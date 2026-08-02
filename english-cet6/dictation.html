@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CET-6 词汇默写训练</title>
+<style>
+/* ===== Reset & Base ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans SC",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.5;min-height:100vh}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;border:none;background:none}
+
+/* ===== Layout ===== */
+.app{max-width:640px;margin:0 auto;padding:16px}
+.header{text-align:center;padding:24px 0 8px}
+.header h1{font-size:1.5rem;font-weight:700;letter-spacing:-0.02em}
+.header p{font-size:0.85rem;color:#6e6e73;margin-top:4px}
+
+/* ===== Tabs ===== */
+.tabs{display:flex;gap:4px;background:#e8e8ed;border-radius:10px;padding:3px;margin-bottom:20px}
+.tab{flex:1;text-align:center;padding:8px 12px;border-radius:8px;font-size:0.875rem;font-weight:500;color:#6e6e73;transition:all 0.2s}
+.tab.active{background:#fff;color:#1d1d1f;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.tab:hover:not(.active){color:#1d1d1f}
+
+/* ===== Progress Bar ===== */
+.progress-wrap{margin-bottom:20px}
+.progress-info{display:flex;justify-content:space-between;font-size:0.8rem;color:#6e6e73;margin-bottom:6px}
+.progress-bar{height:6px;background:#e8e8ed;border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:#0071e3;border-radius:3px;transition:width 0.3s ease}
+
+/* ===== Card ===== */
+.card{background:#fff;border-radius:16px;padding:28px 24px;box-shadow:0 1px 4px rgba(0,0,0,0.04),0 4px 12px rgba(0,0,0,0.04);margin-bottom:16px}
+.card.chinese-card{text-align:center;padding:36px 24px}
+.chinese-meaning{font-size:1.75rem;font-weight:600;color:#1d1d1f;margin-bottom:4px}
+.extra-hint{font-size:0.8rem;color:#86868b;margin-top:8px;min-height:1.2em}
+
+/* ===== Input ===== */
+.input-row{display:flex;gap:10px;margin-bottom:16px}
+.input-row input{flex:1;padding:12px 16px;border:2px solid #d2d2d7;border-radius:12px;font-size:1.05rem;outline:none;transition:border-color 0.2s}
+.input-row input:focus{border-color:#0071e3}
+.input-row input.correct{border-color:#34c759;background:#f0fdf4}
+.input-row input.wrong{border-color:#ff3b30;background:#fef2f2;animation:shake 0.4s ease}
+.input-row button{padding:12px 20px;background:#0071e3;color:#fff;border-radius:12px;font-weight:500;font-size:0.95rem;transition:background 0.2s;white-space:nowrap}
+.input-row button:hover{background:#0062c4}
+.input-row button:disabled{background:#a1a1a6;cursor:not-allowed}
+
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}50%{transform:translateX(6px)}75%{transform:translateX(-4px)}}
+
+/* ===== Feedback ===== */
+.feedback{padding:12px 16px;border-radius:10px;margin-bottom:16px;font-size:0.9rem;display:none}
+.feedback.show{display:flex;align-items:center;gap:10px;animation:fadeIn 0.25s ease}
+.feedback.success{background:#f0fdf4;color:#1b8a3d;border:1px solid #bbf7d0}
+.feedback.error{background:#fef2f2;color:#c53030;border:1px solid #fecaca}
+.feedback .icon{font-size:1.2rem;flex-shrink:0}
+.feedback .correct-word{font-weight:700}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+/* ===== Buttons ===== */
+.btn-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:10px 16px;border-radius:10px;font-size:0.875rem;font-weight:500;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:#0071e3;color:#fff}
+.btn-primary:hover{background:#0062c4}
+.btn-secondary{background:#f5f5f7;color:#1d1d1f}
+.btn-secondary:hover{background:#e8e8ed}
+.btn-outline{border:1.5px solid #d2d2d7;color:#1d1d1f}
+.btn-outline:hover{background:#f5f5f7}
+.btn-speaker{width:40px;height:40px;border-radius:50%;background:#f5f5f7;display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;transition:background 0.2s}
+.btn-speaker:hover{background:#e8e8ed}
+
+/* ===== Knowledge Test ===== */
+.quiz-card .question{font-size:1.1rem;font-weight:600;margin-bottom:18px;line-height:1.6}
+.quiz-card .options{display:flex;flex-direction:column;gap:8px}
+.quiz-card .option{padding:14px 16px;border:2px solid #d2d2d7;border-radius:12px;font-size:0.95rem;text-align:left;transition:all 0.2s;cursor:pointer;background:#fff}
+.quiz-card .option:hover{border-color:#0071e3;background:#f0f7ff}
+.quiz-card .option.selected{border-color:#0071e3;background:#e8f1fb}
+.quiz-card .option.correct-answer{border-color:#34c759;background:#f0fdf4}
+.quiz-card .option.wrong-answer{border-color:#ff3b30;background:#fef2f2}
+.quiz-card .option:disabled{cursor:default;pointer-events:none}
+
+/* ===== Stats ===== */
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.stat-card{background:#fff;border-radius:12px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.stat-value{font-size:1.75rem;font-weight:700;color:#0071e3}
+.stat-label{font-size:0.8rem;color:#6e6e73;margin-top:2px}
+
+/* ===== Word List ===== */
+.word-list{max-height:60vh;overflow-y:auto;border-radius:12px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.word-item{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid #f5f5f7;font-size:0.9rem;transition:background 0.15s}
+.word-item:hover{background:#f5f5f7}
+.word-item:last-child{border-bottom:none}
+.word-item .eng{font-weight:600}
+.word-item .chn{color:#6e6e73;font-size:0.85rem}
+.word-item .status{font-size:0.75rem;padding:3px 8px;border-radius:6px;font-weight:500}
+.word-item .status.mastered{background:#f0fdf4;color:#1b8a3d}
+.word-item .status.learning{background:#fef3c7;color:#b45309}
+
+/* ===== Settings ===== */
+.settings-row{display:flex;gap:12px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.settings-row select,.settings-row input{padding:8px 12px;border:1.5px solid #d2d2d7;border-radius:8px;font-size:0.875rem;background:#fff;outline:none}
+.settings-row select:focus,.settings-row input:focus{border-color:#0071e3}
+.settings-row label{font-size:0.85rem;color:#6e6e73;display:flex;align-items:center;gap:4px;cursor:pointer}
+
+/* ===== Toast ===== */
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;font-weight:500;font-size:0.9rem;z-index:100;opacity:0;transition:opacity 0.3s;pointer-events:none}
+.toast.show{opacity:1}
+.toast.info{background:#1d1d1f;color:#fff}
+
+/* ===== Responsive ===== */
+@media(max-width:480px){
+  .app{padding:10px}
+  .card{padding:20px 16px}
+  .chinese-meaning{font-size:1.4rem}
+  .input-row{flex-direction:column}
+  .input-row button{width:100%}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .tabs{font-size:0.8rem}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <h1>📖 CET-6 词汇默写</h1>
+    <p id="mode-desc">看中文释义，写出英文单词</p>
+    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~5.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="dictation">✍️ 默写</button>
+    <button class="tab" data-tab="quiz">🧠 知识点考核</button>
+    <button class="tab" data-tab="review">📋 复习列表</button>
+  </div>
+
+  <!-- Dictation Mode -->
+  <div id="panel-dictation">
+    <div class="progress-wrap">
+      <div class="progress-info"><span>进度</span><span id="progress-text">0 / 0</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-value" id="stat-correct">0</div><div class="stat-label">✅ 正确</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-attempts">0</div><div class="stat-label">🔄 尝试次数</div></div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings-row">
+      <label>范围
+        <select id="range-select">
+          <option value="all">全部词汇</option>
+          <option value="1">words1 (基础)</option>
+          <option value="2">words2 (进阶)</option>
+          <option value="3">words3 (进阶)</option>
+          <option value="4">words4 (进阶)</option>
+          <option value="5">words5 (进阶)</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
+      <label><input type="checkbox" id="auto-speak-check" checked> 自动发音</label>
+    </div>
+
+    <!-- Chinese Card -->
+    <div class="card chinese-card">
+      <div class="chinese-meaning" id="chn-display">准备开始</div>
+      <div class="extra-hint" id="hint-display"></div>
+      <button class="btn-speaker" id="btn-speak-word" title="听发音 (Ctrl+S)" style="margin-top:12px">🔊</button>
+    </div>
+
+    <!-- Input -->
+    <div class="input-row">
+      <input type="text" id="word-input" placeholder="输入英文单词..." autocomplete="off" autofocus disabled>
+      <button id="btn-submit" disabled>确认</button>
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback" id="feedback"></div>
+
+    <!-- Controls -->
+    <div class="btn-row">
+      <button class="btn btn-primary" id="btn-start">开始默写</button>
+      <button class="btn btn-outline" id="btn-hint" disabled>💡 提示</button>
+      <button class="btn btn-outline" id="btn-skip" disabled>⏭ 跳过</button>
+    </div>
+  </div>
+
+  <!-- Knowledge Quiz Mode -->
+  <div id="panel-quiz" style="display:none">
+    <div class="progress-wrap">
+      <div class="progress-info"><span>考核进度</span><span id="quiz-progress-text">0 / 0</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="quiz-progress-fill" style="width:0%"></div></div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-value" id="quiz-correct">0</div><div class="stat-label">✅ 正确</div></div>
+      <div class="stat-card"><div class="stat-value" id="quiz-total">0</div><div class="stat-label">📝 已答</div></div>
+    </div>
+
+    <div class="card quiz-card" id="quiz-card">
+      <div id="quiz-tag" style="font-size:0.75rem;color:#0071e3;font-weight:600;margin-bottom:8px"></div>
+      <div class="question" id="quiz-question"></div>
+      <div class="options" id="quiz-options"></div>
+      <div id="quiz-explanation" style="margin-top:16px;padding:12px;background:#f5f5f7;border-radius:8px;font-size:0.85rem;display:none"></div>
+      <button class="btn btn-primary" id="btn-next-quiz" style="margin-top:16px;display:none">下一题 →</button>
+    </div>
+
+    <div class="btn-row" style="margin-top:12px">
+      <button class="btn btn-primary" id="btn-start-quiz">开始考核</button>
+    </div>
+  </div>
+
+  <!-- Review Mode -->
+  <div id="panel-review" style="display:none">
+    <div class="settings-row">
+      <label>筛选
+        <select id="review-filter">
+          <option value="all">全部</option>
+          <option value="mastered">✅ 已掌握</option>
+          <option value="learning">🔄 学习中</option>
+          <option value="errors">❌ 出错过</option>
+        </select>
+      </label>
+      <span style="font-size:0.85rem;color:#6e6e73" id="review-count"></span>
+    </div>
+    <div class="word-list" id="word-list"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+// ===== DATA =====
+const WORDS = [
+  {
+    "w": "queer",
+    "m": "奇怪的；同性恋者",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "affluent",
+    "m": "富裕的",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "freelance",
+    "m": "自由职业（者）",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "cardinal",
+    "m": "基本的；基数的",
+    "n": "cardi- = heart（心脏）",
+    "f": 1
+  },
+  {
+    "w": "saline",
+    "m": "盐的，含盐的",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "superstition",
+    "m": "迷信",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "manoeuvre",
+    "m": "策略；调动；演习",
+    "n": "= maneuver（美式）",
+    "f": 1
+  },
+  {
+    "w": "soar",
+    "m": "翱翔；猛增",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "spiral",
+    "m": "螺旋（的）",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "panorama",
+    "m": "全景",
+    "n": "pan-（全）+ horama（景象）",
+    "f": 1
+  },
+  {
+    "w": "hypocrisy",
+    "m": "虚伪，伪善",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "conspiracy",
+    "m": "阴谋，共谋",
+    "n": "spir- = breathe（con- 共同 + spire 呼吸 → 一个鼻孔出气）",
+    "f": 1
+  },
+  {
+    "w": "allegiance to",
+    "m": "忠诚于，效忠于",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "custody",
+    "m": "监护；拘留",
+    "n": "in custody 被拘留",
+    "f": 1
+  },
+  {
+    "w": "the advent of",
+    "m": "…的到来，…的出现",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "lapse",
+    "m": "（时间）流逝；失误",
+    "n": "time lapse 时间流逝 / a lapse of judgment 判断失误",
+    "f": 1
+  },
+  {
+    "w": "herald",
+    "m": "预示…的到来；先驱",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "encyclopedia",
+    "m": "百科全书",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "choir",
+    "m": "合唱团",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "aesthetic",
+    "m": "审美的，美学的",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "a different kettle of fish",
+    "m": "另一码事，完全不同的事",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "chalk sth up to sth",
+    "m": "把…归因于…",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "slip",
+    "m": "滑倒；失误",
+    "n": "→ #27–#30 错误系列",
+    "f": 1
+  },
+  {
+    "w": "gaffe",
+    "m": "失态，失言",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "fault",
+    "m": "错误；缺点；过错",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "blunder",
+    "m": "大错，愚蠢的错误",
+    "n": "比 mistake 语气更重",
+    "f": 1
+  },
+  {
+    "w": "error",
+    "m": "错误，误差",
+    "n": "偏正式/技术语境",
+    "f": 1
+  },
+  {
+    "w": "mistake",
+    "m": "错误，误会",
+    "n": "最通用",
+    "f": 1
+  },
+  {
+    "w": "robe",
+    "m": "长袍，浴袍",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "abide by",
+    "m": "遵守（规则/法律）",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "shorthand",
+    "m": "速记（法）",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "retention",
+    "m": "保留；记忆力",
+    "n": "tent-/ten- = hold",
+    "f": 1
+  },
+  {
+    "w": "avail you nothing",
+    "m": "对你毫无用处",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "flame",
+    "m": "火焰",
+    "n": "🔥 火焰系列 ↓",
+    "f": 1
+  },
+  {
+    "w": "flare",
+    "m": "闪耀；突然爆发",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "scorch",
+    "m": "烧焦，烤焦",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "char",
+    "m": "烧焦，炭化",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "blaze",
+    "m": "熊熊燃烧；火焰",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "kindle",
+    "m": "点燃；激起",
+    "n": "Kindle 阅读器（点燃知识之火）",
+    "f": 1
+  },
+  {
+    "w": "ignite",
+    "m": "点燃；引发",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "dissipate",
+    "m": "消散，消失；挥霍",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "strife",
+    "m": "冲突，争斗",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "furnace",
+    "m": "熔炉，炉子",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "overhaul",
+    "m": "彻底检修；全面改革",
+    "n": "",
+    "f": 1
+  },
+  {
+    "w": "archaeology",
+    "m": "考古学",
+    "n": "archaeo- = ancient（古代的）",
+    "f": 1
+  },
+  {
+    "w": "communism",
+    "m": "共产主义",
+    "n": "communism（n. 共产主义）≠ communist（adj. 共产主义的 / n. 共产主义者）",
+    "f": 2
+  },
+  {
+    "w": "credential",
+    "m": "资格证书；凭证",
+    "n": "cred- = believe/trust（相信，信任）→ credit, incredible, credible",
+    "f": 2
+  },
+  {
+    "w": "press credential",
+    "m": "媒体资格证书",
+    "n": "新闻发布会等场合使用的记者凭证",
+    "f": 2
+  },
+  {
+    "w": "burglar",
+    "m": "窃贼，入室盗贼",
+    "n": "burglar（入室行窃者）≠ thief（泛指小偷）≠ robber（强盗，多含暴力）",
+    "f": 2
+  },
+  {
+    "w": "cat burglar",
+    "m": "飞贼；攀爬入室窃贼",
+    "n": "指从屋顶/窗户等高处潜入的窃贼",
+    "f": 2
+  },
+  {
+    "w": "remnant",
+    "m": "剩余部分，残余",
+    "n": "源自 remain（留下）；the remnants of lunch 残羹剩饭",
+    "f": 2
+  },
+  {
+    "w": "food remnant",
+    "m": "残余食物",
+    "n": "常见于环保/考古类阅读",
+    "f": 2
+  },
+  {
+    "w": "panorama",
+    "m": "全景，全貌",
+    "n": "pan-（全）+ horama（景象，Greek）；[参考] 已见于 words1 #12",
+    "f": 2
+  },
+  {
+    "w": "rack",
+    "m": "支架，搁架",
+    "n": "luggage rack 行李架 / display rack 展示架 / rack one's brains 绞尽脑汁",
+    "f": 2
+  },
+  {
+    "w": "utilise",
+    "m": "利用，使用",
+    "n": "ut-/us- = use（使用）→ utility, utensil, abuse；utilise（英式拼法）= utilize（美式）",
+    "f": 2
+  },
+  {
+    "w": "muscular",
+    "m": "肌肉的；肌肉发达的",
+    "n": "muscul- = muscle（肌肉）→ muscle, musculature 肌肉系统",
+    "f": 2
+  },
+  {
+    "w": "barber",
+    "m": "男理发师",
+    "n": "barber（传统男理发师，只剪男发）≠ hairdresser（美发师，男女通用）；barber's shop 理发店",
+    "f": 2
+  },
+  {
+    "w": "eradicate",
+    "m": "根除，铲除，消灭",
+    "n": "e-（出，向外）+ radic-（根，root）→ 连根拔起；eradicate poverty/disease 消除贫困/疾病",
+    "f": 2
+  },
+  {
+    "w": "greeting card",
+    "m": "贺卡",
+    "n": "send a greeting card 寄贺卡；常见于节日/生日场景",
+    "f": 2
+  },
+  {
+    "w": "perform a symphony",
+    "m": "演奏交响乐",
+    "n": "⚠️ symphony = 交响乐 ≠ concerto（协奏曲）；音乐/艺术类阅读",
+    "f": 2
+  },
+  {
+    "w": "fiction",
+    "m": "小说；虚构的事",
+    "n": "science fiction 科幻小说 / non-fiction 非虚构类 / legal fiction 法律拟制",
+    "f": 2
+  },
+  {
+    "w": "inhabitant",
+    "m": "居民，居住者",
+    "n": "⚠️ inhabitant（居民）≠ habitat（栖息地）；habit- = dwell/live（居住）→ inhabit, habitation",
+    "f": 2
+  },
+  {
+    "w": "coverage",
+    "m": "新闻报道；覆盖范围",
+    "n": "media coverage 媒体报道 / insurance coverage 保险范围 / wide coverage 广泛覆盖",
+    "f": 2
+  },
+  {
+    "w": "shrug off",
+    "m": "不把…当回事；摆脱",
+    "n": "shrug off criticism 对批评不屑一顾 / shrug off a cold 把感冒硬扛过去",
+    "f": 2
+  },
+  {
+    "w": "swear to God",
+    "m": "对天发誓；向上帝发誓",
+    "n": "口语/发誓场景；swear 还可表示\"咒骂\"",
+    "f": 2
+  },
+  {
+    "w": "tile",
+    "m": "瓷砖，瓦片",
+    "n": "tile a bathroom 给浴室贴瓷砖 / install a tile 贴瓷砖 / floor tile 地砖",
+    "f": 2
+  },
+  {
+    "w": "convict",
+    "m": "v. 判罪 / n. 囚犯",
+    "n": "convict sb of sth 因…判处某人；注意发音：v. /kənˈvɪkt/ n. /ˈkɒnvɪkt/",
+    "f": 2
+  },
+  {
+    "w": "repertoire",
+    "m": "全部曲目；全部技能",
+    "n": "音乐/表演类语境；a wide repertoire 广泛的剧目/技能储备",
+    "f": 2
+  },
+  {
+    "w": "smuggle",
+    "m": "走私，偷运",
+    "n": "smuggle drugs 走私毒品 / smuggle sb into a country 偷渡 / smuggle a glance 偷偷瞥一眼",
+    "f": 2
+  },
+  {
+    "w": "scramble",
+    "m": "攀爬；争抢；紧急起飞",
+    "n": "scramble up the cliff 爬上悬崖 / scramble for sth 争抢某物 / scramble eggs 炒蛋",
+    "f": 2
+  },
+  {
+    "w": "nourish",
+    "m": "滋养，养育；怀有（情感）",
+    "n": "nour-/nutri- = feed（喂养）→ nutrition, nutrient, nurse；nourish hope/ambition 怀有希望/抱负",
+    "f": 2
+  },
+  {
+    "w": "perish",
+    "m": "死亡；毁灭；腐烂",
+    "n": "perish the thought! 千万别这么想！但愿不是这样！/ perish in the fire 葬身火海",
+    "f": 2
+  },
+  {
+    "w": "perishable",
+    "m": "易腐烂的；易消亡的",
+    "n": "perish + -able（可…的，易…的）；食品/物流类阅读常见",
+    "f": 2
+  },
+  {
+    "w": "appraisal",
+    "m": "评估，评价，鉴定",
+    "n": "property appraisal 房产评估 / performance appraisal 绩效评估 / critical appraisal 批判性评价",
+    "f": 2
+  },
+  {
+    "w": "malignant",
+    "m": "恶性的；恶意的",
+    "n": "mal- = bad/evil（坏的）→ malice, malfunction, maltreat；malignant tumor 恶性肿瘤",
+    "f": 2
+  },
+  {
+    "w": "strenuous",
+    "m": "费力的，艰苦的；努力的",
+    "n": "strenuous exercise 剧烈运动 / strenuous efforts 不懈努力 / strenuous objection 强烈反对",
+    "f": 2
+  },
+  {
+    "w": "qualitative",
+    "m": "定性的；质量的",
+    "n": "⚠️ qualitative（定性的）≠ quantitative（定量的，量性的）；qualitative analysis 定性分析",
+    "f": 2
+  },
+  {
+    "w": "inverse",
+    "m": "相反的，反向的；倒数",
+    "n": "inverse proportion/ratio 反比 / inverse relationship 反向关系 / in inverse order 以相反顺序",
+    "f": 2
+  },
+  {
+    "w": "horizontal",
+    "m": "水平的，横向的",
+    "n": "vertical 垂直的；图表/数学/设计类阅读",
+    "f": 2
+  },
+  {
+    "w": "solitary",
+    "m": "单独的，独居的；唯一的",
+    "n": "solitary confinement 单独监禁 / solitary life 独居生活 / not a solitary one 一个也没有",
+    "f": 2
+  },
+  {
+    "w": "radiant",
+    "m": "容光焕发的；光芒四射的",
+    "n": "be radiant with joy/happiness 因喜悦而容光焕发；radi- = ray（光线）→ radiate, radius",
+    "f": 2
+  },
+  {
+    "w": "futile",
+    "m": "徒劳的，无效的",
+    "n": "a futile attempt/effort 徒劳的尝试 / it is futile to do sth 做某事是徒劳的",
+    "f": 2
+  },
+  {
+    "w": "obsolete",
+    "m": "过时的，已淘汰的",
+    "n": "科技/设备类阅读高频词；become obsolete 变得过时 / obsolete technology 淘汰的技术",
+    "f": 2
+  },
+  {
+    "w": "centigrade",
+    "m": "摄氏度的",
+    "n": "= Celsius（℃），centigrade 较为老式；centi-（百）+ grade（度）→ 百分度",
+    "f": 2
+  },
+  {
+    "w": "latent",
+    "m": "潜在的，潜伏的",
+    "n": "latent period 潜伏期 / latent talent 潜在的才能 / latent demand 潜在需求",
+    "f": 2
+  },
+  {
+    "w": "discreet",
+    "m": "谨慎的，审慎的",
+    "n": "⚠️ discreet（谨慎的）≠ discrete（离散的，分开的）；a discreet inquiry 谨慎的询问",
+    "f": 2
+  },
+  {
+    "w": "daunting",
+    "m": "令人畏惧的；使人气馁的",
+    "n": "形容任务/挑战巨大；a daunting task/challenge 令人望而生畏的任务",
+    "f": 2
+  },
+  {
+    "w": "daunt",
+    "m": "使害怕，使胆怯；削弱勇气",
+    "n": "nothing daunted 毫不气馁；常用被动 be daunted by sth",
+    "f": 2
+  },
+  {
+    "w": "fantastical",
+    "m": "奇异的，荒诞的",
+    "n": "= fantastic，fantastical 更偏文学/古雅用法；fantas- = imagine（想象）→ fantasy, fantastic",
+    "f": 2
+  },
+  {
+    "w": "foul",
+    "m": "肮脏的；恶臭的；犯规的",
+    "n": "foul air 难闻的气味 / foul mood 坏心情 / foul weather 恶劣天气 / by fair means or foul 不择手段",
+    "f": 3
+  },
+  {
+    "w": "innumerable",
+    "m": "数不清的，无数的",
+    "n": "numer- = number → innumerable, numerous, enumerate, numeral",
+    "f": 3
+  },
+  {
+    "w": "streamline",
+    "m": "精简，使效率更高；流线型",
+    "n": "管理/工程类阅读高频词；streamline the process 精简流程 / streamlined shape 流线型外形",
+    "f": 3
+  },
+  {
+    "w": "wagon",
+    "m": "马车；货车车厢",
+    "n": "covered wagon 有篷马车（美国西部拓荒史常见） / station wagon 旅行车 / on the wagon 戒酒",
+    "f": 3
+  },
+  {
+    "w": "paradigm",
+    "m": "范式，典范，模式",
+    "n": "⚠️ paradigm（范式）≠ parameter（参数）；paradigm shift 范式转移（科学发展史核心概念）/ a new paradigm 新范式",
+    "f": 3
+  },
+  {
+    "w": "franchise",
+    "m": "特许经营权；选举权",
+    "n": "franchise store 加盟店 / grant a franchise 授予特许经营权 / the Star Wars franchise 星球大战系列 IP",
+    "f": 3
+  },
+  {
+    "w": "rifle",
+    "m": "步枪 v. 搜寻，翻找",
+    "n": "rifle through sth 翻找某物 / assault rifle 突击步枪",
+    "f": 3
+  },
+  {
+    "w": "fur",
+    "m": "皮毛，软毛",
+    "n": "fur（动物皮毛，尤指软毛）≠ leather（皮革）≠ skin（皮肤）；fur coat 皮草大衣 / make the fur fly 引起争吵",
+    "f": 3
+  },
+  {
+    "w": "fury",
+    "m": "暴怒，狂怒",
+    "n": "fly into a fury 勃然大怒 / sound and fury 喧嚣与愤怒（出自莎士比亚）/ like fury 拼命地",
+    "f": 3
+  },
+  {
+    "w": "vitality",
+    "m": "生命力，活力，朝气",
+    "n": "vit-/viv- = life（生命）→ vital, revive, survive, vitamin, vivid",
+    "f": 3
+  },
+  {
+    "w": "tobacco",
+    "m": "烟草，烟叶",
+    "n": "公共健康/社会类阅读；tobacco industry 烟草业 / tobacco control 控烟",
+    "f": 3
+  },
+  {
+    "w": "witness",
+    "m": "目击者；证人；见证",
+    "n": "witness to sth 某事的目击者 / bear witness 作证 / witness a change 见证变化",
+    "f": 3
+  },
+  {
+    "w": "introductory",
+    "m": "序言的；入门的；引导的",
+    "n": "intro- = inward（向内）→ introduce, introvert, introspect；introductory course 入门课程 / introductory remarks 开场白",
+    "f": 3
+  },
+  {
+    "w": "nuisance",
+    "m": "讨厌的人/事；妨害",
+    "n": "a real nuisance 真讨厌，真麻烦 / public nuisance 公害 / make a nuisance of oneself 惹人讨厌",
+    "f": 3
+  },
+  {
+    "w": "dominance",
+    "m": "主导地位，支配地位",
+    "n": "domin- = lord/master（主人，掌控）→ dominate, dominant, dominion, predominant",
+    "f": 3
+  },
+  {
+    "w": "ally",
+    "m": "n. 盟友 / v. 与…结盟",
+    "n": "a close ally 亲密盟友 / ally oneself with sb 与某人结盟 / the Allies 同盟国（二战）",
+    "f": 3
+  },
+  {
+    "w": "preface",
+    "m": "序言，前言",
+    "n": "pre-（前）+ face（= speak，说）→ 说在前面的话；preface（作者自序）≠ foreword（他人作序）≠ introduction（导论）",
+    "f": 3
+  },
+  {
+    "w": "gaze",
+    "m": "凝视，注视",
+    "n": "gaze at sth 凝视某物 / steady gaze 目不转睛的注视 / gaze into the distance 凝视远方；gaze（长时间凝视，含情感）≠ glance（一瞥）≠ stare（盯着看，可能不礼貌）",
+    "f": 3
+  },
+  {
+    "w": "volatile",
+    "m": "易挥发的；易变的，动荡的",
+    "n": "volat- = fly（飞）→ 源自拉丁语 volare；volatile market 动荡的市场 / volatile substance 挥发性物质 / volatile temper 喜怒无常的脾气",
+    "f": 3
+  },
+  {
+    "w": "temporary",
+    "m": "暂时的，临时的",
+    "n": "temp- = time（时间）→ temporary, temporal, contemporary, tempo；temporary solution 临时解决方案 / spatial and temporary dimensions 空间与时间的维度",
+    "f": 3
+  },
+  {
+    "w": "auxiliary",
+    "m": "辅助的；备用的",
+    "n": "auxil- = help（帮助）→ 源自拉丁语 auxilium；auxiliary equipment 辅助设备 / auxiliary verb 助动词 / auxiliary power 备用电源",
+    "f": 3
+  },
+  {
+    "w": "monotonous",
+    "m": "单调的，乏味的，一成不变的",
+    "n": "mono-（单一）+ ton-（音调，tone）→ 一个调子的；monotonous work 单调的工作 / monotonous voice 毫无起伏的声音",
+    "f": 3
+  },
+  {
+    "w": "henceforth",
+    "m": "从此以后，今后",
+    "n": "正式/法律文体；henceforth（从现在往后）= from now on（更口语化的说法）",
+    "f": 3
+  },
+  {
+    "w": "exceedingly",
+    "m": "极其，非常",
+    "n": "exceedingly difficult 极其困难 / exceedingly rare 极其罕见；exceedingly 语气比 very 强，偏正式",
+    "f": 3
+  },
+  {
+    "w": "ashore",
+    "m": "在岸上，上岸",
+    "n": "a-（朝向）+ shore（岸）；come ashore 上岸 / go ashore 下船 / be washed ashore 被冲上岸",
+    "f": 3
+  },
+  {
+    "w": "have no idea whatsoever",
+    "m": "毫无头绪，完全不知道",
+    "n": "whatsoever 用于否定句中加强语气 ≈ at all",
+    "f": 3
+  },
+  {
+    "w": "albeit",
+    "m": "尽管，虽然",
+    "n": "正式书面语；albeit = although it be，后接形容词/副词/介词短语；a peaceful, albeit brief, moment 一段平静的（尽管短暂的）时光",
+    "f": 3
+  },
+  {
+    "w": "mosaic",
+    "m": "马赛克；镶嵌图案；拼合物",
+    "n": "源自希腊语 mouseios（缪斯女神之作）；mosaic floor 马赛克地板 / a mosaic of cultures 多元文化的融合 / genetic mosaic 遗传镶嵌体",
+    "f": 4
+  },
+  {
+    "w": "pistol",
+    "m": "手枪",
+    "n": "automatic pistol 自动手枪 / hold a pistol to sb's head 威胁某人（比喻义）/ starting pistol 发令枪",
+    "f": 4
+  },
+  {
+    "w": "pact",
+    "m": "协议，条约，契约",
+    "n": "pact- = agree（同意，固定）→ compact, impact；a pact with sb to do sth 与某人达成协议做某事 / make a pact 立约 / suicide pact 自杀协议 / non-aggression pact 互不侵犯条约",
+    "f": 4
+  },
+  {
+    "w": "rake",
+    "m": "n. 耙子 / v. 耙平；搜寻",
+    "n": "rake up 翻出（旧事），重提 / rake in 大量敛财 / rake through sth 仔细搜寻某物 / as thin as a rake 骨瘦如柴",
+    "f": 4
+  },
+  {
+    "w": "faith",
+    "m": "信仰，信任，虔诚",
+    "n": "have faith in sb/sth 对…有信心 / lose faith 失去信心 / in good faith 真诚地，善意地 / blind faith 盲目信仰；faith（信仰/信任，通常含超越理性的成分）≠ belief（相信/信念，基于经验或推理）≠ trust（信任，侧重于可靠性）",
+    "f": 4
+  },
+  {
+    "w": "ort",
+    "m": "剩饭，残羹碎屑",
+    "n": "通常用复数 orts；kitchen orts 厨房剩饭 / literary orts 文学碎片/断章；⚠️ ort（残羹剩饭，小而碎）≠ leftover（剩菜/剩饭，通用词）",
+    "f": 4
+  },
+  {
+    "w": "overpass",
+    "m": "高架桥，立交桥，天桥",
+    "n": "over-（在上方）+ pass（通过）→ 从上方通过的路；overpass（跨越道路/铁路的桥）≠ flyover（英式：高架道路/立交桥）≠ underpass（地下通道）≠ bridge（通用桥）",
+    "f": 4
+  },
+  {
+    "w": "ribbon",
+    "m": "丝带，缎带；带状物",
+    "n": "a piece of ribbon 一条丝带 / cut the ribbon 剪彩 / ribbon cable 带状电缆 / tear sth to ribbons 把…撕成碎片",
+    "f": 4
+  },
+  {
+    "w": "reclaim",
+    "m": "收回，取回；开垦（荒地）；回收利用",
+    "n": "re-（回）+ claim（声称，要求）→ 要回来；reclaim one's luggage 取回行李 / reclaim land from the sea 填海造地 / reclaimed materials 回收材料 / reclaim one's throne 夺回王位",
+    "f": 4
+  },
+  {
+    "w": "bribe",
+    "m": "v. 贿赂 / n. 贿赂物",
+    "n": "bribe sb to do sth 贿赂某人做某事 / accept/take a bribe 受贿 / offer a bribe 行贿 / bribery and corruption 贪污腐败",
+    "f": 4
+  },
+  {
+    "w": "dental",
+    "m": "牙科的，牙齿的",
+    "n": "dent- = tooth（牙齿）→ dentist, denture, dentition, indent；dental care 牙齿护理 / dental floss 牙线 / dental check-up 牙科检查",
+    "f": 4
+  },
+  {
+    "w": "frown",
+    "m": "v. 皱眉 / n. 皱眉",
+    "n": "frown at sb 对某人皱眉 / frown on/upon sth 反对，不赞成某事 / a deep frown 紧皱的眉头 / frown in concentration 专注地皱眉",
+    "f": 4
+  },
+  {
+    "w": "get the nod",
+    "m": "得到肯定/批准/点头",
+    "n": "get the nod from sb 获得某人的首肯 / give sb the nod 给某人开绿灯",
+    "f": 4
+  },
+  {
+    "w": "lick",
+    "m": "v. 舔 / n. 少量；击打",
+    "n": "lick one's lips 舔嘴唇（期待/满意）/ lick one's wounds 舔舐伤口（恢复元气）/ a lick of paint 薄薄一层漆 / at a great lick 飞快地",
+    "f": 4
+  },
+  {
+    "w": "gum",
+    "m": "n. 口香糖；牙龈；树胶",
+    "n": "chewing gum 口香糖 / gum disease 牙龈病 / bubble gum 泡泡糖；gum（牙龈，解剖术语）≠ teeth（牙齿）≠ lip（嘴唇）",
+    "f": 4
+  },
+  {
+    "w": "waist",
+    "m": "腰，腰部",
+    "n": "waist size 腰围 / around the waist 在腰部 / waist-high 齐腰高的；⚠️ waist（腰部，身体部位）≠ waste（浪费，废弃，同音词）",
+    "f": 4
+  },
+  {
+    "w": "dam",
+    "m": "n. 水坝，大坝 / v. 阻止，抑制",
+    "n": "源自古英语；dam a river 筑坝拦截河流 / dam up one's emotions 压抑情感 / hydropower dam 水电站大坝；⚠️ dam（大坝）≠ damn（该死的，诅咒，同音词）",
+    "f": 4
+  },
+  {
+    "w": "donkey",
+    "m": "驴",
+    "n": "donkey's years 很久很久 / talk the hind legs off a donkey 唠叨个没完 / donkey work 苦活累活；donkey 在英语中常象征固执（stubborn as a donkey）",
+    "f": 4
+  },
+  {
+    "w": "govern",
+    "m": "统治，管理，支配",
+    "n": "gubern-/govern- = steer（掌舵，管理）→ governor, government, governance；govern a country 治理国家 / rules governing sth 支配某事的规则 / govern oneself 自治，自律",
+    "f": 4
+  },
+  {
+    "w": "pilgrim",
+    "m": "朝圣者，香客",
+    "n": "pilgrim 源自拉丁语 peregrinus（外来的，旅行者）；pilgrim route 朝圣路线 / the Pilgrims（特指）清教徒前辈移民（1620 年乘\"五月花号\"抵达美洲）/ pilgrim's progress 天路历程",
+    "f": 4
+  },
+  {
+    "w": "arbitrary",
+    "m": "武断的，专横的；任意的",
+    "n": "arbitr- = judge（裁决）→ 源自拉丁语 arbiter；arbitrary decision 武断的决定 / arbitrary arrest 任意逮捕 / an arbitrary number 任意数字；arbitrary（主观随意的决定）≠ random（数学上的随机）",
+    "f": 4
+  },
+  {
+    "w": "discourse",
+    "m": "n. 话语，论述，语篇 / v. 讲述",
+    "n": "dis-（分离）+ cours-（跑）→ 跑来跑去地讲 → 论述；political discourse 政治话语 / academic discourse 学术论述 / discourse on sth 就某事进行论述 / public discourse 公共讨论",
+    "f": 4
+  },
+  {
+    "w": "skim",
+    "m": "撇去（浮沫）；略读，浏览",
+    "n": "skim off 撇去，捞走（精华/利润）/ skim through a book 浏览一本书 / skim milk 脱脂牛奶 / skim the surface 浅尝辄止；skim（快速浏览，抓重点）≠ scan（快速扫视，寻找特定信息）",
+    "f": 4
+  },
+  {
+    "w": "sow",
+    "m": "v. 播种 / n. 母猪",
+    "n": "sow seeds 播种 / sow doubt 撒播怀疑的种子 / reap what you sow 种瓜得瓜，种豆得豆（自食其果）/ You reap what you sow. 善有善报，恶有恶报；sow（播种，过去式 sowed，过去分词 sown/sowed）≠ sew（缝纫，同音词）",
+    "f": 4
+  },
+  {
+    "w": "embassy",
+    "m": "大使馆",
+    "n": "emb-（里面）+ assy（= send，派）→ 派驻机构；⚠️ embassy（大使馆，机构）≠ ambassador（大使，人员）；the Chinese Embassy 中国大使馆 / embassy staff 使馆工作人员",
+    "f": 4
+  },
+  {
+    "w": "petroleum",
+    "m": "石油",
+    "n": "petr-（岩石）+ oleum（油）→ 石油；crude petroleum 原油 / petroleum industry 石油工业 / petroleum jelly 凡士林；petr- = rock → petrify（石化），petroleum（石油），petroglyph（岩石雕刻）",
+    "f": 4
+  },
+  {
+    "w": "vacuum",
+    "m": "n. 真空 / v. 用吸尘器打扫",
+    "n": "vacu- = empty（空的）→ vacuous, evacuate, vacation（空闲时间）；vacuum cleaner 吸尘器 / in a vacuum 在真空中（比喻脱离现实环境）/ power vacuum 权力真空 / vacuum-packed 真空包装的",
+    "f": 4
+  },
+  {
+    "w": "comb",
+    "m": "n. 梳子 / v. 梳理；仔细搜寻",
+    "n": "comb one's hair 梳头发 / comb the area 仔细搜索该区域 / comb through documents 仔细翻阅文件 / fine-tooth comb 细齿梳（比喻仔细检查）",
+    "f": 4
+  },
+  {
+    "w": "lantern",
+    "m": "灯笼，提灯",
+    "n": "lantern festival 元宵节，灯会 / Chinese lantern 中国灯笼 / magic lantern 幻灯机（早期的）/ a lantern in the dark 黑暗中的灯笼（比喻希望之光）",
+    "f": 4
+  },
+  {
+    "w": "vase",
+    "m": "花瓶",
+    "n": "a vase of flowers 一瓶花 / flower vase 花瓶 / put flowers in a vase 把花插进花瓶；vase（花瓶，装饰用）≠ jar（罐子，储物用）",
+    "f": 4
+  },
+  {
+    "w": "jar",
+    "m": "n. 罐子，广口瓶 / v. 震动，冲突",
+    "n": "cookie jar 饼干罐 / glass jar 玻璃罐 / jar on sb 使某人不快 / jarring sound 刺耳的声音 / a jar of jam 一罐果酱",
+    "f": 4
+  },
+  {
+    "w": "quarantine",
+    "m": "隔离期；检疫",
+    "n": "quar- = forty（意大利语 quaranta → 威尼斯曾要求船只隔离 40 天）；in quarantine 在隔离期 / self-quarantine 自我隔离 / put sb in quarantine 将某人隔离；公共健康/社会类阅读高频词；quar-（四十）→ 40 天隔离 → quarantine",
+    "f": 5
+  },
+  {
+    "w": "pneumonia",
+    "m": "肺炎",
+    "n": "pneumon- = lung（肺）→ 衍生：pneumatic 气动的；医学/公共卫生类阅读常见；⚠️ p 不发音！pneumon- 中首字母 p 不发音，类似 psychology, pneumonia, pterodactyl",
+    "f": 5
+  },
+  {
+    "w": "pendulum",
+    "m": "钟摆",
+    "n": "pend- = hang（悬挂）→ depend, suspend, pending, pendulum；pendulum clock 摆钟 / the swing of the pendulum 钟摆的摆动（比喻舆论/趋势的转变）；the pendulum has swung (back) 风水轮流转，风向变了；议论文中常见比喻\"钟摆效应\"",
+    "f": 5
+  },
+  {
+    "w": "contingent",
+    "m": "adj. 视情况而定的 / n. 代表团",
+    "n": "be contingent on/upon sth 取决于…，受…影响；⚠️ contingent（取决于…的）≠ continent（大陆）；con-（共同）+ ting-/tact-（接触，touch）→ 因接触而关联 → contingent, contact, tangible；contact（接触）→ contingent（接触才发生的 → 视情况而定）",
+    "f": 5
+  },
+  {
+    "w": "mosquito",
+    "m": "蚊子",
+    "n": "mosquito net 蚊帐 / mosquito repellent 驱蚊剂 / mosquito bite 蚊子叮咬；西班牙语 mosquito = mosca（苍蝇）+ -ito（小后缀）→ 小苍蝇 → 蚊子",
+    "f": 5
+  },
+  {
+    "w": "conspiracy",
+    "m": "阴谋，共谋",
+    "n": "spir- = breathe（呼吸：con- 共同 + spire 呼吸 → 一个鼻孔出气）；已见于 words1 #14；conspiracy theory 阴谋论；社科类阅读常见",
+    "f": 5
+  },
+  {
+    "w": "conspire",
+    "m": "密谋；共同导致",
+    "n": "conspire against sb 密谋反对某人 / conspire to do sth 合谋做某事 / events conspired to... 各种因素凑在一起…（拟人用法）；events conspired against us 事事都不顺（命运作对，高级表达）",
+    "f": 5
+  },
+  {
+    "w": "spiral",
+    "m": "n./v. 螺旋（式上升/下降）",
+    "n": "已见于 words1 #11；spiral out of control 失控地急剧上升（或恶化）/ downward spiral 恶性循环，每况愈下 / inflationary spiral 螺旋式通胀；经济/社会类图表作文常用词",
+    "f": 5
+  },
+  {
+    "w": "governor",
+    "m": "州长；总督；理事",
+    "n": "govern- = steer（掌舵，管理）→ govern, government, governance；governor（人：州长/管理者）≠ government（机构：政府）；the Governor of New York 纽约州州长 / board of governors 理事会；govern + -or（做…的人）→ 掌舵的人 → 州长",
+    "f": 5
+  },
+  {
+    "w": "diplomacy",
+    "m": "外交；外交手腕",
+    "n": "diploma-（官方文件/文凭）→ diplomacy, diplomat, diplomatic；shuttle diplomacy 穿梭外交 / quiet diplomacy 秘密外交 / dollar diplomacy 金元外交；国际关系/政治类阅读高频词",
+    "f": 5
+  },
+  {
+    "w": "legitimate",
+    "m": "合法的；合理的；正统的",
+    "n": "leg- = law（法律）→ legal, legitimate, legislate, legislature；legitimate heir 合法继承人 / legitimate concern 合理的担忧 / legitimate business 合法生意；legitimate（合法+正统，强调正当性）≠ legal（法律上的，偏技术性）≠ lawful（依法的，偏古雅）；法律/政治类阅读核心词",
+    "f": 5
+  },
+  {
+    "w": "legislature",
+    "m": "立法机关",
+    "n": "legis-（法律）+ lat-（提出，bring forward）→ 提出法律的机构；⚠️ 原文\"司法机关\"有误！legislature = 立法机关 ≠ judiciary 司法机关 ≠ executive 行政机关；三权分立话题必考词",
+    "f": 5
+  },
+  {
+    "w": "intervention",
+    "m": "干涉，介入，干预",
+    "n": "inter-（之间）+ ven-（来，come）→ 来到中间 → 介入 → intervene, intervention, convene, prevent；government intervention 政府干预 / military intervention 军事干预 / medical intervention 医疗干预；政治/经济类阅读高频词；inter（之间）+ vent（来）→ 走到中间来 → 干预",
+    "f": 5
+  },
+  {
+    "w": "harbour",
+    "m": "n. 港口 / v. 庇护；心怀（情感）",
+    "n": "harbour（英式）= harbor（美式）；safe harbour 避风港 / harbour a grudge 心怀怨恨 / harbour doubts 心怀疑虑 / harbour a criminal 窝藏罪犯；to harbour a secret desire 心中藏着秘密的渴望（文学性表达）",
+    "f": 5
+  },
+  {
+    "w": "enclose",
+    "m": "围住；随函附上",
+    "n": "en-（使，进入）+ close（关闭）→ 关在里面；enclose a cheque 附上支票 / please find enclosed... 随函附上…请查收… / enclose a garden with a fence 用篱笆围住花园；正式信函/商务英语常用语；Enclosed please find...（正式信函用语：\"随函附上…请查收\"）",
+    "f": 5
+  },
+  {
+    "w": "encompass",
+    "m": "包含，包括；围绕",
+    "n": "en-（使进入）+ compass（范围，罗盘）→ 纳入范围之内 → 包含；encompass a wide range of 涵盖广泛的 / encompass all aspects of 涵盖…的方方面面；学术写作高频替换词 = include/cover/embrace；compass 是罗盘/范围 → encompass 是把…圈进范围 → 包含",
+    "f": 5
+  },
+  {
+    "w": "encounter",
+    "m": "v./n. 遭遇；邂逅；经历",
+    "n": "en-（使）+ counter（= contra，对抗，面对面）→ 面对面相遇；encounter difficulties/problems 遇到困难 / a chance encounter 偶遇，邂逅 / close encounter 近距离接触；a brief encounter 一次短暂的邂逅（浪漫/文学语境）",
+    "f": 5
+  },
+  {
+    "w": "intrude on/into",
+    "m": "闯入；侵扰；打断",
+    "n": "trud- = thrust（推，插入）→ intrude（往里推 → 闯入），extrude（往外推 → 挤出），protrude（往前推 → 突出）；intrude on one's privacy 侵犯隐私 / intrude into a conversation 打断谈话 / I don't mean to intrude 我不是有意打扰；社会/伦理类阅读",
+    "f": 5
+  },
+  {
+    "w": "soil your hands",
+    "m": "弄脏你的手",
+    "n": "soil one's hands (with sth) 弄脏手（也比喻参与不光彩之事）/ not soil one's hands 不愿弄脏手（不屑为伍）；soil（弄脏，较正式/文学）≠ dirty（弄脏，口语通用）；\"I wouldn't soil my hands with such dirty work.\" 这种脏活我才不碰。",
+    "f": 5
+  },
+  {
+    "w": "make one's debut",
+    "m": "首次登场，首秀",
+    "n": "make one's debut 首次亮相 / debut album 首张专辑 / debut performance 首场演出 / debut novel 处女作；debut 源自法语 début（开始，开端）；make one's grand debut 盛大登场",
+    "f": 5
+  },
+  {
+    "w": "procession",
+    "m": "队伍，行列",
+    "n": "pro-（向前）+ cess-（走，go）→ 向前走 → procession, process, proceed, procession；funeral procession 送葬队伍 / in procession 列队行进 / wedding procession 婚礼队伍；procession（行进中的队伍）≠ parade（游行/阅兵，偏庆祝）",
+    "f": 5
+  },
+  {
+    "w": "cemetery",
+    "m": "公墓，墓地",
+    "n": "cemetery（公墓，非教堂所属）≠ graveyard（教堂墓地）≠ tomb（坟墓单体）；⚠️ 拼写：cemetery，容易错写成 cemetary。记忆：cemetery 里面全是 e（ce-m-e-t-e-ry，一个 a 都没有）",
+    "f": 5
+  },
+  {
+    "w": "naked",
+    "m": "裸体的；赤裸裸的",
+    "n": "naked eye 肉眼 / stark naked 一丝不挂 / the naked truth 赤裸裸的事实 / naked flame 明火；naked（裸体，通用）≠ nude（裸体，偏艺术/正式/摄影）≠ bare（光秃的，如 bare foot 赤脚）；文学/描述性阅读中常见",
+    "f": 5
+  },
+  {
+    "w": "lucrative",
+    "m": "获利多的，赚钱的",
+    "n": "lucr- = gain/profit（利润）→ lucrative, lucre（钱财，贬义）；a lucrative business/deal 有利可图的生意 / a lucrative career 高薪职业；经济/商业类阅读高频词；lucre（钱，谐音\"路阔\"有钱路才阔）→ lucrative 有利可图的",
+    "f": 5
+  },
+  {
+    "w": "anecdotal",
+    "m": "轶事的，趣闻的；传闻的",
+    "n": "an-（不，未）+ ec-/ex-（出）+ dot-（给，give）→ 未公开给出的（故事）→ anecdote 轶事 → anecdotal 轶事的；anecdotal evidence 传闻性证据（不严谨的证据）；论证/批判性阅读中用以指\"传闻的，缺乏科学依据的\"；anecdote（轶事，小故事）→ anecdotal（轶事的）",
+    "f": 5
+  },
+  {
+    "w": "explicatory",
+    "m": "解释的，说明的",
+    "n": "ex-（向外）+ plic-（折叠，fold）→ 向外展开 → 解释；explicatory（解释性的，较正式/学术）= explanatory（解释的，更常用）；plic-/ply- = fold → explicit 明确的（展开来的），implicit 含蓄的（折在里面的），complicate 复杂的（折在一起）；explicit（明确的）→ explicatory（解释的）",
+    "f": 5
+  },
+  {
+    "w": "headhunter",
+    "m": "猎头；物色人才的人",
+    "n": "corporate headhunter 企业猎头 / executive headhunter 高管猎头；head（头脑，人才）+ hunter（猎人）→ 猎人才的人 → 猎头；\"I got headhunted by Google.\" 我被谷歌挖走了。（headhunt 作动词）",
+    "f": 5
+  },
+  {
+    "w": "chap",
+    "m": "小伙子，家伙",
+    "n": "old chap 老兄（英式口语）/ a decent chap 一个体面的小伙子 / poor chap 可怜的家伙；英式英语日常口语高频词，美式较少使用；英式英语阅读中常见的人物称呼",
+    "f": 5
+  },
+  {
+    "w": "people of all stripes",
+    "m": "各种类型的人，三教九流",
+    "n": "of all stripes = of all kinds/types/backgrounds；politicians of all stripes 各党派政治家 / people of all stripes and colors 形形色色的人；stripe（条纹）→ 不同条纹 → 不同类型/派别 → of all stripes 各种类型的",
+    "f": 5
+  },
+  {
+    "w": "shell",
+    "m": "n. 壳 / v. 剥壳",
+    "n": "shell out (for sth) 付一大笔钱 / come out of one's shell 不再害羞，开始活跃 / turtle shell 乌龟壳 / shell corporation 空壳公司；shell out 掏钱（不情愿地花大钱）：I had to shell out $500 for the repair. 我不得不掏了 500 美元修理费。；shell out → 像剥壳一样\"掏\"出钱来",
+    "f": 5
+  },
+  {
+    "w": "jug",
+    "m": "壶，罐（带柄和嘴）",
+    "n": "milk jug 牛奶壶 / a jug of water 一壶水 / measuring jug 量杯；jug（带柄和嘴的壶）≠ jar（广口罐，储物用）≠ mug（杯子，喝水用）≠ pitcher（大水罐，美式）= jug（英式）",
+    "f": 5
+  },
+  {
+    "w": "purse",
+    "m": "钱包（女式）",
+    "n": "purse（英式：零钱包；美式：女式手提包/钱包）≠ wallet（男士钱包）；tighten the purse strings 紧缩开支 / hold the purse strings 掌管财务 / coin purse 零钱包；the public purse 国库，公共资金",
+    "f": 5
+  },
+  {
+    "w": "penny",
+    "m": "便士；美分",
+    "n": "not a penny 一文不名 / a penny for your thoughts 你在想什么呢？/ every penny counts 每一分钱都很重要；A penny saved is a penny earned. 省一分就是赚一分。（富兰克林名言）/ penny-wise, pound-foolish 小钱精明大钱糊涂；复数：pence（英，金额）/ pennies（美，硬币个数）",
+    "f": 5
+  },
+  {
+    "w": "disc",
+    "m": "磁盘；圆盘",
+    "n": "disc（英式）= disk（美式）；hard disc 硬盘 / disc drive 磁盘驱动器 / compact disc (CD) 光盘 / slipped disc 椎间盘突出",
+    "f": 5
+  },
+  {
+    "w": "trunk",
+    "m": "树干；象鼻；行李箱",
+    "n": "trunk（美式：汽车后备箱）= boot（英式：汽车后备箱）；tree trunk 树干 / swimming trunks 泳裤 / trunk call 长途电话（英式旧用法）；一根树干 → 大象鼻子像树干 → 行李箱也像树干一样粗大 → trunk 三义同一词",
+    "f": 5
+  },
+  {
+    "w": "vapour",
+    "m": "蒸汽，水汽",
+    "n": "vapour（英式）= vapor（美式）；vap- = steam → vapour, evaporate（蒸发）, vapid（索然无味的，像蒸汽一样没味道）；water vapour 水蒸气",
+    "f": 5
+  },
+  {
+    "w": "sift",
+    "m": "v. 筛；仔细审查",
+    "n": "sift through sth 仔细筛查 / sift flour 筛面粉 / sift out 筛除，筛选出；sift 联想 sieve（筛子，名词）→ sift（筛的动作，动词）；sift through piles of documents 在成堆的文件中仔细翻找",
+    "f": 5
+  },
+  {
+    "w": "shrub",
+    "m": "灌木",
+    "n": "shrub（灌木，单株可观赏）≠ bush（灌木丛，成片的）≠ tree（树，有明显主干）≠ herb（草本植物）；evergreen shrub 常绿灌木 / flowering shrub 开花灌木",
+    "f": 5
+  },
+  {
+    "w": "pea",
+    "m": "豌豆",
+    "n": "green peas 青豌豆 / like two peas in a pod 一个模子里刻出来的，一模一样；They are like two peas in a pod.（形容两个人极其相似）；pea 的常用复数 peas，pea soup 豌豆汤",
+    "f": 5
+  },
+  {
+    "w": "garlic",
+    "m": "大蒜",
+    "n": "garlic bread 蒜香面包 / a clove of garlic 一瓣蒜 / garlic press 压蒜器 / garlic breath 大蒜味口气；gar-（像矛 gar）+ lic（像韭 leek）→ 大蒜",
+    "f": 5
+  },
+  {
+    "w": "cattle",
+    "m": "牛（总称，集合名词）",
+    "n": "⚠️ cattle 是牛的集合名词，不可数，谓语用复数！例：The cattle are grazing. 牛在吃草。cattle ≠ cow（母牛/奶牛）≠ ox（阉公牛，干活用）≠ bull（公牛，斗牛用）；a herd of cattle 一群牛 / dairy cattle 奶牛 / beef cattle 肉牛；集合名词用法辨析是语法常考点",
+    "f": 5
+  },
+  {
+    "w": "ox",
+    "m": "牛（阉公牛，用于劳作）",
+    "n": "ox（阉公牛，干活的）≠ bull（未阉公牛，斗牛）≠ cow（母牛/奶牛）≠ cattle（牛的总称）；复数：oxen；as strong as an ox 像牛一样强壮",
+    "f": 5
+  },
+  {
+    "w": "goose",
+    "m": "鹅",
+    "n": "复数：geese /g iː s/；roast goose 烤鹅 / wild goose chase 徒劳的追寻 / cook one's goose 毁掉某人的机会/前途 / what's good for the goose is good for the gander 适用于一方也适用于另一方，一碗水端平；\"Your goose is cooked!\" 你完蛋了！",
+    "f": 5
+  },
+  {
+    "w": "cock",
+    "m": "公鸡",
+    "n": "cock（英式：公鸡） = rooster（美式：公鸡）；cock crow 公鸡打鸣 / cock fight 斗鸡；⚠️ cock 在口语中另有粗俗义（阴茎），正式写作中慎用，优先用 rooster",
+    "f": 5
+  },
+  {
+    "w": "ape",
+    "m": "n. 猿 / v. 模仿",
+    "n": "ape（猿，无尾）≠ monkey（猴子，有尾）；go ape 发狂，暴跳如雷 / ape sb's style 模仿某人的风格；\"He went ape when he found out.\" 他发现后暴跳如雷。",
+    "f": 5
+  }
+];
+
+// ===== KNOWLEDGE QUIZ QUESTIONS =====
+const QUIZZES = [
+  // Distinction questions
+  {type:"辨析",q:"paradigm 和 parameter 的区别是？",opts:["paradigm=范式/模式；parameter=参数","paradigm=参数；parameter=范式","两者完全同义","paradigm 是动词，parameter 是名词"],ans:0,exp:"paradigm = 范式/理论框架（如 paradigm shift 范式转移）；parameter = 参数（可调节变量）"},
+  {type:"辨析",q:"discreet 和 discrete 的区别是？",opts:["discreet=谨慎的；discrete=离散的","discreet=离散的；discrete=谨慎的","两者完全同义","discreet 是名词，discrete 是形容词"],ans:0,exp:"discreet = 谨慎的（如 a discreet inquiry）；discrete = 离散的/分开的（如 discrete units）"},
+  {type:"辨析",q:"cemetery 和 graveyard 的区别是？",opts:["cemetery=公墓（非教堂）；graveyard=教堂墓地","graveyard=公墓；cemetery=教堂墓地","两者完全同义","cemetery 是美式，graveyard 是英式"],ans:0,exp:"cemetery = 公墓（非教堂所属，拼写注意 ceme**t**ery）；graveyard = 教堂所属墓地"},
+  {type:"辨析",q:"naked、nude 和 bare 的区别是？",opts:["naked=裸体通用/nude=艺术裸体/bare=光秃","三个词完全同义","naked=艺术裸体/nude=通用/bare=裸体","naked 和 nude 同义，bare 是形容词"],ans:0,exp:"naked = 裸体（通用，也比喻赤裸裸的如 naked truth）；nude = 裸体（艺术/摄影语境）；bare = 光秃的（bare foot 赤脚）"},
+  {type:"辨析",q:"skim 和 scan 的区别是？",opts:["skim=快速浏览抓重点；scan=快速扫视找特定信息","scan=快速浏览；skim=仔细阅读","两者完全同义","skim 是美式，scan 是英式"],ans:0,exp:"skim = 略读（了解大意，skim through a book）；scan = 扫视（寻找特定信息，scan a document for keywords）"},
+  {type:"辨析",q:"gaze、stare 和 glance 的区别是？",opts:["gaze=凝视含情感/stare=盯着可能不礼貌/glance=一瞥","三者完全同义","gaze=不礼貌地盯/stare=含情脉脉/glance=长时间看","gaze 和 stare 同义，glance 是扫视"],ans:0,exp:"gaze = 凝视（含情感，时间长，gaze at the stars）；stare = 盯着看（可能不礼貌，stare at strangers）；glance = 一瞥（快速扫过，glance at the watch）"},
+  {type:"辨析",q:"faith、belief 和 trust 的区别是？",opts:["faith=信仰可超越理性/belief=基于经验的相信/trust=信任可靠性","三者完全同义","faith=相信/belief=信仰/trust=信念","只有 faith 和 trust 有区别"],ans:0,exp:"faith = 信仰/信任（可超越理性成分，blind faith）；belief = 相信/信念（基于经验或推理）；trust = 信任（侧重于可靠性）"},
+  {type:"辨析",q:"legitimate、legal 和 lawful 的区别是？",opts:["legitimate=合法+正统/legal=法律技术上/lawful=依法偏古雅","三者完全同义","legitimate=技术合法/legal=有正统性/lawful=非法","legitimate 和 legal 同义"],ans:0,exp:"legitimate = 合法+正统（强调正当性，legitimate heir）；legal = 法律上的（偏技术性）；lawful = 依法的（偏古雅/正式）"},
+  {type:"辨析",q:"embassy 和 ambassador 的区别是？",opts:["embassy=大使馆机构/ambassador=大使人员","两者同义","embassy=大使/ambassador=大使馆","没有区别"],ans:0,exp:"embassy = 大使馆（建筑物/机构，the Chinese Embassy）；ambassador = 大使（人）"},
+  {type:"辨析",q:"trunk（美式）和 boot（英式）指什么？",opts:["汽车后备箱","树干","行李箱","象鼻"],ans:0,exp:"trunk = 汽车后备箱（美式），boot = 汽车后备箱（英式）。注意 trunk 还有'树干''象鼻'的意思"},
+
+  // Root questions
+  {type:"词根",q:"词根 cardi- 的含义是？",opts:["心脏","盐","呼吸","持有"],ans:0,exp:"cardi- = heart（心脏）。例词：cardiac 心脏的，cardiology 心脏病学，cardiogram 心电图"},
+  {type:"词根",q:"词根 spir- 的含义是？",opts:["呼吸","心脏","盐","法律"],ans:0,exp:"spir- = breathe（呼吸）。例词：conspiracy 阴谋，inspire 鼓舞，expire 到期，spirit 精神"},
+  {type:"词根",q:"词根 cred- 的含义是？",opts:["相信，信任","法律","使用","肌肉"],ans:0,exp:"cred- = believe/trust（相信，信任）。例词：credential 凭证，credit 信用，incredible 难以置信的，credible 可信的"},
+  {type:"词根",q:"词根 mal- 的含义是？",opts:["坏的，恶的","好的","大的","小的"],ans:0,exp:"mal- = bad/evil（坏的）。例词：malignant 恶性的，malice 恶意，malfunction 故障，maltreat 虐待"},
+  {type:"词根",q:"词根 radi- 的含义是？",opts:["光线，辐射","根","使用","时间"],ans:0,exp:"radi- = ray（光线，辐射）。例词：radiant 光芒四射的，radiate 辐射，radius 半径，radio 无线电"},
+  {type:"词根",q:"词根 vit-/viv- 的含义是？",opts:["生命，生活","时间","数字","法律"],ans:0,exp:"vit-/viv- = life（生命，生活）。例词：vitality 生命力，vital 至关重要的，revive 复活，survive 幸存，vitamin 维生素"},
+  {type:"词根",q:"词根 dent- 的含义是？",opts:["牙齿","牙科","骨头","头发"],ans:0,exp:"dent- = tooth（牙齿）。例词：dental 牙科的，dentist 牙医，denture 假牙，indent 使成锯齿状"},
+  {type:"词根",q:"词根 pend-/pens- 的含义是？",opts:["悬挂；称量","推动","折叠","关闭"],ans:0,exp:"pend-/pens- = hang/weigh（悬挂，称量）。例词：pendulum 钟摆，depend 依靠（挂在…上），suspend 暂停，pension 养老金（称量出的钱）"},
+  {type:"词根",q:"词根 trud-/trus- 的含义是？",opts:["推，插入","拉","折叠","关闭"],ans:0,exp:"trud-/trus- = thrust（推，插入）。例词：intrude 闯入（往里推），extrude 挤出（往外推），protrude 突出（往前推）"},
+  {type:"词根",q:"词根 plic-/ply-/plex- 的含义是？",opts:["折叠","打开","推动","关闭"],ans:0,exp:"plic-/ply- = fold（折叠）。例词：explicit 明确的（展开来的），implicit 含蓄的（折在里面的），complicate 复杂的（折在一起的）"},
+
+  // Phrase matching
+  {type:"短语",q:"abide by 的意思是？",opts:["遵守（规则/法律）","放弃","忽略","创造"],ans:0,exp:"abide by = 遵守（规则/法律）。例：abide by the law 遵守法律，abide by the agreement 遵守协议"},
+  {type:"短语",q:"shrug off 的意思是？",opts:["不把…当回事；摆脱","穿上","捡起","放下"],ans:0,exp:"shrug off = 不把…当回事/摆脱。例：shrug off criticism 对批评不屑一顾，shrug off a cold 把感冒硬扛过去"},
+  {type:"短语",q:"scramble for sth 的意思是？",opts:["争抢某物","放弃某物","忽略某物","创造某物"],ans:0,exp:"scramble for sth = 争抢某物。例：scramble for the ball 抢球，scramble for tickets 抢票"},
+  {type:"短语",q:"rack one's brains 的意思是？",opts:["绞尽脑汁","放松大脑","伤害大脑","清理大脑"],ans:0,exp:"rack one's brains = 绞尽脑汁，苦思冥想。rack = 支架/折磨，把脑子放在架子上折磨 → 绞尽脑汁"},
+  {type:"短语",q:"perish the thought! 的意思是？",opts:["千万别这么想！但愿不是这样！","想到死亡","思考灭亡","想念逝者"],ans:0,exp:"perish the thought! = 千万别这么想！但愿不是这样！（口语表达，用于拒绝一个糟糕的想法）"},
+  {type:"短语",q:"get the nod 的意思是？",opts:["得到肯定/批准/点头","得到否定","得到礼物","得到惩罚"],ans:0,exp:"get the nod = 得到批准/点头同意。例：get the nod from the boss 获得老板的首肯"},
+  {type:"短语",q:"like two peas in a pod 的意思是？",opts:["一模一样，一个模子刻出来的","两粒豌豆","双胞胎","两个人"],ans:0,exp:"like two peas in a pod（像一个豆荚里的两粒豌豆）= 一模一样，极其相似"},
+  {type:"短语",q:"cook one's goose 的意思是？",opts:["毁掉某人的机会/前途","烹饪鹅肉","帮助某人","表扬某人"],ans:0,exp:"cook one's goose = 毁掉某人的机会/前途。例：Your goose is cooked! 你完蛋了！"},
+  {type:"短语",q:"shell out 的意思是？",opts:["付一大笔钱（不情愿地）","剥壳","储蓄","节省"],ans:0,exp:"shell out = 付一大笔钱（不情愿地花大钱）。例：I had to shell out $500 for the repair. 我不得不掏了500美元修理费。"},
+  {type:"短语",q:"go ape 的意思是？",opts:["发狂，暴跳如雷","去动物园","模仿猿猴","爬山"],ans:0,exp:"go ape = 发狂，暴跳如雷。例：He went ape when he found out. 他发现后暴跳如雷。"},
+];
+
+// ===== APP STATE =====
+// ===== SIMILAR-MEANING GROUPS =====
+// Manually curated: words that are easily confused because of close meanings.
+// When a word belongs to a group, auto-show first-letter hint to disambiguate.
+const SIMILAR_GROUPS = {
+  // 点燃
+  'ignite': ['kindle'],
+  'kindle': ['ignite'],
+  // 火焰相关
+  'flame': ['flare', 'blaze'],
+  'flare': ['flame', 'blaze'],
+  'blaze': ['flame', 'flare'],
+  // 烧焦
+  'scorch': ['char'],
+  'char': ['scorch'],
+  // 错误系列
+  'fault': ['blunder', 'error', 'mistake', 'gaffe', 'slip'],
+  'blunder': ['fault', 'error', 'mistake', 'gaffe', 'slip'],
+  'error': ['fault', 'blunder', 'mistake', 'gaffe', 'slip'],
+  'mistake': ['fault', 'blunder', 'error', 'gaffe', 'slip'],
+  'gaffe': ['fault', 'blunder', 'error', 'mistake', 'slip'],
+  'slip': ['fault', 'blunder', 'error', 'mistake', 'gaffe'],
+  // 使害怕
+  'daunt': ['daunting'],
+  'daunting': ['daunt'],
+  // 包含/围绕
+  'enclose': ['encompass'],
+  'encompass': ['enclose'],
+  // 牛
+  'cattle': ['ox'],
+  'ox': ['cattle'],
+  // 共谋
+  'conspiracy': ['conspire'],
+  'conspire': ['conspiracy'],
+  // 消失/驱散
+  'dissipate': ['perish'],
+  'perish': ['dissipate'],
+  // 序言
+  'preface': ['introductory'],
+  'introductory': ['preface'],
+  // 岸
+  'ashore': ['harbour'],
+  'harbour': ['ashore'],
+};
+
+let state = {
+  mode: 'dictation', // dictation | quiz | review
+  words: [],
+  currentIndex: 0,
+  correctCount: 0,
+  attemptCount: 0,
+  wordStatus: {},    // {word: 'mastered'|'learning'}
+  wordErrors: {},    // per-word misspell count
+  currentAttempts: 0,
+  hintLevel: 0,
+  started: false,
+  // quiz state
+  quizQuestions: [],
+  quizIndex: 0,
+  quizCorrect: 0,
+  quizTotal: 0,
+  quizAnswered: false,
+};
+
+// ===== DOM REFS =====
+const $ = id => document.getElementById(id);
+const dom = {
+  tabs: document.querySelectorAll('.tab'),
+  panels: {dictation:$('panel-dictation'),quiz:$('panel-quiz'),review:$('panel-review')},
+  chnDisplay: $('chn-display'),
+  hintDisplay: $('hint-display'),
+  wordInput: $('word-input'),
+  btnSubmit: $('btn-submit'),
+  btnStart: $('btn-start'),
+  btnHint: $('btn-hint'),
+  btnSkip: $('btn-skip'),
+  btnSpeak: $('btn-speak-word'),
+  feedback: $('feedback'),
+  progressText: $('progress-text'),
+  progressFill: $('progress-fill'),
+  statCorrect: $('stat-correct'),
+  statAttempts: $('stat-attempts'),
+  rangeSelect: $('range-select'),
+  shuffleCheck: $('shuffle-check'),
+  autoSpeakCheck: $('auto-speak-check'),
+  modeDesc: $('mode-desc'),
+  // quiz
+  quizProgressText: $('quiz-progress-text'),
+  quizProgressFill: $('quiz-progress-fill'),
+  quizCorrect: $('quiz-correct'),
+  quizTotal: $('quiz-total'),
+  quizCard: $('quiz-card'),
+  quizTag: $('quiz-tag'),
+  quizQuestion: $('quiz-question'),
+  quizOptions: $('quiz-options'),
+  quizExplanation: $('quiz-explanation'),
+  btnNextQuiz: $('btn-next-quiz'),
+  btnStartQuiz: $('btn-start-quiz'),
+  // review
+  wordList: $('word-list'),
+  reviewFilter: $('review-filter'),
+  reviewCount: $('review-count'),
+  toast: $('toast'),
+};
+
+// ===== SPEECH =====
+function speak(text) {
+  if (!window.speechSynthesis) return;
+  speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 0.85;
+  utter.pitch = 1;
+  // Try to find a good English voice
+  const voices = speechSynthesis.getVoices();
+  const enVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google'))
+    || voices.find(v => v.lang.startsWith('en-US'))
+    || voices.find(v => v.lang.startsWith('en'));
+  if (enVoice) utter.voice = enVoice;
+  speechSynthesis.speak(utter);
+}
+
+// Preload voices
+if (window.speechSynthesis) {
+  speechSynthesis.getVoices();
+  speechSynthesis.onvoiceschanged = () => { speechSynthesis.getVoices(); };
+}
+
+// ===== TOAST =====
+let toastTimer;
+function showToast(msg) {
+  dom.toast.textContent = msg;
+  dom.toast.className = 'toast info show';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { dom.toast.className = 'toast info'; }, 2000);
+}
+
+// ===== UTILS =====
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function normalize(s) {
+  return s.replace(/[‐\-–—]/g, '-').replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function checkAnswer(userInput, correctAnswer) {
+  const u = normalize(userInput);
+  const c = normalize(correctAnswer);
+  if (u === c) return true;
+
+  // Handle slash variants: "intrude on/into" → accept "intrude on" or "intrude into"
+  if (c.includes('/')) {
+    const parts = c.split('/');
+    const base = parts[0].replace(/\s*\S+$/, ''); // everything before last word before /
+    const variants = parts.map(p => normalize((base + ' ' + p.split(/\s+/).pop()).trim()));
+    if (variants.some(v => u === v)) return true;
+  }
+
+  // Handle common alternatives
+  const altMap = {
+    'manoeuvre': ['maneuver'],
+    'maneuver': ['manoeuvre'],
+    'utilise': ['utilize'],
+    'utilize': ['utilise'],
+    'harbour': ['harbor'],
+    'harbor': ['harbour'],
+    'vapour': ['vapor'],
+    'vapor': ['vapour'],
+    'disc': ['disk'],
+    'disk': ['disc'],
+    'fantastical': ['fantastic'],
+    'fantastic': ['fantastical'],
+    'centigrade': ['celsius'],
+    'celsius': ['centigrade'],
+    'cock': ['rooster'],
+  };
+  const alts = altMap[c] || [];
+  if (alts.some(a => u === normalize(a))) return true;
+  // Also check if correctAnswer has alts
+  const cAlts = altMap[u] || [];
+  if (cAlts.some(a => normalize(a) === c)) return true;
+  return false;
+}
+
+function getHint(word, level) {
+  if (level === 0) return '';
+  const w = word.w;
+  if (level === 1) {
+    // Show first letter + length
+    return `首字母: <strong>${w[0].toUpperCase()}</strong> · 共 <strong>${w.replace(/\s/g,'').length}</strong> 个字符`;
+  }
+  if (level === 2) {
+    // Show first and last letter + length
+    const cleaned = w.replace(/\s/g,'');
+    return `首字母: <strong>${cleaned[0].toUpperCase()}</strong> · 尾字母: <strong>${cleaned[cleaned.length-1]}</strong> · ${cleaned.length}字符`;
+  }
+  if (level >= 3) {
+    // Show blanks pattern preserving spaces
+    let pattern = '';
+    for (let i = 0; i < w.length; i++) {
+      if (i === 0) pattern += w[i];
+      else if (i === w.length - 1) pattern += w[i];
+      else if (w[i] === ' ') pattern += ' ';
+      else pattern += '_';
+    }
+    return `拼写模式: <strong>${pattern}</strong>`;
+  }
+  return '';
+}
+
+// ===== DICTATION ENGINE =====
+function initDictation() {
+  const range = dom.rangeSelect.value;
+  let pool = range === 'all' ? [...WORDS] : WORDS.filter(w => w.f === parseInt(range));
+  if (dom.shuffleCheck.checked) pool = shuffle(pool);
+  state.words = pool;
+  state.currentIndex = 0;
+  state.correctCount = 0;
+  state.attemptCount = 0;
+  state.currentAttempts = 0;
+  state.hintLevel = 0;
+  state.started = true;
+  state.wordStatus = {};
+  state.wordErrors = {};
+
+  updateDictationUI();
+  showCurrentWord();
+}
+
+function showCurrentWord() {
+  if (state.currentIndex >= state.words.length) {
+    finishDictation();
+    return;
+  }
+  const word = state.words[state.currentIndex];
+  state.currentAttempts = 0;
+  state.hintLevel = 0;
+  dom.chnDisplay.textContent = word.m;
+  dom.wordInput.value = '';
+  dom.wordInput.className = '';
+  dom.wordInput.disabled = false;
+  dom.wordInput.focus();
+  dom.btnSubmit.disabled = false;
+  dom.btnHint.disabled = false;
+  dom.btnSkip.disabled = false;
+  dom.feedback.className = 'feedback';
+  dom.feedback.innerHTML = '';
+  dom.btnStart.style.display = 'none';
+
+  // Auto-show first-letter hint for words with similar-meaning peers
+  const peers = SIMILAR_GROUPS[word.w];
+  if (peers && peers.length > 0) {
+    dom.hintDisplay.innerHTML = `<span style="color:#0071e3">⚠️ 易混词: ${peers.join(' / ')} — ${getHint(word, 1)}</span>`;
+  } else {
+    dom.hintDisplay.innerHTML = '';
+  }
+
+  updateDictationUI();
+}
+
+function submitAnswer() {
+  if (!state.started) return;
+  const userInput = dom.wordInput.value;
+  if (!userInput.trim()) return;
+  const word = state.words[state.currentIndex];
+  state.attemptCount++;
+  state.currentAttempts++;
+
+  if (checkAnswer(userInput, word.w)) {
+    // Correct!
+    dom.wordInput.className = 'correct';
+    dom.wordInput.disabled = true;
+    dom.btnSubmit.disabled = true;
+    dom.btnHint.disabled = true;
+    dom.btnSkip.disabled = true;
+    state.correctCount++;
+    state.wordStatus[word.w] = 'mastered';
+
+    dom.feedback.className = 'feedback success show';
+    dom.feedback.innerHTML = `<span class="icon">✅</span> 正确！<span class="correct-word">${word.w}</span>`;
+    dom.hintDisplay.innerHTML = word.n ? `💡 ${word.n}` : '';
+
+    if (dom.autoSpeakCheck.checked) speak(word.w);
+
+    // Move to next word after a short delay
+    setTimeout(() => {
+      state.currentIndex++;
+      state.hintLevel = 0;
+      showCurrentWord();
+    }, 1500);
+  } else {
+    // Wrong!
+    // Track per-word error count
+    state.wordErrors[word.w] = (state.wordErrors[word.w] || 0) + 1;
+    // Retrigger shake animation
+    dom.wordInput.className = '';
+    void dom.wordInput.offsetWidth;
+    dom.wordInput.className = 'wrong';
+    state.wordStatus[word.w] = 'learning';
+
+    let hintHTML = '';
+    if (state.currentAttempts === 1) {
+      hintHTML = `正确答案: <strong style="color:#c53030">${word.w}</strong> — 请重新输入`;
+    } else if (state.currentAttempts === 2) {
+      state.hintLevel = 1;
+      hintHTML = `正确答案: <strong style="color:#c53030">${word.w}</strong> — ${getHint(word, 1)}`;
+    } else if (state.currentAttempts === 3) {
+      state.hintLevel = 2;
+      hintHTML = `正确答案: <strong style="color:#c53030">${word.w}</strong> — ${getHint(word, 2)}`;
+    } else {
+      state.hintLevel = 3;
+      hintHTML = `正确答案: <strong style="color:#c53030">${word.w}</strong> — ${getHint(word, 3)}`;
+    }
+
+    dom.feedback.className = 'feedback error show';
+    dom.feedback.innerHTML = `<span class="icon">❌</span> ${hintHTML}`;
+    if (word.n && state.currentAttempts >= 2) {
+      dom.feedback.innerHTML += `<br><span style="font-size:0.8rem;color:#86868b">📝 ${word.n}</span>`;
+    }
+
+    // Auto speak on wrong
+    speak(word.w);
+
+    // Highlight input and let user retry
+    setTimeout(() => {
+      dom.wordInput.className = '';
+      dom.wordInput.value = '';
+      dom.wordInput.focus();
+    }, 600);
+
+    updateDictationUI();
+  }
+}
+
+function giveHint() {
+  if (!state.started) return;
+  state.hintLevel++;
+  const word = state.words[state.currentIndex];
+  const hint = getHint(word, Math.min(state.hintLevel, 3));
+  dom.hintDisplay.innerHTML = hint;
+  if (state.hintLevel === 1) speak(word.w);
+}
+
+function skipWord() {
+  if (!state.started) return;
+  const word = state.words[state.currentIndex];
+  state.wordStatus[word.w] = 'mastered';
+  dom.feedback.className = 'feedback success show';
+  dom.feedback.innerHTML = `<span class="icon">⏭</span> 已跳过。正确答案: <strong>${word.w}</strong>（视为已掌握）`;
+  speak(word.w);
+  dom.wordInput.disabled = true;
+  dom.btnSubmit.disabled = true;
+  dom.btnHint.disabled = true;
+  dom.btnSkip.disabled = true;
+  dom.hintDisplay.innerHTML = word.n ? `💡 ${word.n}` : '';
+  setTimeout(() => {
+    state.currentIndex++;
+    state.hintLevel = 0;
+    showCurrentWord();
+  }, 1500);
+}
+
+function finishDictation() {
+  state.started = false;
+  dom.chnDisplay.textContent = '🎉 默写完成！';
+  dom.hintDisplay.innerHTML = '';
+  dom.wordInput.disabled = true;
+  dom.btnSubmit.disabled = true;
+  dom.btnHint.disabled = true;
+  dom.btnSkip.disabled = true;
+  dom.btnStart.style.display = 'inline-flex';
+  dom.btnStart.textContent = '重新开始';
+  dom.feedback.className = 'feedback success show';
+  const total = state.words.length;
+  const pct = total > 0 ? Math.round(state.correctCount / total * 100) : 0;
+  dom.feedback.innerHTML = `<span class="icon">🏆</span> 完成！正确率 <strong>${pct}%</strong>（${state.correctCount}/${total}）`;
+  updateDictationUI();
+  renderReviewList();
+}
+
+function updateDictationUI() {
+  if (!state.started && state.words.length === 0) {
+    dom.progressText.textContent = '0 / 0';
+    dom.progressFill.style.width = '0%';
+  } else {
+    dom.progressText.textContent = `${state.currentIndex} / ${state.words.length}`;
+    dom.progressFill.style.width = state.words.length > 0
+      ? `${(state.currentIndex / state.words.length) * 100}%` : '0%';
+  }
+  dom.statCorrect.textContent = state.correctCount;
+  dom.statAttempts.textContent = state.attemptCount;
+}
+
+// ===== QUIZ ENGINE =====
+function initQuiz() {
+  state.quizQuestions = shuffle([...QUIZZES]);
+  state.quizIndex = 0;
+  state.quizCorrect = 0;
+  state.quizTotal = 0;
+  state.quizAnswered = false;
+  updateQuizUI();
+  showQuizQuestion();
+}
+
+function showQuizQuestion() {
+  if (state.quizIndex >= state.quizQuestions.length) {
+    finishQuiz();
+    return;
+  }
+  state.quizAnswered = false;
+  const q = state.quizQuestions[state.quizIndex];
+  dom.quizTag.textContent = `🏷️ ${q.type}`;
+  dom.quizQuestion.textContent = q.q;
+  dom.quizOptions.innerHTML = '';
+  dom.quizExplanation.style.display = 'none';
+  dom.btnNextQuiz.style.display = 'none';
+
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.textContent = `${String.fromCharCode(65 + i)}. ${opt}`;
+    btn.addEventListener('click', () => answerQuiz(i));
+    dom.quizOptions.appendChild(btn);
+  });
+  updateQuizUI();
+}
+
+function answerQuiz(idx) {
+  if (state.quizAnswered) return;
+  state.quizAnswered = true;
+  state.quizTotal++;
+  const q = state.quizQuestions[state.quizIndex];
+  const isCorrect = idx === q.ans;
+
+  // Highlight answers
+  const opts = dom.quizOptions.querySelectorAll('.option');
+  opts.forEach((opt, i) => {
+    opt.disabled = true;
+    if (i === q.ans) opt.classList.add('correct-answer');
+    if (i === idx && !isCorrect) opt.classList.add('wrong-answer');
+  });
+
+  if (isCorrect) {
+    state.quizCorrect++;
+  }
+
+  dom.quizExplanation.style.display = 'block';
+  dom.quizExplanation.innerHTML = isCorrect
+    ? `<strong>✅ 正确！</strong> ${q.exp}`
+    : `<strong>❌ 错误。</strong> ${q.exp}`;
+  dom.btnNextQuiz.style.display = 'inline-flex';
+  dom.btnNextQuiz.focus();
+  updateQuizUI();
+}
+
+function nextQuiz() {
+  state.quizIndex++;
+  showQuizQuestion();
+}
+
+function finishQuiz() {
+  dom.quizTag.textContent = '';
+  dom.quizQuestion.textContent = '🎉 考核完成！';
+  dom.quizOptions.innerHTML = '';
+  dom.quizExplanation.style.display = 'block';
+  dom.quizExplanation.innerHTML = `正确 <strong>${state.quizCorrect}</strong> / ${state.quizTotal} 题`;
+  dom.btnNextQuiz.style.display = 'none';
+  dom.btnStartQuiz.style.display = 'inline-flex';
+  dom.btnStartQuiz.textContent = '重新考核';
+  updateQuizUI();
+}
+
+function updateQuizUI() {
+  dom.quizProgressText.textContent = `${state.quizIndex} / ${state.quizQuestions.length}`;
+  dom.quizProgressFill.style.width = state.quizQuestions.length > 0
+    ? `${(state.quizIndex / state.quizQuestions.length) * 100}%` : '0%';
+  dom.quizCorrect.textContent = state.quizCorrect;
+  dom.quizTotal.textContent = state.quizTotal;
+}
+
+// ===== REVIEW =====
+function renderReviewList() {
+  const filter = dom.reviewFilter.value;
+  let entries = Object.entries(state.wordStatus);
+  if (filter === 'mastered') entries = entries.filter(([,s]) => s === 'mastered');
+  if (filter === 'learning') entries = entries.filter(([,s]) => s === 'learning');
+  if (filter === 'errors') entries = Object.entries(state.wordErrors).filter(([,c]) => c > 0);
+  if (filter === 'all') {
+    entries = WORDS.map(w => [w.w, state.wordStatus[w.w] || 'untouched']);
+  }
+  dom.reviewCount.textContent = `共 ${entries.length} 个`;
+
+  dom.wordList.innerHTML = entries.map(([word, status]) => {
+    const w = WORDS.find(x => x.w === word);
+    const meaning = w ? w.m : '';
+    const errCount = state.wordErrors[word] || 0;
+    let statusClass = '';
+    let statusText = '';
+    if (filter === 'errors') {
+      statusClass = 'learning';
+      statusText = `❌ ${errCount}次`;
+    } else if (status === 'mastered') {
+      statusClass = 'mastered';
+      statusText = '✅ 已掌握' + (errCount > 0 ? ` (错${errCount}次)` : '');
+    } else if (status === 'learning') {
+      statusClass = 'learning';
+      statusText = `🔄 学习中 · 错${errCount}次`;
+    } else {
+      statusText = '—';
+    }
+    return `<div class="word-item" onclick="speak('${word.replace(/'/g,"\\'")}')" title="点击听发音" style="cursor:pointer">
+      <div><span class="eng">${word}</span><br><span class="chn">${meaning}</span></div>
+      <span class="status ${statusClass}">${statusText}</span>
+    </div>`;
+  }).join('');
+}
+
+// ===== EVENT LISTENERS =====
+dom.btnSubmit.addEventListener('click', submitAnswer);
+dom.wordInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') submitAnswer();
+});
+
+dom.btnStart.addEventListener('click', () => {
+  initDictation();
+  dom.btnStart.textContent = '重新开始';
+});
+
+dom.btnHint.addEventListener('click', giveHint);
+dom.btnSkip.addEventListener('click', skipWord);
+
+dom.btnSpeak.addEventListener('click', () => {
+  // Speak current word in dictation mode
+  if (state.mode === 'dictation' && state.started && state.words[state.currentIndex]) {
+    speak(state.words[state.currentIndex].w);
+  }
+});
+
+dom.btnStartQuiz.addEventListener('click', () => {
+  initQuiz();
+  dom.btnStartQuiz.style.display = 'none';
+});
+
+dom.btnNextQuiz.addEventListener('click', nextQuiz);
+
+dom.reviewFilter.addEventListener('change', renderReviewList);
+
+// Tab switching
+dom.tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    dom.tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const mode = tab.dataset.tab;
+    state.mode = mode;
+    Object.keys(dom.panels).forEach(k => {
+      dom.panels[k].style.display = k === mode ? '' : 'none';
+    });
+    if (mode === 'review') renderReviewList();
+    if (mode === 'dictation') {
+      dom.modeDesc.textContent = '看中文释义，写出英文单词';
+    } else if (mode === 'quiz') {
+      dom.modeDesc.textContent = '词根 · 辨析 · 短语 — 全方位知识点考核';
+    } else {
+      dom.modeDesc.textContent = '追踪你的学习进度';
+    }
+  });
+});
+
+// Keyboard shortcut for speaking
+document.addEventListener('keydown', e => {
+  if (e.key === 's' && e.ctrlKey && state.started) {
+    e.preventDefault();
+    const word = state.words[state.currentIndex];
+    if (word) speak(word.w);
+  }
+});
+
+// ===== INIT =====
+dom.modeDesc.textContent = '看中文释义，写出英文单词';
+$('total-word-count').textContent = WORDS.length;
+dom.btnHint.disabled = true;
+dom.btnSkip.disabled = true;
+dom.wordInput.disabled = true;
+dom.btnSubmit.disabled = true;
+</script>
+</body>
+</html>
