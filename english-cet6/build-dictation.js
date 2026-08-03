@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
-const WORDS_FILES = ['words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md'];
+const WORDS_FILES = ['words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md', 'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md'];
 
 // ===== Parse markdown tables =====
 function parseWordTable(md, fileIndex) {
@@ -16,15 +16,29 @@ function parseWordTable(md, fileIndex) {
   const words = [];
   let inTable = false;
 
-  for (const line of lines) {
-    const trimmed = line.trim();
+  // Peek ahead: is the next non-empty line a table row?
+  const nextNonEmptyIsRow = (idx) => {
+    for (let j = idx + 1; j < lines.length; j++) {
+      const t = lines[j].trim();
+      if (!t) continue;
+      return t.startsWith('|');
+    }
+    return false;
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
 
     // Detect table start
     if (/^\| # \|/.test(trimmed)) { inTable = true; continue; }
     // Skip separator
     if (/^\|---/.test(trimmed) && inTable) continue;
-    // End of main table
-    if (inTable && /^---/.test(trimmed)) break;
+    // A bare --- line: internal group separator if another row follows,
+    // otherwise it ends the main table (sections like 词根小结 come after)
+    if (inTable && /^---/.test(trimmed)) {
+      if (nextNonEmptyIsRow(i)) continue;
+      break;
+    }
     if (!inTable) continue;
     // Must be a table row
     if (!trimmed.startsWith('|')) continue;
@@ -124,7 +138,7 @@ fs.writeFileSync(outPath, html, 'utf-8');
 console.log(`\n✓ Written ${html.length} bytes to ${outPath}`);
 
 // Summary per file
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 10; i++) {
   const count = allWords.filter(w => w.f === i).length;
   console.log(`  words${i}: ${count} words`);
 }

@@ -124,7 +124,7 @@ button{cursor:pointer;border:none;background:none}
   <div class="header">
     <h1>📖 CET-6 词汇默写</h1>
     <p id="mode-desc">看中文释义，写出英文单词</p>
-    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~5.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
+    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~10.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
   </div>
 
   <!-- Tabs -->
@@ -157,6 +157,11 @@ button{cursor:pointer;border:none;background:none}
           <option value="3">words3 (进阶)</option>
           <option value="4">words4 (进阶)</option>
           <option value="5">words5 (进阶)</option>
+          <option value="6">words6 (进阶)</option>
+          <option value="7">words7 (进阶)</option>
+          <option value="8">words8 (进阶)</option>
+          <option value="9">words9 (进阶)</option>
+          <option value="10">words10 (进阶)</option>
         </select>
       </label>
       <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
@@ -1385,6 +1390,1680 @@ const WORDS = [
     "m": "n. 猿 / v. 模仿",
     "n": "ape（猿，无尾）≠ monkey（猴子，有尾）；go ape 发狂，暴跳如雷 / ape sb's style 模仿某人的风格；\"He went ape when he found out.\" 他发现后暴跳如雷。",
     "f": 5
+  },
+  {
+    "w": "divine",
+    "m": "adj. 神圣的；绝妙的 / v. 猜测",
+    "n": "div- = god（神）→ divine, divinity, divination；divine intervention 神的干预 / divine right 神授之权 / divine inspiration 神启；\"The chocolate mousse was simply divine!\" 这巧克力慕斯简直绝了！(口语中表\"极好的\")；div-（神）→ divine（神圣的），同根词：divinity 神性",
+    "f": 6
+  },
+  {
+    "w": "divine power",
+    "m": "神力",
+    "n": "by divine power 凭借神力 / believe in divine power 信仰神力；宗教/文学类阅读",
+    "f": 6
+  },
+  {
+    "w": "catholic",
+    "m": "adj. 天主教的；广泛的，包罗万象的",
+    "n": "cata-（完全，向下）+ hol-（整体）→ 普遍的 → catholic；⚠️ Catholic（大写 C）= 天主教的；catholic（小写 c）= 广泛的，普遍的（a catholic taste in music 广泛的音乐品味）；the Catholic Church 天主教会 / Roman Catholic 罗马天主教；大写/小写词义差异是考研词汇考点",
+    "f": 6
+  },
+  {
+    "w": "Catholic Church",
+    "m": "天主教会",
+    "n": "the Roman Catholic Church 罗马天主教会 / Catholic Church doctrines 天主教教义；Catholic Church（天主教）≠ Protestant Church（新教）≠ Orthodox Church（东正教）",
+    "f": 6
+  },
+  {
+    "w": "pope",
+    "m": "教皇",
+    "n": "Pope Francis 教皇方济各 / the election of a new pope 新教皇选举；pope 源自拉丁语 papa（父亲）→ 精神之父 → 教皇",
+    "f": 6
+  },
+  {
+    "w": "temptation",
+    "m": "诱惑",
+    "n": "tempt- = try/test（试探）→ tempt, temptation, attempt, contempt；resist temptation 抵制诱惑 / yield to temptation 屈服于诱惑 / the temptation to do sth 做某事的诱惑；\"Lead us not into temptation.\" 不叫我们遇见试探。（主祷文名句）",
+    "f": 6
+  },
+  {
+    "w": "hut",
+    "m": "简陋的小屋，棚屋",
+    "n": "mud hut 土坯房 / beach hut 海滩小屋 / mountain hut 山间小屋；hut（简陋小屋）≠ cabin（小木屋，偏度假/森林）≠ cottage（村舍，偏田园/温馨）≠ shed（棚，存放工具）；hut 短小像个小棚子",
+    "f": 6
+  },
+  {
+    "w": "compartment",
+    "m": "隔间；（火车）车厢",
+    "n": "com-（一起）+ part-（分开）+ -ment（名词）→ 分隔出来的空间；glove compartment（汽车）手套箱 / engine compartment 引擎舱 / first-class compartment 头等车厢；part（部分）→ compartment（分隔的小部分）",
+    "f": 6
+  },
+  {
+    "w": "adjoin",
+    "m": "v. 毗邻，紧挨",
+    "n": "ad-（向，靠近）+ join（连接）→ 靠近连接 → 毗邻；adjoin the property 与房产毗邻 / adjoining rooms 相邻的房间；adjoin（紧挨，正式/建筑用语）≠ adjacent（相邻的，偏数学/方位）≠ neighbour（邻居/邻近，通用）；正式写作/房产描述",
+    "f": 6
+  },
+  {
+    "w": "watertight",
+    "m": "防水的；严密的，无懈可击的",
+    "n": "watertight container 防水容器 / watertight alibi 无懈可击的不在场证明 / watertight case 铁案；water + tight（紧的）→ 水进不来的 → 防水的 → 比喻\"无懈可击\"；比喻义在阅读中常见",
+    "f": 6
+  },
+  {
+    "w": "alley",
+    "m": "小巷，胡同",
+    "n": "back alley 后巷 / blind alley 死胡同（也比喻没有出路的工作/研究）/ alley cat 流浪猫 / bowling alley 保龄球馆；be right up one's alley = be right up one's street 正合某人的胃口/特长；alley 像一条窄窄的\"巷\"子",
+    "f": 6
+  },
+  {
+    "w": "scent",
+    "m": "n. 气味（尤指香味）；线索 / v. 嗅到",
+    "n": "⚠️ 原文有误！scent 通常指好闻的气味（香水味、花香），而非难闻的。难闻的气味是 odour/stink；the scent of roses 玫瑰的香味 / a scent of danger 危险的气息 / on the scent of 追踪，寻找 / throw sb off the scent 甩掉追踪者，误导某人；\"The scent of freshly baked bread filled the room.\" 新鲜面包的香气弥漫了整个房间。",
+    "f": 6
+  },
+  {
+    "w": "the scent of a fox",
+    "m": "狐狸的气味（踪迹）",
+    "n": "pick up the scent 嗅到踪迹 / lose the scent 失去线索；猎狐/追踪类文学描写",
+    "f": 6
+  },
+  {
+    "w": "odour",
+    "m": "n. 气味（常指难闻的）",
+    "n": "odour（英式）= odor（美式）；odour（常指臭味）= smell（中性，最通用）≠ scent（香味）≠ fragrance（芬芳）≠ aroma（食物/饮品的香气）；body odour (BO) 体味 / a foul odour 恶臭 / a musty odour 霉味 / odourless 无味的；近义词辨析是词汇题难点",
+    "f": 6
+  },
+  {
+    "w": "a musty odour",
+    "m": "霉味",
+    "n": "a musty smell/odour 霉味 / musty old books 发霉的旧书 / a musty room 有霉味的房间；musty ← must（必须）？no! ← 古英语中\"霉\"的意思；联想：老书 must 有 musty smell",
+    "f": 6
+  },
+  {
+    "w": "a foul odour",
+    "m": "恶臭",
+    "n": "foul（恶臭的，令人作呕的）≠ musty（霉味的）≠ pungent（刺鼻的）≠ stale（不新鲜的，变味的）；foul smell/odour 恶臭 / foul language 脏话 / foul play 犯规，谋杀嫌疑；\"There's a foul smell coming from the fridge.\" 冰箱里飘出一股恶臭。",
+    "f": 6
+  },
+  {
+    "w": "slam",
+    "m": "v./n. 砰地关上；猛撞；猛烈抨击",
+    "n": "slam the door 砰地关门 / slam on the brakes 猛踩刹车 / slam dunk 扣篮（也比喻轻而易举的事）/ slam sb/sth 猛烈抨击；slam（猛力砰地关上）≠ bang（砰的一声响，不一定是关门）≠ shut（关，中性）；\"He slammed the door in my face.\" 他当着我的面摔门。",
+    "f": 6
+  },
+  {
+    "w": "the slam of a door",
+    "m": "关门声，摔门声",
+    "n": "hear the slam of a door 听到摔门声 / the slam of the car door 汽车关门声；slam 是拟声词，模仿砰的关门声",
+    "f": 6
+  },
+  {
+    "w": "be bound up with sth",
+    "m": "与…密切相关",
+    "n": "bound = bind（捆绑）的过去分词 → 绑在一起的；be closely bound up with 与…紧密相连；be bound up with（密切相关，抽象）≠ be bound for（前往，具体方向）≠ be bound to do（一定会做）；bound 的多义性是高频考点",
+    "f": 6
+  },
+  {
+    "w": "bound for",
+    "m": "前往，驶往",
+    "n": "a ship bound for New York 开往纽约的船 / homeward bound 回家的，归途的 / outward bound 出海的，外出的；\"Where are you bound?\" 你去哪儿？（正式/文学用语）",
+    "f": 6
+  },
+  {
+    "w": "trifle",
+    "m": "n. 琐事，小事；少量 / v. 怠慢，小看",
+    "n": "tri-（三）+ -fle → 三个小东西 → 琐事（词源不确定）；a trifle 一点点（= slightly）/ trifle with sb/sth 怠慢，小看 / mere trifle 区区小事；\"He's not a man to be trifled with.\" 他可不是好惹的。⚠️ 原文\"辞职信\"混淆了 trifle 与 resignation！",
+    "f": 6
+  },
+  {
+    "w": "notwithstanding",
+    "m": "prep./adv./conj. 尽管，虽然",
+    "n": "not + with + stand + -ing → 不用站着（反对）→ 尽管；notwithstanding（正式/法律用语）≈ in spite of ≈ despite ≈ although ≈ albeit；法律文书/正式学术写作；考研阅读中出现的正式转折词，需识别；\"Notwithstanding the heavy rain, the match continued.\" 尽管下着大雨，比赛仍然继续。",
+    "f": 6
+  },
+  {
+    "w": "tariff",
+    "m": "关税；价目表",
+    "n": "impose a tariff 征收关税 / protective tariff 保护性关税 / tariff barrier 关税壁垒 / retaliatory tariff 报复性关税；tariff（关税，进口商品税）≠ tax（税，通用）≠ duty（关税，同 tariff，偏英式）≠ levy（征收的税款）；经济/贸易类阅读高频词",
+    "f": 6
+  },
+  {
+    "w": "lynch",
+    "m": "v. 以私刑处死，绞杀",
+    "n": "lynch（私刑处死，未经法律审判）≠ execute（执行死刑，合法程序）；lynch mob 动用私刑的暴民 / be lynched by a mob 被暴民私刑处死；源自美国独立战争时期 Charles Lynch 上校，他在没有正式法庭的情况下惩罚亲英派 → lynch law 私刑；美国历史/社会类阅读话题",
+    "f": 6
+  },
+  {
+    "w": "privileged",
+    "m": "adj. 有特权的；荣幸的",
+    "n": "privi-（私人，单独）+ leg-（法律）→ 私有的法律权利 → privilege；a privileged position 特权地位 / privileged information 机密信息 / I feel privileged to... 很荣幸能… / the privileged few 少数特权阶层；\"I feel privileged to have been invited.\" 承蒙邀请，深感荣幸。",
+    "f": 6
+  },
+  {
+    "w": "resignation",
+    "m": "n. 辞职；辞职信；顺从，听任",
+    "n": "re-（回）+ sign-（标记，签字）→ 签回 → 辞职 → 引申为\"放弃抵抗 → 顺从\"；⚠️ 原文仅写\"辞职信\"，resignation 更核心的含义是\"辞职行为/顺从\"；letter of resignation 辞职信 / hand in one's resignation 提交辞呈 / resignation to fate 听天由命；with resignation 无奈地，顺从地：\"He accepted the decision with resignation.\"",
+    "f": 6
+  },
+  {
+    "w": "charitable",
+    "m": "adj. 慈善的；宽厚的",
+    "n": "char- = car- = dear/love（亲爱的，爱）→ charity → charitable；charitable organization 慈善组织 / charitable donation 慈善捐款 / charitable interpretation 善意的解读；\"Let's be charitable and assume he didn't mean it.\" 我们往好处想，就当他是无心的吧。",
+    "f": 6
+  },
+  {
+    "w": "operative",
+    "m": "adj. 可操作的；有效的 / n. 操作工；特工",
+    "n": "oper- = work（工作）→ operate, operative, operation, operator, cooperate；operative word 关键词 / operative clause 生效条款 / become operative 生效 / factory operative 工厂操作工；\"The operative word here is 'maybe'.\" 这里的关键词是\"也许\"。",
+    "f": 6
+  },
+  {
+    "w": "sturdy",
+    "m": "adj. 强壮的，结实的；坚定的",
+    "n": "a sturdy young man 一个健壮的年轻人 / sturdy furniture 结实的家具 / sturdy resistance 坚决抵抗；sturdy（结实健壮，侧重坚固耐用）≠ robust（强健，侧重身体好/系统强）≠ strong（强壮，最通用）；sturdy 联想 study → 又学习又锻炼 → 又聪明又强壮",
+    "f": 6
+  },
+  {
+    "w": "salient",
+    "m": "adj. 显著的，突出的",
+    "n": "sal- = leap/jump（跳）→ salient（跳出来的 → 突出）；salient point 要点，突出点 / salient feature 显著特征 / salient example 突出例子；salient（突出的，正式/学术用语）≠ prominent（突出的，强调显眼/有名）≠ conspicuous（明显的，强调扎眼）；学术写作高频词",
+    "f": 6
+  },
+  {
+    "w": "a salient point",
+    "m": "要点，突出之处",
+    "n": "highlight a salient point 强调要点 / the most salient point 最突出的一点",
+    "f": 6
+  },
+  {
+    "w": "brevity",
+    "m": "n. 简短，简洁",
+    "n": "brev- = short（短）→ brevity, brief, abbreviate, brevity；brevity is the soul of wit 简洁是智慧的灵魂（莎士比亚名言）/ for the sake of brevity 为简洁起见；写作原则中常提到 brevity；brief（简短的）→ brevity（简洁，名词）",
+    "f": 6
+  },
+  {
+    "w": "wordy",
+    "m": "adj. 冗长的，啰嗦的",
+    "n": "wordy（用词冗长，偏负面）≠ verbose（啰嗦的，正式/文学性）≠ long-winded（啰嗦的，口语化）≠ concise（简洁的，反义词）；a wordy explanation 冗长的解释 / wordy writing 啰嗦的文风；word + -y（形容词后缀）→ 词太多 → 啰嗦",
+    "f": 6
+  },
+  {
+    "w": "rampant",
+    "m": "adj. 猖獗的，泛滥的；疯长的",
+    "n": "ramp- = climb（攀爬）→ rampant（到处爬 → 蔓延/猖獗）；rampant inflation 恶性通胀 / rampant corruption 猖獗的腐败 / the disease is rampant 疾病肆虐 / rampant weeds 疯长的杂草；社会问题类阅读高频词",
+    "f": 6
+  },
+  {
+    "w": "makeshift",
+    "m": "adj. 临时凑合的，权宜的 / n. 临时替代品",
+    "n": "a makeshift shelter 临时避难所 / makeshift solution 权宜之计 / makeshift camp 临时营地；makeshift（临时凑合的，强调简陋应急）≠ temporary（临时的，中性，强调时间短）≠ provisional（临时的，正式，强调以后会换）；make + shift（变换/转移）→ 临时做了一个调整 → 权宜的",
+    "f": 6
+  },
+  {
+    "w": "shifting",
+    "m": "adj. 不断变化的，流动的",
+    "n": "shift- = arrange/change（变化，移动）→ shift, shifting, makeshift, shape-shifter；shifting sands 流沙（比喻不稳定的局面）/ shifting priorities 不断变化的优先事项 / shifting population 流动人口；shift（变化、轮班）→ shifting（不断变化的）",
+    "f": 6
+  },
+  {
+    "w": "akin",
+    "m": "adj. 类似的，相似的",
+    "n": "a-（= of）+ kin（亲属，家族）→ 同一家族的 → 相似的；be akin to sth 与…类似 / something akin to 有点像…的东西 / akin to despair 近乎绝望；\"It was something akin to love at first sight.\" 那有点像一见钟情。",
+    "f": 6
+  },
+  {
+    "w": "analogous",
+    "m": "adj. 类似的，可类比的",
+    "n": "ana-（按照，向上）+ log-（说，推理）→ 按同样的方式推理 → analogous；be analogous to 与…类似 / be analogous with 与…可类比 / draw an analogy 作类比；analogous（可类比的，偏逻辑/系统性相似）≠ akin（类似的，偏血缘/性质上相似）≠ similar（类似，最通用）≠ identical（完全相同）；学术论证/逻辑推理类阅读",
+    "f": 6
+  },
+  {
+    "w": "be analogous to",
+    "m": "和…类似，可与…类比",
+    "n": "\"The human heart is analogous to a pump.\" 人的心脏类似于一个水泵。",
+    "f": 6
+  },
+  {
+    "w": "inclination",
+    "m": "n. 倾向，意愿；爱好",
+    "n": "in-（向）+ clin-（倾斜，lean）→ 倾向；an inclination to do sth 做某事的倾向 / have no inclination to 没有意愿… / follow one's own inclinations 随心所欲 / artistic inclinations 艺术爱好；inclination（意愿/倾向，偏内在兴趣）≠ tendency（趋势/倾向，偏客观规律）≠ preference（偏好，二选一或多选一）",
+    "f": 6
+  },
+  {
+    "w": "an inclination to",
+    "m": "有意愿做…",
+    "n": "show an inclination to 显示出…的倾向 / have an inclination to lie 有说谎的倾向",
+    "f": 6
+  },
+  {
+    "w": "be immune to sth",
+    "m": "对…免疫；不受…影响",
+    "n": "im-/in-（不）+ mun-（服务，职责）→ 不用服务的 → 免疫的 → 不受影响的；be immune to criticism 不在乎批评 / be immune to the disease 对该疾病免疫 / immune system 免疫系统；\"No one is immune to flattery.\" 没人能抵挡恭维。",
+    "f": 6
+  },
+  {
+    "w": "idealist",
+    "m": "n. 理想主义者",
+    "n": "idea-（理念，概念）→ ideal 理想的 → idealist 理想主义者 → idealism 理想主义；idealist（理想主义者）≠ realist（现实主义者）≠ pessimist（悲观主义者）≠ optimist（乐观主义者）；a dreamy idealist 爱空想的理想主义者 / youthful idealist 年轻的理想主义者",
+    "f": 6
+  },
+  {
+    "w": "unreflecting",
+    "m": "adj. 不假思索的，缺乏思考的",
+    "n": "un-（不）+ re-（回）+ flect-（弯曲，反射）→ 不反射回来 → 不回头想 → 缺乏思考；⚠️ 原文\"不反射的\"有误导！unreflecting 主要指\"不加思考的，缺乏反思的\"；表示\"不反射（光）\"应该用 non-reflective；unreflecting obedience 盲从 / unreflecting acceptance 不加思考地接受；reflect（反思）→ unreflecting（不反思的）",
+    "f": 6
+  },
+  {
+    "w": "intricate",
+    "m": "adj. 错综复杂的",
+    "n": "in-（进入）+ tric-（琐事，纠缠）→ 纠缠不清 → intricate；同源：intricacy, intrigue（阴谋，密谋）；intricate patterns 复杂的图案 / an intricate plot 错综复杂的情节 / intricate details 繁复的细节；intricate（复杂精细，强调细节交织）≠ complex（复杂，最通用，反义词 simple）≠ complicated（复杂难懂，偏负面）",
+    "f": 6
+  },
+  {
+    "w": "intricacy",
+    "m": "n. 错综复杂；复杂精细之处",
+    "n": "the intricacy of the design 设计的精巧复杂 / understand the intricacies of 理解…的复杂之处 / legal intricacies 法律的复杂之处",
+    "f": 6
+  },
+  {
+    "w": "homogenization",
+    "m": "n. 同质化，均质化",
+    "n": "homo-（相同）+ gen-（种类，产生）→ 同类化 → homogenize → homogenization；homogenization（同质化：不同事物变得相同）≠ standardization（标准化：按统一标准制作）；cultural homogenization 文化同质化 / milk homogenization 牛奶均质处理；全球化/文化类阅读话题词",
+    "f": 6
+  },
+  {
+    "w": "herbivore",
+    "m": "n. 食草动物",
+    "n": "herb-（草）+ vor-（吃，devour）→ 吃草的动物；herbivore（食草动物）≠ carnivore（食肉动物）≠ omnivore（杂食动物）≠ insectivore（食虫动物）；herb（草药）+ vore（吃）→ 吃草的 → 食草动物；vor- 同根词：devour 狼吞虎咽、voracious 贪吃的",
+    "f": 6
+  },
+  {
+    "w": "antenna",
+    "m": "n. 触角；天线",
+    "n": "复数：antennae（昆虫触角）/ antennas（天线）；TV antenna 电视天线 / satellite antenna 卫星天线 / insect antennae 昆虫触角；昆虫的触角像天线一样伸出来接收信号 → antenna 两义相通",
+    "f": 6
+  },
+  {
+    "w": "petal",
+    "m": "n. 花瓣",
+    "n": "rose petals 玫瑰花瓣 / flower petals 花瓣 / petals fall 花瓣飘落；petal（花瓣）≠ pedal（踏板/骑车）≠ peddle（叫卖/兜售），三个词音近形近易混！",
+    "f": 6
+  },
+  {
+    "w": "alloy",
+    "m": "n. 合金",
+    "n": "steel alloy 钢合金 / aluminium alloy 铝合金 / alloy wheels 合金轮毂；all + oy → 把不同的金属\"全\"融在\"一起\"→ 合金；alloy（合金，金属混合物）≠ ally（同盟/盟友）≠ alley（小巷）→ 三个词形近易混！",
+    "f": 6
+  },
+  {
+    "w": "symposium",
+    "m": "n. 研讨会，专题讨论会",
+    "n": "sym-（共同）+ pos-（喝，drink）→ 古希腊人边喝酒边讨论 → 研讨会 = 一群聪明人坐在一起；academic symposium 学术研讨会 / international symposium 国际研讨会 / hold a symposium on 举办关于…的研讨会；古希腊 symposium 就是学者们喝着酒聊哲学的聚会",
+    "f": 6
+  },
+  {
+    "w": "council",
+    "m": "n. 委员会，理事会；地方议会",
+    "n": "city council 市议会 / security council 安理会 / student council 学生会 / council meeting 理事会会议；council（委员会/理事会，一群人）≠ counsel（劝告，建议/律师，一个人或行为）≠ consul（领事）；⚠️ council vs counsel 是考研常见易混词！council → 和\"开会\"谐音",
+    "f": 6
+  },
+  {
+    "w": "commission",
+    "m": "n. 委员会；佣金；委托 / v. 委托",
+    "n": "com-（共同）+ miss-（送，send）→ 共同派遣 → 委员会；European Commission 欧盟委员会 / sales commission 销售佣金 / commission a portrait 委托画肖像 / out of commission 停止使用，出故障；一词多义是阅读难点：委员会/佣金/委托，三个意思都要掌握",
+    "f": 6
+  },
+  {
+    "w": "panel",
+    "m": "n. 专门小组；面板；仪表盘",
+    "n": "expert panel 专家小组 / interview panel 面试小组 / control panel 控制面板 / solar panel 太阳能板；panel（专门小组成员/面板，强调一组人讨论）≠ committee（委员会，强调正式决策机构）",
+    "f": 6
+  },
+  {
+    "w": "penalty",
+    "m": "n. 处罚，罚款；点球",
+    "n": "pen-/pun- = punish（惩罚）→ penal, penalty, punitive, impunity；death penalty 死刑 / heavy penalty 重罚 / penalty kick 点球 / under penalty of law 依法惩处；penalty（惩罚，可指罚款或刑罚，侧重于因违法或违反规则而受罚）≠ punishment（惩罚，更广泛，包括体罚、责骂等）；法律/体育类阅读",
+    "f": 6
+  },
+  {
+    "w": "penal",
+    "m": "adj. 刑罚的，刑事的",
+    "n": "pen-/pun- = punish（惩罚）；penal code 刑法典 / penal system 刑罚制度 / penal colony 流放地；penal（刑罚的，法律的）≠ panel（面板/小组）；⚠️ 音近易混",
+    "f": 6
+  },
+  {
+    "w": "poverty",
+    "m": "n. 贫穷，贫困；缺乏",
+    "n": "live in poverty 生活在贫困中 / poverty line 贫困线 / poverty alleviation 扶贫 / poverty of imagination 缺乏想象力；poverty（贫困，长期状态）≠ property（财产，反义词之一）≠ poor（贫穷的，形容词）；社会类写作/阅读高频词",
+    "f": 6
+  },
+  {
+    "w": "property",
+    "m": "n. 财产；房产；特性",
+    "n": "proper- = one's own（自己的）→ 自己拥有的东西 → property；personal property 个人财产 / intellectual property 知识产权 / property market 房地产市场 / chemical property 化学性质；property（财产/房产/属性）≠ poverty（贫穷）≠ propriety（得体，礼貌）；⚠️ property vs poverty 一对反义词形近易混",
+    "f": 6
+  },
+  {
+    "w": "regulator",
+    "m": "n. 监管机构；调节器",
+    "n": "regul- = rule/guide（规则，指导）→ regulate → regulator；financial regulator 金融监管机构 / pressure regulator 压力调节器 / industry regulator 行业监管机构；金融/监管类阅读高频词",
+    "f": 6
+  },
+  {
+    "w": "elaborate",
+    "m": "adj. 精心制作的，详尽的 / v. 详细阐述",
+    "n": "e-（出）+ labor-（劳动，工作）→ 辛苦做出来的 → 精心制作的；elaborate design 精心设计 / elaborate plan 周详的计划 / elaborate on sth 详细阐述某事；elaborate（精心制作的/详细阐述）≠ elaborate ≠ elegant（优雅的）；一词两性（形容词+动词）是词汇题常见考点",
+    "f": 6
+  },
+  {
+    "w": "explicitly",
+    "m": "adv. 明确地，清楚地",
+    "n": "ex-（向外）+ plic-（折叠）→ 向外展开 → 不隐藏 → explicit；state explicitly 明确说明 / explicitly forbidden 明令禁止 / explicitly stated 明确声明的；explicitly（明确地，说出来）≠ implicitly（含蓄地，暗示的）；⚠️ 这对反义词是考研词汇题常考！",
+    "f": 6
+  },
+  {
+    "w": "consensus",
+    "m": "n. 共识，一致意见",
+    "n": "con-（共同）+ sens-（感觉，感知）→ 共同的感觉 → 共识；reach a consensus 达成共识 / general consensus 普遍的共识 / consensus politics 共识政治；consensus（共识，非正式一致）≠ census（人口普查）；⚠️ consensus vs census 形近异义，考研常见混淆词！",
+    "f": 6
+  },
+  {
+    "w": "census",
+    "m": "n. 人口普查，统计",
+    "n": "national census 全国人口普查 / census data 人口普查数据 / take a census 进行人口普查；census 和 consensus 只差一个字母 → census（普查，数人）→ consensus（共识，同心）；⚠️ census vs consensus 必须分清楚！",
+    "f": 6
+  },
+  {
+    "w": "sophisticated",
+    "m": "adj. 精密的；老练的；复杂的",
+    "n": "soph- = wisdom（智慧）→ sophisticated, philosopher, sophomore, philosophy；sophisticated technology 尖端技术 / a sophisticated audience 有鉴赏力的观众 / a sophisticated woman 一位老练精明的女士；sophisticated（精密的/老练的，褒义）≠ complicated（复杂的，偏贬义/难懂）",
+    "f": 6
+  },
+  {
+    "w": "philosophical",
+    "m": "adj. 哲学的；泰然的，豁达的",
+    "n": "philosophical thinking 哲学思考 / philosophical attitude 豁达的态度 / be philosophical about sth 对…泰然处之；\"He's very philosophical about losing his job.\" 他对失业一事看得很开。",
+    "f": 6
+  },
+  {
+    "w": "substantial",
+    "m": "adj. 大量的；实质的；坚固的",
+    "n": "sub-（在下面）+ st-（站立）→ 站在下面的 → 有根基的 → 坚固的/实质的；substantial evidence 实质性证据 / a substantial amount 大量 / substantial progress 实质性进展 / substantial meal 丰盛的一餐；substantial（实质的/大量的）≠ substantive（实质性的，偏法律/学术）；考研阅读中频繁出现：substantial majority / increase / evidence",
+    "f": 6
+  },
+  {
+    "w": "solemn",
+    "m": "adj. 庄严的，严肃的",
+    "n": "solemn promise 庄严的承诺 / solemn ceremony 隆重的仪式 / solemn expression 严肃的表情；solemn（庄严肃穆，场合/情绪）≠ serious（严肃认真，态度）≠ grave（严峻的，后果严重）；solemn 联想 → \"所罗门\"王 → 所罗门王的审判是庄严的 → solemn",
+    "f": 6
+  },
+  {
+    "w": "verdict",
+    "m": "n. 裁决，判决；定论",
+    "n": "ver- = true（真实）+ dict- = say（说）→ 说真话 → 裁决；jury verdict 陪审团裁决 / reach a verdict 作出裁决 / final verdict 最终定论 / verdict of guilty 有罪裁决；verdict（陪审团的裁决/最终定论）≠ sentence（法官的判决/量刑）≠ judgement（法官的判断/判决）；法律类阅读核心词",
+    "f": 6
+  },
+  {
+    "w": "attorney",
+    "m": "n. 律师；代理人",
+    "n": "defense attorney 辩护律师 / attorney general 司法部长；attorney（美式：律师/代理人）= lawyer（律师，通用）= solicitor（英式：事务律师）≠ barrister（英式：出庭律师）≠ counsel（法律顾问/辩护律师，正式）；attorney ← at + torn + ey → 替人\"扭转\"局面的人 → 律师",
+    "f": 6
+  },
+  {
+    "w": "accusation",
+    "m": "n. 指控，控告；谴责",
+    "n": "ac-/ad-（向）+ cus-（原因，理由）→ 给出理由指责 → accuse → accusation；false accusation 诬告 / make an accusation 提出指控 / serious accusation 严重指控 / accusation of theft 盗窃指控；accusation（指控，非正式/一般指控）≠ charge（正式起诉，法律程序）≠ allegation（指控，多指还没被证实的）",
+    "f": 6
+  },
+  {
+    "w": "sue",
+    "m": "v. 起诉，控告；请求",
+    "n": "sue sb for damages 起诉某人索赔 / sue for divorce 提出离婚诉讼 / sue for peace 求和；sue（起诉，民事，侧重索赔）≠ charge（指控，刑事，公诉方）≠ accuse（指控，非正式/道德层面）≠ prosecute（提起公诉，刑事）；sue 谐音\"诉\"→ 起诉",
+    "f": 6
+  },
+  {
+    "w": "ascend",
+    "m": "v. 上升；攀登；登基",
+    "n": "a-/ad-（向）+ scend-（爬，climb）→ 向上爬 → 上升；ascend the throne 登基 / ascend to power 上台掌权 / ascend a mountain 登山 / in ascending order 按升序排列；ascend（上，上升，正式）≠ descend（下，下降）≠ transcend（超越，跨越）；ascend/descend 反义词对，考研阅读中常见",
+    "f": 6
+  },
+  {
+    "w": "descendant",
+    "m": "n. 后代，子孙",
+    "n": "de-（向下）+ scend-（爬）→ 向下爬 → 传下去 → descendant；direct descendant 直系后代 / descendant of slaves 奴隶的后代 / leave no descendants 没有留下后代；descendant（后代，人）≠ ascendant（祖先，上升趋势）≠ descendent（下降的，形容词）；de-（向下）→ descend（下降）→ descendant（往下传 → 后代）",
+    "f": 6
+  },
+  {
+    "w": "transcend",
+    "m": "v. 超越，胜过",
+    "n": "trans-（跨越）+ scend-（爬）→ 爬过去 → 超越；transcend boundaries 跨越界限 / transcend the ordinary 超越平凡 / transcend cultural barriers 超越文化障碍；trans（穿过去）+ scend（爬）→ 爬过 → 跨越；同族：ascend 上升, descend 下降, transcend 超越",
+    "f": 6
+  },
+  {
+    "w": "condescend",
+    "m": "v. 屈尊，俯就；以高人一等的态度对待",
+    "n": "con-（一起）+ de-（向下）+ scend-（爬）→ 和比自己低的人一起往下 → 屈尊；condescend to do sth 屈尊做某事 / condescend to sb 用高人一等的口气对某人说话 / a condescending smile 施恩般的微笑（带贬义）；描述人际关系态度的高阶词",
+    "f": 6
+  },
+  {
+    "w": "ascendant",
+    "m": "adj. 上升的；优势的 / n. 祖先",
+    "n": "ascend + -ant（形容词/名词后缀）；in the ascendant 处于上升阶段，如日中天 / ascendant trend 上升趋势；ascendant（上升的/祖先）= ancestor（祖先，仅名词）≠ descendant（后代）；ascend（上升）→ ascendant（正在上升的）",
+    "f": 6
+  },
+  {
+    "w": "descent",
+    "m": "n. 下降；血统；突然到访",
+    "n": "de-（向下）+ scend-（爬）→ descent；of Chinese descent 华裔 / steep descent 陡峭的下坡 / a descent into chaos 陷入混乱 / make a sudden descent on 突然造访；descent（下降/血统）≠ decent（体面的，得体的）；⚠️ descent vs decent 拼写仅一个字母之差！",
+    "f": 6
+  },
+  {
+    "w": "predecessor",
+    "m": "n. 前任；前身",
+    "n": "pre-（前）+ de-（离）+ cess-（走）→ 先走开的人 → 前任；one's immediate predecessor 某人的直接前任 / the predecessor of 某物的前身；predecessor（前任/前身）≠ successor（继任者/后续产品）≠ ancestor（祖先，血缘上）；商业/管理类阅读常用词",
+    "f": 6
+  },
+  {
+    "w": "humble",
+    "m": "adj. 谦逊的；简陋的 / v. 使谦卑",
+    "n": "hum- = ground/earth（土地）→ 贴近地面的 → 低下 → 谦卑的；humble origins 出身卑微 / eat humble pie 低声下气地道歉 / in my humble opinion 依我的浅见；\"He rose from humble beginnings.\" 他出身卑微，白手起家。hum-（土）→ humble（贴近地面的 → 低姿态的 → 谦卑的）",
+    "f": 6
+  },
+  {
+    "w": "saint",
+    "m": "n. 圣人，圣徒",
+    "n": "patron saint 守护神 / saintly life 圣洁的生活 / the patience of a saint 极大的耐心；saint ← sanct-（神圣的）→ sanctuary 避难所、sanction 制裁/批准",
+    "f": 6
+  },
+  {
+    "w": "pilgrim",
+    "m": "n. 朝圣者；清教徒",
+    "n": "已在 words1 中正式整理，此处做补充；pilgrim route 朝圣之路；pilgrim ← 拉丁语 peregrinus（外地人）→ 后来专指宗教朝圣者",
+    "f": 6
+  },
+  {
+    "w": "brute",
+    "m": "n. 畜生；野蛮人 / adj. 蛮力的",
+    "n": "brute force 蛮力 / brute strength 蛮力 / you brute! 你这个畜生！；brute ← 拉丁语 brutus（笨重的，愚蠢的）→ 没有理性的 → 畜生",
+    "f": 6
+  },
+  {
+    "w": "rebellion",
+    "m": "n. 叛乱，反抗",
+    "n": "re-（再）+ bell-（战争，war）→ 再次开战 → 叛乱；armed rebellion 武装叛乱 / tax rebellion 抗税 / a rebellion against authority 反抗权威 / teenage rebellion 青春叛逆期；rebellion（叛乱，反抗）≠ revolt（起义，群体反抗，持续时间短）≠ revolution（革命，彻底变革）；bell- = war → rebel 叛军, rebellion 叛乱, belligerent 好战的",
+    "f": 6
+  },
+  {
+    "w": "overthrow",
+    "m": "v./n. 推翻，打倒",
+    "n": "overthrow the government 推翻政府 / overthrow the dictatorship 推翻独裁统治 / the overthrow of the regime 推翻政权；over（翻转）+ throw（扔）→ 扔翻过去 → 推翻",
+    "f": 6
+  },
+  {
+    "w": "bounce",
+    "m": "v./n. 弹跳；反弹",
+    "n": "bounce back 反弹，恢复 / bounce a cheque 支票被拒付（余额不足）/ bounce ideas off sb 和某人讨论想法 / bounce off the wall 撞墙弹回；\"The stock market bounced back strongly.\" 股市强劲反弹。bounce 是拟声词，模拟弹跳的声音",
+    "f": 6
+  },
+  {
+    "w": "tap into",
+    "m": "利用，开发，挖掘",
+    "n": "tap into new markets 开拓新市场 / tap into one's potential 挖掘潜力 / tap into resources 利用资源；tap 本义是\"水龙头\"→ tap into 像从水龙头放水一样去\"抽取/利用\"资源",
+    "f": 6
+  },
+  {
+    "w": "tackle",
+    "m": "v. 处理，解决；擒抱",
+    "n": "tackle the problem 解决问题 / tackle the issue 处理问题 / fishing tackle 钓鱼用具；\"We need to tackle this head-on.\" 我们需要正面解决这个问题。",
+    "f": 6
+  },
+  {
+    "w": "wrench",
+    "m": "v. 猛扭，扭伤 / n. 扳手",
+    "n": "wrench sth from sb 从某人手中夺走 / wrench one's ankle 扭伤脚踝 / monkey wrench 活动扳手 / throw a wrench into 从中作梗，搞破坏；wrench 动作像用扳手猛地一拧",
+    "f": 6
+  },
+  {
+    "w": "grim",
+    "m": "adj. 阴森的；严峻的；冷酷的",
+    "n": "grim reality 严酷的现实 / grim reaper 死神 / grim prospects 严峻的前景 / grim determination 坚定的决心；grim（严肃/阴森/严酷）≠ grin（咧嘴笑）≠ grip（紧握）≠ grimace（鬼脸，苦相）；⚠️ grim vs grin 只差一个字母，意思完全相反！",
+    "f": 6
+  },
+  {
+    "w": "grin",
+    "m": "v./n. 咧嘴笑",
+    "n": "grin at sb 对某人咧嘴笑 / grin from ear to ear 咧着嘴笑得合不拢嘴 / grin and bear it 默默忍受，苦笑着接受 / a sheepish grin 腼腆的笑；grin（咧嘴笑，露齿）≠ grim（阴森的，严酷的）≠ smile（微笑，通用的）；grin → 嘴角咧到耳朵像\"green\"一样大 → 咧嘴笑",
+    "f": 6
+  },
+  {
+    "w": "aggravate",
+    "m": "v. 加重，恶化；激怒",
+    "n": "ag-/ad-（向）+ grav-（重，heavy）→ 使变重 → 加重/恶化；aggravate the situation 使情况恶化 / aggravate the pain 加重疼痛 / be aggravated by 被…激怒；aggravate（正式，加重+激怒）= worsen（通用，恶化）+ annoy（激怒，口语）；两义：加重（病情/局势）和激怒（人），都要会",
+    "f": 6
+  },
+  {
+    "w": "tendency",
+    "m": "n. 倾向，趋势",
+    "n": "tend- = stretch（延伸）→ 往某个方向延伸 → 倾向；there is a tendency to do 有一种做…的趋势 / have a tendency to 有…的倾向 / upward tendency 上升趋势；tendency（趋势/倾向，偏客观规律/行为模式）≠ inclination（意愿，偏主观偏好）≠ trend（趋势，偏大众/流行方向）",
+    "f": 6
+  },
+  {
+    "w": "deficiency",
+    "m": "n. 缺乏，不足；缺陷",
+    "n": "de-（否定）+ fic-（做，make）→ 没做好 → 不足；vitamin deficiency 维生素缺乏 / iron deficiency 缺铁 / budget deficiency 预算不足 / a deficiency in the system 系统缺陷；deficiency（缺乏/不足，偏功能性/量上的短缺）≠ defect（缺陷，偏质量的毛病）≠ deficit（赤字，偏财政的不平衡）；医学/经济类阅读常见",
+    "f": 6
+  },
+  {
+    "w": "deplete",
+    "m": "v. 耗尽，大量消耗",
+    "n": "de-（去除）+ ple-（满，fill）→ 把满的变空 → 耗尽；deplete resources 耗尽资源 / depleted uranium 贫化铀 / be depleted of 被耗尽…；deplete（耗尽，偏抽象/不可逆）≠ exhaust（耗尽，偏体力/化学）≠ consume（消耗，中性）；de- + plete（满）→ 不满了 → 耗尽",
+    "f": 6
+  },
+  {
+    "w": "trauma",
+    "m": "n. 创伤，精神创伤",
+    "n": "trauma- = wound（伤口，希腊语）→ 创伤；psychological trauma 心理创伤 / childhood trauma 童年创伤 / head trauma 头部外伤 / post-traumatic stress disorder (PTSD) 创伤后应激障碍；⚠️ 原文拼为 'tramua'，正确拼写是 trauma",
+    "f": 6
+  },
+  {
+    "w": "scar",
+    "m": "n. 伤疤 / v. 留下疤痕",
+    "n": "leave a scar 留下伤疤 / emotional scar 情感创伤 / scar tissue 疤痕组织 / scar sb for life 给某人留下终生创伤；scar（伤疤，看得见的/心理的疤痕）≠ scare（惊吓，动词）≠ scar（疤痕）≠ scarce（稀少的）；⚠️ scar/scare/scarce 一路混淆",
+    "f": 6
+  },
+  {
+    "w": "sore",
+    "m": "adj. 疼痛的；恼火的 / n. 痛处",
+    "n": "sore throat 喉咙痛 / sore muscles 肌肉酸痛 / a sore point 痛处，伤心事 / stick out like a sore thumb 显得突兀，格格不入；\"Don't be so sore about it!\" 别为这事这么恼火！sore 联想 → 一\"so\"就\"re\"(热) → 酸痛的",
+    "f": 6
+  },
+  {
+    "w": "brace",
+    "m": "n. 支架；大括号；牙套 / v. 支撑；做好准备",
+    "n": "brace yourself 做好准备（心理/身体）/ wear braces 戴牙套 / a brace of 一对，一双（猎物）；\"Brace yourself for some bad news.\" 做好心理准备，有坏消息。",
+    "f": 6
+  },
+  {
+    "w": "bracket",
+    "m": "n. 括号；支架；等级 / v. 用括号括起；归为一类",
+    "n": "income bracket 收入等级 / age bracket 年龄段 / square brackets 方括号 / bracket sth together 把…归为一类；bracket（括号/支架/等级/归类）≠ brace（支架/牙套/大括号/做好准备），bracket 中的 -et 表示小东西；bracket ← 方括号像一个小支架 bracket",
+    "f": 6
+  },
+  {
+    "w": "bundle",
+    "m": "n. 捆，束，包 / v. 捆扎；匆匆送走",
+    "n": "a bundle of 一捆，一束 / a bundle of contradictions 满是矛盾的人 / bundle sth up 把…捆起来 / bundle sb off 把某人匆匆送走；bundle（捆在一起的东西）≠ bunch（一串/一群，松散聚集）≠ bale（打包的货物，大捆）；量词搭配是考研完形/词汇题考点",
+    "f": 6
+  },
+  {
+    "w": "knit",
+    "m": "v. 编织；紧密结合",
+    "n": "knit a sweater 织毛衣 / knit one's brows 皱眉 / close-knit community 紧密团结的社区 / knit together 紧密结合；\"A close-knit family\" 一个紧密团结的家庭；knit 的 k 不发音！→ 和 needle（针）一起记：knit with needles",
+    "f": 6
+  },
+  {
+    "w": "wax",
+    "m": "n. 蜡 / v. 打蜡；（月亮）渐满",
+    "n": "floor wax 地板蜡 / ear wax 耳垢 / wax and wane 兴衰，盈亏 / waxing moon 渐盈的月亮；\"wax lyrical about sth\" 滔滔不绝地赞美某事；wax（月亮渐满）↔ wane（月亮渐亏），固定搭配 wax and wane",
+    "f": 6
+  },
+  {
+    "w": "dye",
+    "m": "v. 给…染色 / n. 染料",
+    "n": "hair dye 染发剂 / dye one's hair 染发 / natural dye 天然染料；dye（染色，染料）≠ die（死亡）；⚠️ 同音词 dye = die /daɪ/",
+    "f": 6
+  },
+  {
+    "w": "marble",
+    "m": "n. 大理石；弹珠",
+    "n": "marble statue 大理石雕像 / a heart of marble 铁石心肠 / lose one's marbles 发疯，失去理智（口语）/ play marbles 玩弹珠；\"He's lost his marbles.\" 他疯了。",
+    "f": 6
+  },
+  {
+    "w": "gymnasium",
+    "m": "n. 体育馆，健身房",
+    "n": "gymn- = naked（裸体）→ 古希腊人裸体锻炼 → gymnasium；school gymnasium 学校体育馆 / go to the gym 去健身房；⚠️ 原文拼为 'gynmaism'，正确拼写是 gymnasium；缩写：gym",
+    "f": 6
+  },
+  {
+    "w": "hectic",
+    "m": "adj. 繁忙的，忙乱的",
+    "n": "a hectic day 忙乱的一天 / hectic pace of life 忙碌的生活节奏 / a hectic schedule 排得满满的时间表；hectic 看起来像\"hectic\"→ 忙得像疯了似的",
+    "f": 6
+  },
+  {
+    "w": "canal",
+    "m": "n. 运河；沟渠",
+    "n": "Panama Canal 巴拿马运河 / Suez Canal 苏伊士运河 / irrigation canal 灌溉渠 / birth canal 产道；canal（人工修建的运河）≠ channel（海峡/频道/渠道，可天然可人工）≠ tunnel（隧道）；⚠️ 原文拼为 'cannal'，正确是 canal（一个 n）",
+    "f": 6
+  },
+  {
+    "w": "tunnel",
+    "m": "n. 隧道 / v. 挖隧道",
+    "n": "Channel Tunnel 英吉利海峡隧道 / light at the end of the tunnel 隧道尽头的曙光（困境结束的希望）/ tunnel vision 井底之见，一孔之见；\"I can see light at the end of the tunnel.\" 我看到了希望。",
+    "f": 6
+  },
+  {
+    "w": "tempo",
+    "m": "n. 节奏，速度",
+    "n": "at a fast tempo 以快节奏 / change the tempo 改变节奏 / the tempo of life 生活节奏；tempo（节奏，偏音乐/整体节奏，正式）≠ pace（步伐，速度，偏走路/进展）≠ rhythm（韵律，节拍，偏重复性）≠ speed（速度，最通用）；音乐/文化类阅读",
+    "f": 6
+  },
+  {
+    "w": "plot",
+    "m": "n. 情节；阴谋；小块土地 / v. 密谋；绘制",
+    "n": "the plot of the novel 小说情节 / a plot to assassinate 暗杀阴谋 / a plot of land 一小块土地 / plot against sb 密谋对付某人 / plot a graph 画图表；plot（情节，小说的故事线；阴谋，要谋划的）≠ pilot（飞行员，领航员）；一词多义：情节/阴谋/土地/密谋/绘图，5 个意思！",
+    "f": 6
+  },
+  {
+    "w": "pilot",
+    "m": "n. 飞行员；领航员 / v. 驾驶；试点 / adj. 试验性的",
+    "n": "fighter pilot 战斗机飞行员 / pilot project 试点项目 / pilot study 先导研究 / pilot the ship 领航船只；pilot（飞行员/试点）≠ plot（情节/阴谋）；⚠️ 仅一字之差",
+    "f": 6
+  },
+  {
+    "w": "bargain price",
+    "m": "折扣价，特价",
+    "n": "at a bargain price 以低价 / bargain price sale 特价促销；bargain（讨价还价）→ 讨价还价后的价格 → 特价",
+    "f": 6
+  },
+  {
+    "w": "utility",
+    "m": "n. 公用事业；实用，效用",
+    "n": "uti- = use（使用）→ utility, utilize, utensil, utilitarian；public utility 公用事业 / utility bill 水电费等账单 / utility vehicle 多用途车辆 / of little utility 没什么用的；经济/社会类阅读常见词",
+    "f": 6
+  },
+  {
+    "w": "architecture",
+    "m": "n. 建筑学；建筑风格；体系结构",
+    "n": "archi-（主要的，chief）+ tect-（建造，builder）→ 主要的建造者 → 建筑师 → architecture；modern architecture 现代建筑 / software architecture 软件架构 / Gothic architecture 哥特式建筑；IT/计算机领域也可指系统架构",
+    "f": 6
+  },
+  {
+    "w": "acid",
+    "m": "n. 酸 / adj. 酸的；尖酸的",
+    "n": "sulfuric acid 硫酸 / acid rain 酸雨 / acid test 严峻考验 / acid remark 尖酸的话；acid（化学上的酸/酸味，偏强酸/刺激性）≠ sour（酸味的，偏食物变质/口感）≠ bitter（苦的）≠ sweet（甜的）≠ salty（咸的）；\"the acid test\" 决定性的考验",
+    "f": 6
+  },
+  {
+    "w": "sour",
+    "m": "adj. 酸的；酸臭的 / v. 变酸；变坏",
+    "n": "sour milk 酸了的牛奶 / sour grapes 酸葡萄心理（吃不到葡萄说葡萄酸）/ sour mood 坏心情 / the relationship turned sour 关系恶化；\"It's just sour grapes.\" 不过是酸葡萄心理罢了。（伊索寓言典故）",
+    "f": 6
+  },
+  {
+    "w": "vinegar",
+    "m": "n. 醋",
+    "n": "rice vinegar 米醋 / balsamic vinegar 香醋 / apple cider vinegar 苹果醋 / wine vinegar 酒醋；vinegar ← 法语 vin（酒）+ aigre（酸的）→ 酸酒 → 醋",
+    "f": 6
+  },
+  {
+    "w": "ripe",
+    "m": "adj. 成熟的；时机成熟的",
+    "n": "ripe fruit 成熟的水果 / ripe old age 高龄 / the time is ripe (for) 时机成熟，万事俱备；ripe（成熟，偏果实/时机）≠ mature（成熟，偏人/性格/动植物）；\"The time is ripe for change.\" 变革的时机已经成熟。",
+    "f": 6
+  },
+  {
+    "w": "dock",
+    "m": "n. 码头；船坞；被告席 / v. 停靠码头；扣工资",
+    "n": "at the dock 在码头 / dry dock 干船坞 / dock one's pay 扣某人工资 / in the dock 在被告席（受审）；\"The company docked his pay for being late.\" 他因迟到被公司扣了工资。",
+    "f": 6
+  },
+  {
+    "w": "apt",
+    "m": "adj. 恰当的；有…倾向的",
+    "n": "apt- = fit（适合）→ apt, adapt, aptitude, inept；an apt description 贴切的描述 / be apt to do sth 倾向于做某事 / an apt student 一个聪慧的学生；apt 在考研阅读中以 \"be apt to do\" 形式出现较多",
+    "f": 6
+  },
+  {
+    "w": "hack",
+    "m": "v./n. 砍；黑客入侵；应付 / n. 雇佣文人",
+    "n": "hack into a system 入侵系统 / hack sb off 激怒某人（英式口语）/ hack it 应付得了，搞定 / life hack 生活小窍门；\"I just can't hack it anymore.\" 我再也受不了了。",
+    "f": 6
+  },
+  {
+    "w": "gut feeling",
+    "m": "直觉，本能感觉",
+    "n": "trust one's gut feeling 相信直觉 / have a gut feeling that 直觉感到… / gut reaction 本能反应；gut（肠子）→ 古人认为直觉来自肚子里 → gut feeling 直觉；\"I have a gut feeling that something is wrong.\" 直觉告诉我有点不对劲。",
+    "f": 6
+  },
+  {
+    "w": "inspector",
+    "m": "n. 检查员；督察；巡视员",
+    "n": "in-（进入）+ spect-（看，look）→ 往里看的人 → 检查员；police inspector 警督 / tax inspector 税务稽查员 / school inspector 学校督学；spect- = look → inspect（检查）, inspector（检查员）, spectator（观众）, spectacle（景象）",
+    "f": 6
+  },
+  {
+    "w": "pretest",
+    "m": "n./v. 预测试，预先测验",
+    "n": "pre-（前）+ test（测试）→ 预测试；conduct a pretest 进行预测试 / pretest the product 对产品进行预测试；pretest（预测试，事前）≠ protest（抗议）≠ pretext（借口）",
+    "f": 6
+  },
+  {
+    "w": "palm",
+    "m": "n. 手掌；棕榈树",
+    "n": "palm of one's hand 手掌心 / palm tree 棕榈树 / palm oil 棕榈油 / read one's palm 看手相 / have sb in the palm of one's hand 把某人玩弄于股掌之中；\"He had the audience in the palm of his hand.\" 他完全掌控了观众。",
+    "f": 6
+  },
+  {
+    "w": "limb",
+    "m": "n. 肢，四肢；树枝",
+    "n": "upper limbs 上肢 / lower limbs 下肢 / a limb of a tree 树枝 / risk life and limb 冒着生命危险 / out on a limb 孤立无援，处于险境；limb 的 b 不发音！→ 和 climb 一样，b 不发音",
+    "f": 6
+  },
+  {
+    "w": "yield to",
+    "m": "屈服于，让步于；被…取代",
+    "n": "yield to temptation 屈服于诱惑 / yield to pressure 屈服于压力 / yield to traffic 让行 / yield to none 不输给任何人；yield to（屈服，偏正式/书面）≠ give in to（屈服，偏口语）≠ succumb to（屈服，偏被压倒）；yield 多义：屈服/产出/产量",
+    "f": 6
+  },
+  {
+    "w": "unyielding",
+    "m": "adj. 不屈不挠的；坚硬的",
+    "n": "un-（不）+ yield（屈服）+ -ing → 不屈服；unyielding determination 坚定不移的决心 / unyielding material 坚硬的材料 / unyielding opposition 坚决的反对",
+    "f": 6
+  },
+  {
+    "w": "sear",
+    "m": "v. 灼烧；烙印 / adj. 枯萎的",
+    "n": "sear the meat 快速煎烤肉（封住肉汁）/ sear one's memory 深深烙印在记忆中；sear（灼烧，高温快速烤）≠ scar（疤痕）≠ sore（疼痛的）≠ shear（剪切）；⚠️ sear 和 scar 只差一个字母！",
+    "f": 6
+  },
+  {
+    "w": "frown",
+    "m": "v./n. 皱眉；不赞成",
+    "n": "frown at sb 对某人皱眉 / frown on/upon sth 不赞成某事 / a deep frown 深深的皱眉 / a frown of concentration 专注的皱眉；\"Society frowns on such behavior.\" 社会不赞成这种行为。",
+    "f": 6
+  },
+  {
+    "w": "echo an idea",
+    "m": "附和某个观点",
+    "n": "echo the idea that 附和…的观点；\"He simply echoed the boss's ideas.\" 他只是一味附和老板的观点。",
+    "f": 6
+  },
+  {
+    "w": "commonplace",
+    "m": "adj. 平凡的，普遍的 / n. 老生常谈",
+    "n": "become commonplace 变得普遍 / a commonplace occurrence 司空见惯的事 / a mere commonplace 不过是老生常谈；common（普通的）+ place（地方）→ 到处都有的 → 普通的",
+    "f": 6
+  },
+  {
+    "w": "march",
+    "m": "v./n. 行军；游行示威；进展",
+    "n": "march on 继续前进 / protest march 抗议游行 / march of progress 进步的步伐 / steal a march on sb 抢先一步；march（行进/游行，强调步伐一致/有目的）≠ parade（游行，强调展示/庆祝）；March = 三月 → 春天到了 → 军队开始行军 → march",
+    "f": 6
+  },
+  {
+    "w": "armor",
+    "m": "n. 盔甲；装甲",
+    "n": "armor（美式）= armour（英式）；suit of armor 一套盔甲 / armor plating 装甲板 / a chink in one's armor 某人防御中的弱点（比喻）；\"His arrogance is his armor.\" 傲慢是他的盔甲。",
+    "f": 6
+  },
+  {
+    "w": "outlet",
+    "m": "n. 出口；发泄途径；电源插座；专卖店",
+    "n": "emotional outlet 情感宣泄口 / retail outlet 零售店 / power outlet 电源插座 / outlet for one's creativity 发挥创造力的渠道；一词多义是阅读高频障碍：出口/发泄途径/插座/专卖店",
+    "f": 6
+  },
+  {
+    "w": "tumour",
+    "m": "n. 肿瘤",
+    "n": "benign tumour 良性肿瘤 / malignant tumour 恶性肿瘤 / brain tumour 脑瘤；tumour（英式）= tumor（美式）",
+    "f": 6
+  },
+  {
+    "w": "interference",
+    "m": "n. 干扰，干涉",
+    "n": "inter-（之间）+ fer-（带，carry）→ 带到中间 → 干扰；political interference 政治干预 / radio interference 无线电干扰 / run interference for sb 为某人扫清障碍（橄榄球术语引申）",
+    "f": 6
+  },
+  {
+    "w": "territory",
+    "m": "n. 领土，地盘",
+    "n": "terr- = land/earth（土地）→ territory, territorial, terrace, terrain；enemy territory 敌占区 / uncharted territory 未知领域 / come with the territory 在所难免；\"Stress comes with the territory in this job.\" 做这份工作，压力在所难免。",
+    "f": 6
+  },
+  {
+    "w": "activist",
+    "m": "n. 积极分子，活动家，激进分子",
+    "n": "act- = do/drive（做，驱动）→ act → active → activist；political activist 政治活动家 / human rights activist 人权活动人士 / environmental activist 环保活动人士 / student activist 学生运动积极分子；activist（活动家，偏社会/政治运动）≠ activist ≠ activist ≠ extremist（极端分子，贬义）；社会运动/政治类阅读高频词",
+    "f": 7
+  },
+  {
+    "w": "unrest",
+    "m": "n. 动荡，骚乱，不安",
+    "n": "un-（不）+ rest（安宁）→ 不安宁 → 动荡；social unrest 社会动荡 / political unrest 政治骚乱 / civil unrest 内乱 / labour unrest 劳工骚动 / growing unrest 日益加剧的不安；unrest（社会/政治动荡，集体）≠ restlessness（个人的焦躁不安）；国际政治/社会类阅读关键词",
+    "f": 7
+  },
+  {
+    "w": "unification",
+    "m": "n. 统一，联合",
+    "n": "uni- = one（一）+ fic- = make（做）→ 做成一个 → 统一；the unification of Germany 德国统一 / national unification 国家统一 / unification process 统一进程 / unification treaty 统一条约；unification（统一，政治/国家层面）≠ reunification（重新统一）≠ unity（团结，抽象名词）≠ union（联盟，组织）；uni- = one → unite → unified → unification",
+    "f": 7
+  },
+  {
+    "w": "unification of a country",
+    "m": "国家统一",
+    "n": "achieve the unification of a country 实现国家统一 / peaceful unification 和平统一；政治/历史类阅读",
+    "f": 7
+  },
+  {
+    "w": "liberalize",
+    "m": "v. 使自由化，放宽限制",
+    "n": "liber- = free（自由）→ liberal → liberalize；liberalize trade 贸易自由化 / liberalize the economy 经济自由化 / liberalize immigration laws 放宽移民法；liberalize（政策/制度层面的自由化）≠ liberate（解放，释放，使人获自由）；liber-（自由）→ liberty 自由, liberal 自由的/开明的, liberalize 使自由化, liberate 解放",
+    "f": 7
+  },
+  {
+    "w": "misconduct",
+    "m": "n. 不端行为，失职 / v. 管理不当",
+    "n": "mis-（错误）+ conduct（行为，管理）→ 错误行为；professional misconduct 职业不端行为 / sexual misconduct 性行为不端 / scientific misconduct 学术不端 / gross misconduct 严重渎职；misconduct（不端行为，正式用语）≠ wrongdoing（坏事，通用）≠ malpractice（渎职，偏医疗/法律专业）；法律/职场/学术类阅读",
+    "f": 7
+  },
+  {
+    "w": "disproportionate",
+    "m": "adj. 不成比例的，不相称的",
+    "n": "dis-（不）+ proportion（比例）+ -ate → 比例不对的；disproportionate impact 不成比例的影响 / a disproportionate share 不成比例的份额 / disproportionate punishment 量刑过重；disproportionate（不成比例的，偏抽象/社会/法律）≠ disproportional（不成比例的，偏数学/统计）→ 两者常可互换，但 disproportionate 使用更广；⚠️ 原文\"不合安排\"有误，正确释义为\"不成比例的\"",
+    "f": 7
+  },
+  {
+    "w": "proportionate",
+    "m": "adj. 成比例的，相称的",
+    "n": "pro-（按照）+ port-（部分，份）+ -ate → 按份分配的 → 成比例的；proportionate response 相称的回应 / proportionate increase 按比例增长 / proportionate to 与…成比例；proportionate ≈ proportional（成比例的），proportionate 偏\"相称的/均衡的\"，proportional 偏\"数学上的比例关系\"；proportion（比例）→ proportionate（成比例的）≠ disproportionate（不成比例的）",
+    "f": 7
+  },
+  {
+    "w": "grieve",
+    "m": "v. 使悲伤；感到悲痛",
+    "n": "grav- = heavy（重）→ 心情沉重 → grieve；grieve over sth 为某事悲痛 / grieve for sb 为某人哀悼 / grieve the loss of 为失去…而悲伤 / it grieves me to say 我很难过地说；⚠️ 原文误标为\"悲伤的\"（形容词），grieve 是动词！形容词形式是 grieved / grievous / grieving；\"She is still grieving for her husband.\" 她仍在为丈夫悲痛。grave（坟墓）→ grieve（悲伤），同根：gravity 重力, aggravate 加重, grief 悲痛",
+    "f": 7
+  },
+  {
+    "w": "drained",
+    "m": "adj. 精疲力尽的，耗尽的",
+    "n": "drain（排水，耗尽）+ -ed → 被抽干的 → 精疲力尽的；feel drained 感到筋疲力尽 / emotionally drained 情感耗尽的 / financially drained 财力耗尽的；\"I feel completely drained after that meeting.\" 开完那个会后我完全精疲力尽了。drain（排水管）→ drained（被排干的 → 没能量了）",
+    "f": 7
+  },
+  {
+    "w": "dire",
+    "m": "adj. 严重的，可怕的，极端的",
+    "n": "dire consequences 严重的后果 / dire straits 困境，绝境 / dire warning 严重警告 / in dire need of 迫切需要… / dire poverty 赤贫；dire（极端严重/可怕，偏灾难性）≠ serious（严肃/严重，通用）≠ severe（严峻，偏程度重）≠ urgent（紧急的）；\"The country is in dire economic straits.\" 该国陷入了严重的经济困境。",
+    "f": 7
+  },
+  {
+    "w": "gracious",
+    "m": "adj. 慈祥的，和蔼的；优雅的；仁慈的",
+    "n": "grac-/grat- = pleasing/thankful（令人愉悦的，感恩）→ grace → gracious；a gracious smile 慈祥的微笑 / gracious host 亲切好客的主人 / gracious living 优雅的生活 / gracious God! 天哪！（感叹词）；gracious（亲切仁慈的，褒义，上位者对下位者）≠ graceful（优美的，偏动作/形态）≠ grateful（感激的，被动感受）≠ gracious ≠ graceful；⚠️ 这对形近词是考研常见混淆词！\"She was gracious enough to forgive me.\" 她宽宏大量地原谅了我。",
+    "f": 7
+  },
+  {
+    "w": "inarticulate",
+    "m": "adj. 不善言辞的；口齿不清的；难以言表的",
+    "n": "in-（不）+ articulate（清晰表达的）→ 不能清晰表达的；inarticulate speaker 不善言辞的发言者 / inarticulate with rage 气得说不出话 / inarticulate speech 口齿不清的讲话；inarticulate（不善言辞，表达能力差）≠ incoherent（语无伦次，逻辑混乱）≠ mute（哑的，生理上不能说话）≠ taciturn（沉默寡言的，性格内向）；articulate / inarticulate 反义词对",
+    "f": 7
+  },
+  {
+    "w": "unbiased",
+    "m": "adj. 公平的，无偏见的，不偏袒的",
+    "n": "un-（不）+ bias（偏见）+ -ed → 无偏见的；unbiased opinion 公正的意见 / an unbiased judge 不偏不倚的法官 / unbiased reporting 客观报道 / unbiased sample 无偏样本（统计术语）；unbiased（无偏见的，客观中立）≠ fair（公平的，通用）≠ impartial（不偏不倚的，公正的，正式/法律用语）≈ disinterested（无私心的，强调无利益关系）；描述评价/判断立场的常用词",
+    "f": 7
+  },
+  {
+    "w": "shaky",
+    "m": "adj. 颤抖的；不稳定的，不可靠的",
+    "n": "shake（摇动）+ -y（形容词）→ 摇摇晃晃的；a shaky hand 颤抖的手 / shaky legs 发抖的腿 / a shaky economy 不稳定的经济 / on shaky ground 基础不稳，站不住脚 / shaky evidence 不可靠的证据；\"The company's finances are on very shaky ground.\" 这家公司的财务状况非常不稳定。",
+    "f": 7
+  },
+  {
+    "w": "a shaky economy",
+    "m": "不稳定的经济",
+    "n": "suffer from a shaky economy 经济动荡 / revive a shaky economy 重振疲软经济",
+    "f": 7
+  },
+  {
+    "w": "on shaky ground",
+    "m": "站不住脚，基础不稳",
+    "n": "be on shaky ground 底气不足 / put sb on shaky ground 使某人陷入不利境地；\"Legally speaking, we're on shaky ground.\" 从法律上讲，我们的立场站不住脚。",
+    "f": 7
+  },
+  {
+    "w": "filing",
+    "m": "n. 存档，归档；存档文件",
+    "n": "fil- = thread/string（线，穿线）→ 古时文件用线串起来 → file → filing；filing cabinet 文件柜 / filing system 归档系统 / court filing 法院备案 / patent filing 专利申请；filing（归档/存档文件）≠ file（文件夹/文件）≠ filing ≠ filling（填充）；⚠️ 一字之差",
+    "f": 7
+  },
+  {
+    "w": "a bankruptcy filing",
+    "m": "破产申请（文件）",
+    "n": "submit a bankruptcy filing 提交破产申请 / prepare a bankruptcy filing 准备破产文件；法律/商业类阅读",
+    "f": 7
+  },
+  {
+    "w": "wager",
+    "m": "v./n. 打赌，赌注",
+    "n": "make a wager 打个赌 / place a wager on 在…上下注 / a friendly wager 友好的打赌；wager（打赌，偏正式/文学用语）≈ bet（打赌，口语中最常用）；\"I'll wager you a dinner that he shows up late.\" 我赌他一顿晚餐他肯定会迟到。",
+    "f": 7
+  },
+  {
+    "w": "make a wager",
+    "m": "打赌",
+    "n": "make a wager with sb 和某人打赌 / make a wager on the outcome 在结果上下注",
+    "f": 7
+  },
+  {
+    "w": "turnaround",
+    "m": "n. 周转时间；转变，好转",
+    "n": "turn（转）+ around（过来）→ 转过来 → 好转/周转；a quick turnaround 快速周转 / economic turnaround 经济好转 / a dramatic turnaround 戏剧性的逆转 / turnaround time 周转时间 / turnaround point 转折点；商业/经济类阅读高频词；turn（转）+ around（回）→ 转回来 → 情况好转",
+    "f": 7
+  },
+  {
+    "w": "perpetuity",
+    "m": "n. 永恒，永久",
+    "n": "per-（贯穿，一直）+ pet-（追求）+ -uity → 一直追求下去 → 永恒；in perpetuity 永久地 / in perpetuity and forever 永永远远；⚠️ 原文误标为\"永恒的\"（形容词），perpetuity 是名词！形容词是 perpetual；perpetual（永久的 adj.）→ perpetuity（永久 n.）；perpetual motion 永动机",
+    "f": 7
+  },
+  {
+    "w": "rector",
+    "m": "n. 教区牧师；（大学）校长，院长",
+    "n": "rect- = rule/straight（统治，直）→ rector 统治者 → 牧师/校长；parish rector 教区牧师 / university rector 大学校长 / rector of the church 教堂牧师；rector（英式大学校长/教区牧师）≠ president（美式大学校长）≠ principal（中小学校长）≠ chancellor（名誉校长）；rect-（统治，直）→ rector（管理者）, direct（指引）, correct（纠正）, rectangle（矩形）",
+    "f": 7
+  },
+  {
+    "w": "geneticist",
+    "m": "n. 基因学家，遗传学家",
+    "n": "gen- = birth/kind（出生，种类）→ gene → genetic → geneticist；molecular geneticist 分子遗传学家 / a leading geneticist 顶尖遗传学家；gene（基因）→ genetics（遗传学）→ geneticist（遗传学家）；同根：generate 产生, generation 代, genesis 起源",
+    "f": 7
+  },
+  {
+    "w": "interdisciplinary",
+    "m": "adj. 跨学科的",
+    "n": "inter-（之间）+ discipline（学科）+ -ary → 学科之间的 → 跨学科的；interdisciplinary research 跨学科研究 / interdisciplinary approach 跨学科方法 / interdisciplinary team 跨学科团队 / interdisciplinary studies 跨学科研究；interdisciplinary（跨学科，学科间融合）≠ multidisciplinary（多学科的，多个学科共同参与但不融合）≠ transdisciplinary（超学科的，超越学科界限）；⚠️ ⚠️ 原文拼写有误：interdisplinary → 正确拼写为 interdisciplinary；学术/教育类阅读高频词",
+    "f": 7
+  },
+  {
+    "w": "diffusionism",
+    "m": "n. 传播论（人类学/文化传播理论）",
+    "n": "dif-/dis-（分开）+ fus-（流，pour）+ -ism（主义/理论）→ 文化向四面八方流动的理论 → 传播论；cultural diffusionism 文化传播论；diffuse（扩散，传播）→ diffusion（扩散过程）→ diffusionism（传播论）；同根：confuse 混淆, refuse 拒绝, fuse 保险丝/融合",
+    "f": 7
+  },
+  {
+    "w": "biomass",
+    "m": "n. 生物量；生物质能",
+    "n": "bio- = life（生命）+ mass（质量，物质）→ 生物的总质量 → 生物量；biomass energy 生物质能 / biomass fuel 生物燃料 / plant biomass 植物生物量 / above-ground biomass 地上生物量；环保/能源类阅读高频词",
+    "f": 7
+  },
+  {
+    "w": "courtship",
+    "m": "n. 求偶期；求爱期；追求期",
+    "n": "court（求爱，献殷勤）+ -ship（名词后缀，表状态/行为）→ 求爱行为；courtship ritual 求偶仪式 / courtship period 求偶期 / courtship behavior 求偶行为 / courtship display 求偶展示；⚠️ 原文拼写有误：coutership → 正确拼写为 courtship；\"Their courtship lasted three years before they married.\" 他们的恋爱期持续了三年才结婚。court（法庭/求爱）→ courtship（求偶期），court 的两个意思完全不同！",
+    "f": 7
+  },
+  {
+    "w": "a knee-jerk reflex",
+    "m": "膝跳反射",
+    "n": "test the knee-jerk reflex 检查膝跳反射 / knee-jerk reaction 本能反应（比喻义：不加思考的反应）；\"His opposition was just a knee-jerk reaction.\" 他的反对只是一种本能反应罢了。knee（膝盖）+ jerk（猛的一动）→ 敲膝盖小腿一弹 → 膝跳反射",
+    "f": 7
+  },
+  {
+    "w": "inn",
+    "m": "n. 小旅馆，客栈",
+    "n": "a country inn 乡村客栈 / holiday inn 假日酒店 / stay at an inn 住在客栈 / roadside inn 路边客栈；inn（小旅馆，偏传统/乡村/温馨）≠ hotel（酒店，偏现代/大型/城市）≠ motel（汽车旅馆，路边开车可达）≠ hostel（青年旅社）；inn 小而温馨，类似\"隐\"居地",
+    "f": 7
+  },
+  {
+    "w": "enclosure",
+    "m": "n. 围场，圈地；附件（邮件中）",
+    "n": "en-（使）+ clos- = close（关）+ -ure → 关起来的地方 → 围场；an enclosure for animals 动物围场 / see enclosure 见附件 / the enclosure movement 圈地运动（英国历史）；⚠️ 原文释为\"围住\"（动词），enclosure 是名词！动词是 enclose；\"圈地运动\"是考研英语历史背景知识点",
+    "f": 7
+  },
+  {
+    "w": "orb",
+    "m": "n. 球体，天体；宝球（王权象征）",
+    "n": "orb- = circle/globe（圆，球体）→ orb, orbit, orbital；a golden orb 金色圆球 / the celestial orbs 天体（文学中）/ orb of the sun 太阳天体 / the royal orb 王权宝球（英国王权标志之一）；orb → orbit（轨道，天体运行的轨道）→ 天体 + 圆球",
+    "f": 7
+  },
+  {
+    "w": "gravel",
+    "m": "n. 砾石，沙砾 / v. 用砾石铺路",
+    "n": "gravel road 砾石路 / gravel pit 采石场 / a gravel path 碎石小径 / gravel driveway 砾石车道；⚠️ 原文释为\"沙粒\"不够准确，gravel 是砾石/碎石（粒径大于沙粒，2-64mm）；sand = 沙粒（细）；pebble = 鹅卵石（光滑）；gravel = 砾石（棱角多，铺路用）；gravel 走在上面 gravel gravel 响",
+    "f": 7
+  },
+  {
+    "w": "ostrich",
+    "m": "n. 鸵鸟；逃避现实的人",
+    "n": "ostrich policy 鸵鸟政策（比喻自欺欺人）/ bury one's head in the sand like an ostrich 像鸵鸟一样把头埋在沙里 / ostrich feather 鸵鸟羽毛；\"Stop being an ostrich and face reality!\" 别当鸵鸟了，面对现实吧！鸵鸟遇到危险把头埋沙里 → ostrich 比喻\"逃避现实的人\"",
+    "f": 7
+  },
+  {
+    "w": "on-trend",
+    "m": "adj. 时髦的，潮流的",
+    "n": "on-trend fashion 时髦的时装 / on-trend colour 流行色 / stay on-trend 保持时尚；on-trend（时髦的，偏消费/时尚，强调当季潮流）≠ trendy（时髦的，偏人/事物，有时带贬义\"赶时髦\"）≠ fashionable（时尚的，最通用）≠ stylish（有格调的，偏品味）；时尚/消费类口语和文章",
+    "f": 7
+  },
+  {
+    "w": "elude",
+    "m": "v. 逃避，躲避；使不能达到",
+    "n": "e-/ex-（出，向外）+ lud- = play（玩）→ 玩到外面去 → 溜走 → 逃避；elude capture 逃避抓捕 / elude the police 躲避警察 / the answer eludes me 我找不到答案 / sleep eludes me 我无法入睡；\"The exact meaning eludes me.\" 我琢磨不透确切含义。lud- = play → elude（溜走/逃避）, allude（暗指）, delude（欺骗）, illusion（幻觉）",
+    "f": 7
+  },
+  {
+    "w": "elusive",
+    "m": "adj. 难以获得（或达到/捕捉/描述）的；逃避的",
+    "n": "e-（外）+ lud-（玩）+ -ive → 玩消失的 → 难以捉摸的；an elusive goal 难以达到的目标 / elusive concept 难以理解的概念 / elusive criminal 在逃罪犯 / a most elusive quality 最难能可贵的品质；\"Happiness can be an elusive thing.\" 幸福有时难以捉摸。",
+    "f": 7
+  },
+  {
+    "w": "fallout",
+    "m": "n. 后果，余波；放射性沉降物",
+    "n": "political fallout 政治余波 / economic fallout 经济后果 / radioactive fallout 放射性沉降物 / nuclear fallout 核沉降物 / the fallout from the scandal 丑闻的余波；\"The political fallout from the crisis was enormous.\" 这场危机的政治余波是巨大的。fall（落下）+ out（向外）→ 从空中降落下来的东西 → 余波/沉降物",
+    "f": 7
+  },
+  {
+    "w": "diameter",
+    "m": "n. 直径",
+    "n": "dia- = across/through（穿过）+ meter- = measure（测量）→ 穿过圆心测量 → 直径；同根词：perimeter 周长, geometry 几何, metric 公制的；the diameter of a circle 圆的直径 / 10 cm in diameter 直径 10 厘米 / measure the diameter 测量直径；diameter（直径，过圆心的弦）≠ radius（半径，直径的一半）≠ circumference（周长，绕圆一周）；数学/科普类阅读基础词；diameter = 穿过(dia-)圆心测量(meter-)；radius 半径 = 从圆心\"辐射\"出去的一根",
+    "f": 8
+  },
+  {
+    "w": "relativity",
+    "m": "n. 相对论；相对性",
+    "n": "re-（回，再）+ lat- = carry（搬运）+ -ivity → 相互参照 → 相对性；同根词：relate 关联, relative 相对的/亲戚, correlate 相互关联, translate 翻译；the theory of relativity 相对论 / general relativity 广义相对论 / special relativity 狭义相对论 / the relativity of time 时间的相对性；relativity（相对论/相对性，物理术语）≠ relation（关系，偏人际关系）≠ relevance（相关性，与话题相关）；科普类阅读高频词，首字母大写时特指\"相对论\"；Einstein 爱因斯坦 → theory of relativity",
+    "f": 8
+  },
+  {
+    "w": "atmospheric",
+    "m": "adj. 大气层的；大气压的；有氛围的，富有情调的",
+    "n": "atmos- = vapor（蒸汽）+ sphere（球体）+ -ic → 包裹地球的\"蒸汽球\" → 大气层的；同根词：atmosphere 大气/氛围, sphere 球体, hemisphere 半球；atmospheric pressure 大气压 / atmospheric pollution 大气污染 / atmospheric conditions 大气状况 / atmospheric music 有氛围感的音乐；atmospheric（大气层的/有氛围的，双含义）≈ ambient（环境氛围的）≠ moody（情绪化的，指人）；环境/科普类阅读高频词；atmosphere（大气层）→ 人也\"浸\"在氛围里 → atmospheric music 氛围音乐",
+    "f": 8
+  },
+  {
+    "w": "chrome",
+    "m": "n. 铬；铬合金；镀铬层",
+    "n": "chrom- = color（颜色）→ 铬的化合物颜色多样而得名；同根词：chromium 铬（化学元素）, chromatic 色彩的, monochrome 单色的, polychrome 多彩的；chrome plating 镀铬 / chrome steel 铬钢 / chrome-plated 镀铬的；chrome（铬合金/镀铬，日常词）≠ chromium（铬，化学元素 Cr，术语）≠ Chrome（谷歌浏览器，专有名词）；chrom- = 颜色：monochrome（单色）= mono- 一 + chrom- 色；chrome 镀铬层亮闪闪",
+    "f": 8
+  },
+  {
+    "w": "morphine",
+    "m": "n. 吗啡（镇痛麻醉药）",
+    "n": "源自希腊睡神 Morpheus（摩耳甫斯）→ 使人入睡的镇痛药；同根词：morph 形态/变形, metamorphosis 蜕变, Morpheus 睡神；a morphine injection 吗啡注射 / morphine overdose 吗啡过量 / morphine addiction 吗啡成瘾；morphine（吗啡，医用镇痛麻醉药）≠ heroin（海洛因，非法毒品）≠ anesthetic（麻醉剂，通用词）；睡神 Morpheus → morphine（吗啡）→ 打了吗啡昏昏欲睡",
+    "f": 8
+  },
+  {
+    "w": "tracking",
+    "m": "n. 跟踪，追踪；跟踪系统",
+    "n": "track（踪迹，轨道）+ -ing → 顺着踪迹跟 → 跟踪；同根词：track 轨道/踪迹, tracker 追踪者, trackless 无踪迹的；a tracking system 跟踪系统 / image tracking 图像跟踪 / eye tracking 眼动追踪 / GPS tracking GPS 定位跟踪；tracking（跟踪，跟着目标移动）≠ tracing（追溯，找源头，如 trace the origin）≠ following（跟随，通用动词）；科技/网络类阅读高频词；track（火车轨道）→ 顺着轨道跟 → tracking（跟踪）；原文\"图像跟踪系统\"实为 tracking system",
+    "f": 8
+  },
+  {
+    "w": "printout",
+    "m": "n. 打印件，打印输出（的资料）",
+    "n": "print（打印）+ out（出来）→ 打印出来的东西；同根词：print 打印, printer 打印机, reprint 重印；a computer printout 电脑打印件 / a printout of the data 数据的打印件 / produce a printout 生成打印件；printout（打印出来的纸质文件）≠ output（输出，泛指结果）≈ hard copy（硬拷贝/纸质版，正式术语）；办公/计算机场景；print + out → 打印出来 → printout",
+    "f": 8
+  },
+  {
+    "w": "pamphlet",
+    "m": "n. 小册子（多页装订的宣传/说明文字）",
+    "n": "源自拉丁喜剧人名 Pamphilus → 引申为小册子；后缀 -let = 小；同根词：leaflet 传单, booklet 小册子, droplet 小水滴；a political pamphlet 政治小册子 / an advertising pamphlet 广告册 / distribute pamphlets 散发小册子；pamphlet（小册子，多页装订）≠ leaflet（传单，单页）≠ brochure（宣传册，图文并茂）≠ booklet（小书，偏教学/说明）；-let 表\"小\"：leaf + let = leaflet（传单），book + let = booklet（小册子）",
+    "f": 8
+  },
+  {
+    "w": "private sector",
+    "m": "私营部门，私营企业",
+    "n": "private sector companies 私营企业 / work in the private sector 在私营部门工作 / public sector 公共部门 / the third sector 第三部门（非营利组织）；private sector（私营部门，营利性企业）≠ public sector（公共部门，政府/国企）≠ NGO（非政府组织）；⚠️ 经济类阅读高频词组：private / public sector 常成对出现对比；private（私人的）+ sector（部门/板块）",
+    "f": 8
+  },
+  {
+    "w": "juggle",
+    "m": "v. 玩杂耍；同时应付，兼顾；歪曲，篡改",
+    "n": "源自拉丁 joculare（开玩笑/戏法）→ 玩杂耍 → 引申\"同时摆弄多件事\"；juggle work and family 兼顾工作与家庭 / juggle multiple tasks 同时处理多项任务 / juggle the books 篡改账目；juggle（同时兼顾多项，口语常用）≈ multitask（多任务处理，偏技术/职场）≠ balance（平衡，正式用语）；\"She juggles a career and three kids.\" 她一个人要兼顾事业和三个孩子。杂耍演员 juggler 同时抛接多个球 → 同时兼顾多件事",
+    "f": 8
+  },
+  {
+    "w": "juggle sth with sth",
+    "m": "兼顾……和……",
+    "n": "juggle work with study 兼顾工作与学习 / juggle family with career 兼顾家庭与事业 / juggle school with a part-time job 兼顾学业和兼职；\"It's hard to juggle a full-time job with a social life.\" 全职工作兼顾社交生活很难。juggle A with B = 同时\"抛接\"A 和 B",
+    "f": 8
+  },
+  {
+    "w": "factoid",
+    "m": "n. 趣闻，花边小知识；（原义）貌似真实的信息，伪事实",
+    "n": "fact（事实）+ -oid = like（像……的）→ 像事实的东西；同根词：fact 事实, factual 事实的；-oid 后缀：android 人形机器人, asteroid 小行星；a celebrity factoid 名人花边新闻；factoid（貌似事实的信息/趣闻，词义两极化：贬义\"伪事实\" vs 中性\"有趣小知识\"）≠ fact（事实，真实存在）≠ trivia（琐事，冷知识）；阅读中按语境判断词义：正式/学术文中多取\"伪事实\"义，口语新闻中多取\"趣闻\"义；-oid = 像……的 → factoid = 像事实的东西（可真可假）",
+    "f": 8
+  },
+  {
+    "w": "arbiter",
+    "m": "n. 仲裁人，裁决者；权威人士",
+    "n": "arbitr- = judge（裁决）→ arbiter 裁决者；同根词：arbitrary 武断的/任意的, arbitrate 仲裁, arbitration 仲裁（程序）；the arbiter of taste 品味权威 / an arbiter of fashion 时尚权威 / the final arbiter 最终裁决者；arbiter（权威裁决者/仲裁人，兼指鉴赏权威）≠ arbitrator（正式法律仲裁员）≠ referee（体育裁判）≠ judge（法官，司法裁决）；⚠️ 原文拼写 artbiter 有误，正确拼写为 arbiter！拼写易错词：arbiter / arbitrary / arbitrate 同根同考；arbitrary（武断的）→ arbiter（\"我说了算\"的裁决者）",
+    "f": 8
+  },
+  {
+    "w": "gigantic",
+    "m": "adj. 巨大的，庞大的",
+    "n": "giant（巨人）+ -ic → 巨人般的 → 巨大的；同根词：giant 巨人/巨大的, giantism 巨人症；a gigantic task 艰巨的任务 / gigantic proportions 巨大的规模 / a gigantic statue 巨大的雕像；gigantic（巨大的，强调尺寸/规模惊人，口语书面皆可）≈ huge（巨大，最通用）≈ enormous（庞大）≈ colossal（巨像般的，更夸张）≠ vast（广袤的，偏面积）；giant（巨人）+ ic → 巨人般的大",
+    "f": 8
+  },
+  {
+    "w": "successively",
+    "m": "adv. 接连地，连续地",
+    "n": "suc-/sub-（向下，接续）+ cess- = go（走）+ -ive + -ly → 一个接一个地走 → 接连地；同根词：success 成功, successive 连续的, succession 连续/继承, successor 继任者；win three matches successively 连赢三场 / successively higher levels 逐级升高的水平 / appear successively 接连出现；⚠️ successively（接连地，连续地）≠ successfully（成功地）— 形近易混；形容词 successive（连续的）≠ successful（成功的）；阅读中注意 successively / successfully 一字之差；successive（连续的）+ -ly → 依次不断",
+    "f": 8
+  },
+  {
+    "w": "glow",
+    "m": "v. 发出微光；容光焕发，喜形于色 / n. 光辉，微光",
+    "n": "glow（发光）；同根词：glowing 发光的/热情赞扬的, glowworm 萤火虫, afterglow 余晖；glow with pride 因自豪而容光焕发 / glow in the dark 在黑暗中发光 / the warm glow of the fire 火焰温暖的光 / glow with health 面色红润；glow（柔和稳定的光/容光焕发）≠ gleam（闪现的光）≠ glitter（闪闪发光）≠ shine（照耀，最通用）；\"Her face glowed with excitement.\" 她兴奋得容光焕发。glowworm（萤火虫）= glow + worm",
+    "f": 8
+  },
+  {
+    "w": "glowing",
+    "m": "adj. 热情赞扬的；发光的，灼热的；容光焕发的",
+    "n": "glow（发光）+ -ing → 发光的 → 引申\"热情洋溢的\"；同根词：glow 发光, afterglow 余晖；a glowing review 好评如潮 / glowing praise 高度赞扬 / a glowing report 大加褒扬的报告 / glowing cheeks 红润的脸颊；glowing（热情赞扬的/发光的，一词多义）≠ glittering（闪耀的）≠ shining（发光的，最通用）；\"The film received glowing reviews from critics.\" 这部电影获得影评人的如潮好评。阅读中 glowing 常修饰 review / report / praise，表\"好评如潮\"；glow（发光）→ 评价\"发光\" = 热情赞扬",
+    "f": 8
+  },
+  {
+    "w": "ornate",
+    "m": "adj. 装饰华丽的，华美的，繁复的",
+    "n": "orn- = decorate（装饰）+ -ate → 装饰过的 → 华美的；同根词：ornament 装饰品, ornamental 装饰性的, adorn 装饰；an ornate ceiling 装饰华丽的吊顶 / ornate architecture 华丽繁复的建筑 / ornate style 华丽风格 / ornate language 辞藻华丽的语言；ornate（装饰繁复华丽，可含\"过分花哨\"之意）≠ decorated（被装饰的，中性）≠ luxurious（豪华的，偏贵气）≠ elaborate（精心制作的，偏复杂精巧）；ornament（装饰品）→ ornate（装饰华丽的）→ 教堂里的 ornate 雕花",
+    "f": 8
+  },
+  {
+    "w": "ore",
+    "m": "n. 矿石，矿砂",
+    "n": "ore（矿石，古英语\"未加工的金属\"）；同根词：iron ore 铁矿石；iron ore 铁矿石 / ore deposits 矿床 / rich ore 富矿；ore（矿石，含金属的岩石）≠ mine（矿山/矿藏）≠ mineral（矿物，泛称）；资源/贸易类阅读高频：iron ore 常与 coal, oil 并列出现；联想挖矿游戏里挖出的方块就是 ore；⚠️ 原文\"砂石\"不准确，应为\"矿石\"",
+    "f": 9
+  },
+  {
+    "w": "seam",
+    "m": "n. 接缝；煤层；缝隙",
+    "n": "seam（缝，古英语\"缝合处\"）；a seam in the dress 裙子上的接缝 / a coal seam 煤层 / burst at the seams 胀破接缝（人满为患）；seam（接缝，名词）≠ seem（似乎，动词）⚠️ 形近易混；\"The room was bursting at the seams.\" 房间挤得水泄不通。衣服缝线 = seam；透过\"缝\"看 = seem",
+    "f": 9
+  },
+  {
+    "w": "lash",
+    "m": "n. 睫毛；鞭子 / v. 抽打；抨击",
+    "n": "lash（鞭打，古英语）；同根词：eyelash 睫毛, lashing 鞭打；eyelash 睫毛 / a lash of rain 一阵急雨 / lash out at 猛烈抨击；lash（抽打/抨击）≈ whip（鞭打）≈ flog（鞭笞，正式）≠ lash out（怒斥，固定短语）；\"She lashed out at the government's policy.\" 她猛烈抨击政府的政策。睫毛 eyelash 像眼睑上挂着一束束小\"鞭子\"（lash）",
+    "f": 9
+  },
+  {
+    "w": "ebb",
+    "m": "n. 退潮 / v. 退潮；衰退",
+    "n": "ebb（古英语\"退潮\"）；同源词：ebb tide 退潮；ebb and flow 潮起潮落/起伏 / at a low ebb 处于低谷 / the ebb of life 生命的衰退；ebb（退潮/衰退，渐进减弱）≠ wane（减弱，指月亏/势力衰微）≠ recede（后退，水退/发际线后退）；经济/情绪类阅读：at a low ebb 处于低谷期；ebb 像潮水\"一退再退\"（ebb, ebb）→ 退潮",
+    "f": 9
+  },
+  {
+    "w": "the ebb tide",
+    "m": "退潮（期）",
+    "n": "the ebb and flow of the tide 潮水的涨落 / against the ebb tide 逆着退潮；ebb tide（退潮）≠ flood tide（涨潮）；ebb（退）+ tide（潮）→ 退潮；与 flood tide（涨潮）成对记忆",
+    "f": 9
+  },
+  {
+    "w": "gulf",
+    "m": "n. 海湾；鸿沟，巨大分歧",
+    "n": "gulf（源自希腊 kolpos，海湾）；同源词：Gulf Stream 墨西哥湾暖流；the Gulf of Mexico 墨西哥湾 / the Gulf War 海湾战争 / a widening gulf between A and B A 与 B 之间日益扩大的鸿沟；gulf（海湾；喻鸿沟）≠ bay（海湾，较小）≠ strait（海峡，连接两片水域的狭道）；⚠️ 熟词僻义：阅读中 gulf 常表\"巨大分歧/鸿沟\"（a gulf between the rich and poor）；波斯湾（Persian Gulf）→ gulf 海湾；海水\"凹\"进去 → 裂开一道\"鸿沟\"",
+    "f": 9
+  },
+  {
+    "w": "meadow",
+    "m": "n. 草地，牧场",
+    "n": "meadow（古英语 mædwe，草地，与 mow 割草同源）；a flowery meadow 开满鲜花的草地 / meadow grassland 草甸草原；meadow（草场，供放牧/割草）≠ pasture（牧场，专供放牧）≠ grassland（草原，泛指）≠ lawn（草坪，人工修剪）；meadow 谐音\"麦多\"→ 草地上草多得像麦子",
+    "f": 9
+  },
+  {
+    "w": "beaver",
+    "m": "n. 海狸；（口语）勤奋工作的人 / v. beaver away 埋头苦干",
+    "n": "beaver（海狸，古英语 beofor）；busy as a beaver 忙个不停 / beaver away at sth 埋头苦干做某事；beaver（海狸/勤快人）≠ otter（水獭）≠ muskrat（麝鼠）；\"She beavered away all weekend on the report.\" 她整个周末埋头写报告。海狸是动物界\"劳模\"，不停筑坝 → beaver 引申\"勤奋工作者\"",
+    "f": 9
+  },
+  {
+    "w": "drone",
+    "m": "n. 无人机；雄蜂；嗡嗡声 / v. 嗡嗡作响",
+    "n": "drone（古英语\"雄蜂\"；雄蜂只会嗡嗡飞 → 无人机）；a military drone 军用无人机 / drone strikes 无人机空袭 / drone on about sth 絮叨某事；drone（无人机/嗡嗡声）≈ buzz（嗡嗡，更常用）≠ hum（哼唱/低鸣）≠ murmur（低语）；科技类阅读高频：drone delivery 无人机配送 / drone photography 航拍；雄蜂 drone 只会\"嗡嗡\"飞 → 无人机 drone 也是\"嗡嗡\"飞",
+    "f": 9
+  },
+  {
+    "w": "appendix",
+    "m": "n. 附录；阑尾",
+    "n": "ap-/ad-（向，靠近）+ pend- = hang（悬挂）+ -ix → 悬挂在主体后面的东西 → 附录/阑尾；同根词：append 附加, pendant 吊坠, depend 依赖；see appendix 见附录 / appendix A 附录 A / a burst appendix 阑尾穿孔；appendix（附录/阑尾，一词两义）≠ attachment（邮件附件）≠ supplement（增刊/补充）；写作引用附录用 see the appendix；pend- = 悬挂：阑尾\"悬挂\"在盲肠末端，附录\"挂\"在正文后面",
+    "f": 9
+  },
+  {
+    "w": "anatomy",
+    "m": "n. 解剖学；身体构造；剖析",
+    "n": "ana- = up/apart（向上，分开）+ tom- = cut（切）+ -y → 切开研究 → 解剖学；同根词：atom 原子（不可再分）, tome 大部头书；human anatomy 人体解剖学 / the anatomy of a crisis 对危机的剖析；anatomy（解剖学/构造，学科）≠ dissection（解剖，具体动作）≈ structure（结构）；ana-（分开）+ tom-（切）→ 把身体\"切开\"研究 → 解剖学；⚠️ 原文\"解刨学\"为错别字，正确为\"解剖学\"",
+    "f": 9
+  },
+  {
+    "w": "corrode",
+    "m": "v. 腐蚀，侵蚀",
+    "n": "cor-（加强）+ rod- = gnaw（啃咬）+ -e → 一点一点\"啃掉\" → 腐蚀；同根词：erode 侵蚀, rodent 啮齿动物；corrode metal 腐蚀金属 / acid corrodes iron 酸腐蚀铁 / corroded pipes 被腐蚀的管道；corrode（腐蚀，化学作用）≠ erode（侵蚀，风/水冲刷，更常用）≈ rust（生锈，特指铁）；rod- = 啃：老鼠（rodent）啃东西 → 铁被酸\"啃\"出洞 → corrode；⚠️ 原文\"侵蚀的\"为形容词义，corrode 是动词",
+    "f": 9
+  },
+  {
+    "w": "spokesperson",
+    "m": "n. 发言人，代言人",
+    "n": "spoke（speak 的过去分词）+ s + person → 代表发言的人；同根词：spokesman 男发言人, spokeswoman 女发言人；a government spokesperson 政府发言人 / a company spokesperson 公司代言人；spokesperson（发言人，中性，最规范）≠ spokesman（男发言人）≠ spokeswoman（女发言人）≠ representative（代表，泛指）；\"A spokesperson for the company declined to comment.\" 公司发言人拒绝置评。speak + person → 替别人说话的人；⚠️ 原文拼写 spokeserson 有误，正确为 spokesperson！",
+    "f": 9
+  },
+  {
+    "w": "retiree",
+    "m": "n. 退休人员",
+    "n": "re-（回）+ tir- = draw（拉）+ -ee（被……的人）→ 被\"拉回\"工作岗位之外的人 → 退休者；同根词：retire 退休, retirement 退休；a retired teacher 退休教师 / retirement age 退休年龄 / a retiree's pension 退休金；retiree（退休者，指人）≠ retired（退休的，指状态）⚠️ 词性不同；社会类阅读：aging population / retirees 老龄化话题高频；-ee 表\"被……的人\"：employee 雇员（被雇佣的人）、retiree 退休者",
+    "f": 9
+  },
+  {
+    "w": "wholesaler",
+    "m": "n. 批发商",
+    "n": "whole（整个）+ sale（卖）+ -er → 整批出售的人 → 批发商；同根词：wholesale 批发（的）, retail 零售, retailer 零售商；a wholesale market 批发市场 / wholesale price 批发价 / buy wholesale 整批购买；wholesaler（批发商）≠ retailer（零售商）≠ vendor（小贩/供应商）；经济类阅读：wholesale vs retail 批发 vs 零售成对出现；whole（整）+ sale（卖）→ 整批卖 → 批发；零售 retail = re-（再）+ tail（切）→ 拆开零卖",
+    "f": 9
+  },
+  {
+    "w": "laureate",
+    "m": "n. 获奖者；桂冠诗人",
+    "n": "laur- = laurel（月桂树）+ -ate → 头戴月桂冠的人 → 获奖者；同根词：laurel 月桂/桂冠；a Nobel laureate 诺贝尔奖得主 / Poet Laureate 桂冠诗人；laureate（获奖者，特指\"桂冠\"荣誉）≠ winner（获胜者，通用）≠ prizewinner（得奖者）；新闻/科普阅读高频：Nobel laureate 诺奖得主；古希腊给胜利者戴月桂冠（laurel）→ laureate 桂冠诗人；⚠️ 原文拼写 laurate 有误，正确为 laureate！",
+    "f": 9
+  },
+  {
+    "w": "self-centered",
+    "m": "adj. 以自我为中心的，自私的",
+    "n": "self（自己）+ center（中心）+ -ed → 以自己为中心的；同根词：selfish 自私的, selfless 无私的；a self-centered person 以自我为中心的人 / self-centered behavior 自私的行为；self-centered（以自我为中心，偏中性描述）≈ selfish（自私的，贬义更强）≠ selfless（无私的，反义）；\"He's too self-centered to care about others.\" 他太以自我为中心，不关心别人。self + center → 自己是世界的中心 → self-centered",
+    "f": 9
+  },
+  {
+    "w": "self-interest",
+    "m": "n. 自身利益，私利",
+    "n": "self（自己）+ interest（利益）→ 自身利益；同根词：selfish 自私的, selfless 无私的；act out of self-interest 出于私利行事 / in one's own self-interest 符合自身利益 / enlightened self-interest 开明的利己主义；self-interest（自身利益，中性名词）≠ selfishness（自私，贬义）⚠️ 原文\"自私自利的\"为形容词义，self-interest 是名词；self + interest → 自己的利益；out of self-interest 出于私利",
+    "f": 9
+  },
+  {
+    "w": "wistful",
+    "m": "adj. 惆怅的，渴望的，若有所思的",
+    "n": "wistful（源自 wish 愿望 + -ful → 充满渴望的）；a wistful smile 惆怅的微笑 / wistful eyes 渴望的眼神 / feel wistful about 对……感到惆怅；wistful（惆怅中带渴望，向往而不得）≠ nostalgic（怀旧的，怀念过去）≠ melancholy（忧郁的，更沉重）≠ sad（悲伤，最通用）；\"She gave a wistful look at the old photo.\" 她惆怅地看着老照片。wish（愿望）+ -ful → 愿望得不到满足 → 惆怅渴望；⚠️ 原文\"悲伤的\"过重",
+    "f": 9
+  },
+  {
+    "w": "lopsided",
+    "m": "adj. 倾斜的，不对称的，一边倒的",
+    "n": "lop（耷拉，修剪）+ side（边）+ -ed → 一边耷拉下来 → 倾斜的；a lopsided smile 歪嘴笑 / a lopsided victory 一边倒的胜利 / a lopsided score 悬殊的比分；lopsided（一边重/一边斜，不对称）≈ unbalanced（不平衡的）≠ uneven（不平坦的/参差的）；\"The final score was lopsided: 5–0.\" 最终比分一边倒：5 比 0。lop（垂下来）+ side（边）→ 一边垂下来 → 倾斜的",
+    "f": 9
+  },
+  {
+    "w": "a lopsided mouth",
+    "m": "撇嘴，歪嘴",
+    "n": "with a lopsided mouth 歪着嘴 / a lopsided grin 歪嘴咧嘴笑；a lopsided mouth（撇嘴，不对称的嘴型）≠ a pursed mouth（抿嘴，紧闭嘴唇）≠ a pout（撅嘴，不高兴）；lopsided（歪的）+ mouth（嘴）→ 撇嘴/歪嘴",
+    "f": 9
+  },
+  {
+    "w": "crabbed",
+    "m": "adj. 潦草的，难辨认的；（脾气）暴躁的",
+    "n": "crabbed（源自 crab 螃蟹 → 像螃蟹一样横行/古怪的）；crabbed handwriting 潦草的字迹 / a crabbed old man 脾气古怪的老头 / crabbed style 晦涩的文风；crabbed（字迹潦草难辨/脾气坏）≈ illegible（难以辨认的）≠ crabby（暴躁的，口语）≠ scribbled（乱涂的）；阅读中 crabbed 常修饰 handwriting 表\"潦草的\"；螃蟹（crab）横行霸道 → crabbed 字迹像螃蟹爬的 → 潦草难认",
+    "f": 9
+  },
+  {
+    "w": "crabbed handwriting",
+    "m": "潦草的字迹",
+    "n": "illegible crabbed handwriting 难以辨认的潦草字迹；crabbed handwriting（潦草难辨的字迹）≈ scribble（乱写乱画）≠ cursive handwriting（连笔书法，正规书写体）；crabbed（潦草）+ handwriting（笔迹）→ 像螃蟹爬出来的字",
+    "f": 9
+  },
+  {
+    "w": "adoptive",
+    "m": "adj. 收养的，有收养关系的",
+    "n": "ad-（向）+ opt- = choose（选择）+ -ive → 主动\"选择\"孩子的 → 收养的；同根词：adopt 收养/采纳, adoption 收养, option 选择；adoptive parents 养父母 / an adoptive family 收养家庭；⚠️ adoptive（收养方：adoptive parents 养父母）≠ adopted（被收养方：adopted child 养子女）；⚠️ 易错点：adoptive 修饰\"收养者\"（父母/家庭），adopted 修饰\"被收养者\"（孩子）；opt- = 选择：adopt 选择（opt）接受 → 收养；adoptive parents 主动选择孩子的父母",
+    "f": 9
+  },
+  {
+    "w": "metaphysical",
+    "m": "adj. 形而上学的，玄学的；抽象的",
+    "n": "meta-（在……之后/超越）+ phys- = nature（自然）+ -ical → 超越自然（物理）之上的 → 形而上学的；同根词：physics 物理学, physical 物理的, metaphysics 形而上学；metaphysical questions 形而上学问题 / metaphysical poetry 玄学派诗歌；metaphysical（形而上学的，哲学）≠ metaphorical（隐喻的）⚠️ 形近易混；meta-（超越）+ physical（物理的）→ 超越物理的学问 → 形而上学（亚里士多德著作排在《物理学》之后而得名）；哲学/科普阅读词：metaphysical vs metaphorical 一字之差",
+    "f": 9
+  },
+  {
+    "w": "reasoning",
+    "m": "n. 推理，论证，推论",
+    "n": "reason（理性）+ -ing → 推理；同根词：reason 理由/理性, reasonable 合理的, unreasonable 不合理的；logical reasoning 逻辑推理 / a flaw in the reasoning 推理中的漏洞 / deductive reasoning 演绎推理；reasoning（推理过程/论证）≠ reason（理由，名词）≠ rationale（基本原理）≠ rational（理性的，形容词）；阅读/写作高频：the reasoning behind sth 某事背后的逻辑；reason（理性）+ -ing → 运用理性的过程 → 推理",
+    "f": 9
+  },
+  {
+    "w": "a line of reasoning",
+    "m": "推理思路，论证线索",
+    "n": "follow a line of reasoning 沿着一条推理思路 / a flawed line of reasoning 有缺陷的推理；\"I can't follow your line of reasoning.\" 我跟不上你的推理思路。line（线索）+ reasoning（推理）→ 一条推理的\"线\"；⚠️ 原文\"解决问题的方法\"不准确，应为\"推理思路/论证线索\"",
+    "f": 9
+  },
+  {
+    "w": "in-depth",
+    "m": "adj. 深入的，彻底的，全面的",
+    "n": "in-（进入）+ depth（深度）→ 深入内部的 → 深入的；同根词：depth 深度, deep 深的, deepen 加深；an in-depth interview 深度访谈 / in-depth research 深入研究 / an in-depth report 深度报道；in-depth（深入的，系统全面）≠ deep（深的，最通用）≠ thorough（彻底的，强调细致）；\"The newspaper ran an in-depth analysis of the crisis.\" 报纸对危机做了深度分析。新闻/学术阅读高频：in-depth analysis / interview；⚠️ 原文\"完全的，深的\"不准确",
+    "f": 9
+  },
+  {
+    "w": "an in-depth analysis",
+    "m": "深度分析",
+    "n": "conduct an in-depth analysis 进行深度分析 / an in-depth analysis of the market 对市场的深度分析；an in-depth analysis（深入全面的分析）≈ a thorough analysis（彻底的分析）≠ a superficial analysis（肤浅的分析，反义）；in-depth（深入的）+ analysis（分析）→ 深度分析",
+    "f": 9
+  },
+  {
+    "w": "dirt cheap",
+    "m": "adj. 非常便宜的，贱价的",
+    "n": "dirt（泥土）+ cheap（便宜）→ 像泥土一样便宜；dirt-cheap prices 超低价格 / buy sth dirt cheap 以极低价买到某物；dirt cheap（口语，极便宜）≈ a bargain（划算）≠ dirt poor（一贫如洗）⚠️ 形近易混；\"I got this jacket dirt cheap at the flea market.\" 我在跳蚤市场超低价买到这件夹克。比泥土还便宜 → dirt cheap；对比 dirt poor（穷得叮当响）",
+    "f": 9
+  },
+  {
+    "w": "sedition",
+    "m": "n. 煽动叛乱的言论/行为",
+    "n": "sed-（分开，= se-）+ it- = go（走）+ -ion → 蛊惑人心\"走\"向分裂的言论 → 煽动叛乱；同根词：seditious 煽动性的, itinerary 旅程（it- 行走）；charges of sedition 煽动叛乱罪 / seditious speech 煽动性言论；sedition（煽动叛乱，针对政府，言论层面）≠ treason（叛国，投敌，罪更重）≠ rebellion（武装叛乱，行为层面）；se-（分开）+ it-（走）→ 让人\"走开\"分裂 → sedition 煽动叛乱",
+    "f": 9
+  },
+  {
+    "w": "quirk",
+    "m": "n. 怪癖；怪事；偶然的巧合",
+    "n": "quirk（怪癖，源自古英语\"转弯/迂回\"）；a quirk of human nature 人性的怪癖 / a personality quirk 性格怪癖 / by a quirk of fate 因命运的捉弄；quirk（怪癖/怪事，中性偏趣）≈ eccentricity（古怪行为，偏学术）≠ oddity（古怪的事物）≠ habit（习惯，中性）；\"By a quirk of fate, we ended up in the same class.\" 机缘巧合，我们最后进了同一个班。quirk 谐音\"缺壳\"→ 怪人缺\"外壳\" → 有怪癖",
+    "f": 9
+  },
+  {
+    "w": "a quirk of fate",
+    "m": "机缘巧合，命运的捉弄",
+    "n": "by a quirk of fate 出于机缘巧合 / through a quirk of fate 因命运的安排；\"By a quirk of fate, we were seated next to each other.\" 机缘巧合，我们被安排坐在了一起。quirk（怪事）+ fate（命运）→ 命运开的\"小玩笑\" → 机缘巧合",
+    "f": 9
+  },
+  {
+    "w": "clasp",
+    "m": "n. 扣子，钩子；紧握 / v. 握紧，抱紧",
+    "n": "clasp（握紧，古英语）；clasp hands 握手 / clasp sth in one's hands 双手紧握 / a gold clasp 金扣子 / clasp one's hands 十指交叉相握；clasp（握紧，抱紧）≈ grip（紧握）≈ clutch（抓紧，急切）≠ grasp（抓住/理解）；\"She clasped the baby to her chest.\" 她把婴儿紧紧抱在胸前。clasp 像扣子\"咔哒\"一声扣上",
+    "f": 10
+  },
+  {
+    "w": "clasp hands",
+    "m": "握紧双手；握手",
+    "n": "clasp each other's hands 互相握住对方的手 / with clasped hands 双手紧握；clasp hands（握紧手，强调紧握）≠ shake hands（握手，礼仪动作）；clasp（紧握）+ hands → 握紧双手",
+    "f": 10
+  },
+  {
+    "w": "telecom",
+    "m": "n. 电信（业），电信公司（telecommunications 的缩写）",
+    "n": "tele- = far（远）+ communication（通信）→ 远程通信 → 电信；同根词：telephone 电话, television 电视, telegraph 电报；a telecom company 电信公司 / the telecom industry 电信业 / telecom operators 电信运营商；telecom（电信，缩写，口语化）≠ telecommunication（电信，正式，多用复数 telecommunications）；科技/经济类阅读高频：telecom giants 电信巨头；tele-（远）+ com（通信）→ 千里之外的通信 → 电信",
+    "f": 10
+  },
+  {
+    "w": "genetics",
+    "m": "n. 遗传学",
+    "n": "gene（基因）+ -tics（学科后缀）→ 遗传学；同根词：gene 基因, genetic 遗传的, genome 基因组, genetically 基因上地；molecular genetics 分子遗传学 / genetics research 遗传学研究 / genetic engineering 基因工程；genetics（遗传学，学科）≠ genetic（遗传的，形容词）≠ genealogy（家谱学）；科普/生物阅读高频：genetic engineering 基因工程 / genetically modified（GM）转基因的；gene（基因）+ tics → 研究基因的学科 → 遗传学",
+    "f": 10
+  },
+  {
+    "w": "mitochondrial",
+    "m": "adj. 线粒体的",
+    "n": "mito- = thread（线）+ chondr- = granule（颗粒）+ -al → 线状+颗粒状的细胞器 → 线粒体的；同根词：mitochondria 线粒体（复数）, mitochondrion 线粒体（单数）；mitochondrial DNA 线粒体DNA / mitochondrial disease 线粒体疾病 / mitochondrial inheritance 线粒体遗传；mitochondrial（线粒体的）≠ chromosome（染色体）≠ nucleus（细胞核）；生物科普：mitochondrial DNA（mtDNA）母系遗传是热门考点；mito-（线）+ chondr-（颗粒）→ 线粒体是\"线+粒\"状的细胞器",
+    "f": 10
+  },
+  {
+    "w": "creek",
+    "m": "n. 小溪，小河；（美）支流",
+    "n": "creek（小溪，古诺斯语\"海湾/小湾\"）；a mountain creek 山间小溪 / up the creek 陷入困境（俚语）；creek（小溪/小湾）≈ stream（溪流）≠ river（河，更大）≠ brook（细流，更小）；\"up the creek without a paddle\" 陷入困境，无计可施（字面：没桨划船困在小溪）；creek 谐音\"溪口\"→ 小溪的入口",
+    "f": 10
+  },
+  {
+    "w": "cascade",
+    "m": "n. 小瀑布；一连串 / v. 倾泻，流下",
+    "n": "cas- = fall（落下）+ -ade → 落下的水 → 瀑布；同根词：case 情况（发生）, casual 偶然的；a cascade of water 倾泻的水流 / a cascade of events 一连串事件 / cascade effect 级联效应；cascade（小瀑布/一连串）≈ waterfall（瀑布，更大）≠ rapids（急流）；\"The company's collapse set off a cascade of failures.\" 公司倒闭引发一连串连锁失败。科技/管理阅读：cascade effect 级联效应（多米诺骨牌式）；cas- = 落下 → 水\"落下\"→ 瀑布",
+    "f": 10
+  },
+  {
+    "w": "a cascade of curls",
+    "m": "瀑布般的卷发",
+    "n": "a cascade of blonde curls 瀑布般的金色卷发 / her hair fell in cascades 她的头发如瀑布般垂落；a cascade of curls（瀑布般倾泻的卷发，强调\"垂落\"）≈ wavy hair（波浪发）≠ straight hair（直发）；cascade（瀑布）+ curls（卷发）→ 卷发如瀑布",
+    "f": 10
+  },
+  {
+    "w": "riverboat",
+    "m": "n. 内河船，江轮",
+    "n": "river（河）+ boat（船）→ 内河船；a Mississippi riverboat 密西西比河上的内河船 / riverboat gambling 船上赌博；riverboat（内河船）≠ ferry（渡轮）≠ cruise ship（远洋邮轮）；river + boat → 在河里开的船",
+    "f": 10
+  },
+  {
+    "w": "stranglehold",
+    "m": "n. 压制，扼杀；垄断，控制",
+    "n": "strangle（扼死，勒死）+ hold（控制）→ 掐住脖子的控制 → 压制/垄断；have a stranglehold on sth 对……实行垄断/控制 / break the stranglehold of 打破……的垄断；stranglehold（垄断/压制，比喻义）≈ monopoly（垄断，正式）≈ chokehold（锁喉，字面/比喻）；\"The company has a stranglehold on the market.\" 这家公司垄断了市场。strangle（扼杀）+ hold（控制）→ 掐住咽喉的控制 → 垄断",
+    "f": 10
+  },
+  {
+    "w": "epithet",
+    "m": "n. 绰号，称号；（贬）辱骂之词",
+    "n": "epi- = on（在……上）+ thet- = put（放）→ 加在（名字）上的词 → 绰号；同根词：thesis 论点, synthetic 合成的；a racial epithet 种族辱骂语 / an insulting epithet 侮辱性绰号；epithet（绰号/修饰性称号）≈ nickname（昵称，更亲昵）≠ alias（化名，隐瞒身份）≠ title（头衔，正式）；epi-（在……上）+ thet-（放）→ \"贴在\"名字上的称呼 → 绰号",
+    "f": 10
+  },
+  {
+    "w": "overdressed",
+    "m": "adj. 穿得过于正式/花哨的",
+    "n": "over-（过度）+ dress（穿衣）+ -ed → 穿得过度的 → 打扮过头的；be overdressed for the occasion 在某个场合穿得太正式 / feel overdressed 觉得穿得太隆重；overdressed（穿得太正式/花哨）≠ underdressed（穿得太随意/不够正式）⚠️ 反义成对；\"I felt overdressed in a suit at the casual party.\" 在休闲派对上穿西装我觉得太隆重了。over-（过度）+ dressed（穿衣）→ 穿过头了；对比 underdressed",
+    "f": 10
+  },
+  {
+    "w": "taxpayer",
+    "m": "n. 纳税人",
+    "n": "tax（税）+ pay（支付）+ -er → 交税的人 → 纳税人；同根词：tax 税, taxation 征税, tax-free 免税的, income tax 所得税；taxpayer money 纳税人的钱 / hard-working taxpayers 辛勤的纳税人 / a taxpayer-funded project 纳税人出资的项目；taxpayer（纳税人）≠ tax collector（收税人）≠ taxable（应征税的）；\"Taxpayers' money should not be wasted.\" 纳税人的钱不该被浪费。政治经济类阅读：taxpayer money / tax reform 高频；tax + payer → 交税的人",
+    "f": 10
+  },
+  {
+    "w": "decisiveness",
+    "m": "n. 果断，决断力",
+    "n": "de-（加强）+ cis- = cut（切）+ -ive + -ness → 一刀切下去 → 决断；同根词：decide 决定, decision 决定, decisive 决定性的/果断的, incisive 锐利的；act with decisiveness 果断行事 / show decisiveness 表现出决断力 / lack of decisiveness 缺乏决断；decisiveness（决断力，名词）≠ decision（决定，名词）≠ decisive（决定性的/果断的，形容词）；\"Leadership requires decisiveness.\" 领导力需要决断力。cis- = 切：decide = de-（加强）+ cide（切）→ 切下去做决定 → decisiveness 果断",
+    "f": 10
+  },
+  {
+    "w": "stressed-out",
+    "m": "adj. 压力过大的，焦虑不安的",
+    "n": "stress（压力）+ -ed + out → 压力\"爆表\"的；feel stressed-out 感到压力山大 / a stressed-out worker 压力过大的员工；stressed-out（压力过大，焦虑）≈ overwhelmed（不堪重负）≠ stressful（令人有压力的，修饰事物）；\"I'm totally stressed-out about the deadline.\" 我被截止日期搞得压力山大。⚠️ 易混：stressed（感到压力的，修饰人）vs stressful（令人有压力的，修饰事）；stress（压力）+ out（出）→ 压力都\"溢出\"了 → 焦虑不安",
+    "f": 10
+  },
+  {
+    "w": "enraged",
+    "m": "adj. 愤怒的，被激怒的",
+    "n": "en-（使……）+ rage（暴怒）+ -ed → 使暴怒的；同根词：rage 暴怒, enrage 激怒, raging 狂怒的/肆虐的；be enraged at/by sth 因……而暴怒 / an enraged crowd 愤怒的人群 / enraged customers 愤怒的顾客；enraged（暴怒，程度强）> angry（生气，通用）≈ furious（狂怒）≠ irritated（恼怒，程度轻）；\"Residents were enraged by the noise.\" 居民被噪音激怒了。en-（使）+ rage（暴怒）→ 使人暴怒 → enraged",
+    "f": 10
+  },
+  {
+    "w": "recoup",
+    "m": "v. 收回（成本），弥补（损失）",
+    "n": "re-（回）+ coup- = strike（打，切）→ 打回来 → 收回；同根词：coup 政变/妙举, coupon 优惠券（切割下来的票）；recoup one's losses 弥补损失 / recoup the cost 收回成本 / recoup investments 收回投资；recoup（收回/弥补，财务语境）≈ recover（恢复/收回，通用）≈ reclaim（取回，主张权利）；\"It will take years to recoup the initial investment.\" 收回初期投资需要数年。re-（回）+ coup（一击）→ 把损失\"打回来\" → 挽回损失",
+    "f": 10
+  },
+  {
+    "w": "backlog",
+    "m": "n. 积压的事务，待办事项",
+    "n": "back（后面）+ log（原木/记录）→ 堆在后面没处理的 → 积压；a backlog of work 积压的工作 / clear the backlog 清理积压 / reduce the backlog 减少积压；backlog（积压未处理的事务）≠ log（日志）≠ to-do list（待办清单，前瞻性）⚠️ backlog 强调\"堆积未处理\"；\"There's a huge backlog of orders.\" 订单大量积压。back（后面）+ log（木头）→ 木头堆在后面 → 积压；⚠️ 原文\"代办事物\"为错别字，正确为\"待办事项\"",
+    "f": 10
+  },
+  {
+    "w": "a backlog of mail",
+    "m": "积压的邮件",
+    "n": "a backlog of unanswered mail 积压未回的邮件；a backlog of mail（积压未处理的邮件）≠ junk mail（垃圾邮件）≠ a pile of mail（一堆邮件，中性）；backlog（积压）+ mail（邮件）→ 堆积如山的邮件",
+    "f": 10
+  },
+  {
+    "w": "exchequer",
+    "m": "n. 国库，财源；（英国）财政部",
+    "n": "exchequer（源自拉丁 scaccarium 棋盘 → 中世纪英国财政部用方格布记账）；the Exchequer （英国）财政部 / Chancellor of the Exchequer （英国）财政大臣 / public exchequer 国库；exchequer（英国财政部/国库，偏英式）≠ treasury（国库/财政部，通用）≠ the Treasury（美国财政部）；谐音\"一撕拆款\"→ 从国库里撕钱出来 → exchequer 国库",
+    "f": 10
+  },
+  {
+    "w": "treasury",
+    "m": "n. 国库；财政部；国债（treasuries）",
+    "n": "treas- = treasure（财宝）+ -ury → 存财宝的地方 → 国库；同根词：treasure 财宝, treasurer 司库/财务主管；the Treasury 财政部 / treasury bonds 国债 / treasury bills 短期国库券；treasury（国库/财政部，通用）≈ exchequer（英国财政部）≠ treasure（财宝，具体物）；经济类阅读：treasury bonds / treasury bills 国债与国库券；treasure（财宝）+ -ury（地点后缀）→ 放财宝的地方 → 国库",
+    "f": 10
+  },
+  {
+    "w": "toll",
+    "m": "n. 通行费；代价，伤亡人数 / v. 敲钟",
+    "n": "toll（通行费，源自拉丁 telonium 收税处；\"敲钟\"另一起源）；toll road 收费公路 / death toll 死亡人数 / take a toll on 对……造成损害 / toll the bell 敲钟；toll（通行费/代价/伤亡）≠ tax（税，强制征收）≠ fee（费用，服务费）⚠️ death toll 死亡人数是阅读高频；\"The long hours took a toll on her health.\" 长时间工作损害了她的健康。⚠️ 熟词僻义：take a toll on / death toll 高频考点；收费站的兔子（toll）要交过路费；death toll = 死亡人数\"计费表\"",
+    "f": 10
+  },
+  {
+    "w": "under-nutrition",
+    "m": "n. 营养不良（undernutrition 常连写）",
+    "n": "under-（不足）+ nutrition（营养）→ 营养不足；同根词：nutrition 营养, nutritious 有营养的, malnutrition 营养不良（mal- 不良 + nutrition）；child undernutrition 儿童营养不良 / chronic undernutrition 长期营养不良；under-nutrition（营养不足，量不足）≈ malnutrition（营养不良，广义，含营养不均衡）≠ overnutrition（营养过剩）；健康/发展类阅读：undernutrition vs malnutrition 常混用；under-（不足）+ nutrition（营养）→ 营养不良；对比 overnutrition 营养过剩",
+    "f": 10
+  },
+  {
+    "w": "perpetuate",
+    "m": "v. 使持续，使长存（多指负面事物）",
+    "n": "per-（完全）+ petu- = seek（追求）+ -ate → 一直追求下去 → 使永存；同根词：perpetual 永久的, perpetuity 永恒；perpetuate a myth 使谬论长存 / perpetuate inequality 使不平等持续 / perpetuate stereotypes 固化刻板印象；perpetuate（使持续，常带贬义\"使坏事延续\"）≠ maintain（维持，中性）≠ sustain（维持/支撑）；\"The media perpetuate stereotypes about minorities.\" 媒体固化了人们对少数族裔的刻板印象。阅读高频：perpetuate 后常接负面事物（poverty, inequality, myth）；⚠️ 原文\"持续不断的\"为形容词义，perpetuate 是动词",
+    "f": 10
+  },
+  {
+    "w": "shedder",
+    "m": "n. 流泪者，流血者（文学化表达，非词典常用词）",
+    "n": "shed（流出，滴落）+ -er → 使……流出的人；同根词：shed 流出, shed tears 流泪, shed blood 流血；a shedder of tears 流泪者 / a shedder of blood 杀人者，刽子手；shedder（使流出者，罕见词）≠ shed（流出，动词）⚠️ 词典中 shedder 常指\"蜕壳的蟹\"，作\"流泪者/流血者\"属文学性派生；shed tears（流泪）+ -er → 流泪者；shed blood（流血）→ shedder of blood 刽子手",
+    "f": 10
+  },
+  {
+    "w": "contributory",
+    "m": "adj. 促成的，起作用的，有贡献的",
+    "n": "con-（共同）+ tribut- = give（给予）+ -ory → 共同\"给予\"的 → 起促成作用的；同根词：contribute 贡献, contribution 贡献, tributary 支流, distribute 分发；a contributory factor 促成因素 / contributory negligence 共同过失（法律）；contributory（促成的，起作用的）≈ contributing（起作用的）≠ attributable（可归因于……的）；con-（共同）+ tribute（给予）→ 一起\"出力\" → 促成的；⚠️ 原文\"促进\"不完整，应为\"促成的，起作用的\"",
+    "f": 10
+  },
+  {
+    "w": "contributory factor",
+    "m": "促成因素",
+    "n": "a contributory factor to/in sth 某事的促成因素 / be a contributory factor in the accident 事故的促成因素之一；contributory factor（促成因素，间接因素之一）≠ cause（原因，直接原因）≠ determinant（决定性因素）；\"Lack of sleep was a contributory factor in the crash.\" 睡眠不足是事故的促成因素之一。contributory（促成的）+ factor（因素）→ 促成因素",
+    "f": 10
+  },
+  {
+    "w": "contributory negligence",
+    "m": "共同过失，混合过失（法律术语）",
+    "n": "contributory（促成的）+ negligence（过失）→ 受害人自身也有过错；同根词：negligence 过失, negligent 疏忽的, neglect 忽视；the doctrine of contributory negligence 共同过失原则 / claim contributory negligence 主张共同过失；contributory negligence（共同过失：受害方也有过错，责任按比例分担）≠ negligence（单纯过失）；法律英语：原告自己也有责任 → 责任按比例分担",
+    "f": 10
+  },
+  {
+    "w": "judiciary",
+    "m": "n. 司法部门，司法机关；（总称）法官",
+    "n": "jud- = judge（判断）+ -iciary → 负责判断的机构 → 司法部门；同根词：judge 法官/判断, judicial 司法的, judgment 判断, prejudice 偏见；the judiciary 司法部门 / an independent judiciary 独立的司法部门 / judicial system 司法体系；⚠️ judiciary（司法机关）≠ legislature（立法机关）≠ executive（行政机关）— 三权分立三词必考；三权分立：legislature（立法）/ executive（行政）/ judiciary（司法）成组记忆；jud-（判断）+ -iciary → 做\"判断\"的机构 → 司法部门；已在 words5 出现过（legislature 辨析中），此处强化",
+    "f": 10
+  },
+  {
+    "w": "top-down",
+    "m": "adj./adv. 自上而下的（地）",
+    "n": "top（顶）+ down（向下）→ 从上到下的；a top-down approach 自上而下的方法 / top-down management 自上而下的管理 / top-down processing 自上而下加工；top-down（自上而下，集权式）≠ bottom-up（自下而上，民主式）⚠️ 反义成对，管理学常考；管理/心理类阅读：top-down vs bottom-up 成对出现；top + down → 从顶层往下推 → 自上而下；对比 bottom-up",
+    "f": 10
+  },
+  {
+    "w": "contention",
+    "m": "n. 争论；论点，主张",
+    "n": "con-（共同）+ tend- = stretch（伸展）+ -ion → 双方\"拉扯\"同一件事 → 争论；同根词：contend 争辩/竞争, contender 竞争者, tension 紧张；a point of contention 争论的焦点 / the main contention 主要论点 / a bone of contention 争论的焦点（习语）；contention（论点/争论，正式）≈ dispute（争端）≠ argument（争吵/论证）；\"The main contention is that education should be free.\" 主要论点是教育应当免费。tend- = 伸展：con-（一起）+ tend（伸）→ 双方伸手抢 → 争论；a bone of contention 争论的焦点",
+    "f": 10
+  },
+  {
+    "w": "a point of contention",
+    "m": "争论的焦点",
+    "n": "the point of contention between A and B A 与 B 之间的争论焦点 / a bone of contention 争议点（习语）；a point of contention（争论的焦点，双方僵持不下）≠ a point of agreement（共识点，反义）≈ a bone of contention（习语，同义）；point（点）+ contention（争论）→ 争论的\"焦点\"",
+    "f": 10
+  },
+  {
+    "w": "conceive",
+    "m": "v. 构想，设想；怀孕",
+    "n": "con-（共同）+ ceiv- = take（拿取）→ 在脑中\"拿取\"意象 → 构想；同根词：concept 概念, conception 构想/怀孕, deceive 欺骗, receive 接收, perceive 感知；conceive of sth 设想某事 / conceive a plan 构想一个计划 / conceive a child 怀孕；⚠️ ceiv- 词根家族：conceive（构想/怀孕）≠ perceive（感知/察觉）≠ deceive（欺骗）≠ receive（接收）；\"I can't conceive of living without the internet.\" 我无法想象没有互联网的生活。⚠️ conceive of（设想）后接动名词；ceiv- = take 系列高频；con-（一起）拿 → 构想；per-（穿透）拿 → perceive 感知；de-（坏）拿 → deceive 欺骗",
+    "f": 10
+  },
+  {
+    "w": "conceivably",
+    "m": "adv. 可以想象地，可能地",
+    "n": "con- + ceiv-（拿取）+ -ably → 可以\"想得到\"地 → 可能地；同根词：conceive 构想, conceivable 可想象的, inconceivable 不可想象的；conceivably possible 理论上可能 / could conceivably happen 有可能发生；conceivably（可以想象地，可能）≈ possibly（可能）≠ presumably（推测起来）⚠️ 原文拼写 conceiveably 有误，正确为 conceivably！\"The plan could conceivably fail.\" 这个计划有可能失败。conceivable（可想象的）+ -ly → 可以想象地；反义 inconceivable 难以想象的",
+    "f": 10
+  },
+  {
+    "w": "noncontroversial",
+    "m": "adj. 毫无争议的",
+    "n": "non-（不）+ contra-（相反）+ vers- = turn（转）+ -ial → 不会引起\"翻转对立\"的 → 无争议的；同根词：controversial 有争议的, controversy 争议, invert 反转, convert 转变；a noncontroversial topic 毫无争议的话题 / a noncontroversial decision 无争议的决定；noncontroversial（无争议的）≈ uncontroversial（无争议的，更常用）⚠️ 两词同义；non-（不）+ controversial（有争议的）→ 不引起争议的",
+    "f": 10
+  },
+  {
+    "w": "incidental",
+    "m": "adj. 附带的，次要的；伴随的",
+    "n": "in-（在……上）+ cid- = fall（落下）+ -ent + -al → 偶然\"落到\"你身上的 → 附带的；同根词：incident 事件, accident 事故（意外落下）, coincide 巧合；incidental expenses 杂费 / incidental damage 附带损害 / be incidental to sth 伴随某事物而来的；incidental（附带的/次要的）≠ accidental（意外的）⚠️ incidental 强调\"伴随次要\"，accidental 强调\"偶然发生\"；\"The extra costs are incidental to the main project.\" 这些额外费用是主项目的附带支出。cid- = 落下：incident（偶发事件）→ incidental 附带发生的",
+    "f": 10
+  },
+  {
+    "w": "be incidental to sth",
+    "m": "伴随……而来的，对……是次要的",
+    "n": "risks incidental to the job 这份工作附带的风险 / problems incidental to urban life 城市生活伴随的问题；be incidental to（伴随……而来，主次关系）≠ be essential to（对……必不可少，反义）≈ accompany（伴随，动词）；be incidental to = 是……的附带之物",
+    "f": 10
+  },
+  {
+    "w": "vibrant",
+    "m": "adj. 充满活力的，生机勃勃的；鲜艳的",
+    "n": "vibr- = shake（振动）+ -ant → 像在\"振动\"一样有活力 → 充满活力的；同根词：vibrate 振动, vibration 振动；a vibrant city 充满活力的城市 / vibrant colors 鲜艳的色彩 / a vibrant economy 繁荣的经济 / a vibrant community 有生气的社区；vibrant（充满活力的，鲜活的）≈ lively（活泼的）≈ dynamic（动态的/有活力的）≠ vivid（生动的，指描写/记忆清晰）；\"Hong Kong is a vibrant, bustling city.\" 香港是一座充满活力、繁华的城市。城市/文化类阅读高频：vibrant city / vibrant culture；vibr-（振动）→ 心跳\"振动\"不停 → 充满活力",
+    "f": 10
+  },
+  {
+    "w": "benchmark",
+    "m": "n. 基准，基准点；标杆",
+    "n": "bench（长凳/工作台）+ mark（标记）→ 丈量土地时工作台上的标记 → 基准；benchmark index 基准指数 / a benchmark for success 成功的基准 / benchmark against 以……为基准 / industry benchmark 行业基准；benchmark（基准，可衡量对比的标准）≈ standard（标准）≠ baseline（基线，起点水平）；\"The S&P 500 is a benchmark for the US stock market.\" 标普 500 是美国股市的基准。经济/科技阅读：benchmark 常与 performance, index 搭配；bench（工作台）+ mark（记号）→ 刻在工作台上的标准记号 → 基准",
+    "f": 10
+  },
+  {
+    "w": "relocate",
+    "m": "v. 迁移，搬迁，重新安置",
+    "n": "re-（再）+ loc- = place（地点）+ -ate → 换个地方 → 迁移；同根词：locate 定位, location 位置, local 当地的, allocate 分配；relocate to another city 迁往另一城市 / relocate employees 重新安置员工 / relocate the factory 搬迁工厂；relocate（迁移，正式）≈ move（搬家，通用）≈ transfer（调任/转移，职务或物品）；\"The company decided to relocate its headquarters to Shanghai.\" 公司决定把总部迁到上海。经济/职场阅读：relocate 常指公司/工厂迁移；re-（再）+ loc-（地点）→ 换地点 → 迁移",
+    "f": 10
+  },
+  {
+    "w": "upholstered",
+    "m": "adj. 装有软垫的，有衬垫的（家具）",
+    "n": "up- + holster（包裹，枪套）+ -ed → 用填充物\"包\"起来 → 软垫的；同根词：upholster 给……装软垫, upholstery 家具软垫/装饰；an upholstered chair 软垫椅 / upholstered furniture 软垫家具 / a richly upholstered sofa 衬垫厚实的沙发；upholstered（软垫的，家具）≈ cushioned（有坐垫的）≈ padded（加衬垫的，通用）；up + holster（包裹）→ 把椅子\"包\"起来 → 装软垫",
+    "f": 10
+  },
+  {
+    "w": "an upholstered chair",
+    "m": "软垫椅",
+    "n": "a leather-upholstered chair 真皮软垫椅；an upholstered chair（软垫椅，包布/皮座椅）≠ a wooden chair（木椅，无软垫）≈ an armchair（扶手椅，常带软垫）；upholstered（软垫的）+ chair（椅子）→ 软垫椅",
+    "f": 10
+  },
+  {
+    "w": "econometric",
+    "m": "adj. 计量经济学的",
+    "n": "eco-（经济）+ metr- = measure（测量）+ -ic → 用数学方法\"测量\"经济 → 计量经济学的；同根词：econometrics 计量经济学, economy 经济, metric 公制的/度量；econometric models 计量经济模型 / econometric analysis 计量经济分析 / econometric methods 计量经济学方法；⚠️ econometric（计量经济学的）≠ economic（经济的）≠ economical（节约的）三兄弟形近易混；⚠️ economic（经济的）/ economical（节约的）/ econometric（计量经济学的）三词辨析；eco-（经济）+ metric（度量）→ 用度量模型研究经济 → 计量经济",
+    "f": 10
+  },
+  {
+    "w": "hooray",
+    "m": "int. 好极了，万岁",
+    "n": "hooray（欢呼声，拟声词，17 世纪起）；hooray for sb/sth 为……喝彩 / hip hip hooray! 加油！（欢呼语）；hooray / hurrah / hurray 三拼写同义，均为\"万岁/好极了\"；\"Hooray! We won the game!\" 好极了！我们赢了！拟声词：欢呼声\"呼啦\"→ hooray",
+    "f": 10
+  },
+  {
+    "w": "hurrah",
+    "m": "int. 好极了，万岁（hooray 的变体）",
+    "n": "the last hurrah 最后一次亮相/绝唱 / hip hip hurrah! 万岁！；\"Hip hip hurrah!\" 万岁！（喝彩用语）；⚠️ 原文拼写 hurran 有误，正确为 hurrah！与 hooray / hurray 同义，记一个即可",
+    "f": 10
+  },
+  {
+    "w": "hurray",
+    "m": "int. 好极了，万岁（hooray 的变体）",
+    "n": "hurray for the holidays 为假期欢呼；hooray / hurrah / hurray 三拼写同义（欢呼声），无正式/口语之分；hooray / hurrah / hurray 三胞胎，发音相同",
+    "f": 10
+  },
+  {
+    "w": "puritan",
+    "m": "n. 清教徒 / adj. 清教徒的；清教徒式的，严格朴素的",
+    "n": "pur- = pure（纯净）+ -itan（表人）→ 追求\"纯净\"教义的人 → 清教徒；同根词：pure 纯净的, purity 纯净, purify 净化；the Puritans 清教徒（16-17世纪新教派别）/ puritan values 清教徒式的价值观 / a puritan attitude to pleasure 对享乐的清教徒式态度；puritan（清教徒，历史宗教）≠ ascetic（苦行者，禁欲者）≠ hermit（隐士）⚠️ 原文\"苦行僧\"不准确，清教徒 ≠ 苦行僧；pur-（纯净）→ 主张\"净化\"教会的教徒 → 清教徒",
+    "f": 10
+  },
+  {
+    "w": "symbolically",
+    "m": "adv. 象征性地，象征意义上地",
+    "n": "sym-（共同）+ bol- = throw（抛）+ -ical + -ly → 把两件事\"抛\"在一起 → 象征；同根词：symbol 象征/符号, symbolic 象征的, symbolism 象征主义；symbolically significant 具有象征意义的 / act symbolically 象征性地行动；symbolically（象征性地）≠ literally（字面上地，反义）≠ symbolic（象征的，形容词）；\"The gesture was symbolically important.\" 这一姿态具有重要的象征意义。symbol（符号）+ -ically → 作为\"符号\"地 → 象征性地",
+    "f": 10
+  },
+  {
+    "w": "crushingly",
+    "m": "adv. 极其，惨重地（多修饰负面）",
+    "n": "crush（压碎）+ -ing + -ly → 像被压碎一样地 → 极其；crushingly disappointing 令人极度失望 / crushingly defeated 惨败；crushingly（极其，强调\"压倒性\"的负面程度）≈ overwhelmingly（压倒性地）≠ crushing（压碎性的，形容词）；\"The news was crushingly disappointing.\" 这个消息令人极度失望。crush（压碎）+ -ingly → 像泰山压顶 → 极其惨重",
+    "f": 10
+  },
+  {
+    "w": "inescapably",
+    "m": "adv. 不可避免地，无可逃避地",
+    "n": "in-（不）+ escape（逃避）+ -ably → 无法逃避地；同根词：escape 逃避, inescapable 不可避免的, escapable 可逃避的；inescapably linked 密不可分 / inescapably true 千真万确；inescapably（无可逃避地）≈ inevitably（不可避免地）≈ unavoidably（无法避免地）；\"The two issues are inescapably linked.\" 这两个问题密不可分。in-（不）+ escap(e)（逃）+ -ably → 逃不掉地；⚠️ 原文拼写 inescapbly 有误，正确为 inescapably！",
+    "f": 10
   }
 ];
 
