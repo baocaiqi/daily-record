@@ -12,9 +12,6 @@
 | 6 | **misconduct** | n. 不端行为，失职 / v. 管理不当 | `[词根]` mis-（错误）+ conduct（行为，管理）→ 错误行为；`[短语]` professional misconduct 职业不端行为 / sexual misconduct 性行为不端 / scientific misconduct 学术不端 / gross misconduct 严重渎职；`[辨]` misconduct（不端行为，正式用语）≠ wrongdoing（坏事，通用）≠ malpractice（渎职，偏医疗/法律专业）；`[场景]` 法律/职场/学术类阅读 |
 | 7 | **disproportionate** | adj. 不成比例的，不相称的 | `[词根]` dis-（不）+ proportion（比例）+ -ate → 比例不对的；`[短语]` disproportionate impact 不成比例的影响 / a disproportionate share 不成比例的份额 / disproportionate punishment 量刑过重；`[辨]` disproportionate（不成比例的，偏抽象/社会/法律）≠ disproportional（不成比例的，偏数学/统计）→ 两者常可互换，但 disproportionate 使用更广；`[考研]` ⚠️ 原文"不合安排"有误，正确释义为"不成比例的" |
 | 8 | **proportionate** | adj. 成比例的，相称的 | `[词根]` pro-（按照）+ port-（部分，份）+ -ate → 按份分配的 → 成比例的；`[短语]` proportionate response 相称的回应 / proportionate increase 按比例增长 / proportionate to 与…成比例；`[辨]` proportionate ≈ proportional（成比例的），proportionate 偏"相称的/均衡的"，proportional 偏"数学上的比例关系"；`[记忆]` proportion（比例）→ proportionate（成比例的）≠ disproportionate（不成比例的） |
-
----
-
 | 9 | **grieve** | v. 使悲伤；感到悲痛 | `[词根]` grav- = heavy（重）→ 心情沉重 → grieve；`[短语]` grieve over sth 为某事悲痛 / grieve for sb 为某人哀悼 / grieve the loss of 为失去…而悲伤 / it grieves me to say 我很难过地说；`[辨]` ⚠️ 原文误标为"悲伤的"（形容词），grieve 是**动词**！形容词形式是 grieved / grievous / grieving；`[惯用]` "She is still grieving for her husband." 她仍在为丈夫悲痛。`[记忆]` grave（坟墓）→ grieve（悲伤），同根：gravity 重力, aggravate 加重, grief 悲痛 |
 | 10 | **drained** | adj. 精疲力尽的，耗尽的 | `[词根]` drain（排水，耗尽）+ -ed → 被抽干的 → 精疲力尽的；`[短语]` feel drained 感到筋疲力尽 / emotionally drained 情感耗尽的 / financially drained 财力耗尽的；`[惯用]` "I feel completely drained after that meeting." 开完那个会后我完全精疲力尽了。`[记忆]` drain（排水管）→ drained（被排干的 → 没能量了） |
 | 11 | **dire** | adj. 严重的，可怕的，极端的 | `[短语]` dire consequences 严重的后果 / dire straits 困境，绝境 / dire warning 严重警告 / in dire need of 迫切需要… / dire poverty 赤贫；`[辨]` dire（极端严重/可怕，偏灾难性）≠ serious（严肃/严重，通用）≠ severe（严峻，偏程度重）≠ urgent（紧急的）；`[惯用]` "The country is in dire economic straits." 该国陷入了严重的经济困境。 |
@@ -24,18 +21,12 @@
 | 15 | **shaky** | adj. 颤抖的；不稳定的，不可靠的 | `[词根]` shake（摇动）+ -y（形容词）→ 摇摇晃晃的；`[短语]` a shaky hand 颤抖的手 / shaky legs 发抖的腿 / a shaky economy 不稳定的经济 / on shaky ground 基础不稳，站不住脚 / shaky evidence 不可靠的证据；`[惯用]` "The company's finances are on very shaky ground." 这家公司的财务状况非常不稳定。 |
 | 16 | **a shaky economy** | 不稳定的经济 | `[短语]` suffer from a shaky economy 经济动荡 / revive a shaky economy 重振疲软经济 |
 | 17 | **on shaky ground** | 站不住脚，基础不稳 | `[短语]` be on shaky ground 底气不足 / put sb on shaky ground 使某人陷入不利境地；`[惯用]` "Legally speaking, we're on shaky ground." 从法律上讲，我们的立场站不住脚。 |
-
----
-
 | 18 | **filing** | n. 存档，归档；存档文件 | `[词根]` fil- = thread/string（线，穿线）→ 古时文件用线串起来 → file → filing；`[短语]` filing cabinet 文件柜 / filing system 归档系统 / court filing 法院备案 / patent filing 专利申请；`[辨]` filing（归档/存档文件）≠ file（文件夹/文件）≠ filing ≠ filling（填充）；⚠️ 一字之差 |
 | 19 | **a bankruptcy filing** | 破产申请（文件） | `[短语]` submit a bankruptcy filing 提交破产申请 / prepare a bankruptcy filing 准备破产文件；`[场景]` 法律/商业类阅读 |
 | 20 | **wager** | v./n. 打赌，赌注 | `[短语]` make a wager 打个赌 / place a wager on 在…上下注 / a friendly wager 友好的打赌；`[辨]` wager（打赌，偏正式/文学用语）≈ bet（打赌，口语中最常用）；`[惯用]` "I'll wager you a dinner that he shows up late." 我赌他一顿晚餐他肯定会迟到。 |
 | 21 | **make a wager** | 打赌 | `[短语]` make a wager with sb 和某人打赌 / make a wager on the outcome 在结果上下注 |
 | 22 | **turnaround** | n. 周转时间；转变，好转 | `[词根]` turn（转）+ around（过来）→ 转过来 → 好转/周转；`[短语]` a quick turnaround 快速周转 / economic turnaround 经济好转 / a dramatic turnaround 戏剧性的逆转 / turnaround time 周转时间 / turnaround point 转折点；`[考研]` 商业/经济类阅读高频词；`[记忆]` turn（转）+ around（回）→ 转回来 → 情况好转 |
 | 23 | **perpetuity** | n. 永恒，永久 | `[词根]` per-（贯穿，一直）+ pet-（追求）+ -uity → 一直追求下去 → 永恒；`[短语]` in perpetuity 永久地 / in perpetuity and forever 永永远远；`[辨]` ⚠️ 原文误标为"永恒的"（形容词），perpetuity 是**名词**！形容词是 perpetual；`[记忆]` perpetual（永久的 adj.）→ perpetuity（永久 n.）；perpetual motion 永动机 |
-
----
-
 | 24 | **rector** | n. 教区牧师；（大学）校长，院长 | `[词根]` rect- = rule/straight（统治，直）→ rector 统治者 → 牧师/校长；`[短语]` parish rector 教区牧师 / university rector 大学校长 / rector of the church 教堂牧师；`[辨]` rector（英式大学校长/教区牧师）≠ president（美式大学校长）≠ principal（中小学校长）≠ chancellor（名誉校长）；`[记忆]` rect-（统治，直）→ rector（管理者）, direct（指引）, correct（纠正）, rectangle（矩形） |
 | 25 | **geneticist** | n. 基因学家，遗传学家 | `[词根]` gen- = birth/kind（出生，种类）→ gene → genetic → geneticist；`[短语]` molecular geneticist 分子遗传学家 / a leading geneticist 顶尖遗传学家；`[记忆]` gene（基因）→ genetics（遗传学）→ geneticist（遗传学家）；同根：generate 产生, generation 代, genesis 起源 |
 | 26 | **interdisciplinary** | adj. 跨学科的 | `[词根]` inter-（之间）+ discipline（学科）+ -ary → 学科之间的 → 跨学科的；`[短语]` interdisciplinary research 跨学科研究 / interdisciplinary approach 跨学科方法 / interdisciplinary team 跨学科团队 / interdisciplinary studies 跨学科研究；`[辨]` interdisciplinary（跨学科，学科间融合）≠ multidisciplinary（多学科的，多个学科共同参与但不融合）≠ transdisciplinary（超学科的，超越学科界限）；⚠️ ⚠️ 原文拼写有误：interdisplinary → 正确拼写为 interdisciplinary；`[考研]` 学术/教育类阅读高频词 |
@@ -43,17 +34,11 @@
 | 28 | **biomass** | n. 生物量；生物质能 | `[词根]` bio- = life（生命）+ mass（质量，物质）→ 生物的总质量 → 生物量；`[短语]` biomass energy 生物质能 / biomass fuel 生物燃料 / plant biomass 植物生物量 / above-ground biomass 地上生物量；`[考研]` 环保/能源类阅读高频词 |
 | 29 | **courtship** | n. 求偶期；求爱期；追求期 | `[词根]` court（求爱，献殷勤）+ -ship（名词后缀，表状态/行为）→ 求爱行为；`[短语]` courtship ritual 求偶仪式 / courtship period 求偶期 / courtship behavior 求偶行为 / courtship display 求偶展示；`[辨]` ⚠️ 原文拼写有误：coutership → 正确拼写为 courtship；`[惯用]` "Their courtship lasted three years before they married." 他们的恋爱期持续了三年才结婚。`[记忆]` court（法庭/求爱）→ courtship（求偶期），court 的两个意思完全不同！ |
 | 30 | **a knee-jerk reflex** | 膝跳反射 | `[短语]` test the knee-jerk reflex 检查膝跳反射 / knee-jerk reaction 本能反应（比喻义：不加思考的反应）；`[惯用]` "His opposition was just a knee-jerk reaction." 他的反对只是一种本能反应罢了。`[记忆]` knee（膝盖）+ jerk（猛的一动）→ 敲膝盖小腿一弹 → 膝跳反射 |
-
----
-
 | 31 | **inn** | n. 小旅馆，客栈 | `[短语]` a country inn 乡村客栈 / holiday inn 假日酒店 / stay at an inn 住在客栈 / roadside inn 路边客栈；`[辨]` inn（小旅馆，偏传统/乡村/温馨）≠ hotel（酒店，偏现代/大型/城市）≠ motel（汽车旅馆，路边开车可达）≠ hostel（青年旅社）；`[记忆]` inn 小而温馨，类似"隐"居地 |
 | 32 | **enclosure** | n. 围场，圈地；附件（邮件中） | `[词根]` en-（使）+ clos- = close（关）+ -ure → 关起来的地方 → 围场；`[短语]` an enclosure for animals 动物围场 / see enclosure 见附件 / the enclosure movement 圈地运动（英国历史）；`[辨]` ⚠️ 原文释为"围住"（动词），enclosure 是**名词**！动词是 enclose；`[考研]` "圈地运动"是考研英语历史背景知识点 |
 | 33 | **orb** | n. 球体，天体；宝球（王权象征） | `[词根]` orb- = circle/globe（圆，球体）→ orb, orbit, orbital；`[短语]` a golden orb 金色圆球 / the celestial orbs 天体（文学中）/ orb of the sun 太阳天体 / the royal orb 王权宝球（英国王权标志之一）；`[记忆]` orb → orbit（轨道，天体运行的轨道）→ 天体 + 圆球 |
 | 34 | **gravel** | n. 砾石，沙砾 / v. 用砾石铺路 | `[短语]` gravel road 砾石路 / gravel pit 采石场 / a gravel path 碎石小径 / gravel driveway 砾石车道；`[辨]` ⚠️ 原文释为"沙粒"不够准确，gravel 是**砾石/碎石**（粒径大于沙粒，2-64mm）；sand = 沙粒（细）；pebble = 鹅卵石（光滑）；gravel = 砾石（棱角多，铺路用）；`[记忆]` gravel 走在上面 gravel gravel 响 |
 | 35 | **ostrich** | n. 鸵鸟；逃避现实的人 | `[短语]` ostrich policy 鸵鸟政策（比喻自欺欺人）/ bury one's head in the sand like an ostrich 像鸵鸟一样把头埋在沙里 / ostrich feather 鸵鸟羽毛；`[惯用]` "Stop being an ostrich and face reality!" 别当鸵鸟了，面对现实吧！`[记忆]` 鸵鸟遇到危险把头埋沙里 → ostrich 比喻"逃避现实的人" |
-
----
-
 | 36 | **on-trend** | adj. 时髦的，潮流的 | `[短语]` on-trend fashion 时髦的时装 / on-trend colour 流行色 / stay on-trend 保持时尚；`[辨]` on-trend（时髦的，偏消费/时尚，强调当季潮流）≠ trendy（时髦的，偏人/事物，有时带贬义"赶时髦"）≠ fashionable（时尚的，最通用）≠ stylish（有格调的，偏品味）；`[场景]` 时尚/消费类口语和文章 |
 | 37 | **elude** | v. 逃避，躲避；使不能达到 | `[词根]` e-/ex-（出，向外）+ lud- = play（玩）→ 玩到外面去 → 溜走 → 逃避；`[短语]` elude capture 逃避抓捕 / elude the police 躲避警察 / the answer eludes me 我找不到答案 / sleep eludes me 我无法入睡；`[惯用]` "The exact meaning eludes me." 我琢磨不透确切含义。`[记忆]` lud- = play → elude（溜走/逃避）, allude（暗指）, delude（欺骗）, illusion（幻觉） |
 | 38 | **elusive** | adj. 难以获得（或达到/捕捉/描述）的；逃避的 | `[词根]` e-（外）+ lud-（玩）+ -ive → 玩消失的 → 难以捉摸的；`[短语]` an elusive goal 难以达到的目标 / elusive concept 难以理解的概念 / elusive criminal 在逃罪犯 / a most elusive quality 最难能可贵的品质；`[惯用]` "Happiness can be an elusive thing." 幸福有时难以捉摸。 |
