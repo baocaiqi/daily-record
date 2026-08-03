@@ -3595,14 +3595,28 @@ function updateQuizUI() {
 // ===== REVIEW =====
 function renderReviewList() {
   const filter = dom.reviewFilter.value;
-  let entries = Object.entries(state.wordStatus);
-  if (filter === 'mastered') entries = entries.filter(([,s]) => s === 'mastered');
-  if (filter === 'learning') entries = entries.filter(([,s]) => s === 'learning');
-  if (filter === 'errors') entries = Object.entries(state.wordErrors).filter(([,c]) => c > 0);
-  if (filter === 'all') {
-    entries = WORDS.map(w => [w.w, state.wordStatus[w.w] || 'untouched']);
+  const range = dom.rangeSelect.value;
+  const inRange = w => range === 'all' || w.f === parseInt(range);
+
+  let entries;
+  if (filter === 'errors') {
+    entries = Object.entries(state.wordErrors)
+      .map(([word, c]) => [word, c, WORDS.find(x => x.w === word)])
+      .filter(([, , w]) => w && inRange(w))
+      .map(([word, c]) => [word, c]);
+  } else {
+    entries = Object.entries(state.wordStatus)
+      .map(([word, s]) => [word, s, WORDS.find(x => x.w === word)])
+      .filter(([, , w]) => w && inRange(w))
+      .map(([word, s]) => [word, s]);
   }
-  dom.reviewCount.textContent = `共 ${entries.length} 个`;
+  if (filter === 'mastered') entries = entries.filter(([, s]) => s === 'mastered');
+  if (filter === 'learning') entries = entries.filter(([, s]) => s === 'learning');
+  if (filter === 'all') {
+    entries = WORDS.filter(inRange).map(w => [w.w, state.wordStatus[w.w] || 'untouched']);
+  }
+  const rangeLabel = dom.rangeSelect.options[dom.rangeSelect.selectedIndex].text;
+  dom.reviewCount.textContent = `共 ${entries.length} 个 · ${rangeLabel}`;
 
   dom.wordList.innerHTML = entries.map(([word, status]) => {
     const w = WORDS.find(x => x.w === word);
@@ -3638,6 +3652,15 @@ dom.wordInput.addEventListener('keydown', e => {
 dom.btnStart.addEventListener('click', () => {
   initDictation();
   dom.btnStart.textContent = '重新开始';
+});
+
+// Changing the range takes effect immediately on the active dictation session
+dom.rangeSelect.addEventListener('change', () => {
+  if (state.mode === 'dictation' && state.started) {
+    initDictation();
+    showToast('范围已切换');
+  }
+  renderReviewList();
 });
 
 dom.btnHint.addEventListener('click', giveHint);
