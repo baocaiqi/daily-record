@@ -1,37 +1,37 @@
 # 📚 CET-6 单词本 (5)
 
-> 标注说明：`[词根]` = 词根/词缀注释 | `[短语]` = 固定搭配 | `[辨]` = 辨析 | `[场景]` = 场景偏好 | `[考研]` = 考研高频考点 | `[惯用]` = Native Speaker 惯用表达 | `[记忆]` = 记忆技巧
+> 标注说明：`[词根]` = 词根/词缀注释 | `[短语]` = 固定搭配 | `[辨]` = 辨析 | `[场景]` = 场景偏好 | `[考点]` = 高频考点 | `[惯用]` = Native Speaker 惯用表达 | `[记忆]` = 记忆技巧
 
 | # | 单词/短语 | 释义 | 备注 |
 |---|-----------|------|------|
-| 1 | **quarantine** | 隔离期；检疫 | `[词根]` quar- = forty（意大利语 quaranta → 威尼斯曾要求船只隔离 40 天）；`[短语]` in quarantine 在隔离期 / self-quarantine 自我隔离 / put sb in quarantine 将某人隔离；`[考研]` 公共健康/社会类阅读高频词；`[记忆]` quar-（四十）→ 40 天隔离 → quarantine |
-| 2 | **pneumonia** | 肺炎 | `[词根]` pneumon- = lung（肺）→ 衍生：pneumatic 气动的；`[考研]` 医学/公共卫生类阅读常见；`[记忆]` ⚠️ p 不发音！pneumon- 中首字母 p 不发音，类似 psychology, pneumonia, pterodactyl |
-| 3 | **pendulum** | 钟摆 | `[词根]` pend- = hang（悬挂）→ depend, suspend, pending, pendulum；`[短语]` pendulum clock 摆钟 / the swing of the pendulum 钟摆的摆动（比喻舆论/趋势的转变）；`[惯用]` the pendulum has swung (back) 风水轮流转，风向变了；`[考研]` 议论文中常见比喻"钟摆效应" |
+| 1 | **quarantine** | 隔离期；检疫 | `[词根]` quar- = forty（意大利语 quaranta → 威尼斯曾要求船只隔离 40 天）；`[短语]` in quarantine 在隔离期 / self-quarantine 自我隔离 / put sb in quarantine 将某人隔离；`[考点]` 公共健康/社会类阅读高频词；`[记忆]` quar-（四十）→ 40 天隔离 → quarantine |
+| 2 | **pneumonia** | 肺炎 | `[词根]` pneumon- = lung（肺）→ 衍生：pneumatic 气动的；`[考点]` 医学/公共卫生类阅读常见；`[记忆]` ⚠️ p 不发音！pneumon- 中首字母 p 不发音，类似 psychology, pneumonia, pterodactyl |
+| 3 | **pendulum** | 钟摆 | `[词根]` pend- = hang（悬挂）→ depend, suspend, pending, pendulum；`[短语]` pendulum clock 摆钟 / the swing of the pendulum 钟摆的摆动（比喻舆论/趋势的转变）；`[惯用]` the pendulum has swung (back) 风水轮流转，风向变了；`[考点]` 议论文中常见比喻"钟摆效应" |
 | 4 | **contingent** | adj. 视情况而定的 / n. 代表团 | `[短语]` be contingent on/upon sth 取决于…，受…影响；`[辨]` ⚠️ contingent（取决于…的）≠ continent（大陆）；`[词根]` con-（共同）+ ting-/tact-（接触，touch）→ 因接触而关联 → contingent, contact, tangible；`[记忆]` contact（接触）→ contingent（接触才发生的 → 视情况而定） |
 | 5 | **mosquito** | 蚊子 | `[短语]` mosquito net 蚊帐 / mosquito repellent 驱蚊剂 / mosquito bite 蚊子叮咬；`[记忆]` 西班牙语 mosquito = mosca（苍蝇）+ -ito（小后缀）→ 小苍蝇 → 蚊子 |
-| 6 | **conspiracy** | 阴谋，共谋 | `[词根]` spir- = breathe（呼吸：con- 共同 + spire 呼吸 → 一个鼻孔出气）；`[参考]` 已见于 words1 #14；`[短语]` conspiracy theory 阴谋论；`[考研]` 社科类阅读常见 |
+| 6 | **conspiracy** | 阴谋，共谋 | `[词根]` spir- = breathe（呼吸：con- 共同 + spire 呼吸 → 一个鼻孔出气）；`[参考]` 已见于 words1 #14；`[短语]` conspiracy theory 阴谋论；`[考点]` 社科类阅读常见 |
 | 7 | **conspire** | 密谋；共同导致 | `[短语]` conspire against sb 密谋反对某人 / conspire to do sth 合谋做某事 / events conspired to... 各种因素凑在一起…（拟人用法）；`[惯用]` events conspired against us 事事都不顺（命运作对，高级表达） |
-| 8 | **spiral** | n./v. 螺旋（式上升/下降）| `[参考]` 已见于 words1 #11；`[短语]` spiral out of control 失控地急剧上升（或恶化）/ downward spiral 恶性循环，每况愈下 / inflationary spiral 螺旋式通胀；`[考研]` 经济/社会类图表作文常用词 |
+| 8 | **spiral** | n./v. 螺旋（式上升/下降）| `[参考]` 已见于 words1 #11；`[短语]` spiral out of control 失控地急剧上升（或恶化）/ downward spiral 恶性循环，每况愈下 / inflationary spiral 螺旋式通胀；`[考点]` 经济/社会类图表作文常用词 |
 | 9 | **governor** | 州长；总督；理事 | `[词根]` govern- = steer（掌舵，管理）→ govern, government, governance；`[辨]` governor（人：州长/管理者）≠ government（机构：政府）；`[短语]` the Governor of New York 纽约州州长 / board of governors 理事会；`[记忆]` govern + -or（做…的人）→ 掌舵的人 → 州长 |
-| 10 | **diplomacy** | 外交；外交手腕 | `[词根]` diploma-（官方文件/文凭）→ diplomacy, diplomat, diplomatic；`[短语]` shuttle diplomacy 穿梭外交 / quiet diplomacy 秘密外交 / dollar diplomacy 金元外交；`[考研]` 国际关系/政治类阅读高频词 |
-| 11 | **legitimate** | 合法的；合理的；正统的 | `[词根]` leg- = law（法律）→ legal, legitimate, legislate, legislature；`[短语]` legitimate heir 合法继承人 / legitimate concern 合理的担忧 / legitimate business 合法生意；`[辨]` legitimate（合法+正统，强调正当性）≠ legal（法律上的，偏技术性）≠ lawful（依法的，偏古雅）；`[考研]` 法律/政治类阅读核心词 |
-| 12 | **legislature** | 立法机关 | `[词根]` legis-（法律）+ lat-（提出，bring forward）→ 提出法律的机构；`[辨]` ⚠️ 原文"司法机关"有误！legislature = 立法机关 ≠ judiciary 司法机关 ≠ executive 行政机关；`[考研]` 三权分立话题必考词 |
-| 13 | **intervention** | 干涉，介入，干预 | `[词根]` inter-（之间）+ ven-（来，come）→ 来到中间 → 介入 → intervene, intervention, convene, prevent；`[短语]` government intervention 政府干预 / military intervention 军事干预 / medical intervention 医疗干预；`[考研]` 政治/经济类阅读高频词；`[记忆]` inter（之间）+ vent（来）→ 走到中间来 → 干预 |
+| 10 | **diplomacy** | 外交；外交手腕 | `[词根]` diploma-（官方文件/文凭）→ diplomacy, diplomat, diplomatic；`[短语]` shuttle diplomacy 穿梭外交 / quiet diplomacy 秘密外交 / dollar diplomacy 金元外交；`[考点]` 国际关系/政治类阅读高频词 |
+| 11 | **legitimate** | 合法的；合理的；正统的 | `[词根]` leg- = law（法律）→ legal, legitimate, legislate, legislature；`[短语]` legitimate heir 合法继承人 / legitimate concern 合理的担忧 / legitimate business 合法生意；`[辨]` legitimate（合法+正统，强调正当性）≠ legal（法律上的，偏技术性）≠ lawful（依法的，偏古雅）；`[考点]` 法律/政治类阅读核心词 |
+| 12 | **legislature** | 立法机关 | `[词根]` legis-（法律）+ lat-（提出，bring forward）→ 提出法律的机构；`[辨]` ⚠️ 原文"司法机关"有误！legislature = 立法机关 ≠ judiciary 司法机关 ≠ executive 行政机关；`[考点]` 三权分立话题必考词 |
+| 13 | **intervention** | 干涉，介入，干预 | `[词根]` inter-（之间）+ ven-（来，come）→ 来到中间 → 介入 → intervene, intervention, convene, prevent；`[短语]` government intervention 政府干预 / military intervention 军事干预 / medical intervention 医疗干预；`[考点]` 政治/经济类阅读高频词；`[记忆]` inter（之间）+ vent（来）→ 走到中间来 → 干预 |
 | 14 | **harbour** | n. 港口 / v. 庇护；心怀（情感）| `[辨]` harbour（英式）= harbor（美式）；`[短语]` safe harbour 避风港 / harbour a grudge 心怀怨恨 / harbour doubts 心怀疑虑 / harbour a criminal 窝藏罪犯；`[惯用]` to harbour a secret desire 心中藏着秘密的渴望（文学性表达）|
-| 15 | **enclose** | 围住；随函附上 | `[词根]` en-（使，进入）+ close（关闭）→ 关在里面；`[短语]` enclose a cheque 附上支票 / please find enclosed... 随函附上…请查收… / enclose a garden with a fence 用篱笆围住花园；`[考研]` 正式信函/商务英语常用语；`[惯用]` Enclosed please find...（正式信函用语："随函附上…请查收"）|
-| 16 | **encompass** | 包含，包括；围绕 | `[词根]` en-（使进入）+ compass（范围，罗盘）→ 纳入范围之内 → 包含；`[短语]` encompass a wide range of 涵盖广泛的 / encompass all aspects of 涵盖…的方方面面；`[考研]` 学术写作高频替换词 = include/cover/embrace；`[记忆]` compass 是罗盘/范围 → encompass 是把…圈进范围 → 包含 |
+| 15 | **enclose** | 围住；随函附上 | `[词根]` en-（使，进入）+ close（关闭）→ 关在里面；`[短语]` enclose a cheque 附上支票 / please find enclosed... 随函附上…请查收… / enclose a garden with a fence 用篱笆围住花园；`[考点]` 正式信函/商务英语常用语；`[惯用]` Enclosed please find...（正式信函用语："随函附上…请查收"）|
+| 16 | **encompass** | 包含，包括；围绕 | `[词根]` en-（使进入）+ compass（范围，罗盘）→ 纳入范围之内 → 包含；`[短语]` encompass a wide range of 涵盖广泛的 / encompass all aspects of 涵盖…的方方面面；`[考点]` 学术写作高频替换词 = include/cover/embrace；`[记忆]` compass 是罗盘/范围 → encompass 是把…圈进范围 → 包含 |
 | 17 | **encounter** | v./n. 遭遇；邂逅；经历 | `[词根]` en-（使）+ counter（= contra，对抗，面对面）→ 面对面相遇；`[短语]` encounter difficulties/problems 遇到困难 / a chance encounter 偶遇，邂逅 / close encounter 近距离接触；`[惯用]` a brief encounter 一次短暂的邂逅（浪漫/文学语境）|
-| 18 | **intrude on/into** | 闯入；侵扰；打断 | `[词根]` trud- = thrust（推，插入）→ intrude（往里推 → 闯入），extrude（往外推 → 挤出），protrude（往前推 → 突出）；`[短语]` intrude on one's privacy 侵犯隐私 / intrude into a conversation 打断谈话 / I don't mean to intrude 我不是有意打扰；`[考研]` 社会/伦理类阅读 |
+| 18 | **intrude on/into** | 闯入；侵扰；打断 | `[词根]` trud- = thrust（推，插入）→ intrude（往里推 → 闯入），extrude（往外推 → 挤出），protrude（往前推 → 突出）；`[短语]` intrude on one's privacy 侵犯隐私 / intrude into a conversation 打断谈话 / I don't mean to intrude 我不是有意打扰；`[考点]` 社会/伦理类阅读 |
 | 19 | **soil your hands** | 弄脏你的手 | `[短语]` soil one's hands (with sth) 弄脏手（也比喻参与不光彩之事）/ not soil one's hands 不愿弄脏手（不屑为伍）；`[辨]` soil（弄脏，较正式/文学）≠ dirty（弄脏，口语通用）；`[惯用]` "I wouldn't soil my hands with such dirty work." 这种脏活我才不碰。 |
 | 20 | **make one's debut** | 首次登场，首秀 | `[短语]` make one's debut 首次亮相 / debut album 首张专辑 / debut performance 首场演出 / debut novel 处女作；`[记忆]` debut 源自法语 début（开始，开端）；`[惯用]` make one's grand debut 盛大登场 |
 | 21 | **procession** | 队伍，行列 | `[词根]` pro-（向前）+ cess-（走，go）→ 向前走 → procession, process, proceed, procession；`[短语]` funeral procession 送葬队伍 / in procession 列队行进 / wedding procession 婚礼队伍；`[辨]` procession（行进中的队伍）≠ parade（游行/阅兵，偏庆祝） |
 | 22 | **cemetery** | 公墓，墓地 | `[辨]` cemetery（公墓，非教堂所属）≠ graveyard（教堂墓地）≠ tomb（坟墓单体）；`[记忆]` ⚠️ 拼写：ceme**t**ery，容易错写成 cemetary。记忆：cemetery 里面全是 e（ce-m-e-t-e-ry，一个 a 都没有）|
-| 23 | **naked** | 裸体的；赤裸裸的 | `[短语]` naked eye 肉眼 / stark naked 一丝不挂 / the naked truth 赤裸裸的事实 / naked flame 明火；`[辨]` naked（裸体，通用）≠ nude（裸体，偏艺术/正式/摄影）≠ bare（光秃的，如 bare foot 赤脚）；`[考研]` 文学/描述性阅读中常见 |
-| 24 | **lucrative** | 获利多的，赚钱的 | `[词根]` lucr- = gain/profit（利润）→ lucrative, lucre（钱财，贬义）；`[短语]` a lucrative business/deal 有利可图的生意 / a lucrative career 高薪职业；`[考研]` 经济/商业类阅读高频词；`[记忆]` lucre（钱，谐音"路阔"有钱路才阔）→ lucrative 有利可图的 |
-| 25 | **anecdotal** | 轶事的，趣闻的；传闻的 | `[词根]` an-（不，未）+ ec-/ex-（出）+ dot-（给，give）→ 未公开给出的（故事）→ anecdote 轶事 → anecdotal 轶事的；`[短语]` anecdotal evidence 传闻性证据（不严谨的证据）；`[考研]` 论证/批判性阅读中用以指"传闻的，缺乏科学依据的"；`[记忆]` anecdote（轶事，小故事）→ anecdotal（轶事的） |
+| 23 | **naked** | 裸体的；赤裸裸的 | `[短语]` naked eye 肉眼 / stark naked 一丝不挂 / the naked truth 赤裸裸的事实 / naked flame 明火；`[辨]` naked（裸体，通用）≠ nude（裸体，偏艺术/正式/摄影）≠ bare（光秃的，如 bare foot 赤脚）；`[考点]` 文学/描述性阅读中常见 |
+| 24 | **lucrative** | 获利多的，赚钱的 | `[词根]` lucr- = gain/profit（利润）→ lucrative, lucre（钱财，贬义）；`[短语]` a lucrative business/deal 有利可图的生意 / a lucrative career 高薪职业；`[考点]` 经济/商业类阅读高频词；`[记忆]` lucre（钱，谐音"路阔"有钱路才阔）→ lucrative 有利可图的 |
+| 25 | **anecdotal** | 轶事的，趣闻的；传闻的 | `[词根]` an-（不，未）+ ec-/ex-（出）+ dot-（给，give）→ 未公开给出的（故事）→ anecdote 轶事 → anecdotal 轶事的；`[短语]` anecdotal evidence 传闻性证据（不严谨的证据）；`[考点]` 论证/批判性阅读中用以指"传闻的，缺乏科学依据的"；`[记忆]` anecdote（轶事，小故事）→ anecdotal（轶事的） |
 | 26 | **explicatory** | 解释的，说明的 | `[词根]` ex-（向外）+ plic-（折叠，fold）→ 向外展开 → 解释；`[辨]` explicatory（解释性的，较正式/学术）= explanatory（解释的，更常用）；`[词根拓展]` plic-/ply- = fold → explicit 明确的（展开来的），implicit 含蓄的（折在里面的），complicate 复杂的（折在一起）；`[记忆]` explicit（明确的）→ explicatory（解释的） |
 | 27 | **headhunter** | 猎头；物色人才的人 | `[短语]` corporate headhunter 企业猎头 / executive headhunter 高管猎头；`[记忆]` head（头脑，人才）+ hunter（猎人）→ 猎人才的人 → 猎头；`[惯用]` "I got headhunted by Google." 我被谷歌挖走了。（headhunt 作动词） |
-| 28 | **chap** | 小伙子，家伙 | `[惯用]` old chap 老兄（英式口语）/ a decent chap 一个体面的小伙子 / poor chap 可怜的家伙；`[场景]` 英式英语日常口语高频词，美式较少使用；`[考研]` 英式英语阅读中常见的人物称呼 |
+| 28 | **chap** | 小伙子，家伙 | `[惯用]` old chap 老兄（英式口语）/ a decent chap 一个体面的小伙子 / poor chap 可怜的家伙；`[场景]` 英式英语日常口语高频词，美式较少使用；`[考点]` 英式英语阅读中常见的人物称呼 |
 | 29 | **people of all stripes** | 各种类型的人，三教九流 | `[惯用]` of all stripes = of all kinds/types/backgrounds；`[短语]` politicians of all stripes 各党派政治家 / people of all stripes and colors 形形色色的人；`[记忆]` stripe（条纹）→ 不同条纹 → 不同类型/派别 → of all stripes 各种类型的 |
 | 30 | **shell** | n. 壳 / v. 剥壳 | `[短语]` shell out (for sth) 付一大笔钱 / come out of one's shell 不再害羞，开始活跃 / turtle shell 乌龟壳 / shell corporation 空壳公司；`[惯用]` shell out 掏钱（不情愿地花大钱）：I had to shell out $500 for the repair. 我不得不掏了 500 美元修理费。；`[记忆]` shell out → 像剥壳一样"掏"出钱来 |
 | 31 | **jug** | 壶，罐（带柄和嘴）| `[短语]` milk jug 牛奶壶 / a jug of water 一壶水 / measuring jug 量杯；`[辨]` jug（带柄和嘴的壶）≠ jar（广口罐，储物用）≠ mug（杯子，喝水用）≠ pitcher（大水罐，美式）= jug（英式）|
@@ -44,7 +44,7 @@
 | 38 | **shrub** | 灌木 | `[辨]` shrub（灌木，单株可观赏）≠ bush（灌木丛，成片的）≠ tree（树，有明显主干）≠ herb（草本植物）；`[短语]` evergreen shrub 常绿灌木 / flowering shrub 开花灌木 |
 | 39 | **pea** | 豌豆 | `[短语]` green peas 青豌豆 / like two peas in a pod 一个模子里刻出来的，一模一样；`[惯用]` They are like two peas in a pod.（形容两个人极其相似）；`[记忆]` pea 的常用复数 peas，pea soup 豌豆汤 |
 | 40 | **garlic** | 大蒜 | `[短语]` garlic bread 蒜香面包 / a clove of garlic 一瓣蒜 / garlic press 压蒜器 / garlic breath 大蒜味口气；`[记忆]` gar-（像矛 gar）+ lic（像韭 leek）→ 大蒜 |
-| 41 | **cattle** | 牛（总称，集合名词）| `[辨]` ⚠️ cattle 是牛的集合名词，不可数，谓语用复数！例：The cattle are grazing. 牛在吃草。cattle ≠ cow（母牛/奶牛）≠ ox（阉公牛，干活用）≠ bull（公牛，斗牛用）；`[短语]` a herd of cattle 一群牛 / dairy cattle 奶牛 / beef cattle 肉牛；`[考研]` 集合名词用法辨析是语法常考点 |
+| 41 | **cattle** | 牛（总称，集合名词）| `[辨]` ⚠️ cattle 是牛的集合名词，不可数，谓语用复数！例：The cattle are grazing. 牛在吃草。cattle ≠ cow（母牛/奶牛）≠ ox（阉公牛，干活用）≠ bull（公牛，斗牛用）；`[短语]` a herd of cattle 一群牛 / dairy cattle 奶牛 / beef cattle 肉牛；`[考点]` 集合名词用法辨析是语法常考点 |
 | 42 | **ox** | 牛（阉公牛，用于劳作）| `[辨]` ox（阉公牛，干活的）≠ bull（未阉公牛，斗牛）≠ cow（母牛/奶牛）≠ cattle（牛的总称）；复数：oxen；`[短语]` as strong as an ox 像牛一样强壮 |
 | 43 | **goose** | 鹅 | 复数：geese /g iː s/；`[短语]` roast goose 烤鹅 / wild goose chase 徒劳的追寻 / cook one's goose 毁掉某人的机会/前途 / what's good for the goose is good for the gander 适用于一方也适用于另一方，一碗水端平；`[惯用]` "Your goose is cooked!" 你完蛋了！ |
 | 44 | **cock** | 公鸡 | `[辨]` cock（英式：公鸡） = rooster（美式：公鸡）；`[短语]` cock crow 公鸡打鸣 / cock fight 斗鸡；⚠️ cock 在口语中另有粗俗义（阴茎），正式写作中慎用，优先用 rooster |
@@ -102,7 +102,7 @@
 
 ---
 
-### 🎯 考研高频考点速记
+### 🎯 高频考点速记
 
 | 考点 | 说明 |
 |------|------|
@@ -112,4 +112,4 @@
 | **intrude 的词根 trud-** | 各种"推"：intrude 往里推（闯入），extrude 往外推（挤出），protrude 向前推（突出） |
 | **plic- 词根家族** | explicit 展开的 → 明确的 / implicit 折里面的 → 含蓄的 / complicate 折一起 → 复杂的 |
 | **pendulum 的比喻义** | the pendulum has swung = 舆论/趋势已转变（议论文万能表达） |
-| **anecdotal evidence** | 考研阅读常见批判性论证术语 = "传闻证据，不足为据" |
+| **anecdotal evidence** | 阅读常见批判性论证术语 = "传闻证据，不足为据" |
