@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
-const WORDS_FILES = ['words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md', 'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md'];
+const WORDS_FILES = ['words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md', 'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md', 'words11.md'];
 
 // ===== Parse markdown tables =====
 function parseWordTable(md, fileIndex) {
@@ -138,7 +138,7 @@ fs.writeFileSync(outPath, html, 'utf-8');
 console.log(`\n✓ Written ${html.length} bytes to ${outPath}`);
 
 // Summary per file
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 11; i++) {
   const count = allWords.filter(w => w.f === i).length;
   console.log(`  words${i}: ${count} words`);
 }

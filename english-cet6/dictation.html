@@ -124,7 +124,7 @@ button{cursor:pointer;border:none;background:none}
   <div class="header">
     <h1>📖 CET-6 词汇默写</h1>
     <p id="mode-desc">看中文释义，写出英文单词</p>
-    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~10.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
+    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~11.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
   </div>
 
   <!-- Tabs -->
@@ -162,6 +162,7 @@ button{cursor:pointer;border:none;background:none}
           <option value="8">words8 (进阶)</option>
           <option value="9">words9 (进阶)</option>
           <option value="10">words10 (进阶)</option>
+          <option value="11">words11 (进阶)</option>
         </select>
       </label>
       <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
@@ -3064,6 +3065,384 @@ const WORDS = [
     "m": "adv. 不可避免地，无可逃避地",
     "n": "in-（不）+ escape（逃避）+ -ably → 无法逃避地；同根词：escape 逃避, inescapable 不可避免的, escapable 可逃避的；inescapably linked 密不可分 / inescapably true 千真万确；inescapably（无可逃避地）≈ inevitably（不可避免地）≈ unavoidably（无法避免地）；\"The two issues are inescapably linked.\" 这两个问题密不可分。in-（不）+ escap(e)（逃）+ -ably → 逃不掉地；⚠️ 原文拼写 inescapbly 有误，正确为 inescapably！",
     "f": 10
+  },
+  {
+    "w": "howl",
+    "m": "v./n. 嚎叫，长啸；（风）呼啸",
+    "n": "拟声词，模仿狼嚎/风声；howl with pain 疼得嚎叫 / the wind howled 风在呼啸 / howls of laughter 哄堂大笑；howl（狼/风的长嚎）≠ bark（狗吠）≠ roar（狮吼/轰鸣）≠ scream（尖叫）；\"The baby howled all night.\" 婴儿哭嚎了一整夜。拟声词 howl，听起来就像\"嚎\"",
+    "f": 11
+  },
+  {
+    "w": "hurl",
+    "m": "v. 猛扔，猛掷；大声叫骂",
+    "n": "中古英语 hurlen（猛投）；hurl a stone at sb 朝某人扔石头 / hurl insults at 大声辱骂 / hurl oneself at 扑向；⚠️ 原文误作\"拖，拉\"！hurl = 猛扔（throw forcefully）；\"拖，拉\"是 haul / drag；\"He hurled the ball across the field.\" 他把球猛掷过球场。hurl 谐音\"吼\"→ 边吼边扔 → 猛扔",
+    "f": 11
+  },
+  {
+    "w": "hurl a stone",
+    "m": "扔石头",
+    "n": "hurl a stone at the window 朝窗户扔石头 / hurl stones at protesters 朝抗议者扔石头；hurl a stone（猛掷，用力）≠ throw a stone（扔，一般）≠ cast a stone（扔，文学/圣经用语）；hurl（猛扔）+ a stone → 用力掷石",
+    "f": 11
+  },
+  {
+    "w": "fume",
+    "m": "v. 发怒，恼火；冒烟 / n. 烟雾（fumes）",
+    "n": "fum- = smoke（烟）→ fume, perfume 香水, fumigate 烟熏消毒；fume at/over sth 因…而恼火 / be fuming with rage 怒不可遏 / exhaust fumes 尾气 / toxic fumes 有毒烟雾；\"She was fuming at the delay.\" 她对延误感到恼火。气得\"冒烟\"（fume 本义冒烟）→ 发怒",
+    "f": 11
+  },
+  {
+    "w": "fume with anger",
+    "m": "气得直冒烟，怒不可遏",
+    "n": "⚠️ 原文 \"fume with angry\" 有误：with 后接名词 anger，不是形容词 angry；fume with anger at the news 听到消息怒不可遏；fume（冒烟）+ anger（愤怒）→ 愤怒到冒烟",
+    "f": 11
+  },
+  {
+    "w": "impart",
+    "m": "v. 传授，赋予；告知",
+    "n": "im-（向内）+ part- = share（分享，部分）→ 分给 → 传授；impart knowledge 传授知识 / impart information 告知信息 / impart a sense of 赋予…的感觉；impart（传授知识/品质，正式）≠ convey（传达信息，通用）≠ teach（教，最通用）；正式写作/教育语境；part（部分）→ 把自己的\"一部分\"分给他人 → 传授",
+    "f": 11
+  },
+  {
+    "w": "impart sth to sb",
+    "m": "把…传授给某人；赋予某人…",
+    "n": "impart wisdom to the young 向年轻人传授智慧 / impart confidence to students 赋予学生自信；固定搭配 impart A to B，介词 to 不可省略；impart（传授）+ to（给）→ 传给某人",
+    "f": 11
+  },
+  {
+    "w": "commemorate",
+    "m": "v. 纪念，庆祝",
+    "n": "com-（一起）+ memor- = remember（记住）+ -ate → 一起记住 → 纪念；同根词：memory 记忆, memorial 纪念碑, memorable 难忘的；commemorate the victory 纪念胜利 / a statue commemorating the war hero 纪念战争英雄的雕像；commemorate（纪念，正式，指仪式/建筑）≠ celebrate（庆祝，欢庆）≠ remember（记住，一般）；\"The monument commemorates the soldiers who died in the war.\" 这座纪念碑纪念战争中牺牲的士兵。memory（记忆）→ 让…留在记忆里 → 纪念",
+    "f": 11
+  },
+  {
+    "w": "hail",
+    "m": "v. 欢呼，称赞；招呼 / n. 冰雹；一阵",
+    "n": "古诺斯语 heill = healthy（祝健康）→ 欢呼；hail sb/sth as 把…誉为 / hail a taxi 打出租车 / a hail of bullets 一阵弹雨 / hailstorm 冰雹；hail（称赞/招呼）≠ praise（表扬）≠ greet（打招呼）；\"The film was hailed as a masterpiece.\" 这部电影被誉为杰作。下冰雹时人们大喊 hail → 欢呼/招呼",
+    "f": 11
+  },
+  {
+    "w": "knob",
+    "m": "n. 旋钮；球形把手；小块",
+    "n": "中古英语 knobbe（圆形突出物）；turn the knob 转动旋钮 / door knob 门把手 / a knob of butter 一小块黄油；knob（圆形旋钮/把手）≠ handle（把手，长条形）≠ button（按钮，按键）；knob 圆滚滚的像\"脑瓜\"→ 圆把手",
+    "f": 11
+  },
+  {
+    "w": "knot",
+    "m": "n. 结；节（船速单位）/ v. 打结",
+    "n": "古英语 cnotta（结）；tie a knot 打个结 / loosen a knot 解开结 / tie the knot 结婚（惯用）/ at a speed of 20 knots 时速 20 节；knot（结）≠ not（不，同音异形）；\"They tied the knot last summer.\" 他们去年夏天结婚了。knot 的 k 不发音！/nɒt/ 与 not 同音",
+    "f": 11
+  },
+  {
+    "w": "tie a knot",
+    "m": "打个结",
+    "n": "tie a knot in the rope 在绳子上打个结 / tie a knot loosely 松松地打个结；tie 的过去式是 tied，勿写成 tyed；tie（系）+ knot（结）→ 系个结",
+    "f": 11
+  },
+  {
+    "w": "valve",
+    "m": "n. 阀门，气门；（心脏）瓣膜",
+    "n": "拉丁语 valva（门扇）→ 阀门像门一样开合；safety valve 安全阀 / heart valve 心脏瓣膜 / valve stem 气门杆；valve（阀门，控制流体）≠ faucet/tap（水龙头）≠ switch（开关，电）；valve 谐音\"阀门\"→ 阀门",
+    "f": 11
+  },
+  {
+    "w": "rim",
+    "m": "n. 边缘；轮辋",
+    "n": "古英语 rima（边缘）；the rim of a cup 杯口 / wheel rim 轮辋 / the rim of the canyon 峡谷边缘；rim（圆形物体的边缘/口）≠ edge（边缘，通用）≠ brim（杯/帽边缘）≠ verge（边缘，抽象）；rim 音近\"圆\"→ 圆形的边",
+    "f": 11
+  },
+  {
+    "w": "climax",
+    "m": "n./v. 高潮，顶点",
+    "n": "希腊语 klimax = ladder（梯子）→ 爬到梯子顶端 → 高潮；reach a climax 达到高潮 / come to a climax 进入高潮 / the climax of the story 故事的高潮；climax（高潮，顶点）≠ summit（顶峰，山峰/会议）≠ peak（峰值）≠ apex（尖端）；阅读中常考：climax 指情节/事态发展的最高潮点；clim-ax → climb（爬）→ 爬到最高处 → 高潮",
+    "f": 11
+  },
+  {
+    "w": "utmost",
+    "m": "adj. 极度的，最大的 / n. 极限，最大可能",
+    "n": "ut-（= out 向外）+ most（最）→ 最外面的 → 极端的；with the utmost care 极其小心 / of the utmost importance 极为重要 / do one's utmost 竭尽全力；⚠️ 原文拼为 umost 有误！正确拼写 utmost；utmost（极度的）≠ almost（几乎）；\"I did my utmost to help.\" 我尽了最大努力帮忙。out + most → 最外面 → 到顶 → 极度的",
+    "f": 11
+  },
+  {
+    "w": "do one's utmost",
+    "m": "竭尽全力",
+    "n": "do one's utmost to do sth 竭尽全力做某事 / try one's utmost 尽最大努力；do one's utmost（竭尽全力，正式）≈ spare no effort（不遗余力）≈ do one's best（尽力，口语）；写作高分表达：do one's utmost to do 比 try one's best 更正式；utmost（极限）→ 做到极限 → 竭尽全力",
+    "f": 11
+  },
+  {
+    "w": "acuity",
+    "m": "n. 敏锐，灵敏（尤指视力、思维）",
+    "n": "acu- = sharp（尖，锐利）→ acuity, acute 敏锐的, acupuncture 针灸, acumen 精明；visual acuity 视力敏锐度 / mental acuity 思维敏锐 / acuity of hearing 听觉灵敏；acuity（感官/思维敏锐，正式）≠ acumen（商业/判断精明）≠ sharpness（锋利，一般）；医学/心理学/正式写作；acu- = 尖 → 像针尖一样尖锐 → 敏锐",
+    "f": 11
+  },
+  {
+    "w": "favourably",
+    "m": "adv. 赞许地；有利地",
+    "n": "fav- = favor（喜爱，支持）+ -ably → 带着好感地 → 赞许地；speak favourably of sb 称赞某人 / be viewed favourably 受到好评 / compare favourably with 比得上，毫不逊色；⚠️ 原文\"赞扬的\"是形容词义；favourably 是副词，形容词是 favourable；英式 favourably = 美式 favorably（英美拼写差异）；favor（喜欢）+ -ably → 带着好感地 → 赞许地",
+    "f": 11
+  },
+  {
+    "w": "snobbish",
+    "m": "adj. 势利的，自命不凡的",
+    "n": "snob（势利小人）+ -ish（形容词后缀）→ 势利的；a snobbish attitude 势利的态度 / be snobbish about sth 对…很势利；snobbish（势利，看不起人）≠ arrogant（傲慢自大）≠ pretentious（装腔作势）；\"He's too snobbish to talk to us.\" 他太势利，不屑跟我们说话。snob 谐音\"势利\"→ 势利小人",
+    "f": 11
+  },
+  {
+    "w": "snobbish and shallow",
+    "m": "势利肤浅",
+    "n": "a snobbish and shallow person 势利肤浅的人；shallow（肤浅）≠ superficial（表面上的）≠ hollow（空洞的）；snobbish（势利）+ shallow（肤浅）→ 形容人的贬义组合",
+    "f": 11
+  },
+  {
+    "w": "mischief",
+    "m": "n. 恶作剧；顽皮；损害",
+    "n": "mis-（错误，坏）+ chief = head（头）→ 坏主意 → 恶作剧；get into mischief 搞恶作剧 / stay out of mischief 别捣乱 / mischief-maker 捣蛋鬼；\"Those kids are always up to mischief.\" 那些孩子总在捣蛋。mis-（坏）+ chief（首领）→ 坏心眼的首领 → 恶作剧",
+    "f": 11
+  },
+  {
+    "w": "get into mischief",
+    "m": "搞恶作剧，捣乱",
+    "n": "get into mischief at school 在学校捣乱 / keep the kids out of mischief 让孩子别捣蛋；get into mischief（惹麻烦/捣乱）≠ make trouble（制造麻烦）；get into（陷入）+ mischief（恶作剧）→ 捣蛋",
+    "f": 11
+  },
+  {
+    "w": "stay out of mischief",
+    "m": "不捣乱，安分守己",
+    "n": "tell the children to stay out of mischief 让孩子们安分点；stay out of（远离）+ mischief（恶作剧）→ 远离恶作剧",
+    "f": 11
+  },
+  {
+    "w": "slaughter",
+    "m": "n./v. 屠杀，杀戮；屠宰",
+    "n": "古诺斯语 slatr（屠宰）；mass slaughter 大屠杀 / slaughter cattle 宰牛 / the slaughter of innocent people 屠杀无辜者；slaughter（屠杀，大规模杀戮）≠ massacre（大屠杀，强调残忍）≠ kill（杀，通用）≠ assassinate（暗杀）；战争/新闻类阅读高频词；喻义\"惨败\"（a complete slaughter 惨败）；slaughter 音近\"死啦的\"→ 死伤惨重 → 屠杀",
+    "f": 11
+  },
+  {
+    "w": "accountable",
+    "m": "adj. 负有责任的，应作解释的",
+    "n": "ac-（向）+ count（计数，说明）+ -able → 要算账的 → 应负责的；be accountable for sth 对某事负责 / hold sb accountable 追究某人的责任 / be accountable to sb 对某人负责；⚠️ 原文 \"be accoutable of sth/for sb\" 搭配有误：正确为 be accountable for（事）+ to（人）；accountable（应负责的）≠ responsible（负责的，更通用）≠ liable（法律上有责任的）；\"Officials must be held accountable for their decisions.\" 官员必须为其决策承担责任。account（账）→ 要向你\"交代账目\" → 负责",
+    "f": 11
+  },
+  {
+    "w": "be accountable for sth",
+    "m": "对某事负责",
+    "n": "be accountable for one's actions 为自己的行为负责 / hold companies accountable for pollution 追究企业的污染责任；搭配辨析：for + 事，to + 人（be accountable to the public 对公众负责）；accountable（应负责的）+ for（事）→ 对事负责",
+    "f": 11
+  },
+  {
+    "w": "defendant",
+    "m": "n. 被告",
+    "n": "de-（向下）+ fend- = strike（打击）+ -ant → 被打击的一方 → 被告；the defendant in the case 案件中的被告 / appear as a defendant 作为被告出庭；defendant（被告）≠ plaintiff（原告）⚠️ 反义成对；defendant ≠ defender（辩护者）；法律类阅读核心词：defendant 被告 / plaintiff 原告 / judge 法官 / jury 陪审团；defend（辩护）→ 被\"辩护\"的人 → 被告",
+    "f": 11
+  },
+  {
+    "w": "plaintiff",
+    "m": "n. 原告",
+    "n": "plain- = plaint（诉苦，抱怨）+ -iff → 诉苦的人 → 原告；the plaintiff sued the defendant 原告起诉被告 / plaintiff's claim 原告的索赔；plaintiff（原告，民事诉讼）≠ prosecutor（公诉人，刑事诉讼）≠ complainant（投诉人）；complain（抱怨）→ 先\"诉苦\"的一方 → 原告",
+    "f": 11
+  },
+  {
+    "w": "plaintiff and defendant",
+    "m": "原告和被告",
+    "n": "the plaintiff and the defendant in court 法庭上的原告和被告；⚠️ 法律术语对：plaintiff 原告 / defendant 被告；\"原告起诉被告\"= the plaintiff sued the defendant；先告状的是 plaintiff（原告），后辩护的是 defendant（被告）",
+    "f": 11
+  },
+  {
+    "w": "outrage",
+    "m": "n. 愤慨，愤怒；暴行 / v. 激怒",
+    "n": "out-（超出）+ rage（狂怒）→ 怒到极点 → 愤慨；outrage at/over sth 对…的愤慨 / public outrage 公愤 / an act of outrage 暴行 / be outraged by 被…激怒；outrage（对不公/暴行的强烈愤慨）≠ anger（生气，通用）≠ fury（狂怒，程度强）≠ resentment（怨恨，长期积压）；\"The decision caused widespread public outrage.\" 这一决定引发了广泛的公愤。out + rage → 愤怒\"溢\"出来 → 愤慨",
+    "f": 11
+  },
+  {
+    "w": "outrage at/over sth",
+    "m": "对…的愤慨",
+    "n": "outrage at the decision 对这一决定的愤慨 / public outrage over the scandal 公众对丑闻的愤慨；outrage at/over（对…愤慨）≈ be outraged by（被…激怒）；outrage（愤慨）+ at/over（针对）→ 对…愤慨",
+    "f": 11
+  },
+  {
+    "w": "contamination",
+    "m": "n. 污染，玷污",
+    "n": "con-（一起）+ tamin- = touch（接触）+ -ation → 接触传染 → 污染；water contamination 水污染 / food contamination 食品污染 / radioactive contamination 放射性污染；contamination（有害物质渗入）≠ pollution（污染，通用）≠ infection（感染，生物性）；环保/健康类阅读高频：food contamination / cross-contamination 交叉污染；tamin-（接触）→ 被有害物\"碰\"到 → 污染",
+    "f": 11
+  },
+  {
+    "w": "evacuate",
+    "m": "v. 疏散，撤离；排泄",
+    "n": "e-（向外）+ vacu- = empty（空）+ -ate → 使变空 → 撤离；evacuate the building 疏散大楼人员 / evacuate residents from the area 撤离该地区居民 / evacuate the bowels 排便（医学）；evacuate（因危险撤离，正式）≠ leave（离开，通用）≠ abandon（抛弃，放弃）；灾难/新闻类阅读高频；名词 evacuation 疏散；vacuum（真空）→ e- + vacu-（变空）→ 清空 → 疏散",
+    "f": 11
+  },
+  {
+    "w": "orphanage",
+    "m": "n. 孤儿院",
+    "n": "orphan（孤儿，希腊语 orphanos 失去父母）+ -age（场所后缀）→ 孤儿院；grow up in an orphanage 在孤儿院长大 / donate to the orphanage 向孤儿院捐款；⚠️ 原文拼为 orphanege 有误！正确为 orphanage；orphanage（孤儿院）≠ orphan（孤儿）；orphan（孤儿）+ -age（场所）→ 收留孤儿的地方",
+    "f": 11
+  },
+  {
+    "w": "directory",
+    "m": "n. 名录，号码簿；（计算机）目录",
+    "n": "di-（分开）+ rect- = direct（指引）+ -ory → 指引人找到信息 → 名录；telephone directory 电话号码簿 / business directory 企业名录 / home directory 主目录；directory（名录/目录，供查找）≠ catalogue（目录，商品/展览）≠ list（清单，通用）；direct（指引）→ 帮你\"指引\"方向的本子 → 名录",
+    "f": 11
+  },
+  {
+    "w": "hound",
+    "m": "n. 猎犬 / v. 追逼，纠缠",
+    "n": "古英语 hund（狗）；foxhound 猎狐犬 / hound sb 纠缠某人 / be hounded by reporters 被记者纠缠；hound（猎犬；追逼）≠ hunt（打猎）≠ hound ≠ bound（跳跃/必然）；\"The celebrity was hounded by paparazzi.\" 这位名人被狗仔队纠缠不休。hound 音近\"hound 狗\"→ 猎犬；被猎犬追 → 纠缠",
+    "f": 11
+  },
+  {
+    "w": "hawk",
+    "m": "n. 鹰，隼 / v. 兜售，叫卖",
+    "n": "古英语 hafoc（鹰）；hawk one's products 兜售产品 / street hawker 街头小贩 / hawk-eyed 目光锐利的；hawk（鹰/隼；兜售）≠ eagle（雕，更大）≠ falcon（隼）；\"He hawked his goods from door to door.\" 他挨家挨户兜售商品。鹰在天上盘旋盯着猎物 → 盯住路人兜售 → 叫卖",
+    "f": 11
+  },
+  {
+    "w": "hawk one's products",
+    "m": "兜售产品",
+    "n": "hawk one's products on the street 在街头兜售产品 / hawk goods online 在网上推销商品；hawk（叫卖，沿街推销，略带贬义）≠ sell（卖，通用）≠ peddle（兜售，非法/低档）；像老鹰一样盯住顾客 → 兜售",
+    "f": 11
+  },
+  {
+    "w": "a hunting hawk",
+    "m": "猎鹰",
+    "n": "train a hunting hawk 训练猎鹰 / a hunting hawk swooped down 猎鹰俯冲而下；a hunting hawk（猎鹰）≈ falcon（隼）≠ hunting dog（猎犬）；hunting（狩猎）+ hawk（鹰）→ 用于狩猎的鹰",
+    "f": 11
+  },
+  {
+    "w": "dove",
+    "m": "n. 鸽子（和平的象征）",
+    "n": "古英语 dufe；a dove of peace 和平鸽 / dove grey 鸽灰色 / hawks and doves 鹰派与鸽派；dove（鸽子，和平意象）≠ pigeon（鸽子，广场常见）；⚠️ dove 也是 dive 的过去式；政治用语：hawks and doves 鹰派（主战）与鸽派（主和）；和平鸽 = dove；\"我的鸽\"= dove",
+    "f": 11
+  },
+  {
+    "w": "swan",
+    "m": "n. 天鹅 / v. 闲逛，悠荡",
+    "n": "古英语 swan；swan song 天鹅之歌（绝唱）/ swan around 闲逛（英式口语）/ a graceful swan 优雅的天鹅；⚠️ 原文拼为 swam 有误！swam 是 swim 的过去式，天鹅是 swan；\"She's been swanning around all day.\" 她一整天都在闲逛。天鹅在水里游泳（swim），但天鹅是 swan，别和 swam 混",
+    "f": 11
+  },
+  {
+    "w": "crow",
+    "m": "n. 乌鸦 / v. 啼叫；得意洋洋",
+    "n": "古英语 crawa；拟声词，模仿乌鸦叫声；a flock of crows 一群乌鸦 / as the crow flies 直线距离 / crow about/over sth 对…得意洋洋；crow（乌鸦）≠ raven（渡鸦，更大）≠ rook（秃鼻乌鸦）；\"It's 5 miles as the crow flies.\" 直线距离 5 英里。拟声词 crow，模仿乌鸦\"嘎嘎\"叫",
+    "f": 11
+  },
+  {
+    "w": "a flock of crows",
+    "m": "一群乌鸦",
+    "n": "a flock of crows on the field 田野上的一群乌鸦；⚠️ 原文 \"a flock of crow\" 单复数有误：应为 a flock of crows；量词 flock 用于鸟/羊群：a flock of sheep/birds；flock（群）+ crows（乌鸦）→ 一群乌鸦",
+    "f": 11
+  },
+  {
+    "w": "stalk",
+    "m": "v. 潜行跟踪；高视阔步 / n. 茎，秆",
+    "n": "古英语 stalu（偷窃→潜行）；stalk away 大步走开 / stalk one's prey 潜行追踪猎物 / a celery stalk 一根芹菜 / stalk sb 跟踪某人（骚扰）；stalk（潜行跟踪/阔步走）≠ sneak（鬼鬼祟祟）≠ stride（大步走）≠ follow（跟随，通用）；新闻用语：stalker 跟踪骚扰者；植物\"茎\"直挺挺立着 → 挺直身板走路 → 高视阔步",
+    "f": 11
+  },
+  {
+    "w": "stalk away",
+    "m": "大步走开，气冲冲地走开",
+    "n": "stalk away in anger 愤然离去 / she stalked away without a word 她一言不发地大步走开；stalk away（气冲冲大步走）≈ storm off（怒冲冲离开）；stalk（高视阔步）+ away（离开）→ 大步离开",
+    "f": 11
+  },
+  {
+    "w": "tuck",
+    "m": "v. 塞进，掖好；卷起",
+    "n": "中古英语 tuken（卷，折）；tuck in 把…塞好；大吃一顿 / tuck sb in 给某人掖被子 / tuck one's shirt into 把衬衫塞进…里；\"Mom tucked the kids into bed.\" 妈妈给孩子们掖好被子。tuck 音近\"塞\"→ 塞进去",
+    "f": 11
+  },
+  {
+    "w": "cargo",
+    "m": "n. 货物，船货",
+    "n": "西班牙语 cargo（装载，来自 cargar 装载）；cargo ship 货船 / cargo plane 货机 / cargo pants 工装裤 / a cargo of grain 一船谷物；cargo（船/机/车运的货物）≠ goods（商品，通用）≠ freight（货运，美式）≠ shipment（装运的货）；car（车）+ go（走）→ 跟车走的货 → 货物",
+    "f": 11
+  },
+  {
+    "w": "cargo ship",
+    "m": "货船",
+    "n": "a cargo ship bound for Shanghai 开往上海的货船 / load a cargo ship 装货船；cargo ship（货船）≠ container ship（集装箱船）≠ tanker（油轮）；cargo（货物）+ ship（船）→ 运货的船",
+    "f": 11
+  },
+  {
+    "w": "cargo pants",
+    "m": "工装裤，多袋裤",
+    "n": "a pair of cargo pants 一条工装裤 / cargo pants with side pockets 带侧袋的工装裤；cargo pants（工装裤，多口袋）≠ jeans（牛仔裤）≠ khakis（卡其裤）；cargo（货物）→ 口袋多得像装货物 → 工装裤",
+    "f": 11
+  },
+  {
+    "w": "teamster",
+    "m": "n. 卡车司机；（旧）车夫",
+    "n": "team（车组）+ -ster（人）→ 赶车组的人 → 车夫 → 卡车司机；a teamster union 卡车司机工会 / International Brotherhood of Teamsters（美国）卡车司机兄弟会；teamster（美式：卡车司机）≠ truck driver（卡车司机，通用）≠ chauffeur（私人司机）；team（车队）+ -ster（人）→ 开卡车的人",
+    "f": 11
+  },
+  {
+    "w": "chariot",
+    "m": "n. 古代双轮战车/马车",
+    "n": "拉丁语 carrus（车）→ chariot, carriage 马车, car；a war chariot 战车 / chariot race 战车比赛；chariot（古代战车/马车）≠ carriage（四轮马车）≠ wagon（四轮运货马车）；历史/文学类阅读；chariot 里藏着 car（车）→ 古战车",
+    "f": 11
+  },
+  {
+    "w": "caravanserai",
+    "m": "n. 商队旅馆；（东方）大旅店",
+    "n": "caravan（商队，大篷车）+ serai（宫殿，客栈，波斯语）→ 商队客栈；an ancient caravanserai 古代商队旅馆 / stay at a caravanserai 住商队旅馆；⚠️ 原文拼为 caravanserial 有误！正确为 caravanserai；caravanserai（商队旅馆，历史）≠ hotel（现代旅馆）≠ inn（小客栈）；caravan（商队）+ serai（客栈）→ 丝路上商队歇脚的旅馆",
+    "f": 11
+  },
+  {
+    "w": "stereo",
+    "m": "n. 立体声音响；立体声",
+    "n": "stereo- = solid（立体）→ stereo, stereoscope 立体镜, stereotype 刻板印象；a car stereo 车载音响 / stereo system 立体声音响 / in stereo 立体声；stereo（立体声）≠ mono（单声道）；stereo-（立体）→ 立体声",
+    "f": 11
+  },
+  {
+    "w": "trademark",
+    "m": "n. 商标；（某人/物的）鲜明特征",
+    "n": "trade（贸易）+ mark（标记）→ 贸易标记 → 商标；registered trademark 注册商标 / trademark infringement 商标侵权 / his trademark smile 他标志性的微笑；trademark（注册商标，法律）≠ brand（品牌，营销）≠ logo（标识图案）；商业/法律阅读：™ 注册商标符号；trade（贸易）+ mark（标记）→ 贸易中认标记 → 商标",
+    "f": 11
+  },
+  {
+    "w": "gallon",
+    "m": "n. 加仑（容量单位）",
+    "n": "古北法语 galon（液体量单位）；a gallon of milk 一加仑牛奶 / gallons of water 大量水（口语）；gallon（加仑）≠ liter 升 ≠ quart 夸脱（1/4 加仑）⚠️ 美制加仑 ≈ 3.8L，英制加仑 ≈ 4.5L；加油站的 gallon 油 → 加仑",
+    "f": 11
+  },
+  {
+    "w": "a gallon of milk",
+    "m": "一加仑牛奶",
+    "n": "buy a gallon of milk 买一加仑牛奶；英美差异：美制加仑 3.785L，英制加仑 4.546L；gallon（加仑）+ milk（牛奶）→ 大桶牛奶",
+    "f": 11
+  },
+  {
+    "w": "unionize",
+    "m": "v. 成立工会；使加入工会",
+    "n": "uni- = one（一）+ -ize → 联合成一体 → 成立工会；同根词：union 工会, unite 联合, unique 独特的；unionize the workers 组织工人成立工会 / a unionized workforce 工会化的劳动力；unionize（成立工会）≠ unite（联合，通用）≠ union（工会，名词）；社会/劳工类阅读：unionized 工会化的；union（工会）+ -ize（使…）→ 使成立工会",
+    "f": 11
+  },
+  {
+    "w": "self-rule",
+    "m": "n. 自治",
+    "n": "self（自己）+ rule（统治）→ 自己统治自己 → 自治；demand self-rule 要求自治 / self-rule for the region 该地区的自治；self-rule（自治）≈ autonomy（自治，学术）≈ self-government（自治，正式）≠ independence（独立，完全脱离）；政治类阅读：self-rule / autonomy / self-determination 自治与自决；self（自己）+ rule（统治）→ 自己统治自己",
+    "f": 11
+  },
+  {
+    "w": "left-of-center",
+    "m": "adj. 偏左的（政治立场）",
+    "n": "left（左）+ of + center（中间）→ 中间偏左；a left-of-center party 中间偏左的政党 / left-of-center views 偏左的观点；left-of-center（中间偏左）≠ far-left（极左）≠ centrist（中间派）≠ right-of-center（中间偏右）；政治新闻阅读：政治光谱 left（左）— center（中）— right（右）；左中右光谱：left-of-center 左偏中",
+    "f": 11
+  },
+  {
+    "w": "comrade",
+    "m": "n. 同志；战友",
+    "n": "com-（共同）+ rad- = room（房间，拉丁语 camera）→ 同屋的人 → 战友；comrade-in-arms 战友 / old comrades 老同志 / Comrade Wang 王同志；comrade（同志，政治/军事）≠ colleague（同事，职场）≠ companion（同伴，旅伴）；com-（共同）+ rade → 同住一屋的 → 同志",
+    "f": 11
+  },
+  {
+    "w": "offset",
+    "m": "v. 抵消，补偿 / n. 抵消物",
+    "n": "off-（离开）+ set（放置）→ 放到旁边抵消 → 抵消；offset sth against sth 用…抵消… / offset the cost 抵消成本 / carbon offset 碳补偿；offset（抵消，中性）≠ counteract（抵消，对抗）≠ compensate（补偿，给人）≠ balance（平衡）；经济/环保阅读：carbon offset 碳补偿；off + set → 一正一负\"相抵\" → 抵消",
+    "f": 11
+  },
+  {
+    "w": "albeit",
+    "m": "conj. 尽管，虽然",
+    "n": "al（= all 完全）+ be + it → 完全是它（那样）→ 虽然；a useful, albeit expensive, tool 一个有用但昂贵的工具 / He agreed, albeit reluctantly. 他同意了，尽管不情愿。；albeit（正式，后接短语）≈ although（虽然，通用，后接句子）≈ even though（即使）；正式写作/阅读中识别：albeit = although，常接形容词/分词；all + be + it → \"全是那么回事\" → 虽然如此",
+    "f": 11
   }
 ];
 
