@@ -124,7 +124,7 @@ button{cursor:pointer;border:none;background:none}
   <div class="header">
     <h1>📖 CET-6 词汇默写</h1>
     <p id="mode-desc">看中文释义，写出英文单词</p>
-    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~11.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
+    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~12.md 自动导入 <strong id="total-word-count">192</strong> 个词汇</p>
   </div>
 
   <!-- Tabs -->
@@ -163,6 +163,7 @@ button{cursor:pointer;border:none;background:none}
           <option value="9">words9 (进阶)</option>
           <option value="10">words10 (进阶)</option>
           <option value="11">words11 (进阶)</option>
+          <option value="12">words12 (进阶)</option>
         </select>
       </label>
       <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
@@ -3443,6 +3444,228 @@ const WORDS = [
     "m": "conj. 尽管，虽然",
     "n": "al（= all 完全）+ be + it → 完全是它（那样）→ 虽然；a useful, albeit expensive, tool 一个有用但昂贵的工具 / He agreed, albeit reluctantly. 他同意了，尽管不情愿。；albeit（正式，后接短语）≈ although（虽然，通用，后接句子）≈ even though（即使）；正式写作/阅读中识别：albeit = although，常接形容词/分词；all + be + it → \"全是那么回事\" → 虽然如此",
     "f": 11
+  },
+  {
+    "w": "fine-grained",
+    "m": "adj. 细粒度的；细致的，精密的",
+    "n": "fine（精细的）+ grained（有纹理的）→ 纹理很细的 → 细粒度的；fine-grained structure 细粒度结构 / fine-grained analysis 精细分析 / fine-grained control 精细化控制；fine-grained（细粒度，强调颗粒/纹理细）≠ detailed（详细的）≠ fine（精细的，单字）；计算机/材料学/学术写作；fine（细）+ grain（颗粒）→ 颗粒很细 → 细粒度",
+    "f": 12
+  },
+  {
+    "w": "Easter",
+    "m": "n. 复活节",
+    "n": "古英语 Ēastre（盎格鲁-撒克逊春之女神名）→ 复活节；Easter Sunday 复活节主日 / Easter egg 复活节彩蛋 / Easter holiday 复活节假期；Easter（复活节，纪念耶稣复活）≠ Christmas（圣诞节）≠ Good Friday（耶稣受难日，复活节前周五）；⚠️ 专有名词首字母大写 Easter，勿写成 easter；复活节彩蛋 Easter egg 是西方经典文化符号",
+    "f": 12
+  },
+  {
+    "w": "sorrow",
+    "m": "n. 悲伤，悲痛 / v. 感到悲伤",
+    "n": "古英语 sorg（悲伤）；deep sorrow 深深的悲伤 / to one's sorrow 令某人悲伤的是 / drown one's sorrows 借酒浇愁；⚠️ 原文误作\"悲伤的\"！sorrow 是名词，形容词是 sorrowful；sorrow（悲痛，深层情感）≠ sadness（悲伤，通用）≠ grief（哀伤，因失去）≠ grief-stricken（悲痛欲绝）；\"She expressed her sorrow at the news.\" 她对这消息表示悲痛。sor-（痛）+ row → 心里\"熬\"着痛 → 悲伤",
+    "f": 12
+  },
+  {
+    "w": "salvation",
+    "m": "n. 拯救，救赎；解救办法",
+    "n": "salv-/salu- = safe/healthy（安全，健康）→ salvation 拯救, salvage 打捞, salubrious 有益健康的；the salvation of sb 对某人的拯救 / work out one's own salvation 自寻出路 / salvation army 救世军；salvation（灵魂/处境上的救赎，宗教或比喻）≠ rescue（营救，具体行动）≠ remedy（补救办法）；\"The loan was his salvation.\" 这笔贷款是他的救命稻草。salv-（安全）→ 把…带到安全处 → 拯救",
+    "f": 12
+  },
+  {
+    "w": "gratify",
+    "m": "v. 使满足，使高兴；满足（欲望）",
+    "n": "grat- = pleasing（愉悦，感谢）→ gratify, grateful 感激的, gratitude 感激, congratulate 祝贺；gratify one's curiosity 满足某人的好奇心 / gratify sb 使某人高兴 / be gratified at/by 对…感到欣慰；gratify（使满足/愉悦，正式，带愉悦感）≠ satisfy（满足，最通用）≠ indulge（放纵，迁就）；\"I was gratified by the response.\" 这一回应令我欣慰。grat-（愉悦）→ 让人愉悦 → 使满足",
+    "f": 12
+  },
+  {
+    "w": "gratify one's curiosity",
+    "m": "满足某人的好奇心",
+    "n": "gratify one's curiosity about 满足对…的好奇心 / out of curiosity 出于好奇；gratify one's curiosity（满足好奇，正式）≈ satisfy one's curiosity（通用）；gratify（使满足）+ curiosity（好奇心）→ 满足好奇心",
+    "f": 12
+  },
+  {
+    "w": "benefactor",
+    "m": "n. 捐助者，恩人",
+    "n": "bene- = good（好）+ fact- = do（做）+ -or → 做好事的人 → 恩人；同根词：benefit 利益, beneficial 有益的, beneficiary 受益人；anonymous benefactor 匿名捐助者 / generous benefactor 慷慨的捐助者 / the benefactor of the school 学校的捐助人；⚠️ benefactor（施惠者/恩人）≠ beneficiary（受益人）——反义成对，仅差一个字母；bene（好）+ factor（做…的人）→ 做好事的人 → 恩人",
+    "f": 12
+  },
+  {
+    "w": "sensual",
+    "m": "adj. 感官的；肉欲的，性感的",
+    "n": "sens- = feel（感觉）→ sensual, sense 感觉, sensation 感觉, sensitive 敏感的；sensual pleasure 感官愉悦 / sensual experience 感官体验 / sensual lips 性感的嘴唇；sensual（感官/肉欲的，强调肉体快感）≠ sensuous（感性的，审美的，中性褒义）≠ sensory（感觉的，生理/科学术语）⚠️ 三词形近义异；sens-（感觉）→ 刺激感官的 → 感官的/肉欲的",
+    "f": 12
+  },
+  {
+    "w": "the sensual pleasure",
+    "m": "感官愉悦",
+    "n": "the sensual pleasure of music 音乐的感官愉悦 / the sensual pleasures of life 生活中的感官享受；the sensual pleasure（感官快感，偏肉体）≈ sensory pleasure（感官愉悦，中性）≠ intellectual pleasure（智识愉悦）；sensual（感官的）+ pleasure（愉悦）→ 感官享受",
+    "f": 12
+  },
+  {
+    "w": "plural",
+    "m": "adj. 复数的 / n. 复数（形式）",
+    "n": "plur- = more（更多）+ -al → 多于一个 → 复数；plural form 复数形式 / plural noun 复数名词 / in the plural 用复数形式；plural（复数）≠ singular（单数）⚠️ 反义词对；plural（复数）≠ plus（加，介词）；语法考点：不规则复数（child→children, mouse→mice, criterion→criteria）；plur-（更多）→ 多个 → 复数",
+    "f": 12
+  },
+  {
+    "w": "arithmetic",
+    "m": "n. 算术 / adj. 算术的",
+    "n": "希腊语 arithmos = number（数）→ arithmetic, logarithm 对数；arithmetic mean 算术平均数 / mental arithmetic 心算 / arithmetic operations 算术运算；arithmetic（算术，基础四则运算）≠ mathematics（数学，总称）≠ algebra（代数）≠ geometry（几何）；阅读中 arithmetic mean（算术平均）vs geometric mean（几何平均）对比常见；谐音\"阿里斯梅提克\"→ 算术；math 的\"基本功\"",
+    "f": 12
+  },
+  {
+    "w": "telling",
+    "m": "adj. 有力的，有说服力的；说明问题的",
+    "n": "tell（讲述）+ -ing → 能\"说明\"问题的 → 有力的；a telling argument 有力的论证 / a telling detail 说明问题的细节 / most telling of all 最能说明问题的是；telling（有说服力的/说明问题的）≠ convincing（令人信服的）≠ telling ≠ tattling（告密）；\"The most telling evidence was the bank records.\" 最能说明问题的证据是银行记录。tell（说明）→ 能说明问题的 → 有力的",
+    "f": 12
+  },
+  {
+    "w": "understandably",
+    "m": "adv. 可以理解地，合乎情理地",
+    "n": "under-（在…下）+ stand（站）+ -ably → 站得住的 → 可理解的；understandably upset 可以理解地难过 / understandably reluctant 可以理解地不情愿；⚠️ 原文误作\"可以理解的\"（形容词义）！understandably 是副词，形容词是 understandable；\"He was understandably angry.\" 他生气是可以理解的。understandable（可理解的）+ -ly → 可以理解地",
+    "f": 12
+  },
+  {
+    "w": "abruptly",
+    "m": "adv. 突然地，唐突地",
+    "n": "ab-（离开）+ rupt- = break（断裂）+ -ly → 突然断裂 → 突然地；同根词：abrupt 突然的, rupture 破裂, erupt 爆发, disrupt 扰乱；end abruptly 突然结束 / stop abruptly 戛然而止 / speak abruptly 说话唐突；abruptly（突然且唐突，含\"无预兆/不礼貌\"）≠ suddenly（突然，中性）≠ unexpectedly（出人意料）；\"The meeting ended abruptly.\" 会议突然结束。rupt-（断裂）→ 像绳子断了一样 → 突然",
+    "f": 12
+  },
+  {
+    "w": "stark",
+    "m": "adj. 严峻的；赤裸裸的，鲜明的",
+    "n": "古英语 stearc（僵硬的，严酷的）；stark contrast 鲜明的对比 / stark reality 严峻的现实 / in stark terms 毫不掩饰地说；⚠️ 原文误作\"严谨的\"！stark = 严峻的/赤裸裸的；\"严谨的\"是 rigorous / strict；\"The stark truth is that we failed.\" 残酷的事实是我们失败了。stark 联想\"死 tack\"→ 又硬又冷 → 严酷的",
+    "f": 12
+  },
+  {
+    "w": "starkly",
+    "m": "adv. 赤裸裸地，直白地；截然地",
+    "n": "stark + -ly → 副词形式；starkly different 截然不同 / starkly contrasted 形成鲜明对比 / put it starkly 直白地说；starkly（副词：直白地/截然地）≠ stark（形容词）≠ strictly（严格地）⚠️ 形近易混；\"The two approaches are starkly different.\" 两种方法截然不同。stark（赤裸裸的）+ -ly → 直白地",
+    "f": 12
+  },
+  {
+    "w": "uncanny",
+    "m": "adj. 离奇的，难以解释的；惊人的",
+    "n": "un-（不）+ canny（精明的，机灵的）→ 超出常理的 → 离奇的；uncanny resemblance 惊人的相似 / uncanny ability 超常的能力 / an uncanny feeling 一种说不出的怪异感；uncanny（离奇/超常，强调\"超出正常理解\"）≠ mysterious（神秘的，有谜团）≠ weird（怪异的，口语）≠ supernatural（超自然的）；\"She has an uncanny ability to predict trends.\" 她有预测趋势的超常能力。un-（不）+ canny（精明）→ 精明得不正常 → 离奇的",
+    "f": 12
+  },
+  {
+    "w": "self-deception",
+    "m": "n. 自我欺骗，自欺欺人",
+    "n": "self（自己）+ de-（向下）+ ceiv- = take（取）+ -tion → 自己骗自己；engage in self-deception 自欺欺人 / a form of self-deception 一种自我欺骗；self-deception（自我欺骗，无意识）≠ lying（说谎，有意识欺骗他人）≠ self-delusion（自欺，幻觉）；心理/社科阅读：self-deception 与 cognitive bias（认知偏差）关联；self（自己）+ deception（欺骗）→ 自己骗自己",
+    "f": 12
+  },
+  {
+    "w": "nonverbal",
+    "m": "adj. 非言语的，非语言的",
+    "n": "non-（非）+ verb- = word（词）+ -al → 不用词的 → 非言语的；nonverbal communication 非言语交流 / nonverbal cues 非言语线索 / nonverbal signals 非言语信号；nonverbal（非言语，如手势/表情）≠ verbal（言语的）≠ vocal（发声的）；心理学/传播学阅读高频：nonverbal communication = body language 肢体语言；non-（非）+ verbal（言语的）→ 不用说话的交流",
+    "f": 12
+  },
+  {
+    "w": "proceedings",
+    "m": "n. 诉讼程序；会议记录；（复数）论文集",
+    "n": "pro-（向前）+ ceed- = go（走）+ -ings → 向前走的过程 → 进行 → 诉讼程序；legal proceedings 法律诉讼 / start proceedings against 对…提起诉讼 / conference proceedings 会议论文集；⚠️ 常用复数 proceedings；proceedings（诉讼/会议记录）≠ procedure（程序，步骤）≠ process（过程）；法律/学术阅读：take legal proceedings 提起法律诉讼；proceed（进行）→ 进行中的法律程序 → 诉讼",
+    "f": 12
+  },
+  {
+    "w": "stipulate",
+    "m": "v. 规定，明确要求",
+    "n": "stipul- = bargain（约定）+ -ate → 约定条件 → 规定；stipulate that... 规定… / as stipulated in the contract 按合同中规定 / stipulate a deadline 明确规定截止日期；⚠️ 原文误作\"规则\"（名词）！stipulate 是动词；名词是 stipulation；stipulate（明文规定，正式/法律）≠ rule（规则，名词）≠ regulate（监管，动词）≠ specify（具体说明）；\"The contract stipulates that payment is due in 30 days.\" 合同规定付款期限为 30 天。谐音\"死定P一条\"→ 死规定一条 → 明文规定",
+    "f": 12
+  },
+  {
+    "w": "the law stipulates",
+    "m": "法律明确规定",
+    "n": "the law stipulates that... 法律规定… / as the law stipulates 按法律规定；⚠️ 原文 \"law stipulate\" 缺少第三人称单数：主语 the law 是单数，谓语用 stipulates；law（法律）+ stipulate（规定）→ 法律规定",
+    "f": 12
+  },
+  {
+    "w": "accountability",
+    "m": "n. 责任，问责制",
+    "n": "ac-（向）+ count（计算，说明）+ -ability → 可被要求说明 → 问责；hold sb accountable for sth 追究某人对…的责任 / accountability system 问责制度 / public accountability 对公众负责；⚠️ 原文误作\"有责任的\"（形容词义）！accountability 是名词，形容词是 accountable；accountability（问责，制度/抽象）≠ responsibility（责任，通用）；\"There must be accountability for the decision.\" 这一决定必须有人负责。account（账）+ ability → 要能\"报账\" → 问责",
+    "f": 12
+  },
+  {
+    "w": "illiquidity",
+    "m": "n. 非流动性；（资产）难以变现",
+    "n": "il-（不）+ liquid（流动的）+ -ity → 不流动的状态 → 非流动性；asset illiquidity 资产流动性差 / illiquidity risk 流动性风险 / the illiquidity of real estate 房地产的难变现性；⚠️ 原文误作\"非流动的\"（形容词义）！illiquidity 是名词，形容词是 illiquid；illiquidity（非流动性）≠ liquidity（流动性）≠ insolvency（破产，资不抵债）；金融阅读：liquidity（流动性）/ illiquidity（非流动性）/ liquid asset（流动资产）；il-（不）+ liquid（流动的）→ 不流动 → 难变现",
+    "f": 12
+  },
+  {
+    "w": "overrate",
+    "m": "v. 高估，评价过高",
+    "n": "over-（过度）+ rate（评价）→ 评价过度 → 高估；overrate one's ability 高估自己的能力 / be overrated 被高估 / overrated vs underrated 高估 vs 低估；⚠️ 原文误作\"高估的\"（形容词义）！overrate 是动词；overrate（评价过高）≈ overestimate（估计过高，偏数量）≠ underrate/underestimate（低估）⚠️ 反义词对；\"That movie is totally overrated.\" 那部电影完全被高估了。over-（过度）+ rate（打分）→ 分数打过头 → 高估",
+    "f": 12
+  },
+  {
+    "w": "swift",
+    "m": "adj. 迅速的，敏捷的 / n. 雨燕",
+    "n": "古英语 swift（迅速的）；swift response 迅速的反应 / swift action 果断的行动 / a swift recovery 迅速康复 / swift (bird) 雨燕；swift（迅速的，正式/书面）≈ rapid（快速的）≈ quick（快的，口语）≠ slow（慢的）；\"The company made a swift decision.\" 公司迅速作出决定。⚠️ 熟词僻义：swift 作名词 = 雨燕（一种飞得极快的鸟）；雨燕 swift 飞得 swift（迅速）→ 一词两义相通",
+    "f": 12
+  },
+  {
+    "w": "kinship",
+    "m": "n. 亲属关系；相似性，共鸣",
+    "n": "kin- = family（亲属）→ kinship, kin 亲属, kindred 同族的；kinship ties 亲属纽带 / a sense of kinship 亲切感，认同感 / kinship with 与…的相似性；kinship（亲属关系/共鸣，抽象）≠ relationship（关系，通用）≠ relative（亲戚，具体的人）；\"He felt a kinship with the villagers.\" 他与村民们有一种亲近感。kin（亲属）+ ship（关系）→ 亲属关系",
+    "f": 12
+  },
+  {
+    "w": "forested",
+    "m": "adj. 森林覆盖的，林木繁茂的",
+    "n": "forest（森林）+ -ed → 长满森林的；forested area 森林覆盖区 / densely forested 林木茂密的 / forested hills 树木葱茏的山丘；forested（森林覆盖的，形容词）≠ forestry（林业，名词）≠ forest（森林，名词）；forest（森林）+ -ed → 有森林的",
+    "f": 12
+  },
+  {
+    "w": "forestry",
+    "m": "n. 林业，森林管理",
+    "n": "forest（森林）+ -ry（行业/场所后缀）→ 林业；forestry industry 林业产业 / forestry management 森林管理 / forestry worker 林业工人；forestry（林业，学科/产业）≠ forest（森林）≠ deforestation（森林砍伐）≠ afforestation（造林）；环保类阅读：forestry / deforestation / afforestation 三词同现频率高；forest（森林）+ -ry → 与森林相关的行业 → 林业",
+    "f": 12
+  },
+  {
+    "w": "lineage-specific",
+    "m": "adj. 谱系特异的（生物学）",
+    "n": "line- = line（线）+ -age（名词）→ lineage 谱系, 血统 + specific 特异的；lineage-specific genes 谱系特异基因 / lineage-specific expression 谱系特异性表达；lineage-specific（谱系特异的）≠ species-specific（物种特异的）≠ tissue-specific（组织特异的）；生物/遗传阅读：lineage（谱系）常见于发育生物学；lineage（谱系）+ specific（特异的）→ 特定谱系才有的",
+    "f": 12
+  },
+  {
+    "w": "capuchin",
+    "m": "n. 卷尾猴；（天主教）嘉布遣会修士",
+    "n": "意大利语 cappuccino（带风帽的）→ 卷尾猴头上有像风帽的毛；capuchin monkey 卷尾猴 / white-faced capuchin 白面卷尾猴；capuchin（卷尾猴）≠ chimpanzee（黑猩猩）≠ macaque（猕猴）≠ cappuccino（卡布奇诺咖啡）⚠️ 形近；动物/科普阅读；capuchin 的毛发像戴了顶\"风帽\"（cappuccino 同源）",
+    "f": 12
+  },
+  {
+    "w": "fauna",
+    "m": "n. 动物群，动物区系",
+    "n": "faun- = animal（动物，源自罗马神话 Faunus 农牧神）→ fauna 动物群；flora and fauna 动植物 / native fauna 本地动物群 / marine fauna 海洋动物群；fauna（动物群，总称）≠ flora（植物群）⚠️ 常成对出现；fauna ≠ animal（动物，单个）；\"The island's flora and fauna are unique.\" 这座岛的动植物都很独特。罗马神话农牧神 Faunus → 动物 → fauna",
+    "f": 12
+  },
+  {
+    "w": "flora and fauna",
+    "m": "动植物",
+    "n": "the flora and fauna of the region 该地区的动植物 / protect flora and fauna 保护动植物；flora（植物群）≠ fauna（动物群）⚠️ 常成对固定搭配；环保/生物阅读高频词组：flora and fauna 动植物总称；flora（花）→ 植物；fauna（农牧神）→ 动物",
+    "f": 12
+  },
+  {
+    "w": "immunity",
+    "m": "n. 免疫力；豁免权",
+    "n": "im-/in-（不）+ mun- = service/duty（服务，职责）+ -ity → 不承担（疾病）→ 免疫；同根词：immune 免疫的, immunize 使免疫, communal 公共的；immunity to disease 对疾病的免疫力 / herd immunity 群体免疫 / diplomatic immunity 外交豁免权 / immunity from prosecution 免于起诉；immunity（免疫力/豁免权）≠ impunity（免罚，免于惩罚）⚠️ 形近；医学+法律双领域高频词：herd immunity 群体免疫；mun-（职责）→ 免疫 = 不用承担（病痛）的职责",
+    "f": 12
+  },
+  {
+    "w": "herd immunity",
+    "m": "群体免疫",
+    "n": "herd（兽群）+ immunity（免疫）→ 群体免疫；achieve herd immunity 实现群体免疫 / herd immunity threshold 群体免疫阈值；⚠️ 原文 \"herb immunity\" 拼写错误！herd（兽群/人群）≠ herb（草本植物）；公共卫生阅读高频：当足够比例人群接种疫苗或感染获得免疫，病毒传播链被切断；herd（一群）→ 一群人都有免疫 → 群体免疫；herb 是\"草\"",
+    "f": 12
+  },
+  {
+    "w": "decentralise",
+    "m": "v. 分散，下放（权力）；使非中心化",
+    "n": "de-（去除）+ centr- = center（中心）+ -al + -ise → 去掉中心 → 分散；同根词：centre 中心, central 中心的, concentrate 集中；decentralise power 下放权力 / a decentralised system 分散式系统 / decentralise management 分散管理；⚠️ 原文误作\"分散的\"（形容词义）！decentralise 是动词；decentralise（下放/分散，组织/政治）≠ centralise（集权，反义词）≠ disperse（散开，物理）；英式 decentralise = 美式 decentralize（-ise/-ize 拼写差异）；de-（去掉）+ central（中心）→ 去中心化 → 分散",
+    "f": 12
+  },
+  {
+    "w": "longline",
+    "m": "n. 延绳钓（深海长线捕鱼法）",
+    "n": "long（长的）+ line（线）→ 长长的钓线 → 延绳；longline fishing 延绳钓捕鱼 / longline fishery 延绳渔业 / a longline vessel 延绳钓渔船；longline（延绳钓，渔业）≠ long line（长线，一般）≠ longline ≠ long-haul（长途）；环保类阅读：延绳钓对海鸟/海龟的误捕（bycatch）是生态热点；long（长）+ line（线）→ 几公里长的钓线 → 延绳钓",
+    "f": 12
   }
 ];
 
