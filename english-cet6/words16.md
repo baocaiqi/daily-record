@@ -1,79 +1,502 @@
 # 📚 CET-6 单词本 (16)
 
-> 标注说明：`[词根]` = 词根/词缀注释 | `[短语]` = 固定搭配 | `[辨]` = 辨析 | `[场景]` = 场景偏好 | `[考研]` = 考研高频考点 | `[惯用]` = Native Speaker 惯用表达 | `[记忆]` = 记忆技巧 | `[参考]` = 前面文件中已出现
+> 排版：每条单词 2-4 行解析，按优先级排列：核心 → 搭配 → 辨析 → 词根/记忆
+> 标注：`⚠️` = 易混点/重点 | **加粗** = 核心要点
 
-| # | 单词/短语 | 释义 | 备注 |
-|---|-----------|------|------|
-| 1 | **pastime** | n. 消遣，娱乐；爱好 | `[词根]` pas(s)-（度过）+ time（时间）→ 打发时间的活动 → 消遣；对比 pass time 度过时间；`[短语]` a popular pastime 流行的消遣 / one's favourite pastime 最喜欢的消遣 / reading as a pastime 以阅读为消遣；`[辨]` pastime（消遣，打发时间的爱好）≈ hobby（爱好，投入精力）≠ entertainment（娱乐，观看/参与均可）；`[惯用]` "Gardening is his favourite pastime." 园艺是他最喜欢的消遣。`[记忆]` pass（度过）+ time（时间）→ 消磨时间的事 → 消遣 |
-| 2 | **cardinal** | adj. 主要的，基本的 / n. 基数；红衣主教 | `[词根]` card-/cardi- = hinge（枢纽，门轴）→ 门轴般关键的 → 主要的；同根词：cardinal numbers 基数词, cardinal points 基本方位；`[短语]` a cardinal sin 大错（原义"七宗罪"）/ cardinal rule 基本原则 / cardinal direction 基本方位；`[辨]` cardinal（首要的，正式的，如 cardinal principle 首要原则）≈ chief/main（主要的，通用）≠ ordinal（序数的，反义：序数词）；`[考研]` 基数词/序数词辨析：cardinal numbers（1,2,3）≠ ordinal numbers（第一、第二）；`[记忆]` 红衣主教（cardinal）是教会"核心"人物 → 主要的；`[参考]` 已见于 words1 |
-| 3 | **coarse-grained** | adj. 粗略的，颗粒粗的；不精细的 | `[词根]` coarse（粗糙的）+ grain（颗粒；纹理）→ 颗粒粗的 → 引申"粗略的"；同根词：coarse 粗糙的, grain 谷物/纹理, fine-grained 精细的（反义）；`[短语]` coarse-grained analysis 粗略的分析 / coarse-grained wood 纹理粗糙的木材 / coarse-grained sand 粗砂；`[辨]` coarse-grained（粗略的，粒度粗的）≠ fine-grained（细致的，反义）≠ superficial（肤浅的，贬义）；`[记忆]` coarse（粗糙）+ grain（纹理）→ 纹理粗糙 → 粗略的 |
-| 4 | **tiresome** | adj. 令人厌倦的，烦人的 | `[词根]` tire（使疲劳）+ -some（易于…的）→ 令人疲劳/厌倦的；同根词：tire 疲劳, tired 累的, tiresome 烦人的, tiring 令人疲劳的；`[短语]` a tiresome child 烦人的孩子 / tiresome work 枯燥的工作 / become tiresome 变得令人厌烦；`[辨]` tiresome（令人厌倦的，事物使人烦）≈ tedious（单调乏味的）≠ tired（感到累的，人作主语）；⚠️ tiresome 指"令人生厌"，tired 指"自己累了"；`[惯用]` "The endless meetings were getting tiresome." 没完没了的会议开始令人厌烦。`[记忆]` tire（累）+ -some（…的）→ 让人累的 → 烦人的 |
-| 5 | **faint**（原文 raint，拼写有误） | adj. 头晕的，虚弱的；微弱的 / v. 昏厥 | `[辨]` ⚠️ 原文 raint 疑为 faint 的误写；faint（头晕/微弱：a faint sound 微弱的声音 / feel faint 感到头晕）≈ dizzy（头晕，更口语）；`[短语]` feel faint 感到头晕 / faint hope 一线希望 / a faint smell 淡淡的气味 / faint praise 敷衍的表扬；`[惯用]` "She felt faint in the heat." 她在高温下感到头晕。`[记忆]` faint 与 paint 形近：油漆味浓到让人 faint（头晕） |
-| 6 | **be radiant with sth** | 因…而容光焕发，喜形于色 | `[词根]` radi- = ray（光线）→ 发出光芒 → 容光焕发；同根词：radiate 辐射, radiant 光芒四射的, radiation 辐射；`[短语]` be radiant with joy 喜气洋洋 / be radiant with happiness 幸福满面 / a radiant smile 灿烂的笑容；`[辨]` be radiant with（因喜悦/幸福而容光焕发）≠ glow with（泛着…光，可指健康）≠ beam（笑容满面）；⚠️ 原文 radint 拼写有误，正确为 radiant；`[惯用]` "The bride was radiant with happiness." 新娘幸福得容光焕发。`[记忆]` radiant（光芒四射的）→ 脸上放光 → 容光焕发；`[参考]` radiant 已见于 words2 |
-| 7 | **parenting** | n. 养育，育儿（父母对子女的教养） | `[词根]` parent（父母）+ -ing（名词化）→ 为人父母/养育；同根词：parent 父母, parental 父母的, parenthood 父母身份；`[短语]` parenting skills 育儿技巧 / parenting style 教养方式 / single parenting 单亲养育 / co-parenting 共同抚养；`[辨]` parenting（养育，现代常用，强调方法与责任）≠ upbringing（教养，侧重成长环境）≠ childcare（育儿照看，偏看护）；`[考研]` 心理学/教育类阅读高频：authoritative parenting 权威型教养；`[记忆]` parent（父母）+ -ing → 当父母这件事 → 养育 |
-| 8 | **hospitalize** | v. 使住院治疗 | `[词根]` hospital（医院）+ -ize（动词化）→ 送进医院 → 使住院；同根词：hospital 医院, hospitalization 住院治疗, hospitality 好客（同源）；`[短语]` be hospitalized for 因…住院 / be seriously ill and hospitalized 病重住院 / hospitalize sb 使某人住院；`[辨]` hospitalize（使住院，被动常用 be hospitalized）≠ treat（治疗，不一定住院）≠ admit（收治入院，医院角度）；`[惯用]` "He was hospitalized with pneumonia." 他因肺炎住院了。`[记忆]` hospital（医院）+ -ize → 进医院 → 住院 |
-| 9 | **glory** | n. 荣誉，光荣；辉煌 / v. 自豪 | `[词根]` glor- = praise（赞美）→ 荣誉；同根词：glorious 光荣的, glorify 颂扬, glorification 美化；`[短语]` in all its glory 壮丽无比，全盛时期 / its former glory 往日辉煌 / bask in the glory 享受荣耀 / glory in sth 为…而自豪；`[辨]` glory（荣誉，辉煌成就）≈ honour（荣誉，敬重）≠ fame（名声，中性）≠ vanity（虚荣，贬义）；`[惯用]` "The garden is in all its glory in spring." 春天花园里繁花似锦。`[记忆]` 谐音"高丽"→ 高丽王朝曾有的辉煌 → 荣耀 |
-| 10 | **in all its glory** | 壮丽无比，全盛状态 | `[短语]` see the city in all its glory 目睹这座城市最美的样子 / the autumn forest in all its glory 秋林尽染；`[辨]` in all its glory（全盛/最美的样子）≈ at its best（处于最佳状态）≠ in decline（衰落中，反义）；`[惯用]` "The palace has been restored to all its former glory." 宫殿已修复如初。`[记忆]` glory（辉煌）→ in all its glory 尽显辉煌 |
-| 11 | **its former glory** | 往日辉煌 | `[短语]` restore sth to its former glory 使恢复昔日的辉煌 / regain its former glory 重拾昔日荣光；`[辨]` former（以前的，先前的）≠ formal（正式的）⚠️ 形近；`[惯用]` "The old theatre was restored to its former glory." 老剧院恢复了往日的辉煌。`[记忆]` former（往日的）+ glory（辉煌）→ 往日辉煌 |
-| 12 | **affiliate** | v. 使隶属，使并入 / n. 分支机构，附属机构 | `[词根]` af-（=ad-，向）+ fili- = son（儿子）→ 收为"儿子" → 隶属；同根词：filiation 父子关系, affiliate 附属机构；`[短语]` be affiliated with/to 隶属于 / a local affiliate 当地分支机构 / an affiliate company 附属公司；`[辨]` affiliate（附属机构，隶属关系）≠ subsidiary（子公司，控股关系）≠ branch（分公司，同属总部）；⚠️ 原文"当地机关"为误译，应为"当地分支机构/附属机构"；`[考研]` 阅读高频：be affiliated with a university 隶属于某大学；`[记忆]` af-（向）+ fili-（儿子）→ 认作儿子 → 附属 |
-| 13 | **peril** | n. 严重的危险，险境 | `[词根]` 拉丁语 periculum（危险）→ peril；同根词：perilous 危险的, imperil 危及；`[短语]` in peril 处于危险中 / at one's peril 自担风险 / the perils of war 战争的种种危险 / peril point 危险点；`[辨]` peril（严重/迫近的危险，正式，比 danger 语气强）≠ danger（危险，最通用）≠ hazard（隐患，工业/环境）；`[惯用]` "Ignore the warning at your peril." 无视警告后果自负。`[记忆]` 谐音"怕肉"→ 战乱中怕丢性命（肉）→ 危险 |
-| 14 | **in peril** | 处于危险之中 | `[短语]` be in peril of one's life 有生命危险 / put sb/sth in peril 使…陷入危险 / in mortal peril 处于致命危险中；`[辨]` in peril（处于严重危险，正式）≈ in danger（处于危险，通用）≠ at risk（有风险，范围更广）；`[惯用]` "The ship's crew was in peril." 船员们身处险境。`[记忆]` peril（危险）→ in peril 在危险中 |
-| 15 | **treaty** | n. 条约，协定 | `[词根]` treat- = handle（处理）→ 处理国际关系的文件 → 条约；同根词：treat 对待/处理, treaty 条约, treatment 处理；`[短语]` sign a treaty 签署条约 / ratify a treaty 批准条约 / a peace treaty 和平条约 / breach a treaty 违反条约；`[辨]` treaty（国家间正式条约）≠ agreement（协议，最通用）≠ pact（协定，较 informal）≠ convention（公约，多边）；`[考研]` 国际政治阅读高频：the Treaty of Versailles 凡尔赛条约；`[记忆]` treat（处理）+ -y → 处理国与国关系的文件 → 条约；`[参考]` 已见于 words7 |
-| 16 | **scramble** | v. 攀爬，争夺；仓促行动 / n. 混乱 | `[词根]` 中古英语 scramblen（攀爬）→ 手脚并用往上爬 → 争夺；`[短语]` scramble for sth 争抢某物 / scramble up a hill 爬上小山 / scramble to do sth 争先做某事 / scrambled eggs 炒蛋（⚠️ 固定复数）；`[辨]` scramble（争抢/攀爬，动作急乱）≈ clamber（攀爬）≠ struggle（挣扎，费力）；⚠️ 原文"scramble egg"应为 scrambled eggs；`[惯用]` "The kids scrambled for the candy." 孩子们争抢糖果。`[记忆]` 谐音"死扛爬"→ 手脚并用死扛着爬 → 攀爬/争夺；`[参考]` 已见于 words2 |
-| 17 | **ditch** | n. 沟，渠 / v. 抛弃，丢弃（计划/车等） | `[词根]` 古英语 dic（沟渠）→ ditch；对比 dig（挖）；`[短语]` ditch a plan 取消计划 / ditch the car 弃车 / a drainage ditch 排水沟 / be left in the ditch 被抛弃；`[辨]` ditch（丢弃/甩掉，口语，指不再需要的东西）≈ abandon（放弃，正式）≈ dump（扔掉，更粗俗）；`[惯用]` "They ditched the original plan and started over." 他们放弃了原计划重新开始。`[记忆]` 把计划"扔进沟里（ditch）"→ 废弃 |
-| 18 | **facilitate** | v. 促进，使便利 | `[词根]` fac-/fact- = do/make（做）+ -ile（能…的）+ -ate → 使好做 → 促进；同根词：facile 轻而易举的, facility 设施/便利, factor 因素；`[短语]` facilitate development 促进发展 / facilitate communication 促进交流 / facilitate the process 推进流程；`[辨]` facilitate（使更顺畅，正式，宾语是事不是人）≠ promote（促进，推动）≠ ease（缓解，减轻）≠ help（帮助，最通用，可接人）；`[考研]` 阅读高频：facilitate trade 促进贸易；`[惯用]` "The new software facilitates remote work." 新软件让远程办公更便利。`[记忆]` fac-（做）→ 让事"好做" → 促进 |
-| 19 | **magnitude** | n. 巨大，重大；重要性；震级 | `[词根]` magn- = great（大）+ -itude（名词后缀）→ 巨大；同根词：magnify 放大, magnificent 宏伟的, magnate 大亨；`[短语]` the magnitude of the problem 问题的严重性 / an earthquake of magnitude 7 7级地震 / of great magnitude 重大的；`[辨]` magnitude（规模/程度/震级，正式）≠ size（大小，通用）≠ extent（程度，范围）≠ importance（重要性）；`[考研]` 科普/地震类阅读：Richter magnitude 里氏震级；`[记忆]` magn-（大）→ 巨大；同根 magnificent（壮丽的） |
-| 20 | **ward off** | 避开，挡开（危险/疾病/攻击） | `[词根]` ward = guard（守卫，守护）→ 守护着挡开 → 避开；同根词：ward 病房/选区（守护之地）, warden 看守人, wardrobe 衣柜；`[短语]` ward off danger 避开危险 / ward off a cold 预防感冒 / ward off the blow 挡开一击；`[辨]` ward off（挡开/预防，挡在身外）≈ fend off（抵挡，更用力）≠ avoid（避免，不接触）≠ avert（避免，防止发生）；`[惯用]` "Eating garlic is said to ward off colds." 据说吃蒜能预防感冒。`[记忆]` ward（守卫）→ 像守卫一样把危险挡在外面 |
-| 21 | **desirable** | adj. 理想的，值得拥有的；可取的 | `[词根]` de-（加强）+ sir- = wish（渴望）→ 令人渴望的；同根词：desire 渴望, desirable 理想的, desirous 渴望的（人作主语）；`[短语]` a desirable location 理想的地段 / a desirable outcome 可取的结果 / highly desirable 非常可取的 / less than desirable 不尽如人意；`[辨]` desirable（值得拥有的，物作主语）≠ desirous（渴望的，人作主语）⚠️ 易混；≠ favorable（有利的）；`[惯用]` "The house is in a highly desirable neighborhood." 这房子位于非常理想的街区。`[记忆]` desire（渴望）→ 令人渴望的 → 理想的 |
-| 22 | **infrastructure** | n. 基础设施（交通/通讯/水电等） | `[词根]` infra-（在下，低于）+ struct- = build（建造）+ -ure → 底下的结构 → 基础设施；同根词：structure 结构, construct 建造, infrastructure 基建；`[短语]` infrastructure construction 基础设施建设 / public infrastructure 公共设施 / infrastructure investment 基建投资 / aging infrastructure 老化的基础设施；`[辨]` infrastructure（基础设施，宏观）≠ facility（设施，具体场所）≠ establishment（机构）；`[考研]` 经济/城市化阅读高频：investment in infrastructure 基建投资；`[记忆]` infra-（底下）+ structure（结构）→ 支撑一切的地基结构 |
-| 23 | **commencement** | n. 开端，开始（正式书面）；毕业典礼（美式） | `[词根]` com-（共同）+ men- = begin（开始）+ -ment → 共同开始 → 开端；同根词：commence 开始, commencement 开端/毕业典礼；`[短语]` the commencement of …的开始 / commencement ceremony 毕业典礼 / from the commencement 从一开始；`[辨]` commencement（开端，正式书面语；美式"毕业典礼"）≠ beginning/start（开始，通用）≠ opening（开场）；`[惯用]` "The commencement of the project was delayed." 项目的启动被推迟了。`[记忆]` commence（开始）→ 毕业典礼是人生的新开端 |
-| 24 | **summon** | v. 召唤，传唤；鼓起（勇气） | `[词根]` sum-（=sub-，下）+ mon- = warn/remind（提醒）→ 私下提醒→ 传唤；同根词：monitor 监控, admonish 告诫, summon 召唤；`[短语]` summon sb to court 传唤某人出庭 / summon up courage 鼓起勇气 / summon a meeting 召集会议 / summon help 呼救；`[辨]` summon（传唤/召集，权力方对下，正式）≠ call（叫来，通用）≠ convene（召集，会议）≠ subpoena（传票，法律强制）；`[惯用]` "He summoned all his strength to lift the rock." 他使出全身力气举起石头。`[记忆]` 传唤的人通常权力更大 → 命令式召唤；summon up（往上召唤）→ 鼓起 |
-| 25 | **summon up** | 鼓起（勇气），激起 | `[短语]` summon up courage 鼓起勇气 / summon up energy 打起精神 / summon up memories 唤起回忆；`[辨]` summon up（鼓起/唤起，内心力量）≈ muster up（鼓起，召集）≈ pluck up（鼓起勇气，口语）；`[惯用]` "She summoned up the courage to speak." 她鼓起勇气发言。`[记忆]` summon（召唤）→ 把勇气从心里召唤出来 |
-| 26 | **cricket** | n. 板球；蟋蟀 | `[词根]` 词源不明；板球义源自法语 criquet（球门柱）；蟋蟀义为拟声词（蟋蟀叫声）；`[短语]` play cricket 打板球 / a cricket match 板球赛 / crickets chirping 蟋蟀鸣叫；`[辨]` cricket（板球，英国/英联邦国家运动）≠ baseball（棒球，美国）≠ rounders（圆场棒球）；`[惯用]` "It's not cricket."（英式习语）不公平的行为。`[记忆]` 板球和蟋蟀都是"cricket"——蟋蟀的叫声像球棒击球？ |
-| 27 | **make a racket**（原文 make a cricket，有误） | 制造噪音，吵闹 | `[辨]` ⚠️ 原文"make a cricket"应为 make a racket（racket = 球拍/喧闹声）；`[短语]` make a racket 吵闹 / stop making a racket 别吵了 / the racket of traffic 车辆的嘈杂声；`[惯用]` "The kids are making a racket upstairs." 孩子们在楼上吵吵闹闹。`[记忆]` racket（喧闹）→ make a racket 制造噪音；对比 cricket（板球/蟋蟀） |
-| 28 | **take an oath** | 宣誓，发誓 | `[短语]` take an oath of office 宣誓就职 / take an oath to tell the truth 宣誓说真话 / swear an oath 宣誓 / under oath 在宣誓的约束下（法庭）；`[辨]` take an oath（宣誓，正式/法律）≈ swear（发誓，通用）≠ vow（立誓，个人承诺）；`[考研]` 法律/政治阅读：take the oath of office 宣誓就职；`[惯用]` "Witnesses must take an oath before testifying." 证人在作证前必须宣誓。`[记忆]` oath（誓言）→ 法庭上把手放在圣经上起誓 |
-| 29 | **persecute** | v. （因宗教/政治/种族等）迫害；骚扰 | `[词根]` per-（完全）+ secut- = follow（跟随）→ 一路追着不放 → 迫害；同根词：persecution 迫害, persecutor 迫害者；`[短语]` be persecuted for one's beliefs 因信仰受迫害 / persecute minorities 迫害少数族裔 / religious persecution 宗教迫害；`[辨]` ⚠️ persecute（迫害）≠ prosecute（起诉，法律）形近必考；persecute 因身份/信仰，prosecute 因违法行为；`[考研]` 完形/阅读高频形近词对：persecute vs prosecute；`[惯用]` "The regime persecuted political dissidents." 该政权迫害政治异见者。`[记忆]` per-（一直）+ secute（跟随）→ 一直追着整 → 迫害 |
-| 30 | **lay siege to sth** | 围攻，包围（城市/要塞） | `[词根]` siege = sit（坐）→ 围城时"坐"着不撤 → 包围；同根词：besiege 围攻, siege 围城；`[短语]` lay siege to the city 围攻该城 / under siege 被围困 / lift the siege 解围；`[辨]` lay siege to（军事包围，持久围困）≠ surround（包围，通用）≠ blockade（封锁，海上/经济）；⚠️ 原文 seige 拼写有误，正确为 siege；`[惯用]` "The army laid siege to the capital." 军队围攻了首都。`[记忆]` siege（围城）→ 谐音"袭"→ 来袭围城 |
-| 31 | **rehearse** | v. 排练，预演；复述 | `[词根]` re-（再）+ hearse（=harrow 耙地）→ 反复耙地般重复 → 排练；同根词：rehearsal 排练（dress rehearsal 彩排）；`[短语]` rehearse a play 排练戏剧 / rehearse for the concert 为音乐会排练 / rehearse one's speech 练习演讲；`[辨]` rehearse（排练，提前练习表演/发言）≈ practice（练习，通用）≠ perform（演出，正式上场）；`[惯用]` "She rehearsed her presentation three times." 她排练了三次演讲。`[记忆]` re-（反复）+ hearse（耙）→ 一遍遍耙地 → 反复排练 |
-| 32 | **propel** | v. 推进，驱动；促使 | `[词根]` pro-（向前）+ pel- = drive（推）→ 向前推 → 推进；同根词：propeller 螺旋桨, propulsion 推进力, expel 开除, repel 击退；`[短语]` propel the boat forward 推动小船前进 / be propelled by 由…驱动 / propel sb to success 推动某人走向成功；`[辨]` propel（推进，驱动，物理+抽象）≈ drive（驱动）≈ push（推，口语）≠ pull（拉）；`[惯用]` "The rocket is propelled by liquid fuel." 火箭由液体燃料推进。`[记忆]` pro-（向前）+ pel-（推）→ 向前推 → 推进；对比 expel（向外推=开除） |
-| 33 | **economical** | adj. 节约的，经济的；性价比高的 | `[词根]` eco-（家/环境）+ nom- = manage（管理）+ -ical → 管家有道 → 节约的；同根词：economy 经济, economic 经济的, economics 经济学；`[短语]` an economical car 省油的车 / be economical with the truth 避重就轻（委婉语）/ an economical way of life 节俭的生活方式；`[辨]` ⚠️ economical（节约的/划算的）≠ economic（经济上的，宏观）；economical = 省钱省资源，economic = 与经济学相关；`[惯用]` "The car is economical to run." 这辆车开起来很省油。`[记忆]` economic 管"经济"，economical 管"省钱"；`[参考]` 已见于 words10、words15 |
-| 34 | **elude** | v. 逃避，躲避；使无法达到/理解 | `[词根]` e-（=ex-，出）+ lud- = play（玩）→ 玩着溜走 → 逃避；同根词：elusive 难以捉摸的, allude 暗指, delude 欺骗, illusion 幻觉；`[短语]` elude capture 逃脱追捕 / elude the police 躲避警察 / the answer eludes me 我想不出答案；`[辨]` elude（巧妙地避开/使达不到）≠ evade（规避，法律/责任）≠ avoid（避免，中性）；`[惯用]` "The fugitive eluded capture for years." 逃犯多年来一直未被抓获。`[记忆]` e-（出）+ lud-（玩）→ 玩着玩着溜出包围 → 逃脱；`[参考]` 已见于 words7 |
-| 35 | **elusive** | adj. 难以捉摸的，难以找到/实现的 | `[词根]` elud-（逃避）+ -ive → 总想逃的 → 难以捉摸的；同根词：elude 逃避, allusion 暗指, illusion 幻觉；`[短语]` an elusive goal 难以实现的目标 / an elusive figure 行踪不定的人 / elusive success 迟迟不来的成功；`[辨]` ⚠️ elusive（难以捉摸的）≠ illusive（虚幻的，来自 illusion）；elusive 强调"抓不到"，illusive 强调"是假的"；`[惯用]` "Happiness proved elusive for him." 幸福对他来说遥不可及。`[记忆]` elude（逃脱）→ elusive（老抓不住）→ 难以捉摸的；`[参考]` 已见于 words7 |
-| 36 | **copper** | n. 铜；铜币；警察（口语） | `[词根]` 拉丁语 cuprum（塞浦路斯产的铜）→ copper；`[短语]` copper wire 铜线 / copper mines 铜矿 / a copper coin 铜币；`[辨]` copper（铜/警察俚语）≠ cop（警察，更口语）≠ bronze（青铜，铜锡合金）；`[惯用]` "The pipes are made of copper." 这些管子是铜制的。`[记忆]` 警察制服上有铜（copper）质徽章 → 警察 |
-| 37 | **defer** | v. 推迟，延期；遵从 | `[词根]` de-（向下）+ fer- = carry（带）→ 往后带 → 推迟；同根词：defer 推迟, deferral 延期, defer to 遵从；`[短语]` defer doing sth 推迟做某事 / defer payment 延期付款 / defer a decision 推迟决定 / defer to sb 遵从某人（的意见）；`[辨]` defer（推迟，正式；也表"遵从"）≠ delay（耽搁，通用）≠ postpone（延期，正式）≠ cancel（取消，反义）；`[惯用]` "The trial was deferred until next month." 审判推迟到下个月。`[记忆]` de-（向下）+ fer-（带）→ 把事情往后带 → 推迟 |
-| 38 | **hitherto** | adv. 迄今为止，到目前为止（正式书面） | `[词根]` hither（此处）+ to（到）→ 到现在为止；同根词：hither 这里（古语）, thither 那里（古语）；`[短语]` a hitherto unknown species 迄今未知的物种 / a hitherto unpublished letter 一封从未发表的信 / as hitherto 一如以往；`[辨]` hitherto（迄今为止，正式书面，常修饰未知/未做之事）≈ so far/up to now（到目前为止，通用）≈ to date（至今，正式）；`[惯用]` "The study revealed a hitherto unknown gene." 这项研究揭示了一个此前未知的基因。`[记忆]` 谐音"黑泽拖"→ 黑泽明拖到今天才拍 → 迄今为止 |
-| 39 | **levy sth on** | 对…征收（税/罚款等） | `[词根]` lev- = raise（举起）→ 举起征集 → 征收；同根词：levy 征收, lever 杠杆, elevate 提升, relieve 减轻；`[短语]` levy a tax on imports 对进口商品征税 / levy a fine on sb 对某人罚款 / levy war against 对…发动战争；`[辨]` levy（征收，政府强制，正式）≠ collect（收集/收税，中性）≠ impose（施加/征收，法律）；`[考研]` 经济类阅读：levy taxes on luxury goods 对奢侈品征税；`[惯用]` "The government levied a new tax on fuel." 政府对燃料征收新税。`[记忆]` lev-（举起）→ 把钱"举"上来 → 征税；`[参考]` 已见于 words6 |
-| 40 | **lumber** | n. 木材，木料 / v. 笨重地移动 | `[词根]` 中古英语 lomere（笨重物）→ lumber（木材/笨重移动）；`[短语]` lumber industry 木材业 / lumberjack 伐木工 / lumber along 笨重地行进 / lumber room 杂物间；`[辨]` lumber（木材/笨重移动）≠ timber（木材，英式/建筑）≠ wood（木头，最通用）；lumber（v.）≈ plod（沉重地走）；`[惯用]` "The bear lumbered through the forest." 熊笨重地穿过森林。`[记忆]` 联想：扛着 lumber（木材）走路自然 lumber（笨重地移动） |
-| 41 | **pottery** | n. 陶器，陶艺；陶瓷厂 | `[词根]` pot（罐）+ -tery（场所）→ 做陶罐的地方/手艺；同根词：pot 罐, potter 陶工, pottery 陶器；`[短语]` a pottery workshop 陶艺工作坊 / hand-painted pottery 手绘陶器 / pottery making 制陶；`[辨]` pottery（陶器，黏土烧制）≠ porcelain（瓷器，高温精细）≠ ceramics（陶瓷，总称，含瓷砖等）；`[记忆]` pot（罐子）→ 做罐子的手艺 → 陶艺 |
-| 42 | **prose** | n. 散文（非韵文） | `[词根]` 拉丁语 prosa（直白的话）→ prose；对比 verse（韵文）；`[短语]` in prose 用散文体 / prose writing 散文写作 / poetic prose 诗化散文；`[辨]` prose（散文，日常/文学的非韵文）≠ poetry/verse（诗歌/韵文，反义）≠ essay（随笔/议论文，散文的一种）；`[惯用]` "She writes both poetry and prose." 她诗歌散文都写。`[记忆]` 联想：poetry（诗）是押韵的，prose（散文）是"普通"的 |
-| 43 | **savage** | adj. 野蛮的，凶残的；猛烈的 / n. 野蛮人 | `[词根]` 拉丁语 silva（森林）→ 森林里的 → 野蛮的；同根词：savagery 野蛮, savagely 凶残地；`[短语]` a savage attack 凶残的攻击 / savage criticism 猛烈的批评 / savage beasts 野兽；`[辨]` savage（野蛮残暴，原始/残酷）≈ brutal（残忍粗暴）≈ cruel（残忍）≠ civilized（文明的，反义）；`[惯用]` "The film received savage reviews." 这部电影遭到恶评。`[记忆]` 森林（silva）里的生物 → 野蛮的；`[参考]` 已见于 words14 |
-| 44 | **scorn** | n. 鄙视，轻蔑 / v. 鄙视；不屑（做） | `[词根]` 古法语 escarn（嘲笑）→ scorn；`[短语]` pour scorn on 对…嗤之以鼻 / scorn an idea 不屑一顾某个想法 / scorn to do sth 不屑于做某事 / be treated with scorn 遭到轻蔑对待；`[辨]` scorn（鄙视，公开的轻蔑）≈ disdain（蔑视，高傲）≠ despise（厌恶鄙视，情感更强）≠ ridicule（嘲笑，取笑）；`[惯用]` "He poured scorn on the proposal." 他对这项提议嗤之以鼻。`[记忆]` 谐音"死刮你"→ 用眼神死刮你 → 轻蔑 |
-| 45 | **stall** | n. 摊位；畜栏 / v. 拖延；熄火 | `[词根]` 古英语 steall（位置，站立处）→ 摊位；同根词：install 安装, forestall 抢先；`[短语]` a market stall 市场摊位 / stall for time 拖延时间 / the car stalled 汽车熄火了 / stall the negotiations 拖延谈判；`[辨]` stall（拖延，故意拖时间）≈ delay（耽搁）≠ procrastinate（拖延，个人习惯）；stall（n. 摊位）≈ stand（摊位，更口语）；`[惯用]` "Stop stalling and give me an answer!" 别拖了，给我个答复！`[记忆]` 小贩在 stall（摊位）前和顾客"耗时间"→ 拖延；`[参考]` 已见于 words14 |
-| 46 | **decree** | n. 法令，政令；判决 / v. 颁布，裁定 | `[词根]` de-（向下）+ cre- = decide/separate（裁决，分开）+ -e → 拍板 → 法令；同根词：decree 法令, discern 辨别, discrete 分离的；`[短语]` issue a decree 颁布法令 / a royal decree 王室敕令 / decree an amnesty 颁布大赦；`[辨]` decree（法令/裁定，权威机构颁布）≠ law（法律，最通用）≠ order（命令，个人/机构）≠ ruling（裁决，法庭）；`[惯用]` "The king decreed that the tax be abolished." 国王下令废除该税。`[记忆]` de-（下）+ cree（裁决）→ 上面拍板下来 → 法令 |
-| 47 | **cozy up (to sb)** | 讨好，巴结（某人） | `[词根]` cozy（舒适的，温馨的）→ cozy up 凑近套近乎 → 讨好；`[短语]` cozy up to the boss 讨好老板 / cozy up to power 巴结权势 / cozy up with 与…打得火热；`[辨]` cozy up to（讨好，带贬义）≈ ingratiate oneself with（逢迎，正式）≠ befriend（交朋友，中性）≠ suck up to（拍马屁，更口语粗俗）；`[惯用]` "He's been cozying up to the new manager." 他一直在讨好新经理。`[记忆]` cozy（舒服）→ 凑过去让人舒服 → 讨好 |
-| 48 | **ruling** | n. 裁决，裁定 / adj. 执政的，统治的 | `[词根]` rul-（rule 统治）+ -ing → 统治的/裁决；同根词：rule 规则/统治, ruler 统治者/尺子；`[短语]` the ruling party 执政党 / the ruling class 统治阶级 / issue a ruling 作出裁决 / a court ruling 法院裁定；`[辨]` ruling（裁决/执政的）≈ verdict（判决，陪审团）≠ judgement（判断/判决）；`[考研]` 政治新闻高频：the ruling party 执政党；`[惯用]` "The court's ruling was unanimous." 法院一致裁决。`[记忆]` rule（统治）→ ruling party 执政党；`[参考]` 已见于 words14 |
-| 49 | **situate** | v. 使坐落于，使位于 | `[词根]` sit-（=set，放置）+ -uate → 放置在某处 → 坐落；同根词：situation 位置/情况, site 地点, situated 位于；`[短语]` be situated in/at 位于 / be well situated 位置优越 / situate the office downtown 把办公室设在市中心；`[辨]` situate（使位于，正式，常用被动 be situated）≠ locate（确定…的位置/位于，通用）≠ place（放置，最通用）；`[惯用]` "The hotel is situated near the beach." 酒店坐落在海滩附近。`[记忆]` sit（坐）→ 坐落在某处 → 位于 |
-| 50 | **veto a bill** | 否决一项法案/计划 | `[词根]` veto 拉丁语"我禁止"→ 否决权；`[短语]` veto a bill 否决法案 / veto a plan 否决计划 / exercise the veto 行使否决权 / a presidential veto 总统否决；`[辨]` veto（否决，有权者的正式否定）≠ reject（拒绝，通用）≠ override（推翻否决，反义：议会推翻总统否决）；`[考研]` 政治制度阅读：Congress can override a presidential veto；`[记忆]` veto = 拉丁语"我禁止"（I forbid）→ 一票否决 |
-| 51 | **composure** | n. 沉着，镇静，泰然自若 | `[词根]` com-（共同）+ pos- = put（放）→ 把自己放稳 → 镇静；同根词：compose 使镇定, composed 镇定的；`[短语]` keep/lose your composure 保持/失去镇定 / regain one's composure 恢复镇定 / with perfect composure 泰然自若地；`[辨]` composure（压力下不失态）≈ calmness（平静）≠ equanimity（镇定，更正式）；`[惯用]` "She lost her composure when asked about the scandal." 被问及丑闻时她失去了镇定。`[记忆]` compose（镇定）→ composure；`[参考]` 已见于 words15 |
-| 52 | **obsolete** | adj. 过时的，被淘汰的 | `[词根]` ob-（离开）+ sol- = be used to（习惯于）+ -ete → 不再使用 → 过时；同根词：obsolescent 逐渐过时的, obsolescence 淘汰；`[短语]` become obsolete 变得过时 / obsolete technology 过时的技术 / render sth obsolete 使某物被淘汰；`[辨]` obsolete（完全过时，被淘汰）≠ outdated（过时的，还可以用）≠ old-fashioned（老式的，中性）；`[惯用]` "Fax machines are now largely obsolete." 传真机如今基本被淘汰了。`[记忆]` ob-（离开）+ sol-（习惯）→ 脱离习惯 → 不再使用；`[参考]` 已见于 words2 |
-| 53 | **latent** | adj. 潜在的，潜伏的 | `[词根]` lat- = carry（携带）+ -ent → 藏着带在身上的 → 潜伏的；同根词：latent 潜在的, relate 关联, translate 翻译（同源 lat-）；`[短语]` latent danger 潜在的危险 / latent disease 潜伏的疾病 / latent ability 潜能 / latent heat 潜热；`[辨]` latent（潜在的，尚未显现）≈ potential（潜在的，可能的）≠ dormant（休眠的，暂不活动）≠ obvious（明显的，反义）；`[惯用]` "The virus can remain latent for years." 病毒可潜伏数年。`[记忆]` 联想：latent = "来腾"（藏着不腾出来）→ 潜伏的；`[参考]` 已见于 words2、words14 |
-| 54 | **audit** | n./v. 审计，稽核；审查 | `[词根]` aud- = hear（听）→ 听账目汇报 → 审计；同根词：auditor 审计员, auditorium 礼堂（听的地方）, audience 听众；`[短语]` conduct an audit 进行审计 / an annual audit 年度审计 / audit the accounts 审核账目 / internal/external audit 内部/外部审计；`[辨]` audit（审计，财务合规核查）≠ review（审查，较宽松）≠ inspect（检查，实物/现场）；`[惯用]` "The company's books are audited every year." 公司账目每年接受审计。`[记忆]` aud-（听）→ 听财务汇报 → 审计 |
-| 55 | **dew** | n. 露水，露珠 | `[词根]` 古英语 deaw（露）→ dew；`[短语]` morning dew 晨露 / dew drops 露珠 / covered with dew 沾满露水 / dew point 露点（气象）；`[辨]` dew（露水）≠ frost（霜，结冰的露）≠ mist（薄雾）；`[惯用]` "The grass was wet with dew." 草被露水打湿了。`[记忆]` 谐音"嘟"→ 露珠滴落"嘟嘟"响 |
-| 56 | **pillar** | n. 柱子，支柱；主心骨 | `[词根]` 拉丁语 pila（柱子）→ pillar；`[短语]` a pillar of society 社会的栋梁 / the five pillars of Islam 伊斯兰教五大支柱 / a pillar of strength 中流砥柱；`[辨]` pillar（柱子/支柱，具体+抽象）≈ column（圆柱，建筑）≠ beam（横梁）；`[惯用]` "She is a pillar of the community." 她是社区的中流砥柱。`[记忆]` 谐音"劈了"→ 房子柱子被劈了就没支撑了 → 支柱 |
-| 57 | **desolate** | adj. 荒凉的，无人烟的；凄凉的 | `[词根]` de-（完全）+ sol- = alone（独自）+ -ate → 完全孤独 → 荒凉；同根词：solitary 孤独的, solitude 独处, sole 唯一的；`[短语]` a desolate landscape 荒凉的景象 / desolate countryside 荒无人烟的乡村 / feel desolate 感到凄凉；`[辨]` desolate（荒凉/凄凉，无人+孤独）≠ deserted（荒废的，被遗弃）≠ barren（贫瘠的，不毛之地）；`[惯用]` "The house stood desolate and abandoned." 那房子荒凉地立着，无人居住。`[记忆]` de-（完全）+ sol-（孤独）→ 孤零零 → 荒凉 |
-| 58 | **futile** | adj. 徒劳的，无效果的 | `[词根]` fut- = pour（倒）+ -ile → 倒出去就漏 → 徒劳；同根词：futility 徒劳, refute 反驳（倒回去）；`[短语]` a futile attempt 徒劳的尝试 / a futile gesture 徒然的姿态 / futile efforts 白费的努力；`[辨]` futile（徒劳的，注定没结果）≈ vain（徒然的，in vain 白费）≠ useless（无用的，中性）≠ fruitless（无成果的）；`[惯用]` "It is futile to argue with him." 跟他争论是徒劳的。`[记忆]` futile 谐音"废透"→ 白费透了 → 徒劳；`[参考]` 已见于 words2 |
-| 59 | **allegiance to** | 对…的忠诚，效忠 | `[词根]` al-（=ad-，向）+ leg- = law（法律）+ -iance → 向法律宣誓 → 忠诚；同根词：allegiance 忠诚, legal 合法的, loyal 忠诚的；`[短语]` swear allegiance to 宣誓效忠 / pledge allegiance to the flag 向国旗宣誓效忠 / loyalty and allegiance 忠诚与效忠；`[辨]` allegiance（对政权/原则的忠诚，正式）≈ loyalty（忠诚，通用，对人/品牌）≠ fidelity（忠贞，婚姻/数据）；`[惯用]` "He pledged allegiance to the king." 他宣誓效忠国王。`[记忆]` 谐音"爱丽姐"→ 一直追随爱丽姐 → 忠诚；`[参考]` 已见于 words1 |
-| 60 | **decimation** | n. 大量毁灭，大规模削减 | `[词根]` deci- = ten（十）+ -mate → 古罗马"十中抽一"惩罚 → 引申"大批毁灭"；同根词：decimal 十进制的, decade 十年, decimate 大批毁灭；`[短语]` the decimation of the population 人口的大批死亡 / the decimation of forests 森林的大规模毁坏；`[辨]` decimation（大规模毁灭，非"全部灭绝"）≠ extermination（彻底灭绝）⚠️ 程度不同：decimate 毁掉大部分，exterminate 赶尽杀绝；`[惯用]` "The war caused the decimation of the local wildlife." 战争导致当地野生动物大量死亡。`[记忆]` deci-（十）→ 十中抽一 → 大批毁灭；`[参考]` 已见于 words14 |
-| 61 | **anthropologist** | n. 人类学家 | `[词根]` anthrop- = human（人）+ -logy（学）+ -ist（人）→ 研究人类的人 → 人类学家；同根词：anthropology 人类学, philanthropist 慈善家（爱人类者）, misanthrope 厌世者；`[短语]` a cultural anthropologist 文化人类学家 / fieldwork of anthropologists 人类学家的田野调查；`[辨]` anthropologist（人类学家，研究人类社会文化）≠ archaeologist（考古学家，研究遗迹）≠ ethnologist（民族学家）；`[惯用]` "The anthropologist lived with the tribe for two years." 这位人类学家与部落同住了两年。`[记忆]` anthrop-（人）→ 研究"人"的学家；`[参考]` 已见于 words13 |
-| 62 | **fauna** | n. 动物群，动物区系 | `[词根]` Fauna 罗马神话中的动物女神 → 动物群；对应 flora（植物群，花神）；`[短语]` flora and fauna 动植物（固定搭配）/ native fauna 本地动物群 / marine fauna 海洋动物群；`[辨]` fauna（动物群）≠ flora（植物群）⚠️ 常成对出现：the flora and fauna of the region；`[惯用]` "The island is famous for its unique fauna." 该岛以独特的动物群闻名。`[记忆]` Fauna（花神 Flora 的姐妹）→ 动物群；flora and fauna 动植物；`[参考]` 已见于 words12 |
-| 63 | **watershed** | n. 分水岭；转折点；（美）流域 | `[词根]` water（水）+ shed（分流）→ 水分流之处 → 分水岭；`[短语]` a watershed moment 转折点 / a watershed in history 历史上的分水岭 / the watershed between 两者的分界；`[辨]` watershed（分水岭/重大转折，比喻义高频）≈ turning point（转折点，通用）≠ milestone（里程碑，成就节点）；`[考研]` 阅读高频比喻义：a watershed in the development of…；`[惯用]` "The election marked a watershed in the country's politics." 这场选举是该国政治的分水岭。`[记忆]` water（水）+ shed（分流）→ 水往两边流的分界 → 分水岭 |
-| 64 | **caravanserai** | n. （中东）商队旅馆；热闹的场所 | `[词根]` caravan（商队）+ serai（=saray，宫殿/旅舍，波斯语）→ 商队驿站；`[短语]` a desert caravanserai 沙漠商队旅馆；`[辨]` ⚠️ 原文 caravanseria 拼写有误，正确为 caravanserai；caravanserai（商队客栈，历史）≠ hotel（酒店，现代）≠ inn（客栈，英式乡村）；`[记忆]` caravan（大篷车/商队）+ serai（驿站）→ 商队歇脚处 |
-| 65 | **procreation** | n. 生育，繁衍（正式） | `[词根]` pro-（向前）+ cre- = create（创造）+ -ation → 创造新生命 → 生育；同根词：create 创造, procreate 生育, creature 生物；`[短语]` the procreation of children 生儿育女 / for the purpose of procreation 以繁衍为目的；`[辨]` procreation（生育繁衍，正式/生物学）≈ reproduction（繁殖，通用）≠ adoption（收养，反义）；`[惯用]` "The tribe's rituals were tied to procreation." 该部落的仪式与生育繁衍相关。`[记忆]` pro-（向前）+ create（创造）→ 创造下一代；`[参考]` 已见于 words13 |
-| 66 | **uncanny** | adj. 离奇的，难以解释的；惊人的 | `[词根]` un-（不）+ canny（精明谨慎的，苏格兰语）→ 超出常理的 → 离奇；同根词：canny 精明的, uncanny 神秘的；`[短语]` an uncanny resemblance 惊人的相似 / uncanny ability 超常的能力 / an uncanny feeling 一种说不清的感觉；`[辨]` uncanny（离奇超常，让人不安）≠ mysterious（神秘的，有谜团）≠ weird（怪异的，口语）；`[惯用]` "She has an uncanny ability to read people." 她有惊人的识人能力。`[记忆]` un-（不）+ canny（精明的）→ 精明到不寻常 → 离奇；`[参考]` 已见于 words12 |
-| 67 | **hominid** | n. 人科动物，原始人类 | `[词根]` homin- = human（人）+ -id（科，生物学后缀）→ 人科；同根词：homo 人属, hominid 人科, hominoid 人猿总科；`[短语]` early hominids 早期原始人类 / hominid fossils 古人类化石 / hominid ancestors 人类祖先；`[辨]` hominid（人科，含现代人及其祖先）≠ human（人类，现代人）≠ ape（猿）；`[惯用]` "The fossils belong to an early hominid species." 这些化石属于一个早期原始人类物种。`[记忆]` homin-（人）+ -id（科）→ 人这一科 |
-| 68 | **quick-witted** | adj. 机智的，反应快的 | `[词根]` quick（快）+ wit（才智）+ -ed → 才智来得快 → 机智；同根词：wit 才智, witty 诙谐的, outwit 智胜；`[短语]` a quick-witted student 反应敏捷的学生 / a quick-witted reply 机智的回答；`[辨]` quick-witted（反应快，临场机智）≈ sharp（敏锐的）≠ witty（诙谐幽默的，出彩在幽默）≠ slow-witted（迟钝的，反义）；`[惯用]` "The quick-witted child escaped the trap." 机灵的孩子逃脱了陷阱。`[记忆]` quick（快）+ witted（才智）→ 才智来得快 |
-| 69 | **well-orchestrated** | adj. 精心策划的，周密安排的 | `[词根]` orchest- = arrange（编排）+ -ate + -ed → 像指挥交响乐一样编排 → 精心策划；同根词：orchestra 管弦乐队, orchestrate 精心安排；`[短语]` a well-orchestrated campaign 精心策划的活动 / a well-orchestrated attack 周密部署的进攻；`[辨]` well-orchestrated（精心协调安排的，褒义）≈ well-organized（组织良好的）≠ improvised（即兴的，反义）；`[惯用]` "The protest was a well-orchestrated operation." 这场抗议是一次精心策划的行动。`[记忆]` orchestra（管弦乐队）→ 像指挥乐队一样把各方协调好 |
-| 70 | **exterminate** | v. 灭绝，根除 | `[词根]` ex-（出）+ termin- = boundary（边界）+ -ate → 赶出边界 → 灭绝；同根词：terminate 终止, terminal 终点, exterminate 灭绝；`[短语]` exterminate pests 消灭害虫 / exterminate a species 灭绝一个物种 / be exterminated 被消灭；`[辨]` exterminate（彻底灭绝，赶尽杀绝）≠ decimate（大批毁灭，但非全灭）⚠️ 程度不同；≈ eradicate（根除，疾病/贫困）；`[惯用]` "The invasive species was exterminated." 入侵物种被根除了。`[记忆]` ex-（出）+ termin-（边界）→ 赶出边界 → 灭绝 |
+## 一、消遣与娱乐
+
+### 1. **pastime** — 消遣，娱乐；爱好
+**核心**：**打发时间**的活动（不一定投入精力）
+**搭配**：a popular pastime 流行的消遣 / one's favourite pastime 最喜欢的消遣
+**辨析**：⚠️ pastime（消遣）≈ hobby（爱好，投入精力）≠ entertainment（娱乐，观看/参与）
+**词根**：pass（度过）+ time（时间）→ 消磨时间的事
+
+### 2. **cricket** — 板球；蟋蟀
+**核心**：一词两义：**板球**（英联邦运动）与**蟋蟀**
+**搭配**：play cricket 打板球 / crickets chirping 蟋蟀鸣叫
+**辨析**：⚠️ cricket（板球，英国）≠ baseball（棒球，美国）≠ rounders（圆场棒球）
+**记忆**：英式习语 "It's not cricket." = 不公平的行为
+
+### 3. **make a racket** — 制造噪音，吵闹
+**核心**：⚠️ 原文"make a cricket"有误，应为 **make a racket**（racket = 喧闹声）
+**搭配**：make a racket 吵闹 / stop making a racket 别吵了 / the racket of traffic 车辆的嘈杂声
+**辨析**：⚠️ racket（喧闹/球拍）≠ cricket（板球/蟋蟀）— 形近
+**记忆**：racket（喧闹）→ make a racket 制造噪音
+
+---
+
+## 二、特征与状态
+
+### 4. **cardinal** — 主要的，基本的 / n. 基数；红衣主教
+**核心**：**首要的**（正式书面），如 cardinal principle 首要原则
+**搭配**：a cardinal sin 大错（原义"七宗罪"）/ cardinal rule 基本原则 / cardinal direction 基本方位
+**辨析**：⚠️ cardinal numbers 基数词（1,2,3）≠ ordinal numbers 序数词（第一、第二）
+**词根**：card- = hinge（门轴）→ 门轴般关键的；同根 cardinal points 基本方位
+
+### 5. **coarse-grained** — 粗略的，颗粒粗的；不精细的
+**核心**：**颗粒粗/粗略**的（分析/木材/沙子），反义 fine-grained
+**搭配**：coarse-grained analysis 粗略的分析 / coarse-grained wood 纹理粗糙的木材 / coarse-grained sand 粗砂
+**辨析**：⚠️ coarse-grained（粒度粗）≠ fine-grained（细致，反义）≠ superficial（肤浅，贬义）
+**词根**：coarse（粗糙）+ grain（颗粒/纹理）→ 纹理粗糙的
+
+### 6. **tiresome** — 令人厌倦的，烦人的
+**核心**：**令人生厌**（事物作主语）；⚠️ ≠ tired（自己感到累）
+**搭配**：a tiresome child 烦人的孩子 / tiresome work 枯燥的工作 / become tiresome 变得令人厌烦
+**辨析**：⚠️ tiresome（使人烦）≈ tedious（单调乏味）≠ tired（人作主语）
+**词根**：tire（疲劳）+ -some（易于…的）→ 让人累的
+
+### 7. **faint** — 头晕的，虚弱的；微弱的 / v. 昏厥
+**核心**：⚠️ 原文 raint 为拼写错误，正确 **faint**；"微弱"+"昏厥"两义
+**搭配**：feel faint 感到头晕 / a faint smell 淡淡的气味 / faint hope 一线希望 / faint praise 敷衍的表扬
+**辨析**：⚠️ faint（微弱/头晕）≈ dizzy（头晕，更口语）
+**记忆**：faint 与 paint 形近：油漆味浓到让人 faint（头晕）
+
+### 8. **magnitude** — 巨大，重大；重要性；震级
+**核心**：**规模/程度之大**（正式书面）；地震"震级"
+**搭配**：the magnitude of the problem 问题的严重性 / an earthquake of magnitude 7 七级地震 / of great magnitude 重大的
+**辨析**：⚠️ magnitude（规模/震级，正式）≠ size（大小，通用）≠ extent（程度，范围）
+**词根**：magn- = great（大）+ -itude → 巨大；同根 magnify, magnificent
+
+### 9. **desirable** — 理想的，值得拥有的；可取的
+**核心**：**值得拥有/令人渴望的**（物作主语）；⚠️ ≠ desirous（渴望的，人作主语）
+**搭配**：a desirable location 理想的地段 / a desirable outcome 可取的结果 / highly desirable 非常可取的
+**辨析**：⚠️ desirable（值得拥有，物）≠ desirous（渴望，人）— 易混
+**词根**：de-（加强）+ sir-（渴望）+ -able → 令人渴望的；同根 desire
+
+### 10. **composure** — 沉着，镇静，泰然自若（已见于 words15）
+**核心**：**压力下不失态**的沉着镇定
+**搭配**：keep/lose your composure 保持/失去镇定 / regain one's composure 恢复镇定
+**辨析**：⚠️ composure（压力下不失态）≈ calmness（平静）≠ equanimity（镇定，更正式）
+**词根**：com-（共同）+ pos-（放）→ 把自己放稳；同根 compose, composed
+
+---
+
+## 三、容光与荣耀
+
+### 11. **be radiant with sth** — 因…而容光焕发，喜形于色
+**核心**：⚠️ 原文 radint 拼写有误，正确 **radiant**；因喜悦而**脸上放光**
+**搭配**：be radiant with joy 喜气洋洋 / be radiant with happiness 幸福满面 / a radiant smile 灿烂的笑容
+**辨析**：⚠️ be radiant with（容光焕发）≠ glow with（泛光，可指健康）≠ beam（笑容满面）
+**词根**：radi- = ray（光线）→ 发出光芒；同根 radiate, radiation
+
+### 12. **glory** — 荣誉，光荣；辉煌 / v. 自豪
+**核心**：**荣耀与辉煌**（褒义）；glory in sth 为…而自豪
+**搭配**：in all its glory 壮丽无比 / bask in the glory 享受荣耀 / glory in sth 为…自豪
+**辨析**：⚠️ glory（辉煌成就，褒）≈ honour（敬重）≠ fame（名声，中性）≠ vanity（虚荣，贬）
+**词根**：glor- = praise（赞美）→ 荣誉；同根 glorious, glorify
+
+### 13. **in all its glory** — 壮丽无比，全盛状态
+**核心**：**最美的全盛状态**（see the city in all its glory）
+**搭配**：see the city in all its glory 目睹城市最美的样子 / the autumn forest in all its glory 秋林尽染
+**辨析**：⚠️ in all its glory（全盛）≈ at its best（最佳状态）≠ in decline（衰落中，反义）
+
+### 14. **its former glory** — 往日辉煌
+**核心**：**昔日的辉煌**（restore sth to its former glory 恢复如初）
+**搭配**：restore sth to its former glory 使恢复昔日辉煌 / regain its former glory 重拾昔日荣光
+**辨析**：⚠️ former（以前的）≠ formal（正式的）— 形近
+**记忆**：former（往日的）+ glory（辉煌）→ 往日辉煌
+
+---
+
+## 四、养育与医疗
+
+### 15. **parenting** — 养育，育儿（父母对子女的教养）
+**核心**：**为人父母**的方法与责任（现代常用）
+**搭配**：parenting skills 育儿技巧 / parenting style 教养方式 / co-parenting 共同抚养
+**辨析**：⚠️ parenting（方法责任）≠ upbringing（成长环境）≠ childcare（照看）
+**词根**：parent（父母）+ -ing → 当父母这件事；同根 parental, parenthood
+
+### 16. **hospitalize** — 使住院治疗
+**核心**：**送进医院**治疗（被动高频：be hospitalized）
+**搭配**：be hospitalized for 因…住院 / be seriously ill and hospitalized 病重住院
+**辨析**：⚠️ hospitalize（住院，被动常用）≠ treat（治疗，不一定住院）≠ admit（收治，医院角度）
+**词根**：hospital（医院）+ -ize（动词化）→ 进医院；同根 hospitalization
+
+---
+
+## 五、制度与权力
+
+### 17. **affiliate** — 使隶属，使并入 / n. 分支机构，附属机构
+**核心**：⚠️ 原文"当地机关"为误译，应为**分支机构**；be affiliated with 隶属于
+**搭配**：be affiliated with/to 隶属于 / a local affiliate 当地分支机构 / an affiliate company 附属公司
+**辨析**：⚠️ affiliate（隶属关系）≠ subsidiary（控股子公司）≠ branch（同属总部的分公司）
+**词根**：af-（向）+ fili-（儿子）→ 收为"儿子" → 附属
+
+### 18. **treaty** — 条约，协定
+**核心**：**国家间正式条约**（签署/批准/违反）
+**搭配**：sign a treaty 签署条约 / ratify a treaty 批准条约 / a peace treaty 和平条约
+**辨析**：⚠️ treaty（国家间正式）≠ agreement（最通用）≠ pact（较非正式）≠ convention（多边公约）
+**词根**：treat- = handle（处理）→ 处理国际关系的文件；同根 treatment
+
+### 19. **infrastructure** — 基础设施（交通/通讯/水电等）
+**核心**：**支撑社会的底层结构**（宏观，经济/城市化阅读高频）
+**搭配**：infrastructure construction 基础设施建设 / infrastructure investment 基建投资 / aging infrastructure 老化的基础设施
+**辨析**：⚠️ infrastructure（宏观基建）≠ facility（具体场所）≠ establishment（机构）
+**词根**：infra-（在下）+ struct-（建造）+ -ure → 底下的结构
+
+### 20. **decree** — 法令，政令；判决 / v. 颁布，裁定
+**核心**：**权威机构颁布**的法令/裁定（a royal decree 王室敕令）
+**搭配**：issue a decree 颁布法令 / a royal decree 王室敕令 / decree an amnesty 颁布大赦
+**辨析**：⚠️ decree（法令/裁定）≠ law（最通用）≠ order（命令）≠ ruling（法庭裁决）
+**词根**：de-（向下）+ cre-（裁决）→ 上面拍板下来
+
+### 21. **ruling** — 裁决，裁定 / adj. 执政的，统治的
+**核心**：**法庭裁决** + "执政的"（the ruling party 执政党）
+**搭配**：the ruling party 执政党 / issue a ruling 作出裁决 / a court ruling 法院裁定
+**辨析**：⚠️ ruling（裁决）≈ verdict（陪审团判决）≠ judgement（判断/判决）
+**词根**：rule（统治）+ -ing → 统治的/裁决
+
+### 22. **veto a bill** — 否决一项法案/计划
+**核心**：**行使否决权**否定法案（政治制度阅读高频）
+**搭配**：veto a bill 否决法案 / exercise the veto 行使否决权 / a presidential veto 总统否决
+**辨析**：⚠️ veto（有权者正式否定）≠ reject（拒绝，通用）≠ override（推翻否决，反义）
+**词根**：veto = 拉丁语"我禁止"（I forbid）→ 一票否决
+
+### 23. **audit** — 审计，稽核；审查
+**核心**：**财务合规核查**（听账目汇报）
+**搭配**：conduct an audit 进行审计 / an annual audit 年度审计 / internal/external audit 内/外部审计
+**辨析**：⚠️ audit（财务核查）≠ review（较宽松）≠ inspect（实物/现场检查）
+**词根**：aud- = hear（听）→ 听账目汇报；同根 auditor, audience, auditorium
+
+---
+
+## 六、危险与攻守
+
+### 24. **peril** — 严重的危险，险境
+**核心**：**严重迫近**的危险（正式，比 danger 语气强）
+**搭配**：in peril 处于危险中 / at one's peril 自担风险 / the perils of war 战争的种种危险
+**辨析**：⚠️ peril（严重危险，正式）≠ danger（最通用）≠ hazard（隐患，工业/环境）
+**记忆**：谐音"怕肉"→ 战乱中怕丢性命 → 危险
+
+### 25. **in peril** — 处于危险之中
+**核心**：**身处险境**（正式，比 in danger 语气重）
+**搭配**：be in peril of one's life 有生命危险 / put sb/sth in peril 使…陷入危险 / in mortal peril 处于致命危险中
+**辨析**：⚠️ in peril（严重危险，正式）≈ in danger（通用）≠ at risk（范围更广）
+
+### 26. **ward off** — 避开，挡开（危险/疾病/攻击）
+**核心**：**像守卫一样挡在身外**（预防疾病/避开危险）
+**搭配**：ward off danger 避开危险 / ward off a cold 预防感冒 / ward off the blow 挡开一击
+**辨析**：⚠️ ward off（挡开/预防）≈ fend off（更用力）≠ avoid（不接触）≠ avert（防止发生）
+**词根**：ward = guard（守卫）→ 守护着挡开；同根 warden, wardrobe
+
+### 27. **lay siege to sth** — 围攻，包围（城市/要塞）
+**核心**：⚠️ 原文 seige 拼写有误，正确 **siege**；持久围困
+**搭配**：lay siege to the city 围攻该城 / under siege 被围困 / lift the siege 解围
+**辨析**：⚠️ lay siege to（军事围困）≠ surround（包围，通用）≠ blockade（封锁）
+**词根**：siege = sit（坐）→ 围城时"坐"着不撤；同根 besiege
+
+---
+
+## 七、行动与弃置
+
+### 28. **scramble** — 攀爬，争夺；仓促行动 / n. 混乱
+**核心**：**手脚并用地抢/爬**（动作急乱）
+**搭配**：scramble for sth 争抢某物 / scramble up a hill 爬上小山 / scramble to do sth 争先做某事
+**辨析**：⚠️ scramble（急乱争抢）≈ clamber（攀爬）≠ struggle（费力挣扎）
+**记忆**：⚠️ 注意固定搭配 **scrambled eggs**（炒蛋，复数）
+
+### 29. **ditch** — 沟，渠 / v. 抛弃，丢弃（计划/车等）
+**核心**：口语**甩掉/废弃**（不再需要的东西），名词"沟渠"
+**搭配**：ditch a plan 取消计划 / ditch the car 弃车 / a drainage ditch 排水沟
+**辨析**：⚠️ ditch（甩掉，口语）≈ abandon（放弃，正式）≈ dump（扔掉，更粗俗）
+**记忆**：把计划"扔进沟里（ditch）"→ 废弃
+
+---
+
+## 八、召唤、誓言与典礼
+
+### 30. **summon** — 召唤，传唤；鼓起（勇气）
+**核心**：**权力方召唤/传唤**（正式）；summon up 鼓起勇气
+**搭配**：summon sb to court 传唤某人出庭 / summon up courage 鼓起勇气 / summon a meeting 召集会议
+**辨析**：⚠️ summon（传唤，正式）≠ call（叫来，通用）≠ convene（召集会议）≠ subpoena（法律传票）
+**词根**：sum-（=sub-，下）+ mon-（提醒）→ 提醒来报到；同根 monitor, admonish
+
+### 31. **summon up** — 鼓起（勇气），激起
+**核心**：**从心里召唤出**勇气/精力/回忆
+**搭配**：summon up courage 鼓起勇气 / summon up energy 打起精神 / summon up memories 唤起回忆
+**辨析**：⚠️ summon up（鼓起）≈ muster up（召集）≈ pluck up（口语）
+
+### 32. **take an oath** — 宣誓，发誓
+**核心**：**法律/正式宣誓**（take the oath of office 宣誓就职）
+**搭配**：take an oath to tell the truth 宣誓说真话 / under oath 在宣誓约束下（法庭）
+**辨析**：⚠️ take an oath（正式/法律）≈ swear（通用）≠ vow（个人承诺）
+**场景**：法庭作证/就职仪式
+
+### 33. **commencement** — 开端，开始（正式书面）；毕业典礼（美式）
+**核心**：**正式开端**；美式"毕业典礼"（commencement ceremony）
+**搭配**：the commencement of …的开始 / commencement ceremony 毕业典礼 / from the commencement 从一开始
+**辨析**：⚠️ commencement（开端，正式书面）≠ beginning/start（通用）≠ opening（开场）
+**词根**：com-（共同）+ men-（开始）+ -ment → 共同开始；同根 commence
+
+---
+
+## 九、推进与拖延
+
+### 34. **facilitate** — 促进，使便利
+**核心**：**使事情更顺畅**（正式，宾语是"事"不是"人"）
+**搭配**：facilitate development 促进发展 / facilitate communication 促进交流 / facilitate the process 推进流程
+**辨析**：⚠️ facilitate（使便利，正式）≠ promote（推动）≠ ease（缓解）≠ help（最通用，可接人）
+**词根**：fac- = do/make（做）+ -ile + -ate → 让事"好做"
+
+### 35. **propel** — 推进，驱动；促使
+**核心**：**向前推**（物理驱动 + 抽象促使）
+**搭配**：propel the boat forward 推动小船前进 / be propelled by 由…驱动 / propel sb to success 推动某人成功
+**辨析**：⚠️ propel（推进）≈ drive（驱动）≈ push（口语）≠ pull（拉）
+**词根**：pro-（向前）+ pel-（推）→ 向前推；对比 expel 开除, repel 击退
+
+### 36. **defer** — 推迟，延期；遵从
+**核心**：**往后带**的推迟（正式）；defer to 遵从某人
+**搭配**：defer doing sth 推迟做某事 / defer payment 延期付款 / defer to sb 遵从某人（的意见）
+**辨析**：⚠️ defer（推迟，正式）≠ delay（耽搁，通用）≠ postpone（延期）≠ cancel（取消）
+**词根**：de-（向下）+ fer-（带）→ 往后带；同根 deferral 延期
+
+### 37. **stall** — 摊位；畜栏 / v. 拖延；熄火
+**核心**：名词**摊位**；动词"**故意拖延**/熄火"
+**搭配**：a market stall 市场摊位 / stall for time 拖延时间 / the car stalled 汽车熄火了
+**辨析**：⚠️ stall（故意拖时间）≈ delay（耽搁）≠ procrastinate（个人拖延习惯）
+**词根**：古英语 steall（站立处）→ 摊位；同根 install, forestall
+
+---
+
+## 十、追与逃
+
+### 38. **persecute** — （因宗教/政治/种族等）迫害；骚扰
+**核心**：**因身份/信仰**追着迫害（非法律）；⚠️ ≠ prosecute 起诉
+**搭配**：be persecuted for one's beliefs 因信仰受迫害 / persecute minorities 迫害少数族裔 / religious persecution 宗教迫害
+**辨析**：⚠️ persecute（迫害）≠ prosecute（起诉，法律）— 考研形近必考
+**词根**：per-（完全）+ secut-（跟随）→ 一路追着不放
+
+### 39. **elude** — 逃避，躲避；使无法达到/理解
+**核心**：**巧妙地避开**/使达不到（the answer eludes me 我想不出答案）
+**搭配**：elude capture 逃脱追捕 / elude the police 躲避警察
+**辨析**：⚠️ elude（巧妙避开）≠ evade（规避责任/法律）≠ avoid（避免，中性）
+**词根**：e-（出）+ lud-（玩）→ 玩着溜走；同根 elusive, allude, illusion
+
+### 40. **elusive** — 难以捉摸的，难以找到/实现的
+**核心**：**抓不住/够不着**的（目标、人、成功）
+**搭配**：an elusive goal 难以实现的目标 / an elusive figure 行踪不定的人 / elusive success 迟迟不来的成功
+**辨析**：⚠️ elusive（抓不到）≠ illusive（虚幻的，来自 illusion）— 易混
+**词根**：elude（逃避）+ -ive → 总想逃的 → 难以捉摸
+
+---
+
+## 十一、节约与征收
+
+### 41. **economical** — 节约的，经济的；性价比高的
+**核心**：**省钱省资源**的；⚠️ ≠ economic（经济上的，宏观）
+**搭配**：an economical car 省油的车 / be economical with the truth 避重就轻（委婉语）
+**辨析**：⚠️ economical（划算/节约）≠ economic（宏观经济）— 形容词辨析必考
+**词根**：eco-（家）+ nom-（管理）+ -ical → 管家有道；同根 economy, economics
+
+### 42. **levy sth on** — 对…征收（税/罚款等）
+**核心**：**政府强制征收**（正式）
+**搭配**：levy a tax on imports 对进口商品征税 / levy a fine on sb 对某人罚款 / levy war against 对…发动战争
+**辨析**：⚠️ levy（强制征收，正式）≠ collect（收集/收税，中性）≠ impose（施加/征收）
+**词根**：lev- = raise（举起）→ 把钱"举"上来；同根 lever, elevate, relieve
+
+---
+
+## 十二、物产与文艺
+
+### 43. **copper** — 铜；铜币；警察（口语）
+**核心**：**铜**；口语俚语"警察"
+**搭配**：copper wire 铜线 / copper mines 铜矿 / a copper coin 铜币
+**辨析**：⚠️ copper（铜/警察）≠ cop（警察，更口语）≠ bronze（青铜，铜锡合金）
+**记忆**：警察制服上有铜（copper）质徽章 → 警察
+
+### 44. **lumber** — 木材，木料 / v. 笨重地移动
+**核心**：**木材** + 动词"**笨重地移动**"
+**搭配**：lumber industry 木材业 / lumberjack 伐木工 / lumber along 笨重地行进
+**辨析**：⚠️ lumber（木材/笨重移动）≠ timber（英式/建筑）≠ wood（最通用）
+**记忆**：扛着 lumber（木材）走路自然 lumber（笨重移动）
+
+### 45. **pottery** — 陶器，陶艺；陶瓷厂
+**核心**：**黏土烧制的陶器**（手艺+器物）
+**搭配**：a pottery workshop 陶艺工作坊 / hand-painted pottery 手绘陶器
+**辨析**：⚠️ pottery（陶器）≠ porcelain（瓷器，高温精细）≠ ceramics（总称，含瓷砖等）
+**词根**：pot（罐）+ -tery（场所）→ 做陶罐的地方/手艺
+
+### 46. **prose** — 散文（非韵文）
+**核心**：**不押韵**的日常/文学文体（反义 verse 韵文）
+**搭配**：in prose 用散文体 / prose writing 散文写作 / poetic prose 诗化散文
+**辨析**：⚠️ prose（散文）≠ poetry/verse（诗歌，反义）≠ essay（随笔，散文的一种）
+**词根**：拉丁语 prosa（直白的话）→ 散文
+
+### 47. **rehearse** — 排练，预演；复述
+**核心**：**提前反复练习**（演出/发言）
+**搭配**：rehearse a play 排练戏剧 / rehearse one's speech 练习演讲 / dress rehearsal 彩排
+**辨析**：⚠️ rehearse（排练，提前练）≈ practice（练习，通用）≠ perform（正式上场）
+**词根**：re-（再）+ hearse（耙地）→ 一遍遍耙地般重复；同根 rehearsal
+
+---
+
+## 十三、野蛮与轻蔑
+
+### 48. **savage** — 野蛮的，凶残的；猛烈的 / n. 野蛮人
+**核心**：**原始残暴/猛烈**（savage criticism 猛烈的批评）
+**搭配**：a savage attack 凶残的攻击 / savage criticism 猛烈的批评 / savage beasts 野兽
+**辨析**：⚠️ savage（野蛮残暴）≈ brutal（残忍粗暴）≈ cruel（残忍）≠ civilized（文明的，反义）
+**词根**：拉丁语 silva（森林）→ 森林里的 → 野蛮
+
+### 49. **scorn** — 鄙视，轻蔑 / v. 鄙视；不屑（做）
+**核心**：**公开的轻蔑**；pour scorn on 对…嗤之以鼻
+**搭配**：pour scorn on 对…嗤之以鼻 / scorn to do sth 不屑于做某事 / be treated with scorn 遭到轻蔑对待
+**辨析**：⚠️ scorn（公开轻蔑）≈ disdain（高傲蔑视）≠ despise（情感更强）≠ ridicule（嘲笑）
+**记忆**：谐音"死刮你"→ 用眼神死刮你 → 轻蔑
+
+---
+
+## 十四、忠诚与讨好
+
+### 50. **allegiance to** — 对…的忠诚，效忠
+**核心**：**对政权/原则的效忠**（正式）；swear/pledge allegiance to 宣誓效忠
+**搭配**：swear allegiance to 宣誓效忠 / pledge allegiance to the flag 向国旗宣誓效忠 / loyalty and allegiance 忠诚与效忠
+**辨析**：⚠️ allegiance（对政权/原则，正式）≈ loyalty（对人/品牌，通用）≠ fidelity（忠贞，婚姻/数据）
+**词根**：al-（=ad-，向）+ leg-（法律）+ -iance → 向法律宣誓；同根 legal, loyal
+
+### 51. **cozy up (to sb)** — 讨好，巴结（某人）
+**核心**：**凑近套近乎**、讨好（带贬义，口语）
+**搭配**：cozy up to the boss 讨好老板 / cozy up to power 巴结权势 / cozy up with 与…打得火热
+**辨析**：⚠️ cozy up to（讨好，贬）≈ ingratiate oneself with（逢迎，正式）≠ befriend（交朋友，中性）
+**词根**：cozy（舒适）→ 凑过去让人舒服 → 讨好
+
+---
+
+## 十五、境况与心态
+
+### 52. **situate** — 使坐落于，使位于
+**核心**：**使位于某处**（正式，常用被动 be situated）
+**搭配**：be situated in/at 位于 / be well situated 位置优越 / situate the office downtown 把办公室设在市中心
+**辨析**：⚠️ situate（正式，被动）≠ locate（确定位置，通用）≠ place（放置）
+**词根**：sit-（=set，放置）+ -uate → 坐落在某处；同根 situation, site
+
+### 53. **obsolete** — 过时的，被淘汰的
+**核心**：**完全过时被淘汰**（render sth obsolete 使…被淘汰）
+**搭配**：become obsolete 变得过时 / obsolete technology 过时的技术 / render sth obsolete 使被淘汰
+**辨析**：⚠️ obsolete（完全淘汰）≠ outdated（过时但还能用）≠ old-fashioned（老式，中性）
+**词根**：ob-（离开）+ sol-（习惯）→ 脱离习惯 → 不再使用
+
+### 54. **latent** — 潜在的，潜伏的
+**核心**：**尚未显现**的（危险/疾病/能力）
+**搭配**：latent danger 潜在的危险 / latent disease 潜伏的疾病 / latent ability 潜能
+**辨析**：⚠️ latent（尚未显现）≈ potential（可能的）≠ dormant（休眠）≠ obvious（明显，反义）
+**词根**：lat- = carry（携带）+ -ent → 藏着带在身上的；同根 relate, translate
+
+### 55. **desolate** — 荒凉的，无人烟的；凄凉的
+**核心**：**无人+孤独**的荒凉（feel desolate 感到凄凉）
+**搭配**：a desolate landscape 荒凉的景象 / desolate countryside 荒无人烟的乡村
+**辨析**：⚠️ desolate（荒凉/凄凉）≠ deserted（被遗弃）≠ barren（贫瘠不毛）
+**词根**：de-（完全）+ sol-（独自）→ 完全孤独；同根 solitary, solitude
+
+### 56. **futile** — 徒劳的，无效果的
+**核心**：**注定没结果**的徒劳（It is futile to argue with him. 跟他争论是徒劳的）
+**搭配**：a futile attempt 徒劳的尝试 / a futile gesture 徒然的姿态 / futile efforts 白费的努力
+**辨析**：⚠️ futile（注定无果）≈ vain（in vain 白费）≠ useless（中性）≠ fruitless（无成果）
+**词根**：fut- = pour（倒）+ -ile → 倒出去就漏；同根 futility, refute
+
+### 57. **hitherto** — 迄今为止，到目前为止（正式书面）
+**核心**：**迄今**（正式书面，常修饰"未知/未做"之事）
+**搭配**：a hitherto unknown species 迄今未知的物种 / a hitherto unpublished letter 一封从未发表的信
+**辨析**：⚠️ hitherto（正式书面）≈ so far/up to now（通用）≈ to date（正式）
+**词根**：hither（此处）+ to（到）→ 到现在为止
+
+---
+
+## 十六、自然与生态
+
+### 58. **dew** — 露水，露珠
+**核心**：**清晨的露珠**（气象/自然）
+**搭配**：morning dew 晨露 / dew drops 露珠 / dew point 露点（气象）
+**辨析**：⚠️ dew（露水）≠ frost（霜）≠ mist（薄雾）
+**记忆**：谐音"嘟"→ 露珠滴落"嘟嘟"响
+
+### 59. **pillar** — 柱子，支柱；主心骨
+**核心**：**支柱**（具体柱 + 抽象"中流砥柱"）
+**搭配**：a pillar of society 社会的栋梁 / the five pillars of Islam 伊斯兰教五大支柱 / a pillar of strength 中流砥柱
+**辨析**：⚠️ pillar（支柱）≈ column（圆柱，建筑）≠ beam（横梁）
+**记忆**：谐音"劈了"→ 柱子被劈了就没支撑 → 支柱
+
+### 60. **watershed** — 分水岭；转折点；（美）流域
+**核心**：**重大转折点**（比喻义高频：a watershed moment）
+**搭配**：a watershed moment 转折点 / a watershed in history 历史上的分水岭 / the watershed between 两者的分界
+**辨析**：⚠️ watershed（分水岭/转折）≈ turning point（通用）≠ milestone（里程碑）
+**词根**：water（水）+ shed（分流）→ 水往两边流的分界
+
+### 61. **fauna** — 动物群，动物区系
+**核心**：**动物群**；⚠️ 常与 flora 成对：flora and fauna 动植物
+**搭配**：flora and fauna 动植物 / native fauna 本地动物群 / marine fauna 海洋动物群
+**辨析**：⚠️ fauna（动物群）≠ flora（植物群）— 成对记忆
+**词根**：Fauna 罗马神话动物女神 → 动物群；对应 Flora 花神
+
+---
+
+## 十七、人类与繁衍
+
+### 62. **anthropologist** — 人类学家
+**核心**：**研究人类社会文化**的人
+**搭配**：a cultural anthropologist 文化人类学家 / fieldwork of anthropologists 人类学家的田野调查
+**辨析**：⚠️ anthropologist（人类社会）≠ archaeologist（考古遗迹）≠ ethnologist（民族学家）
+**词根**：anthrop- = human（人）+ -logy（学）+ -ist → 研究"人"的学家；同根 anthropology, philanthropist
+
+### 63. **hominid** — 人科动物，原始人类
+**核心**：**人科动物**（含现代人及其祖先）
+**搭配**：early hominids 早期原始人类 / hominid fossils 古人类化石 / hominid ancestors 人类祖先
+**辨析**：⚠️ hominid（人科）≠ human（现代人）≠ ape（猿）
+**词根**：homin- = human（人）+ -id（科）→ 人这一科
+
+### 64. **procreation** — 生育，繁衍（正式）
+**核心**：**创造新生命**的繁衍（正式/生物学）
+**搭配**：the procreation of children 生儿育女 / for the purpose of procreation 以繁衍为目的
+**辨析**：⚠️ procreation（生育，正式）≈ reproduction（繁殖，通用）≠ adoption（收养）
+**词根**：pro-（向前）+ cre-（创造）+ -ation → 创造下一代；同根 procreate, creature
+
+---
+
+## 十八、离奇与禀赋
+
+### 65. **uncanny** — 离奇的，难以解释的；惊人的
+**核心**：**超常到让人不安**的（an uncanny resemblance 惊人的相似）
+**搭配**：an uncanny resemblance 惊人的相似 / an uncanny feeling 一种说不清的感觉
+**辨析**：⚠️ uncanny（离奇超常）≠ mysterious（有谜团）≠ weird（怪异，口语）
+**词根**：un-（不）+ canny（精明）→ 精明到不寻常 → 离奇
+
+### 66. **quick-witted** — 机智的，反应快的
+**核心**：**临场反应快**的机敏（反义 slow-witted 迟钝）
+**搭配**：a quick-witted student 反应敏捷的学生 / a quick-witted reply 机智的回答
+**辨析**：⚠️ quick-witted（反应快）≈ sharp（敏锐）≠ witty（诙谐幽默）
+**词根**：quick（快）+ wit（才智）+ -ed → 才智来得快；同根 witty, outwit
+
+### 67. **well-orchestrated** — 精心策划的，周密安排的
+**核心**：**像指挥乐队一样协调好**（褒义）
+**搭配**：a well-orchestrated campaign 精心策划的活动 / a well-orchestrated attack 周密部署的进攻
+**辨析**：⚠️ well-orchestrated（精心协调，褒）≈ well-organized ≠ improvised（即兴，反义）
+**词根**：orchestra（管弦乐队）+ -ate + -ed → 指挥乐队般编排
+
+---
+
+## 十九、毁灭与灭绝
+
+### 68. **decimation** — 大量毁灭，大规模削减
+**核心**：**毁掉大部分**（非全部灭绝；古罗马"十中抽一"惩罚）
+**搭配**：the decimation of the population 人口的大批死亡 / the decimation of forests 森林的大规模毁坏
+**辨析**：⚠️ decimation（毁大部分）≠ extermination（彻底灭绝）— 程度不同
+**词根**：deci- = ten（十）+ -mate → 十中抽一；同根 decimal, decade
+
+### 69. **exterminate** — 灭绝，根除
+**核心**：**赶尽杀绝**（彻底消灭）
+**搭配**：exterminate pests 消灭害虫 / exterminate a species 灭绝一个物种
+**辨析**：⚠️ exterminate（彻底灭绝）≠ decimate（毁大部分）；≈ eradicate（根除，疾病/贫困）
+**词根**：ex-（出）+ termin-（边界）+ -ate → 赶出边界；同根 terminate, terminal
+
+---
+
+## 二十、历史遗迹
+
+### 70. **caravanserai** — （中东）商队旅馆；热闹的场所
+**核心**：⚠️ 原文 caravanseria 拼写有误，正确 **caravanserai**
+**搭配**：a desert caravanserai 沙漠商队旅馆
+**辨析**：⚠️ caravanserai（商队客栈，历史）≠ hotel（现代酒店）≠ inn（英式乡村客栈）
+**词根**：caravan（商队/大篷车）+ serai（驿站，波斯语）→ 商队歇脚处
 
 ---
 
@@ -94,7 +517,7 @@
 
 ---
 
-## ⚠️ 形近词 / 近义词辨析
+## ⚠️ 形近词 / 近义词辨析（含场景偏好）
 
 | 词对 | 区别 |
 |------|------|
@@ -112,7 +535,7 @@
 
 ---
 
-## 🎯 考研高频考点速记
+## 🎯 高频考点速记
 
 | 考点 | 说明 |
 |------|------|
