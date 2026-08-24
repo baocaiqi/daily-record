@@ -135,6 +135,10 @@ button{cursor:pointer;border:none;background:none}
     <h1>📖 CET-6 词汇默写</h1>
     <p id="mode-desc">看中文释义，写出英文单词</p>
     <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~20.md 自动导入 <strong id="total-word-count">910</strong> 个词汇 <span id="build-version" style="background:#e8e8ed;padding:1px 6px;border-radius:4px;font-size:0.7rem">v3</span></p>
+    <div id="speech-tip" hidden style="margin-top:8px;padding:8px 12px;background:#fff7e6;border:1px solid #ffd591;border-radius:8px;font-size:0.8rem;color:#8a5a00;text-align:left">
+      🔊 <strong>浏览器语音未启用</strong>：本机 Chrome 需要以 <code>--enable-speech-dispatcher</code> 参数启动才有发音。
+      请<strong>完全退出 Chrome</strong>，然后运行 <code>bash ~/start-chrome-speech.sh</code>（或从应用菜单重新打开 Chrome），再刷新本页。
+    </div>
   </div>
 
   <!-- Tabs -->
@@ -5873,6 +5877,36 @@ if (window.speechSynthesis) {
   speechSynthesis.getVoices();
   speechSynthesis.onvoiceschanged = () => { speechSynthesis.getVoices(); };
 }
+
+// ===== SPEECH AVAILABILITY CHECK =====
+// Chrome on Linux keeps speech-dispatcher disabled by default:
+// the page must be opened in a Chrome launched with --enable-speech-dispatcher.
+function speechAvailable() {
+  if (!window.speechSynthesis) return false;
+  const vs = speechSynthesis.getVoices();
+  return vs && vs.some(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+}
+
+function checkSpeech() {
+  // Retry a few times: voices load asynchronously
+  let tries = 0;
+  const timer = setInterval(() => {
+    tries++;
+    const ok = speechAvailable();
+    if (ok || tries > 8) {
+      clearInterval(timer);
+      const tip = document.getElementById('speech-tip');
+      if (tip) {
+        tip.hidden = ok;
+        if (!ok) {
+          dom.btnSpeak.disabled = true;
+          if (dom.autoSpeakCheck) dom.autoSpeakCheck.checked = false;
+        }
+      }
+    }
+  }, 500);
+}
+checkSpeech();
 
 // ===== TOAST =====
 let toastTimer;
