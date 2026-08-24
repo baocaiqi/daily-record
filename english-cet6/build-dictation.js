@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build script: parses words*.md → generates dictation.html
+ * Build script: parses words*.md (new block format) → generates dictation.html
  * Usage: node build-dictation.js
  */
 
@@ -8,78 +8,76 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
-const WORDS_FILES = ['words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md', 'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md', 'words11.md', 'words12.md', 'words13.md', 'words14.md'];
+const WORDS_FILES = [
+  'words1.md', 'words2.md', 'words3.md', 'words4.md', 'words5.md',
+  'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md',
+  'words11.md', 'words12.md', 'words13.md', 'words14.md', 'words15.md',
+  'words16.md', 'words17.md', 'words18.md', 'words19.md', 'words20.md',
+];
 
-// ===== Parse markdown tables =====
-function parseWordTable(md, fileIndex) {
+// ===== Parse new block format =====
+// Each entry looks like:
+//   ### 1. **outskirts** — 市郊，郊区，边缘地带
+//   **核心**：城市的**外围/边缘**，常搭配 **on the outskirts of**
+//   **搭配**：on the outskirts of the city 在城郊 / industrial outskirts
+//   **辨析**：⚠️ outskirts（外围）≠ suburb（住宅区）≠ downtown
+//   **词根**：...
+// Group headers: "## 一、组名"; trailing sections: "## 📌 词根小结" etc.
+function parseWordBlocks(md, fileIndex) {
   const lines = md.split('\n');
   const words = [];
-  let inTable = false;
+  let current = null;
 
-  // Peek ahead: is the next non-empty line a table row?
-  const nextNonEmptyIsRow = (idx) => {
-    for (let j = idx + 1; j < lines.length; j++) {
-      const t = lines[j].trim();
-      if (!t) continue;
-      return t.startsWith('|');
+  // Labels to collect as notes (in priority order), stripped of their label
+  const NOTE_LABELS = ['核心', '搭配', '辨析', '词根', '记忆', '场景', '惯用', '考点', '参考'];
+
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line) continue;
+
+    // Stop at the trailing summary sections
+    if (/^## (📌|⚠️|🎯)/.test(line)) break;
+    // Skip group headers ("## 一、...") and separators
+    if (/^## /.test(line) || /^---/.test(line)) continue;
+
+    // New entry: "### N. **word** — 释义"
+    const entry = line.match(/^### \d+\. \*\*(.+?)\*\*\s*—\s*(.+)$/);
+    if (entry) {
+      if (current) words.push(current);
+      let word = entry[1].trim();
+      // Remove trailing emoji like 🔥 (kept from legacy notes)
+      word = word.replace(/[\u{1F300}-\u{1FAFF}].*$/u, '').trim();
+      let meaning = entry[2].trim();
+      // Skip root-marker entries like "card(i)- — 心脏（词根）"
+      if (meaning.includes('（词根）')) {
+        current = null;
+        continue;
+      }
+      // Skip cross-ref-only rows like "见 #6（诱惑）" (duplicate of the real entry)
+      if (/^见\s*#/.test(meaning)) {
+        current = null;
+        continue;
+      }
+      current = { w: word, m: meaning, n: '', f: fileIndex + 1 };
+      continue;
     }
-    return false;
-  };
 
-  for (let i = 0; i < lines.length; i++) {
-    const trimmed = lines[i].trim();
-
-    // Detect table start
-    if (/^\| # \|/.test(trimmed)) { inTable = true; continue; }
-    // Skip separator
-    if (/^\|---/.test(trimmed) && inTable) continue;
-    // A bare --- line: internal group separator if another row follows,
-    // otherwise it ends the main table (sections like 词根小结 come after)
-    if (inTable && /^---/.test(trimmed)) {
-      if (nextNonEmptyIsRow(i)) continue;
-      break;
+    // Note lines: "**核心**：...", "**搭配**：..." etc.
+    if (current) {
+      const note = line.match(/^\*\*(核心|搭配|辨析|词根|记忆|场景|惯用|考点|参考)\*\*[：:]\s*(.+)$/);
+      if (note && NOTE_LABELS.includes(note[1])) {
+        let text = note[2]
+          .replace(/\*{1,3}([^*]+)\*{1,3}/g, '$1') // Strip bold/italic
+          .replace(/；+/g, '；')
+          .replace(/^[；\s]+|[；\s]+$/g, '')
+          .trim();
+        if (text) {
+          current.n += (current.n ? '；' : '') + text;
+        }
+      }
     }
-    if (!inTable) continue;
-    // Must be a table row
-    if (!trimmed.startsWith('|')) continue;
-
-    const cols = trimmed.split('|');
-    if (cols.length < 5) continue;
-
-    // cols: ['', ' # ', ' **word** ', ' definition ', ' notes ', ...]
-    const rawWord = (cols[2] || '').trim();
-    const definition = (cols[3] || '').trim();
-    const notes = (cols[4] || '').trim();
-
-    // Skip empty / header rows
-    if (!rawWord || !definition) continue;
-    // Skip root-marker rows (🏷️)
-    if (rawWord.includes('🏷️')) continue;
-    // Skip cross-ref-only rows (like "见 #5")
-    if (/^见\s*#/.test(definition)) continue;
-
-    // Extract word: strip **bold** and any trailing emoji/symbols
-    let word = rawWord.replace(/\*\*(.+?)\*\*/, (_, w) => w).trim();
-    // Remove trailing emoji like 🔥
-    word = word.replace(/[\u{1F300}-\u{1FAFF}].*$/u, '').trim();
-    if (!word) continue;
-
-    // Clean notes: strip backtick tags, keep content readable
-    let note = notes
-      .replace(/`\[[^\]]+\]`\s*/g, '')   // Remove `[词根]` style tags
-      .replace(/\*{1,3}([^*]+)\*{1,3}/g, '$1') // Strip bold/italic
-      .replace(/；+/g, '；')
-      .replace(/^[；\s]+|[；\s]+$/g, '') // Trim leading/trailing separators
-      .replace(/\\\|/g, '|')              // Unescape pipes
-      .trim();
-
-    words.push({
-      w: word,
-      m: definition,
-      n: note,
-      f: fileIndex + 1,
-    });
   }
+  if (current) words.push(current);
 
   return words;
 }
@@ -94,7 +92,7 @@ for (let i = 0; i < WORDS_FILES.length; i++) {
     continue;
   }
   const md = fs.readFileSync(filePath, 'utf-8');
-  const words = parseWordTable(md, i);
+  const words = parseWordBlocks(md, i);
   allWords = allWords.concat(words);
   console.log(`${WORDS_FILES[i]}: ${words.length} words parsed`);
 }
@@ -114,7 +112,6 @@ const htmlPath = path.join(DIR, 'dictation.html');
 let html = fs.readFileSync(htmlPath, 'utf-8');
 
 // Replace the WORDS array in the HTML
-// Find the pattern and replace everything from "const WORDS = [" to just before QUIZ section
 const wordsStartMarker = 'const WORDS = [';
 const wordsEndMarker = '\n\n// ===== KNOWLEDGE QUIZ QUESTIONS =====';
 
@@ -138,7 +135,7 @@ fs.writeFileSync(outPath, html, 'utf-8');
 console.log(`\n✓ Written ${html.length} bytes to ${outPath}`);
 
 // Summary per file
-for (let i = 1; i <= 14; i++) {
+for (let i = 1; i <= WORDS_FILES.length; i++) {
   const count = allWords.filter(w => w.f === i).length;
   console.log(`  words${i}: ${count} words`);
 }
