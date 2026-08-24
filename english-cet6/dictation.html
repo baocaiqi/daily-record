@@ -152,26 +152,6 @@ button{cursor:pointer;border:none;background:none}
       <label>范围
         <select id="range-select">
           <option value="all">全部词汇</option>
-          <option value="1">words1 (基础)</option>
-          <option value="2">words2 (进阶)</option>
-          <option value="3">words3 (进阶)</option>
-          <option value="4">words4 (进阶)</option>
-          <option value="5">words5 (进阶)</option>
-          <option value="6">words6 (进阶)</option>
-          <option value="7">words7 (进阶)</option>
-          <option value="8">words8 (进阶)</option>
-          <option value="9">words9 (进阶)</option>
-          <option value="10">words10 (进阶)</option>
-          <option value="11">words11 (进阶)</option>
-          <option value="12">words12 (进阶)</option>
-          <option value="13">words13 (进阶)</option>
-          <option value="14">words14 (进阶)</option>
-          <option value="15">words15 (进阶)</option>
-          <option value="16">words16 (进阶)</option>
-          <option value="17">words17 (进阶)</option>
-          <option value="18">words18 (进阶)</option>
-          <option value="19">words19 (进阶)</option>
-          <option value="20">words20 (进阶)</option>
         </select>
       </label>
       <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
@@ -6363,6 +6343,19 @@ dom.btnHint.disabled = true;
 dom.btnSkip.disabled = true;
 dom.wordInput.disabled = true;
 dom.btnSubmit.disabled = true;
+
+// Build range options dynamically from WORDS data (no hardcoded count)
+(function buildRangeOptions() {
+  const sel = dom.rangeSelect;
+  const maxFile = WORDS.reduce((m, w) => Math.max(m, w.f), 0);
+  sel.innerHTML = '<option value="all">全部词汇</option>';
+  for (let i = 1; i <= maxFile; i++) {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = `words${i} (${i <= 1 ? '基础' : '进阶'})`;
+    sel.appendChild(opt);
+  }
+})();
 </script>
 </body>
 </html>
