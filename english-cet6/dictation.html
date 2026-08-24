@@ -102,6 +102,16 @@ button{cursor:pointer;border:none;background:none}
 .settings-row select:focus,.settings-row input:focus{border-color:#0071e3}
 .settings-row label{font-size:0.85rem;color:#6e6e73;display:flex;align-items:center;gap:4px;cursor:pointer}
 
+/* ===== Custom Range Picker ===== */
+.range-picker{position:relative;display:flex;align-items:center;gap:6px}
+.range-picker .range-label{font-size:0.85rem;color:#6e6e73}
+.range-trigger{padding:8px 12px;border:1.5px solid #d2d2d7;border-radius:8px;font-size:0.875rem;background:#fff;color:#1d1d1f;cursor:pointer;min-width:140px;text-align:left;transition:border-color 0.2s}
+.range-trigger:hover,.range-trigger:focus{border-color:#0071e3}
+.range-menu{position:absolute;top:calc(100% + 4px);left:36px;z-index:100;background:#fff;border:1px solid #e8e8ed;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.12);max-height:60vh;overflow-y:auto;min-width:180px;padding:4px}
+.range-menu button{display:block;width:100%;text-align:left;padding:8px 12px;font-size:0.875rem;color:#1d1d1f;border-radius:6px;background:none;border:none;cursor:pointer;white-space:nowrap}
+.range-menu button:hover{background:#f0f7ff}
+.range-menu button.selected{background:#e8f1fb;color:#0071e3;font-weight:600}
+
 /* ===== Toast ===== */
 .toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;font-weight:500;font-size:0.9rem;z-index:100;opacity:0;transition:opacity 0.3s;pointer-events:none}
 .toast.show{opacity:1}
@@ -149,11 +159,17 @@ button{cursor:pointer;border:none;background:none}
 
     <!-- Settings -->
     <div class="settings-row">
-      <label>范围
-        <select id="range-select">
+      <div class="range-picker">
+        <span class="range-label">范围</span>
+        <button type="button" class="range-trigger" id="range-trigger">全部词汇 ▾</button>
+        <div class="range-menu" id="range-menu" hidden>
+          <!-- options injected by JS -->
+        </div>
+        <!-- native select kept as data source (hidden) -->
+        <select id="range-select" hidden>
           <option value="all">全部词汇</option>
         </select>
-      </label>
+      </div>
       <label><input type="checkbox" id="shuffle-check" checked> 随机顺序</label>
       <label><input type="checkbox" id="auto-speak-check" checked> 自动发音</label>
     </div>
@@ -6347,14 +6363,48 @@ dom.btnSubmit.disabled = true;
 // Build range options dynamically from WORDS data (no hardcoded count)
 (function buildRangeOptions() {
   const sel = dom.rangeSelect;
+  const menu = $('range-menu');
+  const trigger = $('range-trigger');
   const maxFile = WORDS.reduce((m, w) => Math.max(m, w.f), 0);
+
+  // Reset native select (data source)
   sel.innerHTML = '<option value="all">全部词汇</option>';
-  for (let i = 1; i <= maxFile; i++) {
+  menu.innerHTML = '';
+
+  const addOpt = (value, text) => {
     const opt = document.createElement('option');
-    opt.value = i;
-    opt.textContent = `words${i} (${i <= 1 ? '基础' : '进阶'})`;
+    opt.value = value;
+    opt.textContent = text;
     sel.appendChild(opt);
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.dataset.value = value;
+    btn.textContent = text;
+    if (value === 'all') btn.classList.add('selected');
+    btn.addEventListener('click', () => {
+      sel.value = value;
+      trigger.textContent = text + ' ▾';
+      menu.querySelectorAll('button').forEach(b => b.classList.toggle('selected', b.dataset.value === value));
+      sel.dispatchEvent(new Event('change'));
+      menu.hidden = true;
+    });
+    menu.appendChild(btn);
+  };
+
+  addOpt('all', '全部词汇');
+  for (let i = 1; i <= maxFile; i++) {
+    addOpt(String(i), `words${i} (${i <= 1 ? '基础' : '进阶'})`);
   }
+
+  // Open/close menu
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.hidden = !menu.hidden;
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.range-picker')) menu.hidden = true;
+  });
 })();
 </script>
 </body>
