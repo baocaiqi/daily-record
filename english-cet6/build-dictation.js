@@ -13,6 +13,7 @@ const WORDS_FILES = [
   'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md',
   'words11.md', 'words12.md', 'words13.md', 'words14.md', 'words15.md',
   'words16.md', 'words17.md', 'words18.md', 'words19.md', 'words20.md',
+  'words21.md',
 ];
 
 // ===== Parse new block format =====
@@ -29,7 +30,7 @@ function parseWordBlocks(md, fileIndex) {
   let current = null;
 
   // Labels to collect as notes (in priority order), stripped of their label
-  const NOTE_LABELS = ['核心', '搭配', '辨析', '词根', '记忆', '场景', '惯用', '考点', '参考'];
+  const NOTE_LABELS = ['核心', '搭配', '辨析', '词根', '记忆', '场景', '惯用', '考点', '参考', '例句'];
 
   for (const raw of lines) {
     const line = raw.trim();
@@ -64,7 +65,7 @@ function parseWordBlocks(md, fileIndex) {
 
     // Note lines: "**核心**：...", "**搭配**：..." etc.
     if (current) {
-      const note = line.match(/^\*\*(核心|搭配|辨析|词根|记忆|场景|惯用|考点|参考)\*\*[：:]\s*(.+)$/);
+      const note = line.match(/^\*\*(核心|搭配|辨析|词根|记忆|场景|惯用|考点|参考|例句)\*\*[：:]\s*(.+)$/);
       if (note && NOTE_LABELS.includes(note[1])) {
         let text = note[2]
           .replace(/\*{1,3}([^*]+)\*{1,3}/g, '$1') // Strip bold/italic
