@@ -134,7 +134,7 @@ button{cursor:pointer;border:none;background:none}
   <div class="header">
     <h1>📖 CET-6 词汇默写</h1>
     <p id="mode-desc">看中文释义，写出英文单词</p>
-    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~21.md 自动导入 <strong id="total-word-count">956</strong> 个词汇 <span id="build-version" style="background:#e8e8ed;padding:1px 6px;border-radius:4px;font-size:0.7rem">v4</span></p>
+    <p style="font-size:0.75rem;color:#86868b;margin-top:2px">已从 words1~21.md 自动导入 <strong id="total-word-count">956</strong> 个词汇 <span id="build-version" style="background:#e8e8ed;padding:1px 6px;border-radius:4px;font-size:0.7rem">v5</span></p>
     <div id="speech-tip" hidden style="margin-top:8px;padding:8px 12px;background:#fff7e6;border:1px solid #ffd591;border-radius:8px;font-size:0.8rem;color:#8a5a00;text-align:left">
       🔊 <strong>浏览器语音未启用</strong>：本机 Chrome 需要以 <code>--enable-speech-dispatcher</code> 参数启动才有发音。
       请<strong>完全退出 Chrome</strong>，然后运行 <code>bash ~/start-chrome-speech.sh</code>（或从应用菜单重新打开 Chrome），再刷新本页。
@@ -6148,39 +6148,64 @@ function speak(text) {
   speechSynthesis.speak(utter);
 }
 
-// Preload voices
-if (window.speechSynthesis) {
-  speechSynthesis.getVoices();
-  speechSynthesis.onvoiceschanged = () => { speechSynthesis.getVoices(); };
-}
-
 // ===== SPEECH AVAILABILITY CHECK =====
 // Chrome on Linux keeps speech-dispatcher disabled by default:
 // the page must be opened in a Chrome launched with --enable-speech-dispatcher.
+// Voices load asynchronously (speech-dispatcher can be slow on first start), so
+// availability is re-evaluated whenever the voice list changes; if voices arrive
+// late, 自动发音 and the 🔊 button are restored instead of staying disabled.
+let speechAutoUncheckedByUs = false; // true only when WE unset 自动发音 (voices absent at check time)
+
 function speechAvailable() {
   if (!window.speechSynthesis) return false;
   const vs = speechSynthesis.getVoices();
-  return vs && vs.some(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+  return vs && vs.length > 0;
+}
+
+function applySpeechState() {
+  const tip = document.getElementById('speech-tip');
+  if (!tip) return;
+  const ok = speechAvailable();
+  tip.hidden = ok;
+  dom.btnSpeak.disabled = !ok;
+  if (ok && speechAutoUncheckedByUs && dom.autoSpeakCheck && !dom.autoSpeakCheck.checked) {
+    // Voices arrived after the initial check: restore auto-speak (was system-disabled, not user choice)
+    dom.autoSpeakCheck.checked = true;
+    speechAutoUncheckedByUs = false;
+  }
 }
 
 function checkSpeech() {
-  // Retry a few times: voices load asynchronously
+  // Retry for ~10s: voices load asynchronously
   let tries = 0;
   const timer = setInterval(() => {
     tries++;
-    const ok = speechAvailable();
-    if (ok || tries > 8) {
+    if (speechAvailable() || tries > 20) {
       clearInterval(timer);
-      const tip = document.getElementById('speech-tip');
-      if (tip) {
-        tip.hidden = ok;
-        if (!ok) {
-          dom.btnSpeak.disabled = true;
-          if (dom.autoSpeakCheck) dom.autoSpeakCheck.checked = false;
-        }
+      if (!speechAvailable()) {
+        // Speech genuinely unavailable yet: show tip + disable 🔊 + unset auto-speak
+        speechAutoUncheckedByUs = true;
+        dom.btnSpeak.disabled = true;
+        if (dom.autoSpeakCheck) dom.autoSpeakCheck.checked = false;
       }
+      applySpeechState();
     }
   }, 500);
+}
+
+if (window.speechSynthesis) {
+  speechSynthesis.getVoices();
+  // Any time the voice list changes (incl. late arrival), re-evaluate the UI state
+  speechSynthesis.onvoiceschanged = () => {
+    speechSynthesis.getVoices();
+    applySpeechState();
+  };
+  // If the user toggles 自动发音 manually, don't override their choice later
+  if (dom.autoSpeakCheck) {
+    dom.autoSpeakCheck.addEventListener('change', () => {
+      if (dom.autoSpeakCheck.checked) speechAutoUncheckedByUs = false;
+    });
+  }
 }
 checkSpeech();
 
