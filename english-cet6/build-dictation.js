@@ -13,7 +13,7 @@ const WORDS_FILES = [
   'words6.md', 'words7.md', 'words8.md', 'words9.md', 'words10.md',
   'words11.md', 'words12.md', 'words13.md', 'words14.md', 'words15.md',
   'words16.md', 'words17.md', 'words18.md', 'words19.md', 'words20.md',
-  'words21.md',
+  'words21.md', 'words22.md', 'words23.md', 'words24.md', 'words25.md',
 ];
 
 // ===== Parse new block format =====
@@ -129,6 +129,13 @@ const newWordsSection = 'const WORDS = ' + wordsJSON + ';';
 
 // Replace: everything from startIdx to endIdx (exclusive of end marker)
 html = html.slice(0, startIdx) + newWordsSection + html.slice(endIdx);
+
+// Keep the import summary line in sync with the generated data (word range + count)
+const fileCount = WORDS_FILES.length;
+html = html.replace(
+  /words1~\d+(\.md 自动导入 <strong id="total-word-count">)\d+(<\/strong>)/,
+  `words1~${fileCount}$1${allWords.length}$2`
+);
 
 // Write output
 const outPath = path.join(DIR, 'dictation.html');
