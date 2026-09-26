@@ -14,7 +14,7 @@ const WORDS_FILES = [
   'words11.md', 'words12.md', 'words13.md', 'words14.md', 'words15.md',
   'words16.md', 'words17.md', 'words18.md', 'words19.md', 'words20.md',
   'words21.md', 'words22.md', 'words23.md', 'words24.md', 'words25.md',
-  'words26.md',
+  'words26.md', 'words27.md', 'words28.md', 'words29.md',
 ];
 
 // ===== Parse new block format =====
